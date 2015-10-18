@@ -1,0 +1,9 @@
+<% if "#{@local_path}" == "true" %>
+$('#load_image_select').html('');
+$('#tbody-images').prepend('<%= escape_javascript(render(partial: "/admin/renders/tbody_img", locals: {picture: @picture}))%>');
+<%else%>
+$('#insertImage')[0].click();
+$('#image-input-up').val("<%=@picture.version_img.mid%>");
+$('#saveimage')[0].click();
+$('#load_image_select').html('');
+<%end%>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  hash: MyString
+  card: MyString
+  password: MyString
+  role: MyString
+  name: MyString
+
+two:
+  hash: MyString
+  card: MyString
+  password: MyString
+  role: MyString
+  name: MyString

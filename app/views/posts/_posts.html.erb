@@ -1,0 +1,27 @@
+<div class="col-md-12">
+  <div class="row">
+    <% posts.reverse.each do |post|%>
+    <div class="col-md-6">
+      <aside class="profile-nav alt">
+        <section class="panel">
+          <div class="wdgt-row">
+            <% if !post.head_image? %>
+            <%= image_tag('post-head.png', width: 404, height: 202)%>
+            <%else%>
+            <%= image_tag(post.head_image, width: 404, height: 202)%>
+            <%end%>
+          </a>
+          <h1><%= "No name" if post.title.blank? %><%= truncate(post.title, length: 45) if !post.title.blank? %></h1>
+          <p>Autor: <%= post.user.name %></p>
+        </div>
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="javascript:;"> <i class="fa fa-commenting-o"></i> Comentarios <span class="badge label-success pull-right r-activity">10</span></a></li>
+          <li><a href="javascript:;"> <i class="fa fa-line-chart"></i> Actividades <span class="badge label-danger pull-right r-activity">15</span></a></li>
+          <li><%= link_to post_path(post.id) do %> <i class="fa fa-eye"></i> Ver <%end%></li>
+          <li><a href="javascript:;"> <i class="fa fa-pencil"></i> Editar </a></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+  <%end%>
+</div>

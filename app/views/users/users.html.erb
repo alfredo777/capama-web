@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Usuarios</header>
+    <section class="panel">
+      <div class="panel-body">
+        <%= link_to 'Usuario nuevo',new_user_path, class: 'btn btn-default' %>
+        <%= link_to 'Importar usuarios XLXs',new_user_path, class: 'btn btn-default' %>
+        <%= link_to 'Expotar usuarios XLXs',new_user_path, class: 'btn btn-default' %>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>ID interno</th>
+                <th>Teléfono</th>
+                <th>Opciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @user.each do |user| %>
+              <tr>
+                <td><%= user.name%></td>
+                <td><%= user.email%></td>
+                <td><%= user.card%></td>
+                <td><%= user.phone%></td>
+                <td><%= link_to 'Editar', edit_user_path(user.id)%> | <%=  link_to 'Eliminar', destroy_user_path(user.id), "data-confirm": "¿Estas seguro de querer eliminar este usuario?" %></td>
+              </tr>
+              <%end%>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

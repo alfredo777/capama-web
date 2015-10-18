@@ -1,0 +1,2 @@
+<%  if !user.avatar? %><i class="fa fa-user"></i><%end%>
+<%= image_tag("#{user.avatar.mini}", id: "imgavatar", width: "50px") if user.avatar? %>

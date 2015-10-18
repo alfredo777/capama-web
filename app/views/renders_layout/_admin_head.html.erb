@@ -1,0 +1,77 @@
+<!--header start-->
+<header class="header fixed-top clearfix">
+  <!--logo start-->
+  <div class="brand">
+    <a href="/admin/index" class="logo">
+      <img src="/assets/admin/logo.png" alt="" width="130px;"/>
+    </a>
+    <div class="sidebar-toggle-box">
+      <div class="fa fa-bars"></div>
+    </div>
+  </div>
+  <!--logo end-->
+  <div class="nav notify-row" id="top_menu">
+    <!--  notification start -->
+    <ul class="nav top-menu">
+      <!-- notification dropdown start-->
+      <li id="header_notification_bar" class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+          <i class="fa fa-bell-o"></i>
+          <span class="badge bg-warning"><%= current_user.user_helps.where(open: false).count %></span>
+        </a>
+        <ul class="dropdown-menu extended notification">
+          <li>
+            <p>Notifications</p>
+          </li>
+          <% current_user.user_helps.where(open: false).last(5).each do |notice|%>
+          <%= link_to ticket_path(notice.id) do %>
+          <li>
+            <div class="alert alert-info clearfix">
+              <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+              <div class="noti-info">
+                <%= notice.cause %><br/>
+                Area Asignada: <%= notice.area %>
+              </div>
+            </div>
+          </li>
+          <%end%>
+          <% end %>
+        </ul>
+      </li>
+      <!-- notification dropdown end -->
+    </ul>
+    <!--  notification end -->
+  </div>
+  <div class="top-nav clearfix">
+    <!--search & user info start-->
+    <ul class="nav pull-right top-menu">
+      <li>
+        <div class="loading" style="display:none;">Cargando <span id="porcentloadbar">0</span>%- <%=image_tag('load.GIF')%></div>
+      </li>
+      <li>
+        <input type="text" class="form-control search" placeholder=" Search">
+      </li>
+      <!-- user login dropdown start-->
+      <li class="dropdown">
+        <a data-toggle="dropdown" class="dropdown-toggle icon-user" href="#">
+          <%= render partial: '/users/avatars/avatar_mini', locals: {user: current_user}%>
+          <span class="username"><%= truncate(current_user.name, length: 12) %></span>
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu extended logout">
+          <li><%= link_to user_path(current_user.id) do %><i class=" fa fa-suitcase"></i>Perfil</a><%end%></li>
+          <li><%= link_to edit_user_path(current_user.id) do %><i class="fa fa-cog"></i>Editar<%end%></li>
+          <li><%= link_to session_exit_user_path do %><i class="fa fa-key"></i> Salir <%end%></li>
+        </ul>
+      </li>
+      <!-- user login dropdown end -->
+      <!--
+      <li>
+        <div class="toggle-right-box">
+          <div class="fa fa-bars"></div>
+        </div>
+      </li>-->
+    </ul>
+    <!--search & user info end-->
+  </div>
+</header>

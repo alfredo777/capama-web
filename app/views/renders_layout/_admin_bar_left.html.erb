@@ -1,0 +1,86 @@
+<aside>
+  <div id="sidebar" class="nav-collapse">
+    <!-- sidebar menu start-->
+    <div class="leftside-navigation">
+      <ul class="sidebar-menu" id="nav-accordion">
+        <li>
+          <%= link_to admin_path do  %>
+          <i class="fa fa-dashboard"></i>
+          <span>Dashboard</span>
+          <% end %>
+        </li>
+        <% if  scope_permission('blog_posts','view_all') %>
+        <li class="sub-menu">
+          <%= link_to  users_path do  %>
+          <i class="fa fa-pencil"></i>
+          <span>Posts</span>
+          <% end %>
+          <ul class="sub">
+            <li><%= link_to 'Ver todos los posts', posts_path %></li>
+            <li><%= link_to 'Mis posts', my_posts_path %></li>
+            <li><%= link_to 'Nuevo post', new_post_path %></li>
+          </ul>
+        </li>
+        <%end%>
+        <% if  scope_permission('blog_posts','view_all') %>
+         <li>
+          <%= link_to files_path do %>
+            <i class="fa fa-picture-o"></i>
+            <span>Imagenes</span>
+          <%end%>
+        </li>
+        <%end%>
+        <% if  scope_permission('users','view_all') %>
+         <li>
+          <%= link_to tickets_path do %>
+            <i class="fa fa-ticket"></i>
+            <span>Tickets</span>
+          <%end%>
+        </li>
+        <%end%>
+        <!--
+        <% if  scope_permission('blog_posts','view_all') %>
+         <li>
+          <%= link_to files_path do %>
+            <i class="fa fa-code-fork"></i>
+            <span>Formatos</span>
+          <%end%>
+        </li>
+        <%end%>
+        -->
+        <% if  scope_permission('users','view_all') %>
+        <li class="sub-menu">
+          <a href="javascript:;">
+            <i class="fa fa-user"></i>
+            <span>Usuarios</span>
+          </a>
+          <ul class="sub">
+            <li><%= link_to 'Usuarios', users_path %></li>
+            <li><%= link_to 'Nuevo Usuario', new_user_path %></li>
+          </ul>
+        </li>
+        <%end%>
+        <% if  scope_permission('users','view_all') %>
+        <li >
+          <a href="javascript:;">
+            <i class="fa fa-smile-o"></i>
+            <span>Clientes</span>
+          </a>
+        </li>
+        <%end%>
+        <% if  scope_permission('roles','view_all') %>
+        <li class="sub-menu">
+          <a href="javascript:;">
+            <i class="fa fa-user-secret"></i>
+            <span>Roles</span>
+          </a>
+          <ul class="sub">
+            <li><%= link_to  'Todos los roles', roles_path   %></li>
+            <li><%= link_to 'Nuevo rol', new_role_path %></li>
+          </ul>
+        </li>
+        <%end%>
+      </ul></div>
+      <!-- sidebar menu end-->
+    </div>
+  </aside>

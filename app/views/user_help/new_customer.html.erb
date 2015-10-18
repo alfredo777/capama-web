@@ -1,0 +1,51 @@
+<div class="offset"></div>
+<div class="light-wrapper">
+  <div class="container inner">
+    <div class="thin">
+      <h3 class="section-title text-center">Registro de Clientes de CAPAMA</h3>
+      <p class="text-center">Estimado Cliente su peteición ha sido enviada, para poder acceder al soporte en linea o cualquiera de nuestros servicios otros es necesario que uested se registre en nuestro Sistema de Soporte.</p>
+      <div class="divide50"></div>
+      <div class="form-container">
+        <%= form_tag create_customer_path, class: "vanilla vanilla-form" do -%>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="form-field">
+              <label>
+                Email:
+                <%= text_field_tag 'email', params[:email] ,placeholder: 'Email( correo electrónico)', required: true%>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-field">
+              <label>
+                Teléfono:
+                <%= text_field_tag 'phone', params[:phone] ,placeholder: 'Email( correo electrónico)', required: true%>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-field">
+              <label>
+                Nombre:
+                <%= text_field_tag 'name', '' ,placeholder: 'Ingresa tu nombre', required: true%>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="form-field">
+              <label>
+                Dirección:
+                <%= text_field_tag 'address', '' ,placeholder: 'Ingresa tu dirección', required: true%>
+              </label>
+            </div>
+          </div>
+        </div>
+         <%= submit_tag 'Deseo Registrarme e ingresar a los demás servicios', class: 'btn pull-right', 'data-error': "Hay campos sin llenar", 'data-processing': "Enviando", "data-success": "Enviado"%>
+
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

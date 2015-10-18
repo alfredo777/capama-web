@@ -1,0 +1,50 @@
+<div class="col-md-12">
+  <div class="panel-body">
+    <div class="slimScrollDiv" style="position: relative; overflow: auto; width: auto; height: 300px;">
+
+    <ul class="to-do-list ui-sortable" id="sortable-todo" style="overflow: hidden; width: auto; height: 300px;">
+      <% pictures.each do |picture| %>
+      <li class="clearfix">
+        <span class="drag-marker">
+          <i></i>
+        </span>
+        <div class="todo-check pull-left">
+          <%= image_tag(picture.version_img.xsmaill, width: '20px', height: '20px')%>
+        </div>
+        <p class="todo-title">
+          <%= truncate(picture.version_img.url.split('/').last, size: 40)%>
+        </p>
+        <div class="pull-right clearfix todo-actionlist">
+          <a href="#" class="todo-done" data-url="<%= picture.version_img %>"> <i class="fa fa-picture-o"></i></a>
+          <a href="#" class="todo-done" data-url="<%= picture.version_img.full %>"> <i class="fa fa-picture-o"></i></a>
+          <a href="#" class="todo-done" data-url="<%= picture.version_img.mid %>"> <i class="fa fa-picture-o"></i></a>  
+          <a href="#" class="todo-done" data-url="<%= picture.version_img.mini %>"> <i class="fa fa-picture-o"></i></a> 
+        </div>
+      </li>
+      <%end%>
+      </ul>
+
+      <div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 262.391px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+      <div class="todo-action-bar">
+        <div class="row">
+          <div class="col-xs-4 btn-todo-select">
+            <button type="submit" class="btn btn-default"><i class="fa fa-check"></i> Select All</button>
+          </div>
+          <div class="col-xs-4 todo-search-wrap">
+            <input type="text" class="form-control search todo-search pull-right" placeholder=" Search">
+          </div>
+          <div class="col-xs-4 btn-add-task">
+            <button type="submit" class="btn btn-default btn-primary"><i class="fa fa-plus"></i> Add Task</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  $('.todo-done').click(function(){
+    var url = $(this).data('url');
+    $('#insertImage')[0].click();
+    $('#image-input-up').val(url);
+    $('#saveimage')[0].click();
+  });
+  </script>

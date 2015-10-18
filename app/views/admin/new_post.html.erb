@@ -1,0 +1,51 @@
+<section class="panel">
+  <div class="row">
+    <div class="col-md-12">
+      <br/><br/><br/>
+      <div id="load_image_select"></div>
+    </div>
+  </div>
+  <div class="panel-body">
+    <%= form_tag create_post_path, class: 'form-horizontal', id: "form-ajax" do %>
+    <br/>
+    <div class="row" style="margin-left: 15px;">
+      <div class="col-md-12">
+        <h3> Ingresa el título:</h3> <br/><%= text_field_tag 'title', '', placeholder: 'Título de la publicación', class: 'form-control' %>
+        <a class="btn btn-default" onclick="$('#head_image').trigger('click');"n>Cargar imagen de cabecera</a>  <img src="" width="50px" id="head_image_prev">
+        <div style="display:none;">
+        <%= file_field_tag 'head_image' %>
+        </div>
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <center>
+      <div class="col-md-12">
+        <%= render partial: '/admin/renders/text_options', locals: {id: 'content'}%>
+      </div>
+      </center><br/><br/>
+      <%= submit_tag 'Guardar post', class: "btn btn-primary pull-right" %>
+    </div><br/>
+    <%end%>
+  </div>
+</section>
+<script type="text/javascript">
+  $(document).ready(function(){
+    function readURLXM(input) {
+
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+              $('#head_image_prev').attr('src', e.target.result);
+          }
+
+          reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $("#head_image").change(function(){
+        readURLXM(this);
+    });
+  });
+</script>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  talker_id: 1
+  message: MyText
+  talker_type: MyString
+
+two:
+  talker_id: 1
+  message: MyText
+  talker_type: MyString

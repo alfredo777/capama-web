@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Archivos</header>
+  <section class="panel">
+    <div class="panel-body">
+      <div class="col-md-12">
+        <div id="load_image_select"></div>
+      </div>
+      <%= link_to load_image_select_path(type: 'load', local_path: true), class: 'btn btn-default' , remote: true do %>Cargar Imagen <%end%>
+      <div class="table-responsive">
+        <table class="table" id="tbody-images">
+          <thead>
+            <tr>
+              <th>Preview</th>
+              <th>Nombre</th>
+              <th>Usuario</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @pictures.each do |picture| %>
+              <%= render partial: '/admin/renders/tbody_img', locals: {picture: picture} %>
+            <%end%>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+</div>

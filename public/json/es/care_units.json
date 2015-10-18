@@ -1,0 +1,47 @@
+{
+  "title": "Unidades de atención y pago de servicios",
+  "table-title1": "GERENCIAS COMERCIALES",
+  "thead1":[
+    {"t": "Oficina"},
+    {"t": "Ubicación"},
+    {"t": "Teléfono"},
+    {"t": "Horario"}
+  ],
+  "tbody1": [
+    {"t1": "Gerencia Centro", "t2": "Av. Lic. Adolfo Lopez Mateos Esq. Tte. José Azueta s/n Col. Centro C.P. 39300", "t3": "01(744)434-1400", "t4": "Lunes a viernes 08:00 a 17:00 horas Sábados 09:00 a 13:00 hora"},
+    {"t1": "Gerencia Coloso", "t2": "Gran Via Coloso s/n Colonia La Esperanza C.P. 39810", "t3": "01(744)468-0995 ", "t4": "Lunes a viernes 08:00 a 15:00 horas  Sábados 09:00 a 13:00 horas"},
+    {"t1": "Gerencia Diamante", "t2": "Plaza Velero local 1, entrada principal Col. Luis Donaldo Colosio C.P. 39907", "t3": "01(744)466-4406  01(744)466-4407", "t4": "Lunes a viernes 08:00 a 17:00 horas Sábados 08:00 a 16:00 horas"},
+    {"t1": "Gerencia Pie de la Cuesta", "t2": "Carretera Nal Acapulco-Zihuatanejo kilometro 6.5, parada del Tehuacán C.P. 39412", "t3": "01(744)460-1313", "t4": "Lunes a viernes 08:00 a 15:30 horas Sábados 09:00 a 13:00 horas"},
+    {"t1": "Gerencia Renacimiento", "t2": "Calle Yolotepec Cd. Renacimiento lotes 8 y 10 manzana 17 sector 2 C.P. 39710", "t3": "01(744)441-4079 ", "t4": "Lunes a viernes 08:00 a 16:00 horas Sábados 09:00 a 13:00 horas"}
+  ],
+  "table-title2": "MODULOS DE PAGOS AUTORIZADOS",
+  "thead2":[
+    {"t": "Módulos"},
+    {"t": "Ubicación"},
+    {"t": "Teléfono"},
+    {"t": "Horario"}
+  ],
+  "tbody2": [
+    {"t1": "OXXO", "t2": "Todas las sucursales", "t3": "Solo en sucursal", "t4": "De la sucursal"},
+    {"t1": "Walmart Icacos", "t2": "Avenida Costera Migel Aleman 500", "t3": "01(744)481-1142", "t4": "Lunes a sábado 10:00 a 17:00 horas Domingo 10:00 a 15:00 horas"},
+    {"t1": "Comercial Mexicana Diana", "t2": "Avenida Farallon del Obispo 216 C.P. 39690", "t3": "01(744)481-3641", "t4": "Lunes a domingo 09:00 a 16:00 horas"},
+    {"t1": "Comercial Mexicana Vista Alegre", "t2": "Avenida Ruiz Cortinez no 13 C.P. 39560", "t3": "01(744)485-8820", "t4": "Lunes a domingo 09:00 a 16:00 horas"},
+    {"t1": "Elektra", "t2": "Todas las sucursales", "t3": "Solo en sucursal", "t4": "De la sucursal"}
+  ],
+  "table-title3": "PAGOS EN BANCOS AUTORIZADOS",
+  "thead3":[
+    {"t": "Institución Bancaria"},
+    {"t": "Ubicación"},
+    {"t": "Teléfono"},
+    {"t": "Horario"}
+  ],
+  "tbody3": [
+   {"t1": "BANORTE", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
+   {"t1": "HSBC", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
+   {"t1": "Santander", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
+   {"t1": "Bancomer", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
+   {"t1": "Afirme", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
+   {"t1": "Banco Azteca", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
+   {"t1": "Scotiabank", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"}
+  ]
+}

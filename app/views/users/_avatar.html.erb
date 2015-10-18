@@ -1,0 +1,29 @@
+<div class="row">
+  <div>
+    <%= image_tag('admin/avatar.png', id: "imgavatar", width: "128px", height: "128px")  if !user.avatar? %>
+    <%= image_tag("#{user.avatar.gigant}", id: "imgavatar", width: "128px", height: "128px") if user.avatar? %>
+    <div class="btn btn-default" onclick=" $('#file').trigger('click'); "><i class="fa fa-camera-retro"></i> Ingresa tu Avatar</div>
+    <div style="display:none;"><%= file_field_tag 'file'  %></div>
+  </div>
+
+</div></br></br>
+<script type="text/javascript">
+  $(document).ready(function(){
+    function readURL(input) {
+
+      if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function (e) {
+              $('#imgavatar').attr('src', e.target.result);
+          }
+
+          reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $("#file").change(function(){
+        readURL(this);
+    });
+  });
+</script>

@@ -1,0 +1,64 @@
+<div class="container-ajax">
+  <div class="offset"></div>
+  <div class="light-wrapper">
+    <div class="container inner">
+      <div class="thin">
+        <h3 class="section-title text-center">Servicio de Ayuda de CAPAMA</h3>
+        <p class="text-center">Lo invitamos a ingresar en nustro servicio de ayuda, que lo contactará con uno de nuestro asesores de soluciones CAPAMA.</p>
+        <ul class="contact-info text-center">
+          <li><i class="fa fa-building"></i> Av. Lic. Adolfo López Mateos, Esq. Tte. José Azueta s/n, Col. Centro
+          C.P. 39300, Acapulco, Gro </li></br>
+          <li><i class="fa fa-phone"></i>01 744 434-14-000</li>
+          <li><i class="fa fa-envelope-o"></i><a href="email-prueba@email.com">email-prueba@email.com</a> </li>
+        </ul>
+        <div class="divide50"></div>
+        <div class="form-container">
+          <%= form_tag ticket_create_path, class: "vanilla vanilla-form" do -%>
+          <input name="authenticity_token" type="hidden" value="AiezPzztTfWOmbQvHpegwMTiLrfYSg5wZvodOXbaE6E=">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-field">
+                <label>
+                  <%= text_field_tag 'email', '' ,placeholder: 'Email( correo electrónico)', required: true%>
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-field">
+                <label>
+                  <%= text_field_tag 'cause', '' ,placeholder: 'Motivo( Razón por la cual nos contacta )', required: true%>
+                </label>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-field">
+                <label>
+                  <label class="custom-select">
+                    <select name="area" required="required">
+                      <option value="">Seleccione el area a comunicarse</option>
+                      <option value="suport">Soporte</option>
+                      <option value="financial">Cobranzas y Pagos</option>
+                      <option value="maintenance">Reparaciones e instalación</option>
+                      <option value="other">Otras</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-field">
+                  <label>
+                    <%= text_field_tag 'phone', '' ,placeholder: 'Ingresa tu teléfono', required: true%>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <%= text_area_tag 'explanation', '', placeholder: 'Describa el problema por el cual nos contacta', required: true%>
+            <%= submit_tag 'Eviar', class: 'btn pull-right', 'data-error': "Hay campos sin llenar", 'data-processing': "Enviando", "data-success": "Enviado"%>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </label>
+</div>
+</div>
+</div>

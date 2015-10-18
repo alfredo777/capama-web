@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CAPAMA</title>
+    <%= stylesheet_link_tag 'admin' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <% if !notice.nil? %>
+  <div class="alert alert-success" role="alert"><%=flash[:notice] %></div>
+  <%end%>
+  <body class="login_background">
+        <%= yield %>
+  </body>
+  <script src="/assets/admin/jquery.js"></script>
+  <script src="/assets/admin/bootstrap.min.js"></script>
+</html>

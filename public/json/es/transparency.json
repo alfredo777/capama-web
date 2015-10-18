@@ -1,0 +1,20 @@
+{
+  "title": "Transparencia",
+  "content": "El Consejo de Administración, en su función de Órgano de Gobierno de la Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco (CAPAMA), en atención y concordancia con las disposiciones contenidas en el artículo 6, párrafo segundo, fracciones de la I a la VII de la Constitución Política de los Estados Unidos Mexicanos, que elevan a nivel de garantía el derecho que tiene cualquier gobernado para solicitar y obtener de los sujetos obligados, determinada información en los términos previstos por la normatividad reglamentaria, en el ejercicio de sus facultades, autorizó la instauración e instalación de la “Unidad de Enlace para la Transparencia y Acceso a la Información Pública” como una unidad administrativa dependiente de la Dirección General, responsable de recibir y dar trámite a las solicitudes de acceso a la información, hoy denominada por virtud del artículo 71 de la Ley Número 374 de Transparencia y Acceso a la Información Pública del Estado de Guerrero, <i><b>Unidad de Transparencia y Acceso a la Información</b></i>.<br/><br/>  La autorización en comento quedó asentada bajo el Acuerdo número ASC-I-ORD-ENERO 13-2010-06, emitido por el Pleno del Consejo de Administración en la primera sesión ordinaria de 2010, celebrada con fecha 13 de enero del año referido.<br/><br/>  Con esta decisión, el Consejo de Administración otorga vital importancia y relevancia a la transparencia de las actividades propias de este organismo operador municipal, constituyendo una virtual contraloría ciudadana con la participación de quienes requieran información de su interés.<br/><br/>  De esta manera,  la CAPAMA se integra a la red de instituciones públicas que atienden las demandas de información de los ciudadanos, y a través de su portal electrónico, pone a disposición de la ciudadanía en general, la información pública de oficio que obra en su poder.<br/><br/>",
+  "menu": [
+    {"tl": "Solicitud de Información", "action": "loadTPL('appli_information', 'appli_information', 'transparency_content', 'es');"},
+    {"tl": "Esctructura orgánica", "action": "loadTPL('', '', '', 'es');"},
+    {"tl": "Marco normativo", "action": "loadTPL('legal_framework', 'legal_framework', 'transparency_content', 'es');"},
+    {"tl": "Funciones Relevantes", "action": "loadTPL('relevant_functions', 'relevant_functions', 'transparency_content', 'es');"},
+    {"tl": "Programa operativo anual", "action": "loadTPL('', '', '', 'es');"}, 
+    {"tl": "Unidad de transparecia y acceso a la información", "action": "loadTPL('transparency_contact', 'transparency_contact', 'transparency_content', 'es');"},
+    {"tl": "Informe de auditorias", "action": "loadTPL('audits', 'audits', 'transparency_content', 'es');"}, 
+    {"tl": "Informe de contratos", "action": "loadTPL('', '', '', 'es');"},
+    {"tl": "Informe estadístico de las solicitudes de información", "action": "loadTPL('statistical_report_of_information_requests', 'statistical_report_of_information_requests', 'transparency_content', 'es');"},
+    {"tl": "Unidades de atención y pago de servicios", "action": "loadTPL('care_units', 'care_units', 'transparency_content', 'es');"},
+    {"tl": "Requisitos para la contratación de los servicios de agua potable y drenaje", "action": "loadTPL('hiring_requirements', 'hiring_requirements', 'transparency_content', 'es');"},
+    {"tl": "Requisitos para el cambio de nombre de usuario", "action": "loadTPL('name_change_requirements', 'name_change_requirements', 'transparency_content', 'es');"},
+    {"tl": "Servicios que ofrece CAPAMA", "action": "loadTPL('services_offered', 'services_offered', 'transparency_content', 'es');"},
+    {"tl": "Programas que administra la dirección comercial", "action": "loadTPL('commercial_programs', 'commercial_programs', 'transparency_content', 'es');"}
+  ]
+}

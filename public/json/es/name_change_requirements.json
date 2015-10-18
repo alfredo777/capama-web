@@ -1,0 +1,161 @@
+{
+    "title": "REQUISITOS PARA EL LEGAL CAMBIO DE NOMBRE DEL USUARIO",
+    "sub1": "PARA CASA-HABITACIÓN:",
+    "sub1li": [
+        {
+            "li": "Acreditar la propiedad y/o la posesión del inmueble, mediante:",
+            "subli": [
+                {
+                    "li": "Copia de escritura, ó compra-venta debidamente requisitada, ó carta de posesión, ó algún documento que avale la legítima posesión del inmueble expedido por organismo regulador (CORET, CRETT ó INVISUR)"
+                },
+                {
+                    "li": "Régimen condominal (de ser necesario)"
+                },
+                {
+                    "li": "Plano de subdivisión (de ser necesario)"
+                }
+            ]
+        },
+        {
+            "li": "Constitución legal de la administración condominal (de ser necesario)",
+            "subli": []
+        },
+        {
+            "li": "Poder notarial del administrador y copia de identificación oficial vigente (de ser necesario)",
+            "subli": []
+        },
+        {
+            "li": "Copia de identificación oficial vigente del propietario",
+            "subli": []
+        },
+        {
+            "li": "Que el status de la toma de agua potable se encuentre en ACTIVO",
+            "subli": []
+        },
+        {
+            "li": "Que no exista adeudo en el inmueble para el cual se solicita el cambio de datos.",
+            "subli": []
+        }
+    ],
+    "sub2": "Si renta, lo anterior más:",
+    "sub2li": [
+        {
+            "li": "Copia del contrato de arrendamiento"
+        },
+        {
+            "li": "Autorización por escrito del arrendador (carta poder)"
+        },
+        {
+            "li": "Copia de identificación oficial vigente del arrendatario."
+        }
+    ],
+    "sub3": "PARA SERVICIO COMERCIAL:",
+    "sub31": "Personas físicas:",
+    "sub31li": [
+        {
+            "li": "Acreditar la propiedad y/o la posesión del inmueble, mediante:",
+            "subli": [
+                {
+                    "li": "Copia de escritura, ó compra-venta debidamente requisitada, ó carta de posesión"
+                },
+                {
+                    "li": "Régimen condominal (de ser necesario)"
+                }
+            ]
+        },
+        {
+            "li": "Copia de identificación oficial vigente del propietario",
+            "subli": []
+        },
+        {
+            "li": "Que no exista adeudo en el inmueble para el cual se solicita el cambio de datos",
+            "subli": []
+        },
+        {
+            "li": "Que el status de la toma de agua potable se encuentre en ACTIVO",
+            "subli": []
+        },
+        {
+            "li": "Constitución legal de la administración condominal (de ser necesario)",
+            "subli": []
+        },
+        {
+            "li": "Poder notarial del administrador y copia de identificación oficial vigente (de ser necesario)",
+            "subli": []
+        },
+        {
+            "li": "Licencia de funcionamiento y/o alta de hacienda.", 
+            "subli": []
+        }
+    ],
+    "sub32": "Si renta, lo anterior más:",
+    "sub32li": [
+        {
+            "li": "Copia del contrato de arrendamiento"
+        },
+        {
+            "li": "Autorización por escrito del arrendador (carta poder)"
+        },
+        {
+            "li": "Copia de identificación oficial vigente del arrendatario."
+        }
+    ],
+    "sub33": "Personas morales:",
+    "sub33li": [
+        {
+            "li": "Acreditar la propiedad y/o la posesión del inmueble, mediante:",
+            "subli": [
+                {"li": "Copia de escritura, ó compra-venta debidamente requisitada, ó carta de posesión"},
+                {"li": "Régimen condominal (de ser necesario)"}
+            ]
+        },
+        {
+            "li": "Copia de identificación oficial vigente del propietario",
+            "subli": []
+        },
+        {
+            "li": "Que no exista adeudo en el inmueble para el cual se solicita el cambio de datos",
+            "subli": []
+        },
+        {
+            "li": "Que el status de la toma de agua potable se encuentre en ACTIVO",
+            "subli": []
+        },
+        {
+            "li": "Constitución legal de la administración condominal (de ser necesario)",
+            "subli": []
+        },
+        {
+            "li": "Poder notarial del administrador y copia de identificación oficial vigente (de ser necesario)",
+            "subli": []
+        },
+        {
+            "li": "Licencia de funcionamiento y/o alta de hacienda",
+            "subli": []
+        },
+        {
+            "li": "Copia del acta constitutiva de la empresa",
+            "subli": []
+        },
+        {
+            "li": "Copia del poder notarial del representante legal",
+            "subli": []
+        },
+        {
+            "li": "Copia de identificación oficial vigente del representante legal.",
+            "subli": []
+        }
+    ],
+    "sub34": "Si renta, lo anterior más:",
+    "sub34li": [
+        {
+            "li": "Copia del contrato de arrendamiento"
+        },
+        {
+            "li": "Autorización por escrito del arrendador (carta poder)"
+        },
+        {
+            "li": "Copia de identificación oficial vigente del arrendatario."
+        }
+    ]
+}

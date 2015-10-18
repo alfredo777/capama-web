@@ -1,0 +1,25 @@
+<script type="text/javascript" src="/assets/ajax/image_magical"></script>
+<%= form_tag create_new_image_path, class: 'form-horizontal', multipart: true, id: "form-ajax-image" do %>
+<div class="col-md-7">
+  <center>
+  <div class="fileupload-new thumbnail" style="width: 60%;">
+    <%= image_tag('admin/preview.png', width: "100%" , id: "img-prev" )%>
+  </div>
+  </center>
+</div>
+<div class="col-md-5">
+  <div class="btn btn-default" onclick=" $('#file').trigger('click'); "><i class="fa fa-camera-retro"></i> Seleccionar</div>
+  <%= submit_tag 'Agregar', class: 'btn btn-primary' %>
+  <div class="btn btn-danger" onclick="$('#load_image_select').html(''); "><i class="fa fa-times"></i>Cancelar </div>
+  <div style="display:none;">
+    <%= file_field_tag 'file'  %>
+    <%= hidden_field_tag 'local_path', local_path %>
+  </div>
+  <br/><br/>
+  <div class="progress progress-striped progress-sm">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" id="porcentVar" style="width: 0%">
+      <span class="sr-only">40% Complete (success)</span>
+    </div>
+  </div>
+</div>
+<%end%>

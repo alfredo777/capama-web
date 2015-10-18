@@ -1,0 +1,29 @@
+{
+  "title1": "Misión",
+  "content1": "Atender con calidad y calidez a la población en general que acude con el propósito de resolver la problemática que presenta relativa a los servicios públicos que presta el Organismo, así como proporcionar agua potable mediante carros cisterna (pipas) a las colonias que carecen de red y aun cuando cuentan con infraestructura y debido a fallas técnica de cualquier índole, adolecen del vital liquido. Captar y atender la demanda ciudadana y fomentar la cultura del agua.",
+  "title2": "Visión",
+  "content2": "Integrar un equipo de trabajo que proporcione los elementos necesarios para proveer, integrar y desarrollar con profesionalismo, excelencia y alto sentido humano las acciones encaminadas a satisfacer las necesidades de abastecimiento de agua a las colonias que carecen de infraestructura hidráulica y a crear las estrategias que permitan el abastecimiento de agua permanente, así como lograr  que la cultura del agua se extienda en todo el territorio municipal.",
+  "title3": "Funciones",
+  "content3": "La Dirección de Gestión Ciudadana es el área que se encarga de las diversas situaciones sociales, teniendo como principales funciones:",
+  "list3": [
+    {"li": "Ser ventanilla de atención al ciudadano para escucharlo, recibir sus solicitudes de servicio, denuncias, quejas, otros comentarios y sugerencias."},
+    {"li": "Gestionar ante  otras Direcciones de área de la CAPAMA, las solicitudes, quejas y denuncias y darle seguimiento hasta su conclusión."},
+    {"li": "Contar con las medidas necesarias para asegurar la atención oportuna, veraz y correcta a quienes realicen o promuevan cualquier petición."},
+    {"li": "Establecer mesas de trabajo y negociación para el dialogo con grupos organizados de la sociedad."},
+    {"li": "Contar con instrumentos que permitan  identificar el ánimo del usuario con respecto a los servicios otorgados y así mejorar la atención brindada."},
+    {"li": "Suministrar de agua a las colonias que carezcan de la misma por motivos técnicos o de falta de red."},
+    {"li": "Promover la cultura del agua ante la sociedad."},
+    {"li": "Representar a la CAPAMA ante los órganos de consulta y participación social."},
+    {"li": "Y demás actividades que en materia de gestión ciudadana le señale el consejo de administración o el Director General de la CAPAMA."}
+  ],
+  "title4": "Organización",
+  "content4": "La Dirección de Gestión Ciudadana se conforma por la Subdirección de  Atención Ciudadana y las  siguientes áreas de trabajo:",
+  "list4": [
+    {"li": "Procuraduría del Usuario"},
+    {"li": "Atención al Usuario (073)"}, 
+    {"li": "Gestión Integral"},
+    {"li": "Cultura del Agua"}, 
+    {"li": "Programas Alternativos"},
+    {"li": "Comités de Futuros Usuarios"}
+  ]
+}

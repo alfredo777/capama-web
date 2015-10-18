@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CAPAMA | servicio de agua potable y saneamiento  de Acapulco, Guerrero.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <%= favicon_link_tag('favicon.png')%>
+
+    <%= stylesheet_link_tag 'admin' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <script src="/assets/ajax/send_ajax_forms.js"></script>
+    <%= csrf_meta_tags %>
+  </head>
+  <% if !notice.nil? %>
+  <div class="alert alert-success" role="alert"><%=flash[:notice] %></div>
+  <%end%>
+  <body style="overflow:auto;">
+    <section id="container">
+      <%= render partial: "/renders_layout/admin_head" %>
+      <%= render partial: "/renders_layout/admin_bar_left" %>
+      <section id="main-content">
+        <section class="wrapper">
+          <!-- page start-->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="panel-body">
+                <%= yield %>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- page end-->
+      </section>
+    </section>
+    <%= render partial: "/renders_layout/admin_bar_right" %>
+  </section>
+  <!--Core js-->
+  <script src="/assets/admin/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="/assets/admin/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="/assets/admin/jquery.scrollTo.min.js"></script>
+  <script src="/assets/admin/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+  <script src="/assets/admin/jQuery-slimScroll-1.3.0/jquery.slimscroll.js"></script>
+  <script src="/assets/admin/jquery.nicescroll.js"></script>
+  <!--Easy Pie Chart-->
+  <script src="/assets/admin/easypiechart/jquery.easypiechart.js"></script>
+  <!--Sparkline Chart-->
+  <script src="/assets/admin/sparkline/jquery.sparkline.js"></script>
+  <!--jQuery Flot Chart-->
+  <script src="/assets/admin/flot-chart/jquery.flot.js"></script>
+  <script src="/assets/admin/flot-chart/jquery.flot.tooltip.min.js"></script>
+  <script src="/assets/admin/flot-chart/jquery.flot.resize.js"></script>
+  <script src="/assets/admin/flot-chart/jquery.flot.pie.resize.js"></script>
+  <!--common script init for all pages-->
+  <script src="/assets/admin/scripts.js"></script>
+</body>
+</html>

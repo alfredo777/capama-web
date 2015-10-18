@@ -1,0 +1,13 @@
+<div id="loader">
+  <div style="margin-top: 200px;">
+    <center>
+    <%= image_tag "load-water.GIF"%></br>
+    Cargando...
+    </center>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  loadTPL("<%=template%>", "<%=json%>", "<%=div%>", "<%=lang%>");
+  });
+  </script>
+</div>

@@ -1,0 +1,16 @@
+{
+  "title": "INFORME ESTADÍSTICO DE LAS SOLICITUDES DE ACCESO A LA INFORMACIÓN PRESENTADAS ANTE LA COMISIÓN DE AGUA POTABLE Y ALCANTARILLADO DEL MUNICIPIO DE ACAPULCO A TRAVÉS DE SU UNIDAD DE TRANSPARENCIA Y ACCESO A LA INFORMACIÓN.",
+  "thead":[
+    {"t": "Año"},
+    {"t": "Recibidas"},
+    {"t": "Contestadas"},
+    {"t": "Denegadas"}
+  ],
+  "tbody": [
+    {"t1": "2014", "t2": "06", "t3": "06", "t4": "0"},
+    {"t1": "2013", "t2": "02", "t3": "02", "t4": "0"},
+    {"t1": "2012", "t2": "03", "t3": "03", "t4": "01 (Reservada)"},
+    {"t1": "2011", "t2": "10", "t3": "10", "t4": "0"},
+    {"t1": "2010", "t2": "04", "t3": "04", "t4": "0"}
+  ]
+}

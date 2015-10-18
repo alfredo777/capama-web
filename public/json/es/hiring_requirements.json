@@ -1,0 +1,62 @@
+{
+  "title": "REQUISITOS PARA LA CONTRATACIÓN DE LOS SERVICIOS DE AGUA POTABLE Y DRENAJE.",
+  "sub1": "EN TOMAS DE MEDIA PULGADA",
+  "sub11": "Para casa-habitación",
+  "sub11li": [
+    {"li": "Acreditar la propiedad y/o la posesión del inmueble, mediante copia de escritura, ó compra-venta debidamente requisitada, ó carta de posesión."},
+    {"li": "Copia de identificación oficial vigente del propietario."},
+    {"li": "Que no exista adeudo en el inmueble para el cual se solicita el nuevo contrato."}
+  ],
+  "sub12": "Si renta, lo anterior más:",
+  "sub12li": [
+    {"li": "Copia del contrato de arrendamiento."},
+    {"li": "Autorización por escrito del arrendador."},
+    {"li": "Copia de identificación oficial vigente del arrendatario."}
+  ],
+  "sub13": "Para servicio comercial:",
+  "sub14": "Personas físicas:",
+  "sub14li":[
+    {"li": "Acreditar la propiedad y/o la posesión del inmueble, mediante copia de escritura, ó compra-venta debidamente requisitada, ó carta de posesión."},
+    {"li": "Copia de identificación oficial vigente del propietario."},
+    {"li": "Que no exista adeudo en el inmueble para el cual se solicita el nuevo contrato."},
+    {"li": "Licencia de funcionamiento y/o alta de hacienda"}
+  ],
+  "sub15": "Personas morales:",
+  "sub15li": [
+    {"li": "Acreditar la propiedad y/o la posesión del inmueble, mediante copia de escritura, ó compra-venta debidamente requisitada, ó carta de posesión."},
+    {"li": "Copia de identificación oficial vigente del propietario."},
+    {"li": "Que no exista adeudo en el inmueble para el cual se solicita el nuevo contrato."},
+    {"li": "Licencia de funcionamiento y/o alta de hacienda."},
+    {"li": "Copia del acta constitutiva de la empresa."},
+    {"li": "Copia del poder notarial del representante legal."},
+    {"li": "Copia de identificación oficial vigente del representante legal"}
+  ],
+  "sub16": "Si rentan, lo anterior más:",
+  "sub16li": [
+    {"li": "Copia del contrato de arrendamiento."},
+    {"li": "Autorización por escrito del arrendador."},
+    {"li": "Copia de identificación oficial vigente del arrendatario."}
+  ],
+  "sub2": "EN TOMAS MAYORES A MEDIA PULGADA",
+  "sub21": "Original y dos copias de:",
+  "sub21li": [
+    {"li": "Oficio de solicitud de factibilidad de los servicios de agua potable y drenaje, dirigido al Director de la Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco (CAPAMA)."},
+    {"li": "Croquis de ubicación del inmueble."},
+    {"li": "Memoria de cálculo."},
+    {"li": "Juego de planos hidráulicos y sanitarios y especificación de los metros cuadrados de áreas verdes para riego."},
+    {"li": "Pago del estudio de factibilidad."}
+  ],
+  "sub22": "En el caso de las personas físicas, presentar además tres copias de:",
+  "sub22li": [
+    {"li": "Escritura del inmueble."},
+    {"li": "Identificación oficial vigente del propietario."}   
+  ],
+  "sub23": "En el caso de las personas morales, presentar además tres copias de:",
+  "sub23li": [
+    {"li": "Escritura del inmueble."},
+    {"li": "Identificación oficial vigente del propietario."},
+    {"li": "Acta constitutiva de la empresa."},
+    {"li": "Poder notarial del representante legal."},
+    {"li": "Identificación oficial vigente del representante legal."}
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "title": "Auditorias practicadas al Organismo Operador Municipal Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco",
+  "thead": [
+    {"t": "Órgano de control"},
+    {"t": "Periodo"},
+    {"t": "Tipo de auditoria"},
+    {"t": "Seguimiento"}
+  ],
+  "tbody": [
+    {"t1": "Contraloria General, Transparencia y Modernizacion Administrativa H. Ayuntamiento Constitucional de Acapulco de Juarez, Guerrero ", "t2": "Del 1° de enero al 30 de junio de 2009.", "t3": "Admnistrativa-Financiera", "t4":"Atendida"},
+    {"t1": "Auditoria General del Estado de Guerrero", "t2": "Del 1° de enero al 31 de diciembre de 2009. ", "t3": "Admnistrativa-Financiera", "t4": "Atendida"},
+    {"t1": "Auditoria General del Estado de Guerrero", "t2": "Del 1° de enero de 2005 al 31 de agosto de 2006.", "t3": "Admnistrativa-Financiera", "t4": "Atendida"}
+
+  ]
+}

@@ -1,0 +1,2 @@
+module ExternalConectionsHelper
+end

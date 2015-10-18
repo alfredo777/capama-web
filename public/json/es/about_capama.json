@@ -1,0 +1,17 @@
+{
+  "title1": "¿Quienes somos?",
+  "subti11": "Nuestra Misión",
+  "subti11cont": "Somos un organismo público paramunicipal comprometido a proporcionar un servicio de agua potable y saneamiento integral con calidad, eficiencia y honradez, cuidando el entorno ecológico, para satisfacción de la comunidad.",
+  "subti12": "Nuestra Visión",
+  "subti12cont": "Un servicio de calidad para satisfacción de los acapulqueños.",
+  "title2": "Nuestros Valores", 
+  "values": [
+    { "tl": "Calidad", "cont" : "Proporcionar un servicio a la altura de una ciudad internacional como Acapulco."},
+    { "tl": "Ética", "cont" : "Los usuarios pueden estar seguros de que la honestidad es un pilar importante y nos regimos por ella, por eso decimos que la honestidad es nuestro compromiso."},
+    { "tl": "Desarrollo Interno", "cont" : "Trabajamos en conjunto para construir la fortaleza de CAPAMA y de Acapulco."},
+    { "tl": "Personal", "cont" : "Potenciamos el personal humano, estimulando su desarrollo y crecimiento interno."},
+    { "tl": "Compresión", "cont" : "Entendemos las necesidades de los usuarios por eso creamos programas que los beneficien."},
+    { "tl": "Nuestra Estrategia", "cont" : "A través del fortalecimiento de los recursos humanos aprovechando los avances tecnológicos, lograremos una mayor capacidad de servicio y mejoraremos la cultura organizativa y la imagen institucional en beneficio de los usuarios, lo que nos permitirá obtener rentabilidad financiera para la continuidad de los programas de desarrollo."}
+  ]
+
+}

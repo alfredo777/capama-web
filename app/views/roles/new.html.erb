@@ -1,0 +1,40 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Nuevo Rol</header>
+  <section class="panel">
+    <div class="panel-body">
+      <div class="position-center">
+        <%= form_tag create_role_path, class: 'form-horizontal' do -%>
+        <div class="form-group ">
+          <%= text_field_tag 'role[title]', '', placeholder: 'Nombre del permiso', class: 'col-md-6 form-control' %>
+        </div>
+        <table  class="table table-condensed table-hover">
+          <thead style="poition:fixed;">
+            <tr>
+              <th>Permiso</th>
+              <th width="100">Aceptación</th>
+            </tr>
+          </thead>
+        </table>
+        <div class="table-responsive" style="height:300px; overflow:auto;">
+          <table class="table table-condensed table-hover">
+            <% modules.each do |m| %>
+            <% randx = SecureRandom.random_number(11010) %>
+            <tr>
+              <td>
+                <%= label_tag "permissions_#{randx}_active" do %>
+                <%=  "#{m[0]} #{m[1]}" %>
+                <%end%>
+              </td>
+              <td><%= hidden_field_tag "permissions[#{randx}][permission]", "#{m[1]}" %> <%= hidden_field_tag "permissions[#{randx}][modul]", "#{m[0]}" %> <%= check_box_tag "permissions[#{randx}][active]" %></td>
+            </tr>
+            <% end %>
+          </table>
+        </div>
+        </br>
+        <%= submit_tag 'Guardar nuevo permiso', class: 'btn btn-primary btn-large pull-right' %>
+        <%end%>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,18 @@
+<div class="first-head">
+  {{title}}
+</div>
+<div class="container" style="text-align: justify; padding:30px;">
+  <div class="row">
+    <div class="col-md-3 sidebox widget">
+      <h3>Menú</h3>
+      <ul>
+      {{#each menu}}
+      <li><a href="#" onclick="{{action}}">{{tl}}</a><th></li>
+      {{/each}}
+      </ul>
+    </div>
+    <div class="col-md-9" id="transparency_content">
+      {{{content}}}
+    </div>
+  </div>
+</div>
