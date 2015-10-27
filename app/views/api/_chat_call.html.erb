@@ -1,0 +1,19 @@
+<% if !conversation.close_conversation %>
+  <link href="/assets/chat.css" rel="stylesheet">
+  <div class="chat-content">
+    <ul class="chat" chat="chat-<%=ticket%>">
+      <%= render partial: '/api/chat_message', locals: {ticket: ticket}%>
+      <div id="chat-message"></div>
+    </ul>
+    <%= render partial: '/api/chat_form', locals: {conversation: conversation, send_id: current_user.id}%>
+  </div>
+  <script type="text/javascript">
+    $(function(){
+      setInterval(function(){location.reload();}, 180000);
+    });
+  </script>
+  <%else%>
+  <center>
+  <h2>Esta conversación ha sido finalizada</h2>
+  </center>
+<%end%>

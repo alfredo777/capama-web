@@ -24,11 +24,8 @@ $(document).ready(function(){
           var xhr = new window.XMLHttpRequest();
           xhr.upload.addEventListener("progress", function(evt){
             if (evt.lengthComputable) {
-              console.log(evt.loaded);
-              console.log(evt.total);
               var percentComplete = (evt.loaded / evt.total)*100;
               $("#porcentloadbar").html(percentComplete);
-              console.log(percentComplete);
             }
           }, false);
           return xhr;

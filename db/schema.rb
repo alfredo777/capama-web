@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151014044027) do
+ActiveRecord::Schema.define(version: 20151025043309) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -51,7 +51,10 @@ ActiveRecord::Schema.define(version: 20151014044027) do
     t.string   "talker_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "conversation_id"
   end
+
+  add_index "messages", ["talker_id", "talker_type"], name: "index_messages_on_talker_id_and_talker_type"
 
   create_table "permissions", force: true do |t|
     t.integer  "role_id"
@@ -89,6 +92,8 @@ ActiveRecord::Schema.define(version: 20151014044027) do
     t.boolean  "open",        default: false
     t.boolean  "solve",       default: false
     t.boolean  "open_chat",   default: false
+    t.string   "latitude"
+    t.string   "longitude"
   end
 
   create_table "users", force: true do |t|
@@ -112,5 +117,22 @@ ActiveRecord::Schema.define(version: 20151014044027) do
   end
 
   add_index "users", ["card"], name: "index_users_on_card"
+
+  create_table "views", force: true do |t|
+    t.integer  "viewver_id"
+    t.string   "viewver_type"
+    t.string   "path"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "agent"
+  end
+
+  create_table "zones", force: true do |t|
+    t.string   "title"
+    t.string   "lat"
+    t.string   "long"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

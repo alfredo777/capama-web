@@ -1,3 +1,5 @@
+<script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+<script src="/assets/admin/google-map/matplace-advanced.js"></script>
 <div class="row">
   <div class="col-sm-12">
     <section class="panel">
@@ -7,10 +9,65 @@
         </span>
       </header>
       <div class="panel-body">
-       Email: <%= @ticket.email%></br>
-       Teléfono: <%= @ticket.phone%></br>
-       <p><%= @ticket.explanation%></p>
+        <div class="row" style="padding:10px;">
+          <div class="btn-group btn-group-justify pull-left">
+            <a id="map-a" onclick='CircleMap(<%= @position.html_safe %>,<%= @ticket.latitude %> , <%= @ticket.longitude %> ,16, "#gmap-circles", 150);', class="btn btn-default" >Cargar Ubicación</a>
+            <% if @ticket.conversations.count != 0 %>
+            <a class="btn btn-default" onclick="$('#chat').toggle();">Ocultar el chat</a>
+            <%end%>
+            <%= link_to 'Finalizar el tiket', close_ticket_path(id: @ticket.id), class: "btn btn-default" %>
+          </div>
+        </div>
+        Email: <%= @ticket.email%></br>
+        Teléfono: <%= @ticket.phone%></br>
+        <p><%= @ticket.explanation%></p>
+      </div>
+    </section>
+    <section class="panel" style="display:none;" id="map">
+      <header class="panel-heading">
+        Ubicación de la insidencia con area de úbicación 150 Metros a la redonda.
+      </header>
+      <div class="panel-body">
+        <div id="gmap-circles" style="display:block; height:500px; widht:100%;"></div>
       </div>
     </section>
   </div>
+  <% if @ticket.conversations.count != 0 %>
+  <div id="chat">
+    <div class="col-sm-6">
+      <section class="panel">
+        <header class="panel-heading">
+          Chat #<%= @ticket.id %> Conversación de ( <%= @ticket.user.name %> | <%= @ticket.customer.name %> )
+        </header>
+        <div class="panel-body">
+          <%= render partial: '/api/chat_call', locals: {ticket: @ticket, conversation: @conversation}%>
+        </div>
+      </section>
+    </div>
+    <div class="col-sm-6">
+      <section class="panel" id="chat">
+        <header class="panel-heading">
+          Opciones del chat
+        </header>
+        <div class="panel-body">
+        <p>Instrucciones: El chat esta diseñado para llevar un temporizador que cerrará el proceso de comunicación despues de 3 minutos de charla con el usaurio despues de que se halla respondido el primer mensaje.</p>
+        </div>
+      </section>
+      <section class="panel" id="chat">
+        <header class="panel-heading">
+          Temporizador
+        </header>
+        <div class="panel-body">
+        <div class="timer"></div>
+        </div>
+      </section>
+    </div>    
+    <%end%>
+  </div>
 </div>
+<script type="text/javascript">
+$('#map-a').click(function(){
+$('#map').toggle();
+$('#map').attr('onclick', '');
+});
+</script>

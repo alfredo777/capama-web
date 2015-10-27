@@ -1,31 +1,75 @@
 <div class="row">
   <div class="col-lg-12">
+    <header class="panel-heading tab-bg-dark-navy-blue">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#t1" data-toggle="tab" aria-expanded="true">Tickets actuales</a></li>
+        <li ><a href="#t2" data-toggle="tab" aria-expanded="true">Tickets pasados</a></li>
+      </ul>
+    </header>
   <header class="panel-heading" >Reportes de ayuda</header>
-    <section class="panel">
-      <div class="panel-body">
-        <div class="table-responsive">
-          <table class="table">
-            <thead>
-              <tr>
-                <th>Causa</th>
-                <th>Email</th> 
-                <th>Teléfono</th>
-                <th>Opciones</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% @tikets.each do |ticket| %>
-              <tr>
-                <td><%= ticket.cause%></td>
-                <td><%= ticket.email%></td>
-                <td><%= ticket.phone%></td>
-                <td><%= link_to 'Abrir', ticket_path(ticket.id)%></td>
-              </tr>
-              <%end%>
-            </tbody>
-          </table>
+  <div class="tab-content">
+    <div id="t1" class="tab-pane active">
+      <section class="panel">
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Causa</th>
+                  <th>Email</th>
+                  <th>Teléfono</th>
+                  <th>Status</th>
+                  <th>Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @tickets.each do |ticket| %>
+                <tr>
+                  <td><%= ticket.cause%></td>
+                  <td><%= ticket.email%></td>
+                  <td><%= ticket.phone%></td>
+                  <td><%= "<span class='label label-info'>Abierto</span>".html_safe if  ticket.open && !ticket.solve %> <%= "<span class='label label-danger'>Cerrado</span>".html_safe if  !ticket.open %> <%= "<span class='label label-success'> Finalizado</span>".html_safe if  ticket.solve %></td>
+                  <td><%= link_to 'Abrir', ticket_path(ticket.id)%></td>
+                </tr>
+                <%end%>
+              </tbody>
+            </table>
+            <%= will_paginate @tickets, renderer: BootstrapPagination::Rails %>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
+    <div id="t2" class="tab-pane">
+      <section class="panel">
+        <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Causa</th>
+                  <th>Email</th>
+                  <th>Teléfono</th>
+                  <th>Status</th>
+                  <th>Opciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @tickets_finish.each do |ticket| %>
+                <tr>
+                  <td><%= ticket.cause%></td>
+                  <td><%= ticket.email%></td>
+                  <td><%= ticket.phone%></td>
+                  <td><%= "<span class='label label-info'>Abierto</span>".html_safe if  ticket.open && !ticket.solve %> <%= "<span class='label label-danger'>Cerrado</span>".html_safe if  !ticket.open %> <%= "<span class='label label-success'> Finalizado</span>".html_safe if  ticket.solve %></td>
+                  <td><%= link_to 'Abrir', ticket_path(ticket.id)%></td>
+                </tr>
+                <%end%>
+              </tbody>
+            </table>
+            <%= will_paginate @tickets_finish, renderer: BootstrapPagination::Rails %>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
 </div>

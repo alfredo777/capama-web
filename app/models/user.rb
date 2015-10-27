@@ -4,6 +4,8 @@ class User < ActiveRecord::Base
   mount_uploader :avatar, AvatarUploader
   has_many :pictures
   has_many :user_helps
+  has_many :messages, as: :talker
+  has_many :conversations
   validates_presence_of :password
   validates_presence_of :name
   validates_presence_of :card

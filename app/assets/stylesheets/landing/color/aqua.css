@@ -1,6 +1,36 @@
 /*-----------------------------------------------------------------------------------*/
 /*	MAIN COLOR
 /*-----------------------------------------------------------------------------------*/
+
+@font-face {
+  font-family: 'PineappleDemo';
+  src: url("/assets/PineappleDemo.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hanalei';
+  src: url("/assets/Hanalei-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Sand';
+  src: url("/assets/sand.TTF");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'typemachine';
+  src: url("/assets/Mechanical-Machine.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 #preloader .textload {
 	color: #62b8c8;
 }

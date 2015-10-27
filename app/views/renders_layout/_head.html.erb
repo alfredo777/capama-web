@@ -1,10 +1,8 @@
-<div class="navbar solid dark">
+<div class="navbar solid dark row">
     <div class="navbar-header">
       <div class="basic-wrapper"> 
-        <div class="navbar-brand"> <%= link_to root_path do %><%= image_tag('admin/logo-v-3.png', width: '100px')%><%end%></div>
-        <% if agent %>
-        <a class="btn" data-toggle="collapse" data-target=".navbar-collapse" style="display: table-cell; vertical-align: middle; text-align: right; background:none; color:#fff;"><h1 style="color:#fff;"><i class="fa fa-bars"></i></h1></a>
-        <%end%>
+        <div class="navbar-brand"> <%= link_to root_path do %><%= image_tag('admin/logo-v-3.png', width: '120px') if !agent %> <%= image_tag('admin/logo.png', width: '120px') if agent %> <%end%></div>
+        <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
       </div>
       <!-- /.basic-wrapper -->  
     </div>
@@ -16,12 +14,10 @@
             <li><a href="#">Pagar mi cuenta</a></li>
             <li><a href="#">Ver mi estatus de pagos</a></li>
             <li><a href="#">Descargar mi recibo</a></li>
-            <li><a href="#">Sucursales para pagos</a></li>
+            <li><%= link_to "Sucursales para pagos", branches_for_payments_path %></a></li>
           </ul>
         </li>
-        <li class="dropdown"><a href="#" class="dropdown-toggle js-activated">Noticias <span class="caret"></span></a>
-   
-        </li>
+        <li class="dropdown"><%= link_to 'Noticias', news_path %></li>
         <li class="dropdown"><%= link_to "Transparencia", transparency_path %></li>
         <li class="dropdown"><%= link_to "Cultura del Agua", whater_culture_path %></a>
     
@@ -38,22 +34,11 @@
             <li><%= link_to "Captaciones", water_catchments_path%></li>
           </ul>
         </li>
-        <li class="dropdown"><%= link_to new_ticket_path do %> Ayuda y denuncias <span class="caret"></span> <%end%>
-        </li>
         
+        <li class="dropdown"><%= link_to new_ticket_path do %> Ayuda <%end%></li>
       </ul>
       <!-- /.navbar-nav --> 
-    </nav>
-    <!-- /.navbar-collapse -->
-    <div class="social-wrapper">
-      <ul class="social naked">
-        <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-        <li><a href="#"><i class="icon-s-twitter"></i></a></li>
-        <li><a href="#"><i class="icon-s-flickr"></i></a></li>
-        <li><a href="#"><i class="icon-s-instagram"></i></a></li>
-      </ul>
-      <!-- /.social --> 
-    </div>
+    </nav>    
     <!-- /.social-wrapper --> 
   </div>
   <!-- /.navbar -->

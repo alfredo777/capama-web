@@ -1,0 +1,8 @@
+<% if ticket.conversations.count != 0 %>
+  <% ticket.conversations.each do |con| %>
+    <% con.messages.each do |message| %>
+    <li class="clearfix chat-list"><div class="conversation-text"><div class="ctext-wrap"><i><%= message.talker.name %></i><p><%= message.message %></p></div></div></li>
+    <%end%>
+  <%end%>
+<%end%>
+

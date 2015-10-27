@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   get '/water_catchments', to: 'public_views#water_catchments', as: :water_catchments
   get '/capama_history', to: 'public_views#capama_history', as: :capama_history
   get '/organization_chart', to: 'public_views#organization_chart', as: :organization_chart
+  get '/branches_for_payments', to: 'public_views#branches_for_payments', as: :branches_for_payments
+  get '/post/:id', to: 'public_views#post', as: :post_public_view
+
   ##### admin #####
 
   get 'admin/login'
@@ -64,17 +67,38 @@ Rails.application.routes.draw do
   get '/api/posts', to: 'api#posts', as: :api_posts
   get '/api/users', to: 'api#users', as: :api_users
   get '/api/create_ticket', to: 'api#create_ticket', as: :create_ticket
+  get '/api/post/:id', to: 'api#post', as: :api_post
+  get '/api/viewver', to: 'api#viewver', as: :viewver
+  post '/api/viewver'
+  get '/api/clicking', to: 'api#clicking', as: :clicking
+  post '/api/clicking'
 
   ### user_help ####
   get '/admin/tickets', as: :tickets
+  get '/admin/customers', as: :customers
+  get '/admin/destroy_customer', as: :destroy_customer
+  post '/admin/destroy_customer'
   get '/user_help/show/:id', to: 'admin#admin_tiket_show',  as: :ticket
+  get '/admin/close_ticket', as: :close_ticket
+  post '/admin/close_ticket'
+  post '/admin/admin_tiket_show'
   get '/user_help/new_ticket', as: :new_ticket
   get '/user_help/new_customer', as: :new_customer
   get '/user_help/chat', as: :chat
+  post '/user_help/chat'
   get '/api/create_ticket', as: :ticket_create
   post '/api/create_ticket'
   get '/api/create_customer', as: :create_customer
   post '/api/create_customer'
+
+  #### messages ####
+  get '/messages/show', to: "messages#show", as: :show_message
+  get '/messages/create', to: "messages#create", as: :crete_message
+  post '/messages/create'
+  get '/messages/paginate_messages', to: "messages#paginate_messages", as: :paginate_messages
+  get '/messages/events', to: "messages#events", as: :events_messages
+  post '/messages/events'
+
 
   #### external db conections ###
   get 'external_conections/create'

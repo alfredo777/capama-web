@@ -1,0 +1,14 @@
+<div id="loader">
+  <div style="margin-top: 200px;">
+    <center>
+    <%= image_tag "load-water.GIF"%></br>
+    Cargando...
+    </center>
+  </div>
+  <script type="text/javascript">
+  $(document).ready(function(){
+  loadTPLAPI("<%=template%>", "<%=json%>", "<%=div%>");
+  $.get("<%=viewver_path(id: params[:id], type: type)%>");
+  });
+  </script>
+</div>

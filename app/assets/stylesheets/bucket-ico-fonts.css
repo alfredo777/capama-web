@@ -2,7 +2,6 @@
 	font-family: 'bucket-ico-font';
 	src:url('../assets/bucket-ico-font.eot');
 	src:url('../assets/bucket-ico-font.eot?#iefix') format('embedded-opentype'),
-		url('../assets/bucket-ico-font.woff') format('woff'),
 		url('../assets/bucket-ico-font.ttf') format('truetype'),
 		url('../assets/bucket-ico-font.svg#bucket-ico-font') format('svg');
 	font-weight: normal;

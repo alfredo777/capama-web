@@ -112,30 +112,17 @@ var LocsC = [
 
 var LocsD = [
     {
-        lat: 45.4654,
-        lon: 9.1866,
-        title: 'Milan, Italy',
+        lat: 16.8477304,
+        lon: -99.910647,
+        title: 'CAPAMA',
         html: '<h3>Milan, Italy</h3>'
     },
     {
-        lat: 47.36854,
-        lon: 8.53910,
-        title: 'Zurich, Switzerland',
+        lat: 16.8467471,
+        lon: -99.8125651,
+        title: 'Gerencia colozo',
         html: '<h3>Zurich, Switzerland</h3>',
         visible: false
-    },
-    {
-        lat: 48.892,
-        lon: 2.359,
-        title: 'Paris, France',
-        html: '<h3>Paris, France</h3>',
-        stopover: true
-    },
-    {
-        lat: 48.13654,
-        lon: 11.57706,
-        title: 'Munich, Germany',
-        html: '<h3>Munich, Germany</h3>'
     }
 ];
 

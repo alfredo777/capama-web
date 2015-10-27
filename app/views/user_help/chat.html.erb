@@ -1,2 +1,19 @@
-<h1>UserHelp#chat</h1>
-<p>Find me in app/views/user_help/chat.html.erb</p>
+<link href="/assets/chat.css" rel="stylesheet">
+<div class="offset"></div>
+<div class="light-wrapper">
+  <div class="container inner">
+    <div class="thin">
+      <ul class="chat">
+        <div id="chat-message"></div>
+      </ul>
+      <div id="form-chat">
+      <%= render partial: '/api/chat_form', locals: {conversation: @open_conversation, send_id: params[:customer]}%>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+      setInterval(function(){ $('#chat-message').html('<h1>La sesión del chat ha finalizado</h1><br/><p>Esperamos haberle antendido con éxito para mayores informes contactarnos al  01 (744)434-1400 </p>'); $('#form-chat').html('');}, 180000);
+    });
+  </script>

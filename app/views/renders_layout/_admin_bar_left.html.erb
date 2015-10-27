@@ -23,27 +23,27 @@
         </li>
         <%end%>
         <% if  scope_permission('blog_posts','view_all') %>
-         <li>
+        <li>
           <%= link_to files_path do %>
-            <i class="fa fa-picture-o"></i>
-            <span>Imagenes</span>
+          <i class="fa fa-picture-o"></i>
+          <span>Imagenes</span>
           <%end%>
         </li>
         <%end%>
         <% if  scope_permission('users','view_all') %>
-         <li>
+        <li>
           <%= link_to tickets_path do %>
-            <i class="fa fa-ticket"></i>
-            <span>Tickets</span>
+          <i class="fa fa-ticket"></i>
+          <span>Tickets</span>
           <%end%>
         </li>
         <%end%>
         <!--
         <% if  scope_permission('blog_posts','view_all') %>
-         <li>
+        <li>
           <%= link_to files_path do %>
-            <i class="fa fa-code-fork"></i>
-            <span>Formatos</span>
+          <i class="fa fa-code-fork"></i>
+          <span>Formatos</span>
           <%end%>
         </li>
         <%end%>
@@ -61,11 +61,11 @@
         </li>
         <%end%>
         <% if  scope_permission('users','view_all') %>
-        <li >
-          <a href="javascript:;">
+        <li>
+          <%= link_to customers_path do %>
             <i class="fa fa-smile-o"></i>
             <span>Clientes</span>
-          </a>
+          <%end%>
         </li>
         <%end%>
         <% if  scope_permission('roles','view_all') %>

@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CAPAMA</title>
+    <title>PAMA | servicio de agua potable y saneamiento  de Acapulco, Guerrero.</title>
     <%= favicon_link_tag('favicon.png')%>
     <%= stylesheet_link_tag 'application' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/assets/landing/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/landing/plugins.css" rel="stylesheet">
     <link href="/assets/landing/style.css" rel="stylesheet">
     <link href="/assets/landing/color/aqua.css" rel="stylesheet">
+    <link href="/assets/landing/icons.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <script src="/assets/landing/jquery.min.js"></script>
     <script src="/handlebars/handlebars-v4.0.2.js"></script>
     <script src="/handlebars/hb-call.js"></script>
+    <script type="text/javascript" src="/assets/notices.js"></script>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -20,6 +23,8 @@
     <main class="body-wrapper">
     <%= render partial: "/renders_layout/head" %>
     <%= yield %>
+    <%= render partial: "/renders_layout/footer" %>
+
     </main>
   </body>
   <script src="/assets/landing/bootstrap.min.js"></script>

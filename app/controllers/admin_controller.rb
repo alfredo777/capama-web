@@ -3,6 +3,28 @@ class AdminController < ApplicationController
   end
 
   def index
+    helps = []
+    @helps = UserHelp.last(50)
+    @pending = UserHelp.where(open: false).count
+    @process = UserHelp.where(open: true, solve: false).count
+    @solve = UserHelp.where(solve: true).count
+    @views_today = Views.where("created_at >= ?", Time.zone.now.beginning_of_day).count
+    @views_monthly = Views.where("created_at >= ?", Time.zone.now.beginning_of_month).count
+    @views_year = Views.where("created_at >= ?", Time.zone.now.beginning_of_year).count
+    @views_today_list = Views.where("created_at >= ?", Time.zone.now.beginning_of_day).last(30)
+    @views_monthly_celphone = Views.where("agent LIKE? or agent LIKE? or agent LIKE?", "%iPhone%","%Android%", "%iPad%").count
+
+    @helps.each do |h|
+       helps.push(
+        "lat": "#{h.latitude}",
+        "lon": "#{h.longitude}",
+        "title": "#{h.cause}",
+        "zoom": 13,
+        "html": "<h3>#{h.cause}</h3>"
+       )
+    end
+
+    @helps = helps.to_json
   end
   
   ##### se crean los post #####
@@ -74,14 +96,74 @@ class AdminController < ApplicationController
   #### tikets ######
 
   def tickets
-    @tikets = UserHelp.paginate(:page => params[:page], :per_page => 30).order('id DESC')
+    @tickets = current_user.user_helps.where(solve: false).paginate(:page => params[:page], :per_page => 15).order('id DESC')
+    @tickets_finish = current_user.user_helps.where(solve: true).paginate(:page => params[:page], :per_page => 15).order('id DESC')
   end
 
   def admin_tiket_show
+    require 'thread/pool'
+    require 'thread/future'
+    require 'thread/delay'
+
     @ticket = UserHelp.find(params[:id])
+    @ticket.open = true
+    @ticket.save
+    helpa = []
+    helpa.push({
+        "lat": "#{@ticket.latitude}",
+        "lon": "#{@ticket.longitude}",
+        "title": "#{@ticket.cause}",
+        "zoom": 18,
+        "html": "<h3>#{@ticket.cause}</h3>",
+    })
+
+    @position = helpa.to_json
+    @conversation = @ticket.conversations.last
+   
+
+    if @ticket.conversations.count != 0
+      puts @conversation.id
+      if !@conversation.close_conversation
+        timexec = Thread.new {timerexecute( @conversation ) }
+      end
+    end
+
+
+  end
+  def timerexecute(conversation)
+    sleep(180)
+    puts "Se cierra la sesión del chat para evitar malos manejos"
+    @conversation = conversation
+    puts @conversation
+    @conversation.close_conversation = true
+    @conversation.save
+    ActiveRecord::Base.clear_active_connections!
   end
 
+  def close_ticket
+    @ticket = UserHelp.find(params[:id])
+    @ticket.solve = true
+    @ticket.save
+    flash[:notice] = "Se ha finalizado la petición de ayuda"
+    redirect_to  tickets_path
+  end
 
-  
+  def create_zone
+  end
+
+  def new_zone
+  end
+
+  def customers
+    @customers = Customer.paginate(:page => params[:page], :per_page => 30).order('id DESC')
+  end
+
+  def destroy_customer
+    @customer = Customer.find(params[:id])
+    @customer.destroy
+
+    flash[:notice] = "Ha sido destruido el cliente"
+    redirect_to :back
+  end
 
 end

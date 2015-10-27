@@ -1,0 +1,46 @@
+<div class="first-head"></div>
+<img src="/assets/heads/head1v2.png" width="100%">
+<div class="ahead-head">
+  {{title}}
+</div>
+<div class="container inner2">
+  <div class="row">
+    <div class="col-md-12 pull-right">
+      <form class="searchform" method="get">
+        <input type="text" id="s1" name="s" value="Buscar por título" onfocus="this.value=''" onblur="this.value='Buscar por título'">
+        <button type="submit" class="btn btn-default">Buscar</button>
+      </form>
+    </div>
+  </div><br/>
+  <div class="blog grid-view col1 row">
+    <div class="col-sm-12 blog-content">
+      <div class="blog-posts">
+        <div class="isotope row" id="puts-posts">
+          {{#each posts}}
+          <div class="col-md-4 col-sm-12 grid-view-post">
+            <div class="item post">
+              <figure class="main"><a href="blog-post.html"><img src="{{head_image.image_head.url}}" alt="" /></a></figure>
+              <div class="box text-center">
+                <div class="category cat6"><span><a href="#">Periodismo</a></span></div>
+                <h4 class="post-title"><a href="blog-post.html">{{{trimString title}}}</a></h4>
+                <div class="meta"><span class="date">17 May 2015</span><span class="comments"><a href="#"><i class="icon-chat-1"></i> 5</a></span></div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <a onclick="paginatePost(2)" class="btn btn-defaul" data-remote="true" id="paginate-posts">
+        Cargar mas Noticias
+      </a>
+    </div>
+    <!--
+    <div class="col-sm-4 blog-content">
+      <div class="sidebox widget">
+        <h3 class="widget-title">Search</h3>
+        
+      </div>
+    </div>
+    -->
+  </div>
+</div>

@@ -1,2 +1,1 @@
-<h1>PublicViews#news</h1>
-<p>Find me in app/views/public_views/news.html.erb</p>
+<%= render partial: "/renders_layout/loading_api", locals: {template: "posts", json:"news", div: "loader", type: 'all_news'} %>

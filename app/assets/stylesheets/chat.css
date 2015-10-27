@@ -1,0 +1,16 @@
+.chat{
+  width: 100%;
+  height: 300px;
+  overflow: auto;
+  list-style-type: none;
+
+}
+.chat-content{
+  width: 100%;
+  height: 350px;
+}
+.chat-list{
+  width: 100%;
+  border-bottom: solid 1px #eee;
+  padding: 10px;
+}

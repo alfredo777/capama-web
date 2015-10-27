@@ -13,10 +13,13 @@ gem 'bootstrap-sass', '~> 3.3.5'
 gem "font-awesome-rails"
 gem "highcharts-rails", "~> 3.0.0"
 gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap'
 gem 'carrierwave'
 #gem 'httparty'
 gem 'rest-client'
 gem 'json'
 gem "mini_magick"
-
-
+gem 'redis'
+gem 'puma'
+gem 'rack', '~> 1.5.2', git: 'https://github.com/dkubb/rack.git', branch: 'fix/rack-1.5/rack-lock-mutex-usage'
+gem 'thread'

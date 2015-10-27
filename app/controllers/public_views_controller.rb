@@ -47,4 +47,7 @@ class PublicViewsController < ApplicationController
 
   def water_catchments
   end
+
+  def branches_for_payments
+  end
 end

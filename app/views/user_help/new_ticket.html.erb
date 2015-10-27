@@ -1,3 +1,4 @@
+<script type="text/javascript" src="/handlebars/geolocalization.js"></script>
 <div class="container-ajax">
   <div class="offset"></div>
   <div class="light-wrapper">
@@ -5,6 +6,7 @@
       <div class="thin">
         <h3 class="section-title text-center">Servicio de Ayuda de CAPAMA</h3>
         <p class="text-center">Lo invitamos a ingresar en nustro servicio de ayuda, que lo contactará con uno de nuestro asesores de soluciones CAPAMA.</p>
+        <div id="notice-geo" ></div>
         <ul class="contact-info text-center">
           <li><i class="fa fa-building"></i> Av. Lic. Adolfo López Mateos, Esq. Tte. José Azueta s/n, Col. Centro
           C.P. 39300, Acapulco, Gro </li></br>
@@ -52,6 +54,8 @@
                 </div>
               </div>
             </div>
+            <%= hidden_field_tag 'latitude', '' %>
+            <%= hidden_field_tag 'longitude', '' %>
             <%= text_area_tag 'explanation', '', placeholder: 'Describa el problema por el cual nos contacta', required: true%>
             <%= submit_tag 'Eviar', class: 'btn pull-right', 'data-error': "Hay campos sin llenar", 'data-processing': "Enviando", "data-success": "Enviado"%>
           <%end%>

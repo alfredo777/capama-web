@@ -806,7 +806,7 @@ footer ul.circled li:before {
     margin: 0;
     display: none;
     text-align: center;
-    font-size: 22px;
+    font-size: 25px;
     background: none;
     position: relative;
     z-index: 999999;
@@ -994,7 +994,7 @@ footer ul.circled li:before {
 .tp-bannertimer {
     width: 100%;
     height: 10px;
-    background: url(style/images/timer.png);
+    background: url(/style/images/timer.png);
     position: absolute;
     z-index: 200;
 }
@@ -4039,10 +4039,10 @@ textarea {
 /*-----------------------------------------------------------------------------------*/
 /*	31. RESPONSIVE
 /*-----------------------------------------------------------------------------------*/
-@media (min-width: 992px) { 
+@media (min-width: 999px) { 
 	.navbar {
 		display: table;  
-		padding: 0 40px;
+		padding: 0 80px;
 	}
 	.navbar-header {
 	    display: table-cell !important;
@@ -4063,6 +4063,7 @@ textarea {
 	    margin: 0 15px;
 	    display: inline-block;
 	    text-align: center;  
+
 	}
 	.navbar .social-wrapper {
 	    display: table-cell !important;
@@ -4164,7 +4165,7 @@ textarea {
 		display: block;
 	}
 }
-@media (max-width: 991px) {
+@media (max-width: 998px) {
 	body:not(.onepage) .navbar,
 	body:not(.onepage) .navbar.fixed {
 	    position: relative;
@@ -4321,7 +4322,7 @@ textarea {
 	    margin-bottom: 6px;
 	}
 }
-@media (min-width: 768px) and (max-width: 991px) { 
+@media (min-width: 768px) and (max-width: 998px) { 
 	.container {
 	    padding-right: 15px;
 	    padding-left: 15px;
@@ -4412,15 +4413,20 @@ textarea {
 	}
 }
 .first-head{
-    background-image: url('/assets/heads/head1v2.jpg');
+    margin-top: 120px;
     width:100%;
-    padding: 5%;
     text-align: center;
-    height: 420px !important;
     background-size: 100%;
     background-repeat: no-repeat;
-    font-size: 70px;
+    font-size: 60px;
     vertical-align: middle;
-    line-height: 300px;     
-    text-shadow: 2px 2px #f1f1f1;
+    line-height: 62px;     
+    color: #505050;
+}
+.ahead-head{
+    width: 100%;
+    padding: 25px;
+    color: #fff;
+    background: rgba(3, 30, 54, 0.9);
+    font-size: 60px;
 }

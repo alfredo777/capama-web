@@ -6,6 +6,24 @@ function loadTPL(jsonn, tpln, divloadtpl, lang){
       });    
    });
 }
+
+// cargar tpl api
+function loadTPLAPI(jsonn, tpln, divloadtpl){
+   getasJSONAPI(jsonn,function(data, err) {
+      getTemplate(tpln, data, function(output, err) {
+        $("#"+divloadtpl).html(output);
+      });    
+   });
+}
+
+// cargar paginando
+
+function loadTPLpaginate(data, tpln, divloadtpl){
+  getTemplate(tpln, data, function(output, err) {
+    $("#"+divloadtpl).append(output);
+  });
+}
+
 // se dirige al tpl
 function getTemplate(name, context, callback) {
   $.ajax({
@@ -36,6 +54,20 @@ function getasJSON(json_file, lang ,callback){
     }
   });
 }
+// se conecta al json  API
+function getasJSONAPI(json_file ,callback){
+  $.ajax({
+    dataType: "json",
+    url: '/api/'+ json_file + '.json',
+    cache: true,
+    success: function (data) {
+      callback(data, null);
+    },
+    error: function(err) {
+      callback(null, err);
+    }
+  });
+}
 
 Handlebars.registerHelper('list', function(items, options) {
   var out = "<ul>";
@@ -45,4 +77,9 @@ Handlebars.registerHelper('list', function(items, options) {
   }
 
   return out + "</ul>";
+});
+
+Handlebars.registerHelper('trimString', function(passedString) {
+    var theString = passedString.substring(0,420);
+    return new Handlebars.SafeString(theString)
 });

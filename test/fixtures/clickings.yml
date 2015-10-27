@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  clicking_url: MyString
+  clicking_id: MyString
+  clicking_val: MyString
+
+two:
+  clicking_url: MyString
+  clicking_id: MyString
+  clicking_val: MyString
