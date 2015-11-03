@@ -45,7 +45,7 @@ class ApiController < ApplicationController
   end
 
   def create_ticket
-    @user = User.where(area: 'suport').first
+    @user = User.first
     @ticket = UserHelp.create(email: params[:email], cause: params[:cause], phone: params[:phone] ,explanation: params[:explanation], area: params[:area], user_id: @user.id, latitude: params[:latitude], longitude: params[:longitude] )
     @customer = Customer.find_by_email("#{params[:email]}")
     if !@customer.nil?
