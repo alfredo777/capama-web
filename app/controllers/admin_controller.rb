@@ -1,7 +1,7 @@
 class AdminController < ApplicationController
-  before_filter :config, only: [:index, :all_post, :posts, :files, :tickets, :admin_tiket_show, :create_zone]
-  before_filter :session_filter, only: [:index,]
+  before_filter :session_filter, :only => [:index]
   
+  layout 'admin'
   def login
   end
 
@@ -191,9 +191,12 @@ class AdminController < ApplicationController
   end
 
   def config_roles
+    render layout: "login"
+
   end
 
   def congif_users
+    render layout: "login"
   end
 
 private 
@@ -204,16 +207,5 @@ private
    end
   end
 
-  def config
-     r = Role.count
-     s = User.count
-    if r.count == 0
-      congif_roles_path
-    end
-
-    if s.count == 0
-      congif_users_path
-    end
-    render layout: 'application'
-  end
+  
 end

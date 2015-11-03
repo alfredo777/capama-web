@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  before_filter :configfrtscriot, :only => [:login]
   before_filter :session_filter, :only => [:show, :edit, :new, :update, :users, :destroy]
   before_filter :admin_filter, :only => [:show, :create, :edit]
 

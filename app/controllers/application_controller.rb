@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   helper_method :agent
   helper_method :lang
   helper_method :last_post
+  helper_method :configfrtscriot
 
   def current_user
     @user = User.find_by_id(session[:user])
@@ -49,6 +50,18 @@ class ApplicationController < ActionController::Base
 
   def host 
     @hostname = request.host_with_port || "www.capama.gob.mx"
+  end
+
+  def configfrtscriot
+     r = Role.count
+     s = User.count
+    if r == 0
+     redirect_to congif_roles_path
+    end
+
+    if s == 0 && r != 0
+     redirect_to congif_users_path
+    end
   end
 
 
