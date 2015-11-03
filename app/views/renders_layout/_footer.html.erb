@@ -7,10 +7,10 @@
           <ul class="post-list">
             <% last_post(3).each do |post| %>
             <li>
-              <div class="icon-overlay"> <a href="blog-post.html"><%= image_tag(post.head_image.ban, width: "100%", height: '120px') %> </a> </div>
+              <div class="icon-overlay"> <a href="<%= post_public_view_path(post.id)%>"><%= image_tag(post.head_image.ban, width: "100%", height: '120px') %> </a> </div>
               <div class="meta">
-                <h5><a href="blog-post.html"><%= post.title %></a></h5>
-                <em><span class="date">3th Oct 2012</span> <span class="comments"><a href="#"><i class="icon-chat-1"></i> 8</a></span></em> </div>
+                <h5><a href="<%= post_public_view_path(post.id)%>"><%= post.title %></a></h5>
+                <em><span class="date"><%=post.created_at.strftime('%Y/%m/%d')%></span></div>
             </li>
              <%end%>
                 </ul>

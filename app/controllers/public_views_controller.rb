@@ -50,4 +50,7 @@ class PublicViewsController < ApplicationController
 
   def branches_for_payments
   end
+  
+  def show_post
+  end
 end

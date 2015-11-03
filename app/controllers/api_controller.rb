@@ -16,7 +16,7 @@ class ApiController < ApplicationController
   end
 
   def view_post
-    @post = BlogPost.find_by_id(params[:id])
+    @post = BlogPost.find(params[:id])
     render json: @post
   end
 

@@ -19,7 +19,8 @@ Rails.application.routes.draw do
   get '/capama_history', to: 'public_views#capama_history', as: :capama_history
   get '/organization_chart', to: 'public_views#organization_chart', as: :organization_chart
   get '/branches_for_payments', to: 'public_views#branches_for_payments', as: :branches_for_payments
-  get '/post/:id', to: 'public_views#post', as: :post_public_view
+  get '/post/:id', to: 'public_views#show_post', as: :post_public_view
+
 
   ##### admin #####
 
@@ -76,8 +77,8 @@ Rails.application.routes.draw do
   get '/api/clicking', to: 'api#clicking', as: :clicking
   post '/api/clicking'
   get '/lang_select', to: 'api#lang', as: :lang
-
-  ### user_help ####
+  get '/api/view_post', to: 'api#view_post'
+    ### user_help ####
   get '/admin/tickets', as: :tickets
   get '/admin/customers', as: :customers
   get '/admin/destroy_customer', as: :destroy_customer
