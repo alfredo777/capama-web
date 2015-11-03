@@ -2,6 +2,7 @@ class AdminController < ApplicationController
   before_filter :session_filter, :only => [:index]
   
   layout 'admin'
+
   def login
   end
 
@@ -196,6 +197,7 @@ class AdminController < ApplicationController
   end
 
   def congif_users
+    @roles = Role.all
     render layout: "login"
   end
 
