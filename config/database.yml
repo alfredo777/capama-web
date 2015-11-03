@@ -24,7 +24,7 @@ production:
   adapter: postgresql
   encoding: UTF-8
   host: localhost
-  user: production
+  user: localuser
   password: post123
   database: production
   pool: 5
