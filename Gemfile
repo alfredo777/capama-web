@@ -29,4 +29,5 @@ gem 'barby'
 gem 'ean13'
 gem 'rb-readline'
 gem 'chunky_png'
+gem 'therubyracer',  platforms: :ruby
 
