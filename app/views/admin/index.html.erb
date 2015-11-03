@@ -36,12 +36,11 @@
       <button class="btn btn-white" type="button">Ver zonas</button>
       <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button" aria-expanded="false"><span class="caret"></span></button>
       <ul role="menu" class="dropdown-menu">
-        <li><a href="#">Agregar nueva zona</a></li>
+        <li><%= link_to "Administrar zonas", new_zone_path %></li>
         <li class="divider"></li>
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-        
+        <% @zones.each do |zone|%>
+        <li><a class="lalong" data-lat="<%= zone.lat %>" data-long="<%= zone.long %>"><%= zone.title %></a></li>
+        <%end%>
       </ul>
     </div>
     <section class="panel">
@@ -134,5 +133,11 @@
 <!-- page end-->
 <!--common script init for all pages-->
 <script>
-SuperMapFilter(<%=@helps.html_safe%>, 16.8548671,-99.8979708, 13, '#gmap-list');
+SuperMapFilter(<%=@helps.html_safe%>, "16.8548671" , "-99.8979708", 13, '#gmap-list');
+$(".lalong").click(function(){
+  var latitude = $(this).data('lat');
+  var longitude = $(this).data('long');
+  $('#gmap-list').html('');
+  SuperMapFilter(<%=@helps.html_safe%>, latitude , longitude, 17, '#gmap-list');
+});
 </script>

@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" ><%= @format_form.title %></header>
+  <section class="panel">
+    <%= link_to 'Regresar a los formatos', format_forms_path, class: "btn btn-default" %>
+    <%= link_to 'Ver formato', view_action_path(@format_form.id), class: "btn btn-info", target: "_blank" %>
+    <div class="panel-body">
+      <strong>Título:</strong>
+      <%= @format_form.title %>
+      <strong>Descripcción:</strong>
+      <%= @format_form.description %>
+      <p>
+        <strong>Public:</strong>
+        <%= @format_form.public %>
+      </p>
+      <% @format_form.questions.each do |question| %>
+      <label><%= question.qtag %></label><br/>
+      <% question.question_options.each do |q| %>
+      <%= q.qotag %><br/>
+      <%end%>
+      <%end%>
+    </div>
+  </section>
+  </div>
+</div>

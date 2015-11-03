@@ -64,4 +64,30 @@ class ApiController < ApplicationController
       redirect_to root_path
     end
   end
+
+  def lang
+     session[:lang] = params[:lang]
+     redirect_to :back
+  end
+
+  def response_forms
+    session[:form_sender] = nil
+    session[:question_id] = nil
+    session[:form_sender] = SecureRandom.hex(10)
+
+    params[:question_responses].each do |qrs| 
+     qrs[1].each do |qx|
+      if qx[1].is_a? Hash
+      question_value = qx[1][:question_value]
+      question_id = qx[1][:question]
+      puts "#{qx[1][:question_value]} , #{qx[1][:question]}"
+      @response = QuestionResponse.create(question_value: question_value, question_id: question_id , form_sender: session[:form_sender] )
+      end
+     end
+    end
+    redirect_to printing_view_format_path(form_sender: session[:form_sender])
+  end
+
+  def parameters_response_forms
+  end
 end

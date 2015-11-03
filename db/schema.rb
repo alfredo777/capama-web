@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151025043309) do
+ActiveRecord::Schema.define(version: 20151101051936) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -45,6 +45,30 @@ ActiveRecord::Schema.define(version: 20151025043309) do
     t.datetime "updated_at"
   end
 
+  create_table "entities", force: true do |t|
+    t.string   "name"
+    t.string   "format_folio"
+    t.integer  "in_charge"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "format_forms", force: true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.boolean  "public",      default: false
+    t.string   "tclass"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "format_forms_to_roles", force: true do |t|
+    t.integer  "format_form_id"
+    t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "messages", force: true do |t|
     t.integer  "talker_id"
     t.text     "message"
@@ -73,6 +97,31 @@ ActiveRecord::Schema.define(version: 20151025043309) do
     t.string   "version_img"
   end
 
+  create_table "question_options", force: true do |t|
+    t.string   "qotag"
+    t.string   "qovalue"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "question_id"
+  end
+
+  create_table "question_responses", force: true do |t|
+    t.string   "question_id"
+    t.string   "question_value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "form_sender"
+  end
+
+  create_table "questions", force: true do |t|
+    t.string   "qtag"
+    t.string   "qtype"
+    t.string   "qclass"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "format_form_id"
+  end
+
   create_table "roles", force: true do |t|
     t.string   "title"
     t.boolean  "active_role"
@@ -94,6 +143,7 @@ ActiveRecord::Schema.define(version: 20151025043309) do
     t.boolean  "open_chat",   default: false
     t.string   "latitude"
     t.string   "longitude"
+    t.string   "ticket_type", default: "external"
   end
 
   create_table "users", force: true do |t|

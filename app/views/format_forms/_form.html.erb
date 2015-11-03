@@ -1,0 +1,44 @@
+<%= form_for(@format_form, class: 'form-horizontal') do |f| %>
+<% if @format_form.errors.any? %>
+<div id="error_explanation">
+  <h2><%= pluralize(@format_form.errors.count, "error") %> prohibited this format_form from being saved:</h2>
+  <ul>
+    <% @format_form.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+<div class="form-group">
+  <div class="field">
+    <%= f.label :título %><br>
+    <%= f.text_field :title, class: "form-control" %>
+  </div>
+  <div class="field">
+    <%= f.label :descripción %><br>
+    <%= f.text_area :description, class: "form-control" %>
+  </div>
+  <div class="field ">
+    <%= f.label :hacer_este_formato_de_uso_público %> : <%= f.check_box :public, class: "iCheck-helper" %>
+  </div>
+  <div id="questions_div" >
+    <%= f.fields_for :questions  do |f| %>
+    <%= render partial: 'question_fields', locals: {:f => f} %>
+    <%end%>
+  </div>
+  <div class="actions" style="margin-top:25px; padding:20px;">
+    <%= link_to_add_association 'Agregar pregunta', f, :questions, class: "btn btn-success" %>
+    <%= f.submit "Crear formulario", class: "btn btn-info pull-right" %>
+  </div>
+</div>
+<% end %>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".container").on('click',"a.remove_fields",function(){
+return confirm("¿Deseas eliminar este campo?") ;
+});
+$("#questions a.add_fields").
+data("association-insertion-position", 'after').
+data("association-insertion-node", '#questions_div');
+});
+</script>

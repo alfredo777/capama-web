@@ -8,6 +8,7 @@ class ApplicationController < ActionController::Base
   helper_method :host
   helper_method :agent
   helper_method :lang
+  helper_method :last_post
 
   def current_user
     @user = User.find_by_id(session[:user])
@@ -17,11 +18,14 @@ class ApplicationController < ActionController::Base
     lang = session[:lang]
     if lang.nil?
       lang = "es"
+      else
+      lang = session[:lang]
     end
+
   end
   def modules
     modules_array = []    
-    modules = ['users','blog_posts', 'roles', 'formats']
+    modules = ['users','blog_posts', 'roles', 'formats', 'dashboard', 'tickets', 'zones']
     actions = ['create', 'upadate', 'delete', 'view', 'view_all']
     modules.each do |m|
       actions.each do |a|
@@ -29,6 +33,10 @@ class ApplicationController < ActionController::Base
       end
     end
     modules_array
+  end
+
+  def last_post(n)
+    posts = BlogPost.last(n)
   end
 
   def scope_permission(module_call, permission)
@@ -42,6 +50,7 @@ class ApplicationController < ActionController::Base
   def host 
     @hostname = request.host_with_port || "www.capama.gob.mx"
   end
+
 
   def agent
     result  = request.env['HTTP_USER_AGENT']

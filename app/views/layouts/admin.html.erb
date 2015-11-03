@@ -13,7 +13,10 @@
     <%= csrf_meta_tags %>
   </head>
   <% if !notice.nil? %>
-  <div class="alert alert-success" role="alert"><%=flash[:notice] %></div>
+  <div id="alert-box-top" class="alert alert-success" role="alert"><%=flash[:notice] %></div>
+  <script type="text/javascript">
+  setTimeout(function(){ $("#alert-box-top").slideToggle('slow'); }, 3000);
+  </script>
   <%end%>
   <body style="overflow:auto;">
     <section id="container">
@@ -30,10 +33,10 @@
             </div>
           </div>
         </div>
+        <%= render partial: "/renders_layout/admin_bar_right" %>
         <!-- page end-->
       </section>
     </section>
-    <%= render partial: "/renders_layout/admin_bar_right" %>
   </section>
   <!--Core js-->
   <script src="/assets/admin/bootstrap.min.js"></script>

@@ -3,26 +3,16 @@
     <div class="row">
       <div class="col-sm-4">
         <div class="widget">
-          <h3 class="widget-title">Popular Posts</h3>
+          <h3 class="widget-title">Últimas publicaciones</h3>
           <ul class="post-list">
+            <% last_post(3).each do |post| %>
             <li>
-              <div class="icon-overlay"> <a href="blog-post.html"><img src="style/images/art/a1.jpg" alt="" /> </a> </div>
+              <div class="icon-overlay"> <a href="blog-post.html"><%= image_tag(post.head_image.ban, width: "100%", height: '120px') %> </a> </div>
               <div class="meta">
-                <h5><a href="blog-post.html">Magna Mollis Ultricies</a></h5>
+                <h5><a href="blog-post.html"><%= post.title %></a></h5>
                 <em><span class="date">3th Oct 2012</span> <span class="comments"><a href="#"><i class="icon-chat-1"></i> 8</a></span></em> </div>
-              </li>
-              <li>
-                <div class="icon-overlay"> <a href="blog-post.html"><img src="style/images/art/a2.jpg" alt="" /> </a> </div>
-                <div class="meta">
-                  <h5><a href="blog-post.html">Ornare Nullam Risus Tellus Elit Fusce Inceptos Etiam</a></h5>
-                  <em><span class="date">28th Sep 2012</span> <span class="comments"><a href="#"><i class="icon-chat-1"></i> 5</a></span></em> </div>
-                </li>
-                <li>
-                  <div class="icon-overlay"> <a href="blog-post.html"><img src="style/images/art/a3.jpg" alt="" /> </a> </div>
-                  <div class="meta">
-                    <h5><a href="blog-post.html">Euismod Nullam</a></h5>
-                    <em><span class="date">15th Aug 2012</span> <span class="comments"><a href="#"><i class="icon-chat-1"></i> 9</a></span></em> </div>
-                  </li>
+            </li>
+             <%end%>
                 </ul>
                 <!-- /.post-list -->
               </div>
@@ -32,17 +22,13 @@
             
             <div class="col-sm-4">
               <div class="widget">
-                <h4 class="widget-title">Tags</h4>
+                <h4 class="widget-title">Mas buscado</h4>
                 <ul class="tag-list">
-                  <li><a href="#" class="btn">Web</a></li>
-                  <li><a href="#" class="btn">Photography</a></li>
-                  <li><a href="#" class="btn">Illustation</a></li>
-                  <li><a href="#" class="btn">Fun</a></li>
-                  <li><a href="#" class="btn">Blog</a></li>
-                  <li><a href="#" class="btn">Commercial</a></li>
-                  <li><a href="#" class="btn">Journal</a></li>
-                  <li><a href="#" class="btn">Nature</a></li>
-                  <li><a href="#" class="btn">Still Life</a></li>
+                  <li><%=link_to "Ayuda", new_ticket_path, class: "btn" %></li>
+                  <li><%=link_to "Noticias", news_path, class: "btn" %></li>
+                  <li><%=link_to "Transparencia", transparency_path, class: "btn" %></li>
+                  <li><%=link_to "Pagos", branches_for_payments_path, class: "btn" %></li>
+                  <li><%=link_to "Historia", capama_history_path, class: "btn" %></li>
                 </ul>
               </div>
               <!-- /.widget -->
@@ -50,11 +36,8 @@
               <div class="widget">
                 <h4 class="widget-title">Elsewhere</h4>
                 <ul class="social">
-                  <li><a href="#"><i class="icon-s-rss"></i></a></li>
                   <li><a href="#"><i class="icon-s-twitter"></i></a></li>
                   <li><a href="#"><i class="icon-s-facebook"></i></a></li>
-                  <li><a href="#"><i class="icon-s-pinterest"></i></a></li>
-                  <li><a href="#"><i class="icon-s-linkedin"></i></a></li>
                 </ul>
                 <!-- .social -->
                 
@@ -63,18 +46,11 @@
             <!-- /column -->
             
             <div class="col-sm-4">
-              <div class="widget">
-                <h4 class="widget-title">Search</h4>
-                <form class="searchform" method="get">
-                  <input type="text" id="s2" name="s" value="Search something" onfocus="this.value=''" onblur="this.value='Search something'">
-                  <button type="submit" class="btn btn-default">Find</button>
-                </form>
-              </div>
               <!-- /.widget -->
               <div class="widget">
                 <h4 class="widget-title">Para mayores informes</h4>
                 <p>Favor de comunicarse en al siguiente teléfono o acudir a la siguiente dirección, para trámites consultar la ayuda en linea</p>
-                <div class="contact-info"> <i class="icon-location"></i>Av. Lic. Adolfo López Mateos, Esq. Tte. José Azueta s/n, Col. Centro C.P. 39300, Acapulco, Gro <br />
+                <div class="contact-info"> <i class="icon-location"></i> <a href="https://www.google.com.mx/maps/place/Av+Adolfo+L%C3%B3pez+Mateos+%26+Teniente+Jos%C3%A9+Azueta,+Zona+Urbana+49,+Acapulco,+Gro./@16.8472459,-99.911306,18.4z/data=!4m2!3m1!1s0x85caf7e5220eb7e7:0x20274e0e63ff31f0" target="_blank">Av. Lic. Adolfo López Mateos, Esq. Tte. José Azueta s/n, Col. Centro C.P. 39300, Acapulco, Gro </a> <br />
                   <i class="icon-phone"></i>01 (744)434-1400 <br />
                 </div>
                 <!-- /.widget -->

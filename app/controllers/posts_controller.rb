@@ -1,8 +1,10 @@
 class PostsController < ApplicationController
 skip_before_filter :verify_authenticity_token, :only => [:create, :update]
+before_filter :session_filter
+
 layout 'admin'
   def posts
-  @posts = BlogPost.all
+  @posts = BlogPost.paginate(:page => params[:page], :per_page => 10).order('id DESC')
   end
 
   def show
@@ -10,7 +12,7 @@ layout 'admin'
   end
 
   def user_posts
-  @posts = current_user.blog_posts
+  @posts = current_user.blog_posts.paginate(:page => params[:page], :per_page => 10).order('id DESC')
   end
 
   def create
@@ -29,5 +31,13 @@ layout 'admin'
   end
 
   def edit
+  end
+
+private 
+
+  def session_filter
+   if session[:user] == nil
+      redirect_to login_user_path
+   end
   end
 end

@@ -23,3 +23,9 @@ gem 'redis'
 gem 'puma'
 gem 'rack', '~> 1.5.2', git: 'https://github.com/dkubb/rack.git', branch: 'fix/rack-1.5/rack-lock-mutex-usage'
 gem 'thread'
+gem "cocoon"
+gem 'barby'
+gem 'ean13'
+gem 'rb-readline'
+gem 'chunky_png'
+

@@ -1,0 +1,14 @@
+<div class="nested-fields">
+  <div class="col-md-10" style="padding:20px; border-bottom:1px solid #7A7575; margin-bottom:10px">
+    <div class="input-group m-bot15">
+      <%= f.text_field :qotag, placeholder: "Posible respuesta", class: "form-control"%>
+      <span class="input-group-addon">
+        <%=  link_to_remove_association f,  data: {confirm: '¿Estas seguro de eliminarlo?'}  do %>
+        <i class="fa fa-minus"></i>
+        <%end%>
+      </span>
+    </div>
+  </div>
+  <div class="col-md-2">
+  </div>
+</div>

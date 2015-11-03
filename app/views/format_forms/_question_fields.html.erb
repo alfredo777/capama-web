@@ -1,0 +1,33 @@
+
+<div>
+  <div class="row" style="border-top:1px solid #eee; border-bottom:1px solid #eee;">
+    <div class="col-xs-12" style="margin-top:15px;  ">
+      <div class="col-md-4">
+        <%= f.text_field :qtag, class: "form-control", placeholder: "Escriva una pregunta"%><br/>
+      </div>
+      <div class="col-md-4">
+        <label>Tipo</label>
+        <%= f.select :qtype, options_for_select(["Abierto", "Opcciones", "Selección"]), {}, {required: 'true', autofocus: 'true', class: 'opcciones'} %><br/>
+      </div>
+      <div class="col-md-4">
+        <label>Posición</label>
+        <%= f.select :qclass, options_for_select(["izquierdo-mid", "derecho-mid", "completo"]) %><br/>
+      </div>
+    </div>
+    <div class="op-opts" >
+      <div class="col-xs-12" style"margin-bottom:15px;">
+        <div class="col-md-10">
+          <label>Opcciones</label>
+          <%= f.fields_for :question_options do %>
+          <%= render partial: 'question_option_fields', locals: {:f => f} %>
+          <%end%>
+        </div>
+        <div class="col-md-2">
+          <%= link_to_add_association f, :question_options, class: "btn btn-success", :render_options => {:wrapper => 'bootstrap' } do  %>
+          <i class="fa fa-plus"></i>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

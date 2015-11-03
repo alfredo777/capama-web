@@ -18,7 +18,7 @@
             <tr>
               <td><%= r.title %></td>
               <td><%= r.active_role %></td>
-              <td><a>Editar</a> | <a>Eliminar</a></td>
+              <td><%= link_to 'Eliminar', destroy_role_path(id: r.id), "data-confirm": "¿Estas seguro de querer eliminar este rol?" %></td>
             </tr>
             <%end%>
           </tbody>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  format_folio: MyString
+  in_charge: 1
+
+two:
+  name: MyString
+  format_folio: MyString
+  in_charge: 1

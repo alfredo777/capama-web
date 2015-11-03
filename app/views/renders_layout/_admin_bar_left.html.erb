@@ -38,16 +38,16 @@
           <%end%>
         </li>
         <%end%>
-        <!--
-        <% if  scope_permission('blog_posts','view_all') %>
+      
+        <% if  scope_permission('formats','view_all') %>
         <li>
-          <%= link_to files_path do %>
+          <%= link_to format_forms_path do %>
           <i class="fa fa-code-fork"></i>
           <span>Formatos</span>
           <%end%>
         </li>
         <%end%>
-        -->
+      
         <% if  scope_permission('users','view_all') %>
         <li class="sub-menu">
           <a href="javascript:;">

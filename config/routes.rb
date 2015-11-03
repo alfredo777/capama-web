@@ -61,7 +61,8 @@ Rails.application.routes.draw do
   get '/admin/roles', to: 'roles#roles', as: :roles
   get '/admin/roles/create', to: 'roles#create', as: :create_role
   post '/admin/roles/create', to: 'roles#create'
-
+  get '/admin/roles/destroy', to: 'roles#destroy', as: :destroy_role
+  post '/admin/roles/destroy', to: 'roles#destroy'
   #### api #####
 
   get '/api/posts', to: 'api#posts', as: :api_posts
@@ -72,6 +73,7 @@ Rails.application.routes.draw do
   post '/api/viewver'
   get '/api/clicking', to: 'api#clicking', as: :clicking
   post '/api/clicking'
+  get '/lang_select', to: 'api#lang', as: :lang
 
   ### user_help ####
   get '/admin/tickets', as: :tickets
@@ -99,9 +101,26 @@ Rails.application.routes.draw do
   get '/messages/events', to: "messages#events", as: :events_messages
   post '/messages/events'
 
+  #### filter map ####
+
+  get '/admin/new_zone', to: "admin#new_zone", as: :new_zone
+  get '/admin/create_zone', as: :create_zone
+  post '/admin/create_zone'
+  get '/admin/destroy_zone', as: :destroy_zone
+  post '/admin/destroy_zone'
+
 
   #### external db conections ###
   get 'external_conections/create'
+
+  #### format forms ####
+
+  resources :format_forms
+
+  get "/format/:id", to: "format_forms#view_action", as: :view_action
+  get "/api/response_forms", as: :response_forms
+  post "/api/response_forms"
+  get '/printing_view_format', to: "format_forms#printing_view_format", as: :printing_view_format
 
 
 end

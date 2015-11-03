@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   layout 'admin'
 
   def users
-    @user = User.all
+    @user = User.paginate(:page => params[:page], :per_page => 30).order('id DESC')
   end
 
   def show

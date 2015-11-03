@@ -26,8 +26,8 @@
           <% current_user.user_helps.where(open: false).last(5).each do |notice|%>
           <%= link_to ticket_path(notice.id) do %>
           <li>
-            <div class="alert alert-info clearfix">
-              <span class="alert-icon"><i class="fa fa-bolt"></i></span>
+            <div class="alert alert-success clearfix">
+              <span class="alert-icon"><i class="fa fa-comments"></i></span>
               <div class="noti-info">
                 <%= notice.cause %><br/>
                 Area Asignada: <%= notice.area %>

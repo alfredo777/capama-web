@@ -1,0 +1,82 @@
+<div class="first-head"></div>
+<img src="/assets/heads/head1v2.png" width="100%">
+<div class="ahead-head  col-md-12 ">Formulario</div>
+
+<div class="container-ajax" style="text-align: justify;">
+  <div class="offset"></div>
+  <div class="light-wrapper">
+    <div class="container inner" style="margin-top:-70px;">
+      <div class="thin">
+        <div class="col-md-2"></div>
+        <div class="col-md-8 question-content">
+          <h2><%= @format_form.title %></h2>
+          <p>
+          <strong>Descripcción del formulario:</strong><br/>
+          <%= @format_form.description %>
+          </p>
+          <p>
+            <strong>Public:</strong>
+            <%= @format_form.public %>
+          </p>
+          <%= form_tag response_forms_path do -%>
+          <% @format_form.questions.each_with_index do |question, index| %>
+          <%= hidden_field_tag "question_responses[#{index}][0][question]", "#{question.id}" %>
+          <% case question.qtype %>
+          <% when "Abierto" %>
+          <label><b><%= question.qtag %>:</b></label><br/>
+          <%= text_field_tag "question_responses[#{index}][0][question_value]" %><br/>
+          <% when "Opcciones"  %>
+          <table class="table">
+            <thead>
+              <tr>
+                <td><b><%= question.qtag %>:</b></td>
+                <td>Seleccionar</td>
+              </tr>
+            </thead>
+            <tbody>
+              <% question.question_options.each_with_index do |q, ind| %>
+              <tr>
+                <% if ind == 0 %>
+                <td><%= label_tag "question_responses_#{index}_#{ind}_question_value" do %><%= q.qotag %><%end%></td>
+                <td> <%= check_box_tag "question_responses[#{index}][#{ind}][question_value]", "#{q.qotag}", true %></td>
+                <%else%>
+                <td><%= label_tag "question_responses_#{index}_#{ind}_question_value" do %><%= q.qotag %><%end%></td>
+                <td> <%= check_box_tag "question_responses[#{index}][#{ind}][question_value]", "#{q.qotag}" %></td>
+                <%end%>
+              </tr>
+              <%end%>
+            </tbody>
+          </table>
+          <% when "Selección"  %>
+          <table class="table" width="100%">
+            <thead>
+              <tr>
+                <td><b><%= question.qtag %>:</b></td>
+                <td>Seleccionar</td>
+              </tr>
+            </thead>
+            <tbody>
+              <% question.question_options.each_with_index do |q, ind| %>
+              <tr>
+                <% if ind == 0 %>
+                <td><%= label_tag "question_responses_#{index}_0_question_value_#{q.qotag}", value: "#{q.qotag}" do %><%= q.qotag %><%end%></td> 
+                <td><%= radio_button_tag "question_responses[#{index}][0][question_value]", "#{q.qotag}", true %></td>
+                <% else %>
+                <td><%= label_tag "question_responses_#{index}_0_question_value_#{q.qotag}", value: "#{q.qotag}" do %><%= q.qotag %><%end%></td> <td><%= radio_button_tag "question_responses[#{index}][0][question_value]", "#{q.qotag}" %></td>
+                <%end%>
+              </tr>
+              <%end%>
+            </tbody>
+          </table>
+          <%end%>
+          <div style="border-bottom: solid 2px rgba(48, 54, 66, 0.9); margin-top: 10px; margin-bottom:10px;"></div>
+          <%end%>
+          <div class="row">
+            <%= submit_tag "Enviar Formulario", class: "btn btn-green pull-right" %>
+          </div>
+          <%end%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

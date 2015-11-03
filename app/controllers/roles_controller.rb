@@ -1,4 +1,5 @@
 class RolesController < ApplicationController
+before_filter :session_filter
 layout 'admin'
 
   def roles
@@ -27,9 +28,21 @@ layout 'admin'
   end
 
   def destroy
+    @role = Role.find(params[:id])
+    @role.destroy
+
+    flash[:notice] = "Rol eliminado"
+    redirect_to :back
   end
 
   def new
   end
   
+private 
+
+  def session_filter
+   if session[:user] == nil
+      redirect_to login_user_path
+   end
+  end
 end

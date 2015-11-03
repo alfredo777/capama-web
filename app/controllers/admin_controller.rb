@@ -1,4 +1,7 @@
 class AdminController < ApplicationController
+
+  before_filter :session_filter
+  
   def login
   end
 
@@ -13,7 +16,7 @@ class AdminController < ApplicationController
     @views_year = Views.where("created_at >= ?", Time.zone.now.beginning_of_year).count
     @views_today_list = Views.where("created_at >= ?", Time.zone.now.beginning_of_day).last(30)
     @views_monthly_celphone = Views.where("agent LIKE? or agent LIKE? or agent LIKE?", "%iPhone%","%Android%", "%iPad%").count
-
+    @zones = Zone.all
     @helps.each do |h|
        helps.push(
         "lat": "#{h.latitude}",
@@ -50,7 +53,7 @@ class AdminController < ApplicationController
   ##### manejo de archivos #######
 
   def files
-    @pictures = Picture.all
+    @pictures = Picture.paginate(:page => params[:page], :per_page => 10).order('id DESC')
   end
 
   def destroy_file_image
@@ -149,9 +152,30 @@ class AdminController < ApplicationController
   end
 
   def create_zone
+    @zone = Zone.new
+    @zone.title = params[:title]
+    @zone.lat = params[:lat]
+    @zone.long = params[:long]
+    @zone.save
+
+    if @zone.save
+       flash[:notice] = "Zona creada correctamente"
+      else
+        flash[:notice] = "La zona no ha sido creada"
+    end
+
+    redirect_to :back
   end
 
   def new_zone
+    @zones = Zone.paginate(:page => params[:page], :per_page => 20).order('id DESC')
+  end
+
+  def destroy_zone
+    @zone = Zone.find(params[:id])
+    @zone.destroy
+    flash[:notice] = "Zona eliminada correctamente"
+    redirect_to :back
   end
 
   def customers
@@ -166,4 +190,11 @@ class AdminController < ApplicationController
     redirect_to :back
   end
 
+private 
+
+  def session_filter
+   if session[:user] == nil
+      redirect_to login_user_path
+   end
+  end
 end
