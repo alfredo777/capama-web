@@ -25,6 +25,8 @@ Rails.application.routes.draw do
 
   get 'admin/login'
   get 'admin/index', as: :admin
+  get 'admin/config_roles', as: :congif_roles
+  get 'admin/congif_users', as: :congif_users
 
   #### posts ######
   get 'admin/posts', to: 'posts#posts', as: :posts

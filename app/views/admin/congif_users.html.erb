@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Nuevo usuario</header>
+  <section class="panel">
+    <div class="panel-body">
+      <div class="position-center">
+        <%= form_tag admin_users_create_path, class: 'form-horizontal' do -%>
+        <div class="form-group">
+          <%= text_field_tag "name","" ,placeholder: 'Nombre', class: 'col-md-6 form-control' %><br/><br/>
+          <%= text_field_tag "card","", placeholder: 'ID Número de identificación interno', class: 'col-md-6 form-control' %><br/><br/>
+          <%= text_field_tag "email","" ,placeholder: 'Email', class: 'col-md-6 form-control'%><br/><br/>
+          <%= text_field_tag "phone", "",placeholder: 'Teléfono', class: 'col-md-6 form-control'%><br/><br/>
+          <%= password_field_tag "password","" ,placeholder: 'Contraseña', class: 'col-md-6 form-control' %><br/><br/>
+          <%= text_field_tag "area", "", placeholder: 'Area a la que pertenezco', class: 'col-md-6 form-control' %><br/>
+          <%= text_field_tag "position", '', placeholder: 'Puesto', class: 'col-md-6 form-control'%><br/>
+          <%= text_field_tag "immediate_boss", '',placeholder: 'Jefe inmediato', class: 'col-md-6 form-control'%><br/>
+          <%= text_field_tag "immediate_boss_email", '',placeholder: 'Email del jefe inmediato', class: 'col-md-6 form-control'%><br/>
+          <%= text_field_tag "address", '',placeholder: 'Mi dirección', class: 'col-md-6 form-control'%><br/>
+          <%= text_field_tag "social_security", '',placeholder: 'ID seguridad social', class: 'col-md-6 form-control'%><br/>
+          <%= text_field_tag "responsible_for_accidents", '',placeholder: 'Persona responsable en caso de accidente', class: 'col-md-6 form-control'%><br/>
+          <br/>
+          <%= password_field_tag  "password_confirmation","" ,placeholder: 'Confirma la Contraseña', class: 'col-md-6 form-control' %>
+          <br/><br/>
+          <%= select_tag "role", options_from_collection_for_select(@roles, "id", "title"), class: 'col-md-4 form-control' %>
+        </div>
+        <br/>
+        <%= submit_tag 'Crear usuario', class: 'btn btn-primary pull-right' %>
+        <%end%>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,6 +1,6 @@
 class AdminController < ApplicationController
-
-  before_filter :session_filter
+  before_filter :config, only: [:index, :all_post, :posts, :files, :tickets, :admin_tiket_show, :create_zone]
+  before_filter :session_filter, only: [:index,]
   
   def login
   end
@@ -190,11 +190,30 @@ class AdminController < ApplicationController
     redirect_to :back
   end
 
+  def config_roles
+  end
+
+  def congif_users
+  end
+
 private 
 
   def session_filter
    if session[:user] == nil
       redirect_to login_user_path
    end
+  end
+
+  def config
+     r = Role.count
+     s = User.count
+    if r.count == 0
+      congif_roles_path
+    end
+
+    if s.count == 0
+      congif_users_path
+    end
+    render layout: 'application'
   end
 end

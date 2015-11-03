@@ -1,5 +1,5 @@
 class RolesController < ApplicationController
-#before_filter :session_filter
+before_filter :session_filter
 layout 'admin'
 
   def roles
