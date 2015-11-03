@@ -1,4 +1,5 @@
 class UserHelpController < ApplicationController
+  skip_before_filter :verify_authenticity_token 
   def new_ticket
   end
 
@@ -14,6 +15,8 @@ class UserHelpController < ApplicationController
     conversation = ticket.conversations.last
     end
     @open_conversation = conversation
+
+    render layout: 'public_chat'
   end
 
 end

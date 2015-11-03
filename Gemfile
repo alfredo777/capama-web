@@ -27,8 +27,6 @@ gem 'rack', '~> 1.5.2', git: 'https://github.com/dkubb/rack.git', branch: 'fix/r
 gem 'thread'
 gem "cocoon"
 gem 'barby'
-gem 'ean13'
-gem 'rb-readline'
 gem 'chunky_png'
-gem 'therubyracer',  platforms: :ruby
+gem 'therubyracer',  platforms: :ruby, group: :production
 

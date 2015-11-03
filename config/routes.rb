@@ -88,8 +88,8 @@ Rails.application.routes.draw do
   post '/admin/admin_tiket_show'
   get '/user_help/new_ticket', as: :new_ticket
   get '/user_help/new_customer', as: :new_customer
-  get '/user_help/chat', as: :chat
-  post '/user_help/chat'
+  get '/user_help/chat', to: 'user_help#chat', as: :chat
+  post '/user_help/chat', to: 'user_help#chat'
   get '/api/create_ticket', as: :ticket_create
   post '/api/create_ticket'
   get '/api/create_customer', as: :create_customer
@@ -97,7 +97,7 @@ Rails.application.routes.draw do
 
   #### messages ####
   get '/messages/show', to: "messages#show", as: :show_message
-  get '/messages/create', to: "messages#create", as: :crete_message
+  get '/messages/create', to: "messages#create", as: :create_message
   post '/messages/create'
   get '/messages/paginate_messages', to: "messages#paginate_messages", as: :paginate_messages
   get '/messages/events', to: "messages#events", as: :events_messages

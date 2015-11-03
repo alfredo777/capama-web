@@ -60,7 +60,6 @@ GEM
     daemon_controller (1.2.0)
     domain_name (0.5.25)
       unf (>= 0.0.5, < 1.0.0)
-    ean13 (1.4.0)
     erubis (2.7.0)
     execjs (2.6.0)
     font-awesome-rails (4.4.0.0)
@@ -113,7 +112,6 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rake (10.4.2)
-    rb-readline (0.5.3)
     rdoc (4.2.0)
     redis (3.2.1)
     ref (2.0.0)
@@ -175,7 +173,6 @@ DEPENDENCIES
   chunky_png
   cocoon
   coffee-rails (~> 4.0.0)
-  ean13
   font-awesome-rails
   highcharts-rails (~> 3.0.0)
   jbuilder (~> 2.0)
@@ -187,7 +184,6 @@ DEPENDENCIES
   puma
   rack (~> 1.5.2)!
   rails (= 4.1.0)
-  rb-readline
   redis
   rest-client
   sass-rails (~> 4.0.3)

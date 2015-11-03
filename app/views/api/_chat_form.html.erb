@@ -1,11 +1,13 @@
 
 <div class="row">
-  <%= form_tag crete_message_path, id: "form-chat" do -%>
+  <%= form_tag create_message_path, id: "form-chat", "data-remote": true do -%>
   <center>
   <div class="col-xs-9">
     <%= text_field_tag 'message', '', placeholder: 'Mensaje', class: "form-control chat-input" %>
-    <%= hidden_field_tag 'conversation', conversation.id %>
-    <%= hidden_field_tag 'send_id', send_id %>
+    <div style="display:none;">
+    <%= number_field_tag 'conversation_id', conversation.id %>
+    <%= number_field_tag 'send_id', send_id %>
+    </div>
   </div>
   <div class="col-xs-3 chat-send">
     <%= submit_tag 'Enviar', class: "btn btn-default btn-large"  %>
@@ -13,6 +15,7 @@
   </center>
   <% end%>
 </div>
-
 <script type="text/javascript" src="/handlebars/remote-chat.js"></script>
 <script type="text/javascript" src="/handlebars/open-chat.js"></script>
+
+

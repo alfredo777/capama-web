@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
+  skip_before_action :verify_authenticity_token
   before_filter :set_cache_buster
-
   include ActionController::Live
 
   def show
@@ -10,8 +10,7 @@ class MessagesController < ApplicationController
 
   def create
     response.headers["Content-Type"] = "text/javascript"
-    @conversation = Conversation.find(params[:conversation])
-
+    @conversation = Conversation.find(params[:conversation_id])    
     @m = !params[:message].empty?
     if @m
       @message = Message.new
@@ -27,10 +26,7 @@ class MessagesController < ApplicationController
       $redis.publish('messages.create', json_parce_for_chat.to_json)
     end
 
-    respond_to do |format|
-      format.json { render json: @message.to_json }
-    end
-
+    render json: @message.to_json 
   end
 
   def paginate_messages
