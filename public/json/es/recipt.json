@@ -1,0 +1,53 @@
+{ 
+  "title": "Recibo de agua",
+  "head": "AV. ADOLFO LOPEZ MATEOS ESQ. TTE. JOSÉ AZUETA S/N <br/> COL.CENTRO ACAPULCO GUERRERO, C.P. 39300, R.F.C. CAP-940429-IG1 <br/> Tel. 4341-400 www.capama.gob.mx",
+  "color": "229EF0",
+  "head-li1": [
+    {"li": "MES FACTURADO</br></br>", "content": "2015/09"},
+    {"li": "LECTURA ANTERIOR (O CONSUMO ESTIMADO)", "content": "0"},
+    {"li": "LECTURA ACTUAL (O CONSUMO ESTIMADO)", "content": "0"},
+    {"li": "CONSUMO</br></br>", "content":"12"},
+    {"li": "FECHA LÍMITE DE PAGO</br></br>", "content": "23/10/15"}
+  ],
+  "head-li2": [
+    {"li": "NÚMERO DE RECIBO</br></br>", "content": "H-019548360"},
+    {"li": "FECHA DE LECTURA ANT.</br></br>", "content": "18/08/15"},
+    {"li": "FECHA DE LECTURA ACTUAL</br></br>", "content": "22/09/15"},
+    {"li": "DÍAS DE CONSUMO</br></br>", "content": "35"},
+    {"li": "IMPORTE TOTAL A PAGAR</br></br>", "content": "1,598.00"}
+  ],
+  "user": "CALBILLO GOMEZ MARTHA CECILIA",
+  "user_token": "tok_0104332093",
+  "address": "AV. EM. ZAPATA, C.13 N1245 P/A EJIDO DE STA CRUZ (COND.AVILA)",
+  "medidor": "13478",
+  "diameter": "0.500",
+  "service": "Doméstico",
+  "clavact": "1140",
+  "tarifa": "5.95",
+  "fechacorte": "25/09/2015",
+  "homocode": "037-001-0010-0",
+  "oxxocode": "3303700100100231015000015987",
+  "bank": [
+    {"li": "BBVA-BANCOMER", "content": "675172-037001001009"},
+    {"li": "BANORTE", "content": "Nº.EMPRESA(10023) DIGITO(9)"},
+    {"li": "SOCOTIABANK", "content": "Nº CONVENIO 4047 DIGITO(9)"}, 
+    {"li": "Paga en linea", "content": "www.capama.gob.mx"},
+    {"li": "Reporte al", "content": "073"}
+  ],
+  "listconcepts": [
+    {"concept": "Agua", "rezago": "1,057.28", "mes_actual": "71.45", "total": "1,128.73"},
+    {"concept": "Drenaje", "rezago": "133.12", "mes_actual": "14.29", "total": "147.41"},
+    {"concept": "Subtotal", "rezago": "1,274.14", "mes_actual": "0", "total": "1,274.14"},
+    {"concept": "Total", "rezago": "1,274.14", "mes_actual": "0", "total": "1,274.14"}
+  ],
+  "tarifas": [
+    {"rango": "10A 10.0", "m3": "10", "tarifa": "5.167", "importe": "51.67"},
+    {"rango": "10.1A 20.0", "m3": "2", "tarifa": "9.890", "importe": "19.78"}
+  ],
+  "importeconletra": "1,274.14 (UN MIL QUINIENTOS NOVENTA Y OCHO PESOS CON 14/100 MXN)",
+  "recibo": "H-019548360",
+  "perdio": "2015/09",
+  "adeudo_anterior": "1374.14",
+  "importe_total": "1,274.14"
+
+}

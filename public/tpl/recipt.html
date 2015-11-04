@@ -1,0 +1,270 @@
+<script type="text/javascript" src="/assets/html2canvas.js"></script>
+<script type="text/javascript" src="/assets/canvas2image.js"></script>
+<style type="text/css">
+.content-recipt {
+height: 1050px;
+width: 100%;
+border-right: solid 1px #{{color}};
+border-left: solid 1px #{{color}};
+border-top: solid 1px #{{color}};
+border-bottom: dotted 3px #{{color}};
+}
+.head-recipt {
+width: 100%;
+padding-left: 60px;
+padding-right: 60px;
+padding-top: 10px;
+height: 320px;
+background: #{{color}};
+color: #fff;
+}
+.head-ac{
+height: 100px;
+}
+.head-content {
+width: 70%;
+float:left;
+text-align: center;
+}
+.logo-content{
+width: 30%;
+float: right;
+}
+.container-clover{
+height: 100px;
+}
+.clover-list{
+width: 19%;
+margin-left: 5px;
+color: #fff;
+float: left;
+height: 100px;
+bottom: 0px;
+}
+.clover-content{
+background: #fff;
+color: #010101;
+text-align: right;
+padding: 1px;
+position:relative;
+bottom:0px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+.content-moc{
+width: 100%;
+height:  auto;
+margin-top: 10px;
+color: #000;
+}
+.blue-span{
+width: 100%;
+padding: 10px;
+color: #fff;
+text-align: center;
+background: #{{color}};
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+}
+.blue-span-min{
+width: 33.3%;
+padding: 10px;
+color: #fff;
+text-align: center;
+background: #{{color}};
+float:left;
+}
+.span-ming{
+width: 33.3%;
+padding: 10px;
+float: left;
+text-align: right;
+}
+.blue-span-min-2{
+width: 25%;
+padding: 10px;
+color: #fff;
+text-align: center;
+background: #{{color}};
+float:left;
+}
+.span-ming-2{
+width: 25%;
+padding: 10px;
+float: left;
+text-align: right;
+}
+.cmid{
+width: 50%;
+float: left;
+padding-left: 30px;
+padding-right: 30px;
+height: 330px;
+}
+.cfull{
+width: 100%;
+padding: 30px;
+}
+.pointer-dotted{
+width: 100%;
+height:30px;
+height: 300px;
+border-right: solid 1px #{{color}};
+border-left: solid 1px #{{color}};
+border-bottom: solid 1px #{{color}};
+}
+</style>
+<div class="first-head"></div>
+<img src="/assets/heads/head1v2.png" width="100%">
+<div class="ahead-head">
+  {{title}}
+</div>
+
+<div class="container inner2">
+   <div class="btn btn-green" id="format-print">Imprimir recibo</div>
+
+  <div id="recipt" >
+    <div class="content-recipt" >
+      <div class="head-recipt">
+        <div class="head-ac">
+          <div class="head-content">
+            <div class="pull-left">
+              {{{head}}}
+            </div>
+          </div>
+          <div class="logo-content"><img src="/assets/admin/logo.png" width="60%" class="pull-right" /></div>
+        </div>
+        <div class="container-clover">
+          {{#each head-li1}}
+          <div class="clover-list">
+            <center>{{{li}}}</center>
+            <div class="clover-content">{{content}}</div>
+          </div>
+          {{/each}}
+        </div>
+        <div class="container-clover">
+          {{#each head-li2}}
+          <div class="clover-list">
+            <center>{{{li}}}</center>
+            <div class="clover-content">{{content}}</div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      <div class="content-moc">
+        <div class="cmid">
+          <div class="blue-span">USUARIO</div>
+          <br/>
+          {{{user}}} <br/>
+          {{{address}}}
+          <br/><br/>
+          <div class="blue-span-min">NUM.MEDIDOR</div>
+          <div class="blue-span-min">DIAMETRO</div>
+          <div class="blue-span-min">TIPO DE USUARIO</div>
+          <div class="span-ming">{{medidor}}</div>
+          <div class="span-ming">{{diameter}}</div>
+          <div class="span-ming">{{service}}</div>
+          <br/><br/>
+          <div class="blue-span-min">CLAVE DE ACT</div>
+          <div class="blue-span-min">PROM TARIFA</div>
+          <div class="blue-span-min">FECHA DE CORTE</div>
+          <div class="span-ming">{{clavact}}</div>
+          <div class="span-ming">{{tarifa}}</div>
+          <div class="span-ming">{{fechacorte}}</div>
+        </div>
+        <div class="cmid">
+          <div class="blue-span">DATOS DE PAGOS</div>
+          <div class="payments">
+            {{#each bank }}
+            <p><b>{{li}}</b>: {{content}}</p>
+            {{/each}}
+            <div>{{homocode}}</div>
+            <div>{{oxxocode}}</div>
+          </div>
+        </div>
+        <div class="cfull">
+          <div class="blue-span-min-2">CONCEPTO</div>
+          <div class="blue-span-min-2">REZAGO</div>
+          <div class="blue-span-min-2">MES ACTUAL</div>
+          <div class="blue-span-min-2">TOTAL</div>
+          {{#each listconcepts }}
+          <div class="span-ming-2" style="text-align:left;">{{concept}}</div>
+          <div class="span-ming-2">${{rezago}}</div>
+          <div class="span-ming-2">${{mes_actual}}</div>
+          <div class="span-ming-2">${{total}}</div>
+          {{/each}}
+        </div>
+        <div class="cmid" style="text-align:justify; height: 150px;">
+          <br/>
+          <p>EL SANEAMIENTO ES SUBSIADO POR EL GOBIERNO FEDERAL CON $0.50 MXN POR CADA METRO CÚBICO(M3) DE AGUA RESIDUAL TRATADA.</p>
+          <P>PARA COMBATIR EL DENGUE, MANTÉN TAPADOS TUS CONTENEDORES DE AGUA LIMPIA Y VOLTEA LOS QUE NO UTILICES. </P>
+        </div>
+        <div class="cmid" style="height: 150px;">
+          <div class="blue-span-min-2">RANGO</div>
+          <div class="blue-span-min-2">M3</div>
+          <div class="blue-span-min-2">TARIFA</div>
+          <div class="blue-span-min-2">IMPORTE</div>
+          {{#each tarifas }}
+          <div class="span-ming-2" style="text-align:left;">{{rango}}</div>
+          <div class="span-ming-2">{{m3}}</div>
+          <div class="span-ming-2">${{tarifa}}</div>
+          <div class="span-ming-2">${{importe}}</div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+    <div class="pointer-dotted">
+      <center>CORTAR</center>
+      <div class="cmid">
+        <b>IMPORTE TOTAL A PAGAR</b></br>
+        {{importeconletra}}</br></br>
+        <b>USUARIO</b></br>
+        {{user}}</br>
+        {{address}}</br>
+      </div>
+      <div class="cmid">
+        <div class="blue-span-min-2">Nº RECIBO</div>
+        <div class="blue-span-min-2">PERIODO</div>
+        <div class="blue-span-min-2">ADEUDO</div>
+        <div class="blue-span-min-2">TOTAL</div>
+        <div class="span-ming-2" style="text-align:left;">{{recibo}}</div>
+        <div class="span-ming-2">{{perdio}}</div>
+        <div class="span-ming-2">${{adeudo_anterior}}</div>
+        <div class="span-ming-2">${{importe_total}}</div>
+        </br></br>
+        {{homocode}}<br/>
+        {{oxxocode}}<br/>
+        <div class="pull-right"><img src="/assets/admin/logo-v-3.png" width="40%" class="pull-right" /></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+html2canvas($("#recipt"), {
+onrendered: function(canvas) {
+theCanvas = canvas;
+//document.body.appendChild(canvas);
+// Convert and download as image
+//Canvas2Image.saveAsPNG(canvas);
+$("#recipt").html(convertCanvasToImage(canvas));
+// Clean up
+//document.body.removeChild(canvas);
+}
+});
+function convertCanvasToImage(canvas) {
+var image = new Image();
+image.src = canvas.toDataURL("image/png");
+return image;
+}
+$("#format-print").click(function(){
+var url = "/recipt";
+var divElements = $("#recipt").html();
+document.body.innerHTML = divElements ;
+window.print();
+window.location = url
+});
+});
+</script>

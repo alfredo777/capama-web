@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get '/organization_chart', to: 'public_views#organization_chart', as: :organization_chart
   get '/branches_for_payments', to: 'public_views#branches_for_payments', as: :branches_for_payments
   get '/post/:id', to: 'public_views#show_post', as: :post_public_view
-
+  get '/recipt', to: 'public_views#recipt', as: :recipt
 
   ##### admin #####
 

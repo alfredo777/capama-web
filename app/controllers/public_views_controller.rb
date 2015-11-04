@@ -53,4 +53,7 @@ class PublicViewsController < ApplicationController
   
   def show_post
   end
+
+  def recipt
+  end
 end
