@@ -4,7 +4,7 @@ before_filter :session_filter
 
 layout 'admin'
   def posts
-  @posts = BlogPost.paginate(:page => params[:page], :per_page => 10).order('id DESC')
+  @posts = BlogPost.paginate(:page => params[:page], :per_page => 6).order('id DESC')
   end
 
   def show
@@ -12,7 +12,7 @@ layout 'admin'
   end
 
   def user_posts
-  @posts = current_user.blog_posts.paginate(:page => params[:page], :per_page => 10).order('id DESC')
+  @posts = current_user.blog_posts.paginate(:page => params[:page], :per_page => 6).order('id DESC')
   end
 
   def create
@@ -31,6 +31,22 @@ layout 'admin'
   end
 
   def edit
+    @post = BlogPost.find(params[:id])
+
+    if !params[:title].nil?
+      @post.title = params[:title]
+    end
+    if !params[:content].nil?
+      @post.content = params[:content]
+    end
+    @post.head_image = params[:head_image]
+
+    @post.save
+
+    @notice = "Actualizado correctamente el post"
+    respond_to do |format|
+      format.js
+    end
   end
 
 private 

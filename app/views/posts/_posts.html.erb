@@ -1,6 +1,7 @@
 <div class="col-md-12">
+  <%= will_paginate posts, renderer: BootstrapPagination::Rails %>
   <div class="row">
-    <% posts.reverse.each do |post|%>
+    <% posts.each do |post|%>
     <div class="col-md-6">
       <aside class="profile-nav alt">
         <section class="panel">
@@ -15,15 +16,15 @@
           <p>Autor: <%= post.user.name %></p>
         </div>
         <ul class="nav nav-pills nav-stacked">
-          <li><a href="javascript:;"> <i class="fa fa-commenting-o"></i> Comentarios <span class="badge label-success pull-right r-activity">10</span></a></li>
-          <li><a href="javascript:;"> <i class="fa fa-line-chart"></i> Actividades <span class="badge label-danger pull-right r-activity">15</span></a></li>
+          <!--<li><a href="javascript:;"> <i class="fa fa-commenting-o"></i> Comentarios <span class="badge label-success pull-right r-activity">10</span></a></li>-->
+          <li><a> <i class="fa fa-line-chart"></i> Visitas <span class="badge label-danger pull-right r-activity"><%=   post.blog_acces_open %></span></a></li>
           <li><%= link_to post_path(post.id) do %> <i class="fa fa-eye"></i> Ver <%end%></li>
-          <li><a href="javascript:;"> <i class="fa fa-pencil"></i> Editar </a></li>
+          <li><%= link_to edit_post_path(post.id) do %><i class="fa fa-pencil"></i> Editar <%end%></li>
         </ul>
       </section>
     </aside>
   </div>
   <%end%>
-  </div>
-  <%= will_paginate posts, renderer: BootstrapPagination::Rails %>
+</div>
+<%= will_paginate posts, renderer: BootstrapPagination::Rails %>
 </div>

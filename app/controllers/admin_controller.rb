@@ -43,6 +43,7 @@ class AdminController < ApplicationController
   end
 
   def edit_post
+    @post = BlogPost.find(params[:id])
   end
   
   def update_post

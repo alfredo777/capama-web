@@ -37,6 +37,8 @@ Rails.application.routes.draw do
   get 'admin/new_post', as: :new_post
   get 'admin/files', as: :files
   post 'admin/create_post', to: 'posts#create', as: :create_post
+  get 'admin/edit_post/:id', to: "admin#edit_post" , as: :edit_post 
+  post 'admin/update_post/:id', to: 'posts#edit', as: :update_post
 
   ##### images #####
   post 'admin/create_new_image', to: 'admin#create_new_image', as: :create_new_image
