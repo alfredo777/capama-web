@@ -28,6 +28,10 @@ layout 'admin'
   end
 
   def destroy
+    @post = BlogPost.find(params[:id])
+    @post.destroy
+    flash[:notice] = "Post eliminado correctamente"
+    redirect_to :back
   end
 
   def edit

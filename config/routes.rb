@@ -39,6 +39,8 @@ Rails.application.routes.draw do
   post 'admin/create_post', to: 'posts#create', as: :create_post
   get 'admin/edit_post/:id', to: "admin#edit_post" , as: :edit_post 
   post 'admin/update_post/:id', to: 'posts#edit', as: :update_post
+  get 'admin/destroy_post', to: 'posts#destroy', as: :destroy_post
+  post 'admin/destroy_post', to: 'posts#destroy'
 
   ##### images #####
   post 'admin/create_new_image', to: 'admin#create_new_image', as: :create_new_image

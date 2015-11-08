@@ -20,6 +20,7 @@
           <li><a> <i class="fa fa-line-chart"></i> Visitas <span class="badge label-danger pull-right r-activity"><%=   post.blog_acces_open %></span></a></li>
           <li><%= link_to post_path(post.id) do %> <i class="fa fa-eye"></i> Ver <%end%></li>
           <li><%= link_to edit_post_path(post.id) do %><i class="fa fa-pencil"></i> Editar <%end%></li>
+          <li><%= link_to destroy_post_path(id: post.id), "data-confirm": "¿Estas seguro de querer eliminar este Post?" do %> <i class="fa fa-trash-o"></i> Eliminar Post<%end%></li>
         </ul>
       </section>
     </aside>
