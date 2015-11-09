@@ -182,6 +182,14 @@ class AdminController < ApplicationController
 
   def customers
     @customers = Customer.paginate(:page => params[:page], :per_page => 30).order('id DESC')
+    @customers_all = Customer.all
+    respond_to do |format|
+      format.html 
+      format.xls {
+        filename = "Customers-#{Time.now.strftime("%Y%m%d%H%M%S")}.xls"
+        send_data(@customers_all.to_xls, :type => "text/xls; charset=utf-8; header=present", :filename => filename)
+       }
+    end
   end
 
   def destroy_customer
