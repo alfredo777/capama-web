@@ -4,8 +4,8 @@
     <section class="panel">
       <div class="panel-body">
         <%= link_to 'Usuario nuevo',new_user_path, class: 'btn btn-default' %>
-        <%= link_to 'Importar usuarios XLXs',new_user_path, class: 'btn btn-default' %>
-        <%= link_to 'Expotar usuarios XLXs',new_user_path, class: 'btn btn-default' %>
+        <%= link_to 'Importar usuarios XLXs, CSV',create_users_masive_path, class: 'btn btn-default' %>
+        <%= link_to 'Expotar usuarios XLXs', users_path(:format => :xls), class: 'btn btn-default' %>
         <div class="table-responsive">
           <table class="table">
             <thead>

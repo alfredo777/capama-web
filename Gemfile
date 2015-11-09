@@ -29,4 +29,7 @@ gem "cocoon"
 gem 'barby'
 gem 'chunky_png'
 gem 'therubyracer',  platforms: :ruby, group: :production
+gem 'roo', '~> 2.1.0'
+gem 'iconv'
+gem 'to_xls-rails'
 

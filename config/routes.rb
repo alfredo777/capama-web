@@ -61,6 +61,8 @@ Rails.application.routes.draw do
   get '/admin/users/edit/:id', to: 'users#edit', as: :edit_user
   get '/admin/users/destroy/:id', to: 'users#destroy', as: :destroy_user
   post '/admin/users/destroy/:id', to: 'users#destroy'
+  get '/admin/create_users_masive', to: 'users#create_users_masive', as: :create_users_masive
+  post '/users/import_users', as: :import_users
 
   #### roles ####
 

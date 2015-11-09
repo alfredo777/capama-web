@@ -6,7 +6,18 @@ class UsersController < ApplicationController
   layout 'admin'
 
   def users
+
     @user = User.paginate(:page => params[:page], :per_page => 30).order('id DESC')
+
+    @user_all = User.all
+
+    respond_to do |format|
+      format.html 
+      format.xls {
+        filename = "Users-#{Time.now.strftime("%Y%m%d%H%M%S")}.xls"
+        send_data(@user_all.to_xls, :type => "text/xls; charset=utf-8; header=present", :filename => filename)
+       }
+    end
   end
 
   def show
@@ -89,6 +100,15 @@ class UsersController < ApplicationController
   def session_exit
     session[:user] = nil
     redirect_to login_user_path
+  end
+
+  def create_users_masive
+  end
+
+  def import_users
+     User.import(params[:file])
+     flash[:notice] = "Usuarios importados correctamente"
+     redirect_to users_path
   end
 
 private
