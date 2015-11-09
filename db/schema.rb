@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151104000055) do
+ActiveRecord::Schema.define(version: 20151101051936) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -95,16 +95,6 @@ ActiveRecord::Schema.define(version: 20151104000055) do
     t.datetime "updated_at",  null: false
     t.integer  "user_id"
     t.string   "version_img"
-  end
-
-  create_table "pruebes", force: true do |t|
-    t.string   "tiele"
-    t.integer  "aptitude"
-    t.float    "value"
-    t.boolean  "trueelse"
-    t.text     "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "question_options", force: true do |t|
