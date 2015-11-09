@@ -1,0 +1,2 @@
+class AppmobileApiController < ApplicationController
+end

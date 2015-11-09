@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Importar usuarios masivamente</header>
+  <section class="panel">
+    <div class="panel-body">
+      <b>Instrucciones:</b><br/>
+      <p>Para importar los usuarios de manera masiva es recomendable hacerlo en el formato CSV, ya que es el mejor formato de lectura para evitar errores de identación por tipos de registros en la base de datos.</p>
+      <p>Cada uno de los registros contiene cierta cantidad de columnas que deben de ir acomodadas de manera específica descarga el ejemplo <%= link_to "Click aquí", "/files/user_import.csv"%> </p><br/>
+      <%= form_tag import_users_path, multipart: true do %>
+      <%= file_field_tag :file %><br/>
+      <%= submit_tag "Importar Usuarios", class: "btn btn-info" %>
+      <% end %>
+    </div>
+  </section>
+  
+</div>
+</div>
