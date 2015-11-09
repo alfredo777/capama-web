@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151101051936) do
+ActiveRecord::Schema.define(version: 20151109015431) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -96,6 +96,16 @@ ActiveRecord::Schema.define(version: 20151101051936) do
     t.integer  "user_id"
     t.string   "version_img"
   end
+
+  create_table "public_images", force: true do |t|
+    t.string   "img"
+    t.integer  "imageable_id"
+    t.string   "imageable_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "public_images", ["imageable_id", "imageable_type"], name: "index_public_images_on_imageable_id_and_imageable_type"
 
   create_table "question_options", force: true do |t|
     t.string   "qotag"

@@ -7,7 +7,7 @@ class CreatePublicImages < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :messages, [:imageable_id, :imageable_type]
+    add_index :public_images, [:imageable_id, :imageable_type]
   end
 
 end

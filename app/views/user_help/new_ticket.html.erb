@@ -6,7 +6,7 @@
       <div class="thin">
         <h3 class="section-title text-center">Servicio de Ayuda de CAPAMA</h3>
         <p class="text-center">Lo invitamos a ingresar en nustro servicio de ayuda, que lo contactará con uno de nuestro asesores de soluciones CAPAMA.</p>
-        <div id="notice-geo" ></div>
+        <div id="notice-geo" style="display:none;" ></div>
         <ul class="contact-info text-center">
           <li><i class="fa fa-building"></i> Av. Lic. Adolfo López Mateos, Esq. Tte. José Azueta s/n, Col. Centro
           C.P. 39300, Acapulco, Gro </li></br>
@@ -15,7 +15,7 @@
         </ul>
         <div class="divide50"></div>
         <div class="form-container">
-          <%= form_tag ticket_create_path, class: "vanilla vanilla-form" do -%>
+          <%= form_tag ticket_create_path, multipart: true, class: "vanilla vanilla-form" do -%>
           <input name="authenticity_token" type="hidden" value="AiezPzztTfWOmbQvHpegwMTiLrfYSg5wZvodOXbaE6E=">
           <div class="row">
             <div class="col-sm-6">
@@ -35,15 +35,9 @@
             <div class="col-sm-6">
               <div class="form-field">
                 <label>
-                  <label class="custom-select">
-                    <select name="area" required="required">
-                      <option value="">Seleccione el area a comunicarse</option>
-                      <option value="suport">Soporte</option>
-                      <option value="financial">Cobranzas y Pagos</option>
-                      <option value="maintenance">Reparaciones e instalación</option>
-                      <option value="other">Otras</option>
-                    </select>
-                  </label>
+                  <div class="btn btn-green" onclick="$('#file').trigger();">Enviar una imagen</div>
+                  <div style="display:none;"><%= file_field_tag "file" %></div>
+                  <%= hidden_field_tag "area", "suport" %>
                 </div>
               </div>
               <div class="col-sm-6">

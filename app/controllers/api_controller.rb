@@ -47,6 +47,11 @@ class ApiController < ApplicationController
   def create_ticket
     @user = User.first
     @ticket = UserHelp.create(email: params[:email], cause: params[:cause], phone: params[:phone] ,explanation: params[:explanation], area: params[:area], user_id: @user.id, latitude: params[:latitude], longitude: params[:longitude] )
+    @image = PublicImage.new
+    @image.imageable = @ticket
+    @image.img = params[:file]
+    @image.save
+
     @customer = Customer.find_by_email("#{params[:email]}")
     if !@customer.nil?
       redirect_to chat_path(customer: @customer.id, ticket: @ticket.id)
