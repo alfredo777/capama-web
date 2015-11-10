@@ -1,0 +1,15 @@
+<div class="row">
+<%= form_tag create_reading_path, class: 'form-verticaly' do -%>
+  <div class="col-md-4">
+    <%= select_tag 'user_id', options_from_collection_for_select(users, "id", "name") %>
+  </div>
+  <div class="col-md-4">
+    <%= text_field_tag 'future_scheduled', '', placeholder: "Ingresa la fecha (año/mes/día - 2015/09/10)",class: 'form-control' %>
+  </div>
+  <div class="col-md-4">
+    <%= submit_tag 'Crear ruta', class: "btn btn-info"%>
+  </div>
+<%end%>
+</div>
+<br/>
+<br/>

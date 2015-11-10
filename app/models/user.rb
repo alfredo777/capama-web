@@ -6,9 +6,13 @@ class User < ActiveRecord::Base
   has_many :user_helps
   has_many :messages, as: :talker
   has_many :conversations
+  has_many :readings
   validates_presence_of :password
   validates_presence_of :name
   validates_presence_of :card
+
+  auto_strip_attributes :name, :card, :password, :email, :phone, :area, :responsible_for_accidents, :social_security, :immediate_boss, :immediate_boss_email
+
   
 
   after_create do

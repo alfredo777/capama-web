@@ -28,6 +28,9 @@ Rails.application.routes.draw do
   get 'admin/index', as: :admin
   get 'admin/config_roles', to: 'admin#config_roles', as: :congif_roles
   get 'admin/congif_users', to: 'admin#congif_users', as: :congif_users
+  get 'admin/readings', as: :readings
+  get 'admin/create_reading', to: 'api#create_reading', as: :create_reading
+  post 'admin/create_reading', to: 'api#create_reading'
 
   #### posts ######
   get 'admin/posts', to: 'posts#posts', as: :posts
@@ -131,5 +134,9 @@ Rails.application.routes.draw do
   post "/api/response_forms"
   get '/printing_view_format', to: "format_forms#printing_view_format", as: :printing_view_format
 
+  ##### get mobile api ####
+
+  get "mobile/login", to: "appmobile_api#login"
+  post "mobile/login", to: "appmobile_api#login"
 
 end

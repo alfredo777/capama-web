@@ -32,4 +32,5 @@ gem 'therubyracer',  platforms: :ruby, group: :production
 gem 'roo', '~> 2.1.0'
 gem 'iconv'
 gem 'to_xls-rails'
+gem "auto_strip_attributes", "~> 2.0"
 

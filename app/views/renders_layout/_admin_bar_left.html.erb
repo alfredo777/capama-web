@@ -30,11 +30,21 @@
           <%end%>
         </li>
         <%end%>
-        <% if  scope_permission('users','view_all') %>
+        <% if  scope_permission('tickets','view_all') %>
         <li>
           <%= link_to tickets_path do %>
           <i class="fa fa-ticket"></i>
           <span>Tickets</span>
+          <%end%>
+        </li>
+        <%end%>
+
+        <% if scope_permission('zones', 'view_all') %>
+        
+        <li>
+          <%= link_to readings_path do %>
+          <i class="fa fa-pencil-square-o"></i>
+          <span>Lecturas</span>
           <%end%>
         </li>
         <%end%>

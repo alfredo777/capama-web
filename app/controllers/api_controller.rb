@@ -75,6 +75,12 @@ class ApiController < ApplicationController
      redirect_to :back
   end
 
+  def create_reading
+    @reading =  ReadingAssignment.create(user_id: params[:user_id], future_scheduled: "#{params[:future_scheduled]}".to_date)
+    flash[:notice] = "Se ha agregado la asignación de lectura al usuario."
+    redirect_to :back
+  end
+
   def response_forms
     session[:form_sender] = nil
     session[:question_id] = nil

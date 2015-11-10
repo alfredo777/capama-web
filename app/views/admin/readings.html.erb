@@ -1,0 +1,33 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Lecturas de agua</header>
+  <section class="panel">
+    <div class="panel-body">
+      <%= render partial: "/admin/renders/form_reading", locals: {users: @users} %>
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Lecturista</th>
+              <th>Fecha para la toma de lectua</th>
+              <th>Fecha de sincronización</th>
+              <th>Número de ruta</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @readings.each do |read| %>
+            <tr>
+              <td><%= read.user.name %></td>
+              <td><%= read.future_scheduled %></td>
+              <td><%= read.synchronization_date%></td>
+              <td><%= read.route_number %></td>
+            </tr>
+            <%end%>
+          </tbody>
+        </table>
+      </div>
+      <%= will_paginate @readings, renderer: BootstrapPagination::Rails %>
+    </div>
+  </section>
+</div>
+</div>

@@ -35,6 +35,8 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    auto_strip_attributes (2.0.6)
+      activerecord (>= 3.0)
     autoprefixer-rails (5.2.1)
       execjs
       json
@@ -180,6 +182,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  auto_strip_attributes (~> 2.0)
   barby
   bootstrap-sass (~> 3.3.5)
   carrierwave

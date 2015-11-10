@@ -210,6 +210,14 @@ class AdminController < ApplicationController
     render layout: "login"
   end
 
+  ###### readings water #####
+
+  def readings
+    @readings = ReadingAssignment.paginate(:page => params[:page], :per_page => 40).order('id DESC')
+    users = User.where(:area => 'reportes')
+    @users = users.order(name: :asc)
+  end
+
 private 
 
   def session_filter

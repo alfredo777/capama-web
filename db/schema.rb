@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151109015431) do
+ActiveRecord::Schema.define(version: 20151109165325) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -131,6 +131,39 @@ ActiveRecord::Schema.define(version: 20151109015431) do
     t.datetime "updated_at"
     t.integer  "format_form_id"
   end
+
+  create_table "reading_assignments", force: true do |t|
+    t.integer  "user_id"
+    t.date     "future_scheduled"
+    t.string   "route_number"
+    t.datetime "synchronization_date"
+  end
+
+  add_index "reading_assignments", ["synchronization_date"], name: "index_reading_assignments_on_synchronization_date"
+  add_index "reading_assignments", ["user_id"], name: "index_reading_assignments_on_user_id"
+
+  create_table "reading_takes_waters", force: true do |t|
+    t.string   "business_name"
+    t.string   "address"
+    t.string   "colony"
+    t.string   "water_meter"
+    t.string   "reference"
+    t.text     "observations"
+    t.string   "sx"
+    t.string   "ux"
+    t.string   "stage"
+    t.string   "account_number"
+    t.string   "abnormalities"
+    t.string   "lecture"
+    t.datetime "data_access"
+    t.integer  "reading_assignment_id"
+    t.boolean  "successfully_completed"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "reading_takes_waters", ["business_name"], name: "index_reading_takes_waters_on_business_name"
+  add_index "reading_takes_waters", ["water_meter"], name: "index_reading_takes_waters_on_water_meter"
 
   create_table "roles", force: true do |t|
     t.string   "title"
