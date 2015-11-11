@@ -1,0 +1,15 @@
+{
+  "title": "Audits performed to the Operator Municipal Organization Commission of Water and Sewer of Acapulco Municipality",
+  "thead": [
+    {"t": "Control body"},
+    {"t": "Period"},
+    {"t": "Type of audit"},
+    {"t": "Follow up"}
+  ],
+  "tbody": [
+    {"t1": "General Comptroller, Transparency and Administrative Modernization H. Constitutional Town Coucil of Acapulco de Juarez, Guerrero ", "t2": "From January 1st to June 30th, 2009.", "t3": "Administrative and Financial", "t4":"Served"},
+    {"t1": "General audit of the State of Guerrero", "t2": "From January 1st to December 31st, 2009. ", "t3": "Administrative and Financial", "t4": "Served"},
+    {"t1": "General audit of the State of Guerrero", "t2": "From January 1st, 2005 to August 31st, 2006.", "t3": "Administrative and Financial", "t4": "Served"}
+
+  ]
+}

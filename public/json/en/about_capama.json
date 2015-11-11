@@ -1,0 +1,17 @@
+{
+  "title1": "Who are we?",
+  "subti11": "Our Mission",
+  "subti11cont": "We are a public paramunicipal body committed to providing drinking water and integrated quality sanitation, efficienctly and honestly, caring for the ecological environment, to  satisfy the community.",
+  "subti12": "Our Vision",
+  "subti12cont": "A quality service for the satisfaction of the people from Acapulco.",
+  "title2": "Our values", 
+  "values": [
+    { "tl": "Cuality", "cont" : "Providing a service up to the standard of an international city like Acapulco."},
+    { "tl": "Ethics", "cont" : "Users can be sure that honesty is one of our important pillars and we abide by it, that is why we say that honesty is our commitment."},
+    { "tl": "Internal Development", "cont" : "We work together to build the strength of CAPAMA and Acapulco."},
+    { "tl": "Personnel", "cont" : "We promote our personnel, encouraging their development and internal growth."},
+    { "tl": "Understanding", "cont" : "We understand the user needs and create programs that benefit them."},
+    { "tl": "Our Strategy", "cont" : "Through the strengthening of human resources and taking advantage of technological advances, we will achieve increased service capacity and improve the organizational culture and corporate image for the benefit of users, allowing us to obtain financial profitability for the continuity of the development programs."}
+  ]
+
+}

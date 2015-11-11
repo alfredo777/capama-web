@@ -8,13 +8,12 @@ class AppmobileApiController < ApplicationController
     else
        password = false
     end
-
+    
     if password 
-       render json: {user: @user.to_json}
+       render json: @user.to_json, callback: params[:callback]
     else
-       render json: {user: "Error al ingresar al usuario"}
+       render json: "Error al ingresar al usuario".to_json, callback: params[:callback]
     end
-
   end
 
 private

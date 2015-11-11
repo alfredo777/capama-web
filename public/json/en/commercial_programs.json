@@ -1,0 +1,36 @@
+{
+  "title": "Programas que administra la Dirección Comercial",
+  "sub1":  "Fundamento legal",
+  "cont1": "Artículo 71 fracción XXIV de la ley Número 663 de Ingresos para el Municipio de Acapulco de Juárez del Estado de Guerrero, para el ejercicio fiscal 2015.",
+  "sub2":  "Beneficios",
+  "cont2": "La Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco, podrá conceder subsidios hasta de un 50%, que cubrirá el Ayuntamiento, en el pago de los servicios públicos de agua potable, drenaje, alcantarillado, tratamiento y disposición de sus agua residuales , exclusivamente a aquellos usuarios del servicio domestico popular que se encuentre los siguientes puestos:",
+  "sub3": "Población objetivo ",
+  "cont3": "Sean madres solteras, personas jubiladas de conformidad a las leyes laborales, pensionados, personas con capacidades diferentes, así como usuarios del servicio mayores de 60 años, siempre y cuando cumplan con los siguientes requisitos:", 
+  "sub4": "Requisitos",
+  "cont4li": [
+    {
+      "li":"Constancia oficial de madre soltera que acrediten tener hijos menores de 18 años de edad y/o acrediten que estos continúan inscritos en una escuela pública legalmente reconocida por la autoridad competente , y no tener más de 25 años de edad, misma que deberá ser refrendada anualmente; en los casos de capacidades diferentes o de incapacidad física, el Sistema para el Desarrollo Integral de la Familia Municipal expedirá la acreditación correspondiente, previa la presentación del certificado médico correspondiente; credencial de pensionado expedida por el Instituto mexicano del Seguro Social, del Instituto de Seguridad y Servicio Sociales de los Trabajadores del Estado o la Tarjeta del Instituto Nacional de las Personas Adultas mayores."
+    },
+    {
+      "li": "Credencial de Elector."
+    },
+    {
+      "li": "Comprobante de domicilio, recibo de agua."
+    }
+  ],
+  "cont4": "El domicilio señalado en la tarjeta del Instituto Nacional de las Personas Adultas mayores, debe coincidir con el de la credencial de elector.<br/><br/>Este subsidio se aplicara siempre y cuando se pague puntualmente la facturación de consumos por toma instalada en la casa habitación de la persona beneficiada, bajo las condiciones siguientes:",
+  "list4li2": [
+    {
+      "li": "El beneficio anterior se concederá siempre y cuando la toma este a nombre del beneficiario y se encuentre ubicada en el inmueble en donde habita, y en un volumen máximo hasta 20 metros cúbicos, mensuales. Si el consumo es superior no procederá dicho beneficio. Es obligatorio acreditar la del beneficiado en forma anual ante las oficinas de la Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco."
+    },
+    {
+      "li": "El beneficio a que se refiere la presente fracción, se aplicara a pagos anuales anticipados. Este beneficio en ningún caso será aplicable para pagos atrasados, a multas ni recargos. En el caso del suministro de agua potable con medidor, el organismo operador recibirá el pago anticipado sobre el promedio anual del ejercicio inmediato anterior, aplicando las bonificaciones referidas. Al finalizar el sexto bimestre, determinara el total de metros cúbicos consumidos por el usuario, si ello resultara un mayor número de metros cúbicos suministrados que los pagados de forma anualizada, notificara al usuario la diferencia para que se realice el pago correspondiente, dentro de los primeros diez días posteriores a la notificación."
+    },
+    {
+      "li": "El beneficio a que se refiere la presente fracción, solo es aplicable para la vivienda correspondiente al domicilio del usuario que aparece en el documento de identificación."
+    },
+    {
+      "li": "El beneficio a que se refiere la presente fracción, se cancelara automáticamente cuando el beneficiario presente un atraso de más de 3 meses con sus obligaciones fiscales."
+    }
+  ]
+}

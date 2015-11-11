@@ -1,0 +1,47 @@
+{
+  "title": "Assistance units and payment of services ",
+  "table-title1": "COMMERCIAL MANAGING OFFICES ",
+  "thead1":[
+    {"t": "Office"},
+    {"t": "Location"},
+    {"t": "Telephone"},
+    {"t": "Opening Hours"}
+  ],
+  "tbody1": [
+    {"t1": "Gerencia Centro", "t2": "Av. Lic. Adolfo Lopez Mateos Esq. Tte. José Azueta s/n Col. Centro C.P. 39300", "t3": "01(744)434-1400", "t4": "Monday to Friday from 08:00 to 5:00 pm Saturday  from 09:00 to 1:00 pm"},
+    {"t1": "Gerencia Coloso", "t2": "Gran Via Coloso s/n Colonia La Esperanza C.P. 39810", "t3": "01(744)468-0995 ", "t4": "Monday to Friday from 08:00 a 5:00 pm. Saturday from 09:00 to 1:00 pm"},
+    {"t1": "Gerencia Diamante", "t2": "Plaza Velero local 1, entrada principal Col. Luis Donaldo Colosio C.P. 39907", "t3": "01(744)466-4406  01(744)466-4407", "t4": "Monday to Friday from 08:00 a 5:00 pm. Saturday from 09:00 to 4:00 pm "},
+    {"t1": "Gerencia Pie de la Cuesta", "t2": "Carretera Nal Acapulco-Zihuatanejo kilometro 6.5, parada del Tehuacán C.P. 39412", "t3": "01(744)460-1313", "t4": "Monday to Friday from 08:00 a 3:30 pm. Saturday from 09:00 to 1:00 pm"},
+    {"t1": "Gerencia Renacimiento", "t2": "Calle Yolotepec Cd. Renacimiento lotes 8 y 10 manzana 17 sector 2 C.P. 39710", "t3": "01(744)441-4079 ", "t4": "Monday to Friday from 08:00 a 4:00 pm Saturday from 09:00 to 1:00 pm"}
+  ],
+  "table-title2": "AUTHORIZED PAYMENT MODULES ",
+  "thead2":[
+    {"t": "Modules"},
+    {"t": "Location"},
+    {"t": "Telephone"},
+    {"t": "Opening Hours "}
+  ],
+  "tbody2": [
+    {"t1": "OXXO", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Of the branch "},
+    {"t1": "Walmart Icacos", "t2": "Avenida Costera Migel Aleman 500", "t3": "01(744)481-1142", "t4": "Monday to Saturday from 10:00 to 5:00 pm, Sunday from 10:00 a 3:00 pm"},
+    {"t1": "Comercial Mexicana Diana", "t2": "Avenida Farallon del Obispo 216 C.P. 39690", "t3": "01(744)481-3641", "t4": "Monday to Sunday from 09:00 to 4:00 pm"},
+    {"t1": "Comercial Mexicana Vista Alegre", "t2": "Avenida Ruiz Cortinez no 13 C.P. 39560", "t3": "01(744)485-8820", "t4": "Monday to Sunday from 09:00 to 4:00 pm"},
+    {"t1": "Elektra", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Of the branch "}
+  ],
+  "table-title3": "AUTHORIZED BANKS FOR PAYMENTS ",
+  "thead3":[
+    {"t": "Bank"},
+    {"t": "Location"},
+    {"t": "Telephone"},
+    {"t": "Opening Hours"}
+  ],
+  "tbody3": [
+   {"t1": "BANORTE", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Business hours of the bank"},
+   {"t1": "HSBC", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Business hours of the bank"},
+   {"t1": "Santander", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Business hours of the bank"},
+   {"t1": "Bancomer", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Business hours of the bank"},
+   {"t1": "Afirme", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Business hours of the bank"},
+   {"t1": "Banco Azteca", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Business hours of the bank"},
+   {"t1": "Scotiabank", "t2": "All branch offices ", "t3": "Only in branch office ", "t4": "Business hours of the bank"}
+  ]
+}

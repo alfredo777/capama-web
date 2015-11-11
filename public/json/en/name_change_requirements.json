@@ -1,0 +1,161 @@
+{
+    "title": "REQUIREMENTS FOR THE LEGAL CHANGE OF NAME OF  USER",
+    "sub1": "FOR HOUSHOLD:",
+    "sub1li": [
+        {
+            "li": "Prove ownership and / or possession of the property by:",
+            "subli": [
+                {
+                    "li": "Copy of deed title, duly endorsed purchase contract, letter or possession, or any document certifying the legal possession of the property issued by regulatory body (CORET, CRETT ó INVISUR)"
+                },
+                {
+                    "li": "Condominial regime (if necessary)"
+                },
+                {
+                    "li": "Subdivision blueprint (if necessary)"
+                }
+            ]
+        },
+        {
+            "li": "Legal constitution of Condominial administration (if necessary)",
+            "subli": []
+        },
+        {
+            "li": "Administrator notarized power of attorney and a copy of valid official ID (if necessary)",
+            "subli": []
+        },
+        {
+            "li": "Copy of in force official identification of the owner ",
+            "subli": []
+        },
+        {
+            "li": "The status of drinking water intake is ACTIVE ",
+            "subli": []
+        },
+        {
+            "li": "There shall be no debt on the property for which it is requested the change of data.",
+            "subli": []
+        }
+    ],
+    "sub2": "If it is leased, the above plus:",
+    "sub2li": [
+        {
+            "li": "Copy of lease contract "
+        },
+        {
+            "li": "Written consent of the lessor (proxy letter)"
+        },
+        {
+            "li": "Copy of official identification in force of the tenant."
+        }
+    ],
+    "sub3": "FOR COMMERCIAL SERVICE:",
+    "sub31": "Natural persons:",
+    "sub31li": [
+        {
+            "li": "Prove ownership and / or possession of the property by:",
+            "subli": [
+                {
+                    "li": "Copy of deed title, duly endorsed purchase contract, letter or possession "
+                },
+                {
+                    "li": "Condominial regime (if necessary)"
+                }
+            ]
+        },
+        {
+            "li": "Copy of in force official identification of the owner ",
+            "subli": []
+        },
+        {
+            "li": "There shall be no debt on the property for which it is requested the change of data ",
+            "subli": []
+        },
+        {
+            "li": "The status of the drinking water intake is  ACTIVE ",
+            "subli": []
+        },
+        {
+            "li": "Legal constitution of Condominial administration (if necessary)",
+            "subli": []
+        },
+        {
+            "li": "Notarized power of  Administrator and a copy of in force official ID (if necessary)",
+            "subli": []
+        },
+        {
+            "li": "Operating license and / or registration in Secretaria de Hacienda.", 
+            "subli": []
+        }
+    ],
+    "sub32": "If it is leased, the above plus:",
+    "sub32li": [
+        {
+            "li": "Copy of lease contract "
+        },
+        {
+            "li": "Written consent of the lessor (proxy letter)"
+        },
+        {
+            "li": "Copy of official identification in force of the tenant."
+        }
+    ],
+    "sub33": "Natural persons:",
+    "sub33li": [
+        {
+            "li": "Prove of ownership and / or possession of the property by:",
+            "subli": [
+                {"li": "Copy of deed title, duly endorsed purchase contract, letter or possession "},
+                {"li": "Condominial regime (if necessary)"}
+            ]
+        },
+        {
+            "li": "Copy of official identification in force of the tenant",
+            "subli": []
+        },
+        {
+            "li": "There shall be no debt on the property for which it is requested the change of data ",
+            "subli": []
+        },
+        {
+            "li": "The status of the drinking water intake is  ACTIVE ",
+            "subli": []
+        },
+        {
+            "li": "Legal constitution of Condominial administration (if necessary)",
+            "subli": []
+        },
+        {
+            "li": "Notarized power of  Administrator and a copy of in force official ID (if necessary))",
+            "subli": []
+        },
+        {
+            "li": "Operating license and / or registration in Secretaria de Hacienda ",
+            "subli": []
+        },
+        {
+            "li": "Copy of charter of the company ",
+            "subli": []
+        },
+        {
+            "li": "Copia del poder notarial del representante legal",
+            "subli": []
+        },
+        {
+            "li": "Copy of in force official identification of the legal representative.",
+            "subli": []
+        }
+    ],
+    "sub34": "If it is leased, the above plus:",
+    "sub34li": [
+        {
+            "li": "Copy of lease contract "
+        },
+        {
+            "li": "Written consent of the lessor (proxy letter)"
+        },
+        {
+            "li": "Copy of official identification in force of the tenant."
+        }
+    ]
+}
