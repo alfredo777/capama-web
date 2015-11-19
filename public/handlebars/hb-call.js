@@ -1,4 +1,10 @@
 // carga el tpl
+function loadDBTPL(data, tpln, divloadtpl){
+    getTemplate(tpln, data, function(output, err) {
+      $("#"+divloadtpl).html(output);
+    });  
+}
+
 function loadTPL(jsonn, tpln, divloadtpl, lang){
    getasJSON(jsonn, lang,function(data, err) {
       getTemplate(tpln, data, function(output, err) {

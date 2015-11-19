@@ -5,6 +5,7 @@
     <div class="panel-body">
       <%= render partial: "/admin/renders/form_reading", locals: {users: @users} %>
       <div class="table-responsive">
+        <a href="/files/routes_import.csv">Descargar Ejemplo para importación CSV</a>
         <table class="table">
           <thead>
             <tr>
@@ -12,6 +13,9 @@
               <th>Fecha para la toma de lectua</th>
               <th>Fecha de sincronización</th>
               <th>Número de ruta</th>
+              <th>Importación</th>
+              <th>Eliminar | Limpiar </th>
+              <th>Exportar Exel </th>
             </tr>
           </thead>
           <tbody>
@@ -21,6 +25,15 @@
               <td><%= read.future_scheduled %></td>
               <td><%= read.synchronization_date%></td>
               <td><%= read.route_number %></td>
+              <td>
+                <%=form_tag import_readings_path, multipart: true do -%>
+                <%= file_field_tag 'file' %>
+                <%= hidden_field_tag 'assignment', read.id %>
+                <%= submit_tag "Importar", class: "btn btn-default" %>
+                <%end%>
+              </td>
+              <td><%=link_to "Eliminar", destroy_read_path(id: read.id), "data-confirm": "¿Estas seguro de querer eliminar esta ruta?"%> | <%=  link_to "Limpiar(quita todas las rutas importadas)", clear_readings_path(id: read.id) %></td>
+              <td><%= link_to "Exportar", export_readings_path(id: read.id, :format => :xls) %></td>
             </tr>
             <%end%>
           </tbody>

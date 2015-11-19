@@ -81,6 +81,42 @@ class ApiController < ApplicationController
     redirect_to :back
   end
 
+  def import_readings
+    @route = ReadingAssignment.find_by_id(params[:assignment])
+    @r =  @route.reading_takes_waters.import(params[:file])
+    flash[:notice] = "Se han importado las zonas de lectura"
+    redirect_to :back
+  end
+
+  def export_readings
+    @route = ReadingAssignment.find_by_id(params[:id])
+    @routes = @route.reading_takes_waters
+    respond_to do |format|
+      format.html 
+      format.xls {
+        filename = "Ruta-de-#{@route.user.name}-del-#{Time.now.strftime("%Y%m%d%H%M%S")}.xls"
+        send_data(@routes.to_xls, :type => "text/xls; charset=utf-8; header=present", :filename => filename)
+       }
+    end
+  end
+
+  def clear_readings
+    @route = ReadingAssignment.find_by_id(params[:id])
+    @routes = @route.reading_takes_waters
+    @routes.each do |r|
+       r.destroy
+    end
+    flash[:notice] = "Se eliminaron las lecturas cargadas para este usurio"
+    redirect_to :back
+  end
+
+  def destroy_read
+     @route = ReadingAssignment.find_by_id(params[:id])
+     @route.destroy
+     flash[:notice] = "Se ha eliminado la ruta"
+     redirect_to :back
+  end
+
   def response_forms
     session[:form_sender] = nil
     session[:question_id] = nil

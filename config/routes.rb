@@ -31,6 +31,13 @@ Rails.application.routes.draw do
   get 'admin/readings', as: :readings
   get 'admin/create_reading', to: 'api#create_reading', as: :create_reading
   post 'admin/create_reading', to: 'api#create_reading'
+  get 'admin/import_readings', to: 'api#import_readings', as: :import_readings
+  post 'admin/import_readings', to: 'api#import_readings'
+  get 'admin/export_readings', to: 'api#export_readings', as: :export_readings
+  get 'admin/clear_readings', to: 'api#clear_readings', as: :clear_readings
+  post 'admin/clear_readings', to: 'api#clear_readings' 
+  get 'admin/destroy_read', to: 'api#destroy_read', as: :destroy_read
+  post 'admin/destroy_read', to: 'api#destroy_read'
 
   #### posts ######
   get 'admin/posts', to: 'posts#posts', as: :posts
@@ -138,5 +145,6 @@ Rails.application.routes.draw do
 
   get "mobile/login", to: "appmobile_api#login"
   post "mobile/login", to: "appmobile_api#login"
+  get "mobile/call_all_routes", to: "appmobile_api#call_all_routes"
 
 end

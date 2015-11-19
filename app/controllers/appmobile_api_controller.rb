@@ -15,7 +15,14 @@ class AppmobileApiController < ApplicationController
        render json: "Error al ingresar al usuario".to_json, callback: params[:callback]
     end
   end
+  
+  def call_all_routes
+    user = User.find_by_card(params[:card])
+    reading_t = user.reading_assignments.last
+    @readings = reading_t.reading_takes_waters
 
+    render json: @readings.to_json, callback: params[:callback]
+  end
 private
 protected
   def corroborate_password(password, pass)

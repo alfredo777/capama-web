@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151109165325) do
+ActiveRecord::Schema.define(version: 20151113021447) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -160,6 +160,7 @@ ActiveRecord::Schema.define(version: 20151109165325) do
     t.boolean  "successfully_completed"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "diameter"
   end
 
   add_index "reading_takes_waters", ["business_name"], name: "index_reading_takes_waters_on_business_name"
