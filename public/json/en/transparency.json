@@ -1,0 +1,20 @@
+{
+  "title": "Transparency",
+  "content": "The Board of Directors, in its role as the Governing Body of Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco (CAPAMA) in attention and consistent with the provisions contained in Article 6, second paragraph, fractions I to VII of Constitución Política de los Estados Unidos Mexicanos, which raise to the level of guarantee the right of any citizen to request and obtain from the obligee, certain information under the terms provided by the statutory regulations, in the exercise of its powers  authorized the establishment and installation of the “Unidad de Enlace para la Transparencia y Acceso a la Información Pública”as an administrative unit under  Direccion General responsible for receiving and processing requests for access to information, under Article 71 of Law No. 374 today called Transparencia y Acceso a la Información Pública del Estado de Guerrero,</<i><b>Unidad de Transparencia y Acceso a la Información</b></i>.<br/><br/>  The authorization was established under the Agreement number ASC-I-13-2010-06 ORD-JANUARY issued by the full Board of Directors at the first regular session in 2010, held on 13 January of the year referred.<br/><br/>  />  With this decision, the Board of Directors and gives vital importance to the transparency of the activities of the municipal utility, constituting a virtual citizen control with the participation of those who need information of their interest. <br/><br/>  Thus, CAPAMA joins the network of public institutions serving the information demands of citizens, and through its Web site, makespublic information in its possession available to the general public.<br/><br/>",
+  "menu": [
+    {"tl": "Request for Information", "action": "loadTPL('appli_information', 'appli_information', 'transparency_content', 'en');"},
+    {"tl": "Organisational structure", "action": "loadTPL('', '', '', 'en');"},
+    {"tl": "Legal Framework", "action": "loadTPL('legal_framework', 'legal_framework', 'transparency_content', 'en');"},
+    {"tl": "RelevantFunctions ", "action": "loadTPL('relevant_functions', 'relevant_functions', 'transparency_content', 'en');"},
+    {"tl": "Annual Operational Program", "action": "loadTPL('', '', '', 'en');"}, 
+    {"tl": "Unidad de transparecia y acceso a la informaciÃ³n", "action": "loadTPL('transparency_contact', 'transparency_contact', 'transparency_content', 'en');"},
+    {"tl": "Audit report", "action": "loadTPL('audits', 'audits', 'transparency_content', 'en');"}, 
+    {"tl": "Informe de contratos", "action": "loadTPL('', '', '', 'en');"},
+    {"tl": "'statistical report of information requests ", "action": "loadTPL('statistical_report_of_information_requests', 'statistical_report_of_information_requests', 'transparency_content', 'en');"},
+    {"tl": "Sevice Units and payment services ", "action": "loadTPL('service_units', service_units', 'transparency_content', 'en');"},
+    {"tl": "Requirements for hiring the services of drinking water and sewage ", "action": "loadTPL('hiring_requirements', 'hiring_requirements', 'transparency_content', 'en');"},
+    {"tl": "Requirements for changing username ", "action": "loadTPL('name_change_requirements', 'name_change_requirements', 'transparency_content', 'en');"},
+    {"tl": "Services offered by CAPAMA ", "action": "loadTPL('services_offered', 'services_offered', 'transparency_content', 'en');"},
+    {"tl": "Programs Administered by Commercial Direction ", "action": "loadTPL('commercial_programs', 'commercial_programs', 'transparency_content', 'en');"}
+  ]
+}

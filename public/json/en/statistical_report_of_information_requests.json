@@ -1,0 +1,16 @@
+{
+  "title": "STATISTICAL REPORT ON REQUESTS FOR ACCESS TO INFORMATION SUBMITTED TO LA COMISIÓN DE AGUA POTABLE Y ALCANTARILLADO DEL MUNICIPIO DE ACAPULCO THROUGH ITS UNIT OF TRANSPARENCY AND ACCESS TO INFORMATION.",
+  "thead":[
+    {"t": "Year"},
+    {"t": "Received"},
+    {"t": "Answered"},
+    {"t": "Denied"}
+  ],
+  "tbody": [
+    {"t1": "2014", "t2": "06", "t3": "06", "t4": "0"},
+    {"t1": "2013", "t2": "02", "t3": "02", "t4": "0"},
+    {"t1": "2012", "t2": "03", "t3": "03", "t4": "01 (Reserved)"},
+    {"t1": "2011", "t2": "10", "t3": "10", "t4": "0"},
+    {"t1": "2010", "t2": "04", "t3": "04", "t4": "0"}
+  ]
+}

@@ -23,6 +23,27 @@ class AppmobileApiController < ApplicationController
 
     render json: @readings.to_json, callback: params[:callback]
   end
+
+  def sincronize_routes
+    @reading = ReadingTakesWater.find(params[:id])
+    @reading.reference = params[:reference]
+    @reading.observations = params[:observations]
+    @reading,abnormalities = params[:abnormalities]
+    @reading.lecture = params[:lecture]
+    @reading.save
+
+    render json: @readings.to_json, callback: params[:callback]
+  end
+
+  def sincronize_user_helps
+
+  end
+
+  def sincronize_inspects
+  end
+
+  def sincronize_serivices_contracts
+  end
 private
 protected
   def corroborate_password(password, pass)

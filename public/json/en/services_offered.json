@@ -1,0 +1,157 @@
+{
+  "title": "For the administrative services set at CAPAMA, it charges the following fees:",
+  "thead":[
+    {"t": "concept", "size": "80%"},
+    {"t": "fee", "size": "20%"}
+  ],
+  "tbody": [
+    {
+      "t1": "Issuance of proof of feasibility of potable water and sewerage services",
+      "t2": "10 S.M.V"
+    },
+    {
+      "t1": "Issuance of Certificate of debt or no debt",
+      "t2": "5 S.M.V."
+    },
+    {
+      "t1": "Authorization of construction projects for internal network of potable water and sewerage",
+      "t2": "2 S.M.V. /l.p.s."
+    },
+    {
+      "t1": "Leak detection of water or sewage inside the building",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "Checking of measuring devices reported as broken or damaged",
+      "t2": "1.5 S.M.V"
+    },
+    {
+      "t1": "Cleaning of septic tanks and sludge disposal by M3",
+      "t2": "12 S.M.V."
+    },
+    {
+      "t1": "Authorization of diameter reduction of water intakes",
+      "t2": "5 S.M.V."
+    },
+    {
+      "t1": "Procedure to change data from user´s registry",
+      "t2": "1.5 S.M.V."
+    },
+    {
+      "t1": "Changes of measuring devices within the property (it does not include material)",
+      "t2": "2.5 S.M.V."
+    },
+    {
+      "t1": "Breaking of concrete per linear meter due to installation of water intakes ",
+      "t2": "2.5 S.M.V."
+    },
+    {
+      "t1": "Sewage discharges by vessels and boats to dock tax collectors for M3.",
+      "t2": "2.5 S.M.V"
+    },
+    {
+      "t1": "For the reception of wastewater for its treatment in CAPAMA plants by M3",
+      "t2": "1.5 S.M.V."
+    },
+    {
+      "t1": "For the measuring devices to be replaced by breakdown, or damage, in all sizes and for all uses, provided the damage is not attributable to the user.",
+      "t2": "50% of the cost of the new meter"
+    },
+    {
+      "t1": "For physico-chemical analysis to be done in the laboratories of the CAPAMA",
+      "t2": "12 S.M.V."
+    },
+    {
+      "t1": "For Physico-Chemical analysis by tank car or tank of sewage water discharged in CAPAMA’s plants ",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "For administrative efforts to collect for half inch water intakes (equipment not included )",
+      "t2": "2 S.M.V."
+    },
+    {
+      "t1": "For administrative efforts to collect for .750 inch water intakes (equipment not included).",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "For administrative efforts to collect for 1,000 inch water intakes (equipment not included).",
+      "t2": "5 S.M.V."
+    },
+    {
+      "t1": "For administrative efforts to collect for higher than an inch water intakes (equipment not included)",
+      "t2": "6 S.M.V."
+    },
+    {
+      "t1": "For termination or suspension procedures.",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "For new meters 1 / 2 in for popular service.",
+      "t2": "11 S.M.V."
+    },
+    {
+      "t1": "For new mechanical meters 1 / 2in service for Residential, Commercial, Public and Markets.",
+      "t2": "14 S.M.V."
+    },
+    {
+      "t1": "For new radio frequency meters 1 / 2in service for Residential, Commercial, Public and Markets.",
+      "t2": "36 S.M.V."
+    },
+    {
+      "t1": "For new 3 / 4in Radio Frequency meters .",
+      "t2": "38 S.M.V."
+    },
+    {
+      "t1": "For new 3 / 4in mechanic meters.",
+      "t2": "17 S.M.V."
+    },
+    {
+      "t1": "For new 1in meters ",
+      "t2": "74 S.M.V."
+    },
+    {
+      "t1": "For new 1 1 / 2in meters  ",
+      "t2": "126 S.M.V."
+    },
+    {
+      "t1": "For new 2in meters ",
+      "t2": "162 S.M.V."
+    },
+    {
+      "t1": "For new 2 1 / 2in meters ",
+      "t2": "409 S.M.V"
+    },
+    {
+      "t1": "For new 3in meters ",
+      "t2": "458 S.M.V."
+    },
+    {
+      "t1": "For new 4in meters ",
+      "t2": "567 S.M.V."
+    },
+    {
+      "t1": "For new 6in meters ",
+      "t2": "625 S.M.V."
+    },
+    {
+      "t1": "Review of blueprints for authorization of projects for housing or condominiums developments",
+      "t2": "12 S.M.V. / l.p.s."
+    },
+    {
+      "t1": "For supervision of the construction of internal networks of drinking water supply and sewerage, you will be charged for every 1,000 pesos of investment.",
+      "t2": "0.3 S.M.V."
+    },
+    {
+      "t1": "Issuance of Historical consumption and user payments, for the last 5 years",
+      "t2": "0.5 S.M.V."
+    },
+    {
+      "t1": "By connecting a water intake derived for commercial use within the same property and with different commercial business, up to 5mt of pipeline (excluding the meter).",
+      "t2": "30 S.M.V."
+    },
+    {
+      "t1": "By connecting a water intake derived for commercial use within the same property and with different commercial business, up to 10mt of pipeline (excluding the meter.",
+      "t2": "35 S.M.V."
+    }
+  ]
+}
