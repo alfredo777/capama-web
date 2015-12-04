@@ -27,3 +27,17 @@
     <li class="dropdown"><a href="/user_help/new_ticket"> {{m6}} </a></li>
   </ul>
 </nav>
+<script type="text/javascript">
+$('.js-activated').dropdownHover({
+        instantlyCloseOthers: false,
+        delay: 0
+    }).dropdown();
+$('.btn.responsive-menu').on('click', function() {
+    $(this).toggleClass('opn');
+});
+$('.onepage .navbar .nav li a').on('click', function() {
+    $('.navbar .navbar-collapse.in').collapse('hide');
+    $('.btn.responsive-menu').removeClass('opn');
+});
+$('.offset').css('padding-top', $('.navbar').height() + 'px');
+</script>

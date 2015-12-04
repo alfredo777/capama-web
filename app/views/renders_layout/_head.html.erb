@@ -1,18 +1,17 @@
 <div class="navbar solid dark row">
-    <div class="navbar-header">
-      <div class="basic-wrapper"> 
-        <div class="navbar-brand"> <%= link_to root_path do %><%= image_tag('admin/logo-v-3.png', width: '120px') if !agent %> <%= image_tag('admin/logo.png', width: '120px') if agent %> <%end%></div>
-        <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
-      </div>
-      <!-- /.basic-wrapper -->  
+  <div class="navbar-header">
+    <div class="basic-wrapper">
+      <div class="navbar-brand"> <%= link_to root_path do %><%= image_tag('admin/logo-v-3.png', width: '120px') if !agent %> <%= image_tag('admin/logo.png', width: '120px') if agent %> <%end%></div>
+      <a class="btn responsive-menu" data-toggle="collapse" data-target=".navbar-collapse"><i></i></a>
     </div>
-    <!-- /.navbar-header -->
+    <!-- /.basic-wrapper -->
+  </div>
+  <!-- /.navbar-header -->
 
-    <script type="text/javascript">
-    loadTPL('menu', 'menu', 'navmenu', "<%=lang%>")
-    </script>
+  <%= render partial: "/renders_layout/rendermenu", locals: {template: "menu", json:"menu", div: "navmenu", type: "navmenu"} %>
 
-    <div id="navmenu"></div>
-    <!-- /.social-wrapper --> 
+
+  <div id="navmenu"></div>
+  <!-- /.social-wrapper -->
 </div>
-  <!-- /.navbar -->
+<!-- /.navbar -->
