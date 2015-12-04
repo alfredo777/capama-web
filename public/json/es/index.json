@@ -6,7 +6,7 @@
   "li2c": "Te invitamos a probar nuestro servicio de ayuda en linea.",
   "li2b": "<a href='/user_help/new_ticket' class='btn btn-orange'>Ayuda en linea</a>",
   "li3t": "Ahora nuestra página es múlti lenguaje",
-  "li3c": "Selecciona un lenguaje: <a href='#'' class='btn btn-rose'>En</a> <a href='#' class='btn btn-blue'>Fr</a> <a href='#'' class='btn btn-green'>Es</a>",
+  "li3c": "Selecciona un lenguaje: <a href='/lang_select?lang=en' class='btn btn-rose'>En</a> <a href='/lang_select?lang=fr' class='btn btn-blue'>Fr</a> <a href='/lang_select?lang=es' class='btn btn-green'>Es</a>",
   "li4tt": "Nueva sección de noticias",
   "li4t": "¿Quieres enterarte? entra a nuestra nueva sección de noticias",
   "li4c": "<a href='/news' class='btn btn-blue'>Ver noticias </a>",

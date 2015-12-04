@@ -6,7 +6,7 @@
   "li2c": "We invite you to use our online helpdesk .",
   "li2b": "<a href='/user_help/new_ticket' class='btn btn-orange'>Online support</a>",
   "li3t": "Now our site is multi language",
-  "li3c": "Select a language: <a href='#'' class='btn btn-rose'>En</a> <a href='#' class='btn btn-blue'>Fr</a> <a href='#'' class='btn btn-green'>Es</a>",
+  "li3c": "Select a language: <a href='/lang_select?lang=en' class='btn btn-rose'>En</a> <a href='/lang_select?lang=fr' class='btn btn-blue'>Fr</a> <a href='/lang_select?lang=es' class='btn btn-green'>Es</a>",
   "li4tt": "News section",
   "li4t": "Want to find out ? enters our news section",
   "li4c": "<a href='/news' class='btn btn-blue'>News</a>",
