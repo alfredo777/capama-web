@@ -7,6 +7,7 @@
   "li2b": "<a href='/user_help/new_ticket' class='btn btn-orange'>Ayuda en linea</a>",
   "li3t": "Ahora nuestra página es múlti lenguaje",
   "li3c": "Selecciona un lenguaje: <a href='#'' class='btn btn-rose'>En</a> <a href='#' class='btn btn-blue'>Fr</a> <a href='#'' class='btn btn-green'>Es</a>",
+  "li4tt": "Nueva sección de noticias",
   "li4t": "¿Quieres enterarte? entra a nuestra nueva sección de noticias",
   "li4c": "<a href='/news' class='btn btn-blue'>Ver noticias </a>",
   "cont1": "Nuestro trabajo",
@@ -15,7 +16,7 @@
   "contp2m":  "Intalación y mejora de infraestructura hidráulica",
   "contp3m":  "Reparación y saneamiendo de alcantarillado",
   "cont2": "CAPAMA trabajando para tí",
-  "solve1": "Solucianando tus necesidades",
+  "solve1": "Solucionando tus necesidades",
   "solve1des": "En capama estamos día a día dedicados a solucionar cada una de tus necesidades por eso mejoramos constantemente nuestro servicio.",
   "insid": "Resolución de Insidencias",
   "insidper": "95",
@@ -32,5 +33,6 @@
   "frc": "Aujourd'hui on est multilingue",
   "enc": "We are now multi-language",
   "esc": "Ahora nos encontramos en varios idiomas",
-  "news": "Noticias"
+  "news": "Noticias",
+  "news_go": "Ir a las noticias"
 }

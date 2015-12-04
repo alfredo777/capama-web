@@ -7,8 +7,9 @@
   "li2b": "<a href='/user_help/new_ticket' class='btn btn-orange'>Online support</a>",
   "li3t": "Now our site is multi language",
   "li3c": "Select a language: <a href='#'' class='btn btn-rose'>En</a> <a href='#' class='btn btn-blue'>Fr</a> <a href='#'' class='btn btn-green'>Es</a>",
+  "li4tt": "News section",
   "li4t": "Want to find out ? enters our news section",
-  "li4c": "<a href='/news' class='btn btn-blue'>Ver noticias </a>",
+  "li4c": "<a href='/news' class='btn btn-blue'>News</a>",
   "cont1": "Our job",
   "contp1": "In CAPAMA work every day to provide better service to you and your family in the beautiful city of Acapulco Guerrero, we are committed to provide the best service possible to heso perform the following activities:",
   "contp1m":  "Repair hydrants",
@@ -32,5 +33,6 @@
   "frc": "Aujourd'hui on est multilingue",
   "enc": "We are now multi-language",
   "esc": "Ahora nos encontramos en varios idiomas",
-  "news": "News"
+  "news": "News",
+  "news_go": "Go to news"
 }
