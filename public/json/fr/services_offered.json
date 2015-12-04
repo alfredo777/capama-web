@@ -1,0 +1,157 @@
+{
+  "title": "Par les services administratifs rendues CAPAMA recouvrera les cotisations suivantes:",
+  "thead":[
+    {"t": "titre", "size": "80%"},
+    {"t": "Cotisation", "size": "20%"}
+  ],
+  "tbody": [
+    {
+      "t1": "Expédition d'un constance de faisabilité de services d'eau potable et d'égouts",
+      "t2": "10 S.M.V"
+    },
+    {
+      "t1": "Expédition d'un Note de débit ou constance aucun dette",
+      "t2": "5 S.M.V."
+    },
+    {
+      "t1": "Autorisation des projets de construction des reseaux internes de'eau potable es d'égouts sanitaires",
+      "t2": "2 S.M.V. /l.p.s."
+    },
+    {
+      "t1": "Détection de fuites d'eau potable ou de drainage dans le interieur de l'immeuble",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "Examen d'appareils de mesure avec report de détraqué ou avec défaut",
+      "t2": "1.5 S.M.V"
+    },
+    {
+      "t1": "Nettoyage de  fosses septiques et traitement des boues disposición par M3",
+      "t2": "12 S.M.V."
+    },
+    {
+      "t1": "Autorisation de réduction du diamètre des prises d'eau",
+      "t2": "5 S.M.V."
+    },
+    {
+      "t1": "Démarche de changement de données du registre des usagers",
+      "t2": "1.5 S.M.V."
+    },
+    {
+      "t1": "Changement du lieu des appareils de mesure dans le immeuble (ce qui n'inclut pas matériaux)",
+      "t2": "2.5 S.M.V."
+    },
+    {
+      "t1": "Rupture de béton par mètre linéal pour installer les prises d'eau",
+      "t2": "2.5 S.M.V."
+    },
+    {
+      "t1": "Ddécharges des eaux usées par moyen de navires et par bateau aux receveurs du quai fiscal par M3.",
+      "t2": "2.5 S.M.V"
+    },
+    {
+      "t1": "Pour le service de réception du traitement des eaux usées dans les usines du CAPAMA par M3",
+      "t2": "1.5 S.M.V."
+    },
+    {
+      "t1": "Pour les appareils de mesure que doivent être remplacés à cause de détraque ou de dégâts, dans tous les diámetres et pour tous les utilisations,chaque fois que le dégât ne soit pas imputable au usager.",
+      "t2": "50% du coût du nouveau mesureur"
+    },
+    {
+      "t1": "à titre de l'analyse  physico-chimiques faits dans les laboratoires de la CAPAMA",
+      "t2": "12 S.M.V."
+    },
+    {
+      "t1": "à titre de l'analyse  physico-chimiques par auto-citerne ou citerne de eaux usées Décharges dans les usines de CAPAMA",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "à titre de Démarches administratives de encaissement de prises d'eau de demi-pouce  (ce qui n'inclut pas matériaux)",
+      "t2": "2 S.M.V."
+    },
+    {
+      "t1": "à titre de Démarches administratives de encaissement de prises d'eau de .750 pouces (ce qui n'inclut pas matériaux).",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "à titre de Démarches administratives de encaissement de prises d'eau de 1.000 pouces (ce qui n'inclut pas matériaux).",
+      "t2": "5 S.M.V."
+    },
+    {
+      "t1": "à titre de Démarches administratives de encaissement de prises d'eau de plus de une pouce (ce qui n'inclut pas matériaux",
+      "t2": "6 S.M.V."
+    },
+    {
+      "t1": "Pour Démarches de Baisse ou Suspension.",
+      "t2": "3 S.M.V."
+    },
+    {
+      "t1": "Pour nouveaux Mesureurs de 1/2in pour service populaire.",
+      "t2": "11 S.M.V."
+    },
+    {
+      "t1": "Por Medidores mecánicos nuevos de 1/2in para servicio Residencial, Comercial, Público y Mercados.",
+      "t2": "14 S.M.V."
+    },
+    {
+      "t1": "Por Mesureurs  mécaniques nouveaux de radiofréquence de 1/2in pour service résidentiel, Comercial, Publique et marchés.",
+      "t2": "36 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs nouveaux de 3/4in radiofréquence.",
+      "t2": "38 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs mécaniques nouveaux de 3/4in .",
+      "t2": "17 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs nouveaux de 1in",
+      "t2": "74 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs  nouveaux de 1 1/2in",
+      "t2": "126 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs nouveaux  de 2in",
+      "t2": "162 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs nouveaux  de 2 1/2in",
+      "t2": "409 S.M.V"
+    },
+    {
+      "t1": "Pour mesureurs  nouveaux de 3in",
+      "t2": "458 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs nouveaux  de 4in",
+      "t2": "567 S.M.V."
+    },
+    {
+      "t1": "Pour mesureurs nouveaux de 6in",
+      "t2": "625 S.M.V."
+    },
+    {
+      "t1": "Examen de plans pou autoriser projets de développements habitationnels ou condominiums",
+      "t2": "12 S.M.V. / l.p.s."
+    },
+    {
+      "t1": "Pour superviser oeuvres des reseaux internes d'eau potable et des égouts, s' encaissera pour chaque 1,000 pesos d'investissement.",
+      "t2": "0.3 S.M.V."
+    },
+    {
+      "t1": "Expédition de Historique  de consommation et paiement des usagers, des cinq dernières années",
+      "t2": "0.5 S.M.V."
+    },
+    {
+      "t1": "Pour connecter une prise d'eau dérivée pour utilisation comercial dans  le même terrain et avec un tour différent,  jusqu'à 5 mt de conduite, (le mesureur n'est pas inclus).",
+      "t2": "30 S.M.V."
+    },
+    {
+      "t1": "Pour connecter une prise d'eau dérivée pour utilisation comercial dans  le même terrain et avec un tour différent,  jusqu'à 10mt de conduits, (le mesureur n'est pas inclus).",
+      "t2": "35 S.M.V."
+    }
+  ]
+}

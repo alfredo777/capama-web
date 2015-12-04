@@ -218,6 +218,37 @@ class AdminController < ApplicationController
     @users = users.order(name: :asc)
   end
 
+  def contracts
+    @contracts = ServiceContract.paginate(:page => params[:page], :per_page => 40).order('id DESC')
+  end
+
+  def inspects
+    @inspects = Inspect.paginate(:page => params[:page], :per_page => 40).order('id DESC')
+
+  end
+
+  def export_inspect
+    @inspect = Inspect.where(id: params[:id])
+    respond_to do |format|
+      format.html 
+      format.xls {
+        filename = "Inspect-#{Time.now.strftime("%Y%m%d%H%M%S")}.xls"
+        send_data(@inspect.to_xls, :type => "text/xls; charset=utf-8; header=present", :filename => filename)
+       }
+    end
+  end
+
+  def export_contract
+    @contract = ServiceContract.where(id: params[:id])
+    respond_to do |format|
+      format.html 
+      format.xls {
+        filename = "Contrato-#{Time.now.strftime("%Y%m%d%H%M%S")}.xls"
+        send_data(@contract.to_xls, :type => "text/xls; charset=utf-8; header=present", :filename => filename)
+       }
+    end
+  end
+
 private 
 
   def session_filter

@@ -1,0 +1,15 @@
+{
+  "title": "Audits effectuées au Organisme Opérateur  Comission d'Eau Potable et des égouts du Municipalité de Acapulco",
+  "thead": [
+    {"t": "Órgane de contrôle"},
+    {"t": "Période"},
+    {"t": "Type d'audit"},
+    {"t": "Suivi"}
+  ],
+  "tbody": [
+    {"t1": "Contrôleur général, Transparence et  Modernisation Administrative. Honorable. Municipalité Constitutionnel d'Acapulco de Juarez, Guerrero ", "t2": "Du 1° janvier au 30 de juin 2009.", "t3": "Admnistrative-Financière", "t4":"Compte rendu"},
+    {"t1": "Audit Général de l'État de Guerrero", "t2": "Du 1° janvier au 31 Décembre 2009. ", "t3": "Admnistrative-Financière", "t4": "Compte rendu"},
+    {"t1": "Audit Général de l'État de Guerrero", "t2": "Du 1° janvier 2005  au 31 Août 2006.", "t3": "Admnistrative-Financière", "t4": "Compte rendu"}
+
+  ]
+}

@@ -40,11 +40,22 @@
         <%end%>
 
         <% if scope_permission('zones', 'view_all') %>
-        
         <li>
           <%= link_to readings_path do %>
           <i class="fa fa-pencil-square-o"></i>
           <span>Lecturas</span>
+          <%end%>
+        </li>
+        <li>
+          <%= link_to inspects_path do %>
+          <i class="fa fa-user-secret"></i>
+          <span>Inspecciones</span>
+          <%end%>
+        </li>
+        <li>
+          <%= link_to contracts_path do %>
+          <i class="fa fa-file-text-o"></i>
+          <span>Contratos</span>
           <%end%>
         </li>
         <%end%>

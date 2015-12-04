@@ -1,0 +1,47 @@
+{
+  "title": "Unités d'attention et de paiement de services",
+  "table-title1": "DIRECTIONS  COMERCIAUX",
+  "thead1":[
+    {"t": "Bureau"},
+    {"t": "Emplacement"},
+    {"t": "Téléphone"},
+    {"t": "Horaire"}
+  ],
+  "tbody1": [
+    {"t1": "Gérance Centro", "t2": "Av. Lic. Adolfo Lopez Mateos Esq. Tte. José Azueta s/n Col. Centro C.P. 39300", "t3": "01(744)434-1400", "t4": "Lunes a viernes 08:00 a 17:00 horas Sábados 09:00 a 13:00 hora"},
+    {"t1": "Gérance Coloso", "t2": "Gran Via Coloso s/n Colonia La Esperanza C.P. 39810", "t3": "01(744)468-0995 ", "t4": "Lunes a viernes 08:00 a 15:00 horas  Sábados 09:00 a 13:00 horas"},
+    {"t1": "Gérance Diamante", "t2": "Plaza Velero local 1, entrada principal Col. Luis Donaldo Colosio C.P. 39907", "t3": "01(744)466-4406  01(744)466-4407", "t4": "Lunes a viernes 08:00 a 17:00 horas Sábados 08:00 a 16:00 horas"},
+    {"t1": "Gérance Pie de la Cuesta", "t2": "Carretera Nal Acapulco-Zihuatanejo kilometro 6.5, parada del Tehuacán C.P. 39412", "t3": "01(744)460-1313", "t4": "Lunes a viernes 08:00 a 15:30 horas Sábados 09:00 a 13:00 horas"},
+    {"t1": "Gérance Renacimiento", "t2": "Calle Yolotepec Cd. Renacimiento lotes 8 y 10 manzana 17 sector 2 C.P. 39710", "t3": "01(744)441-4079 ", "t4": "Lunes a viernes 08:00 a 16:00 horas Sábados 09:00 a 13:00 horas"}
+  ],
+  "table-title2": "MODULES DE PAIEMENT AUTORISES",
+  "thead2":[
+    {"t": "Modules"},
+    {"t": "Emplacement"},
+    {"t": "Téléphone"},
+    {"t": "Horaire"}
+  ],
+  "tbody2": [
+    {"t1": "OXXO", "t2": "Toutes les succursales", "t3": "Seulement en succursal", "t4": "De la succursal"},
+    {"t1": "Walmart Icacos", "t2": "Avenida Costera Migel Aleman 500", "t3": "01(744)481-1142", "t4": "Lundi à samedi 10:00 a 17:00 heures Dimanche 10:00 a 15:00 heures"},
+    {"t1": "Comercial Mexicana Diana", "t2": "Avenida Farallon del Obispo 216 C.P. 39690", "t3": "01(744)481-3641", "t4": "Lundi à Dimanche 09:00 a 16:00 heures"},
+    {"t1": "Comercial Mexicana Vista Alegre", "t2": "Avenida Ruiz Cortinez no 13 C.P. 39560", "t3": "01(744)485-8820", "t4": "Lundi à Dimanche 09:00 a 16:00 heures"},
+    {"t1": "Elektra", "t2": "Toutes les succursales", "t3": "Seulement en succursal", "t4": "De la succursal"}
+  ],
+  "table-title3": "PAIEMENTS DANS LES BANCS AUTORISES",
+  "thead3":[
+    {"t": "Institution Bancaire"},
+    {"t": "Emplacement"},
+    {"t": "Téléphone"},
+    {"t": "Horaire"}
+  ],
+  "tbody3": [
+   {"t1": "BANORTE", "t2": "Toutes les succursales", "t3": "Seulement en succursales", "t4": "Horaire de l'institution bancaire"},
+   {"t1": "HSBC", "t2": "Toutes les succursales", "t3": "Seulement en succursales", "t4": "Horaire de l'institution bancaire"},
+   {"t1": "Santander", "t2": "Toutes les succursales", "t3": "Seulement en succursales", "t4": "Horaire de l'institution bancaire"},
+   {"t1": "Bancomer", "t2": "Toutes les succursales", "t3": "Seulement en succursales", "t4": "Horaire de l'institution bancaire"},
+   {"t1": "Afirme", "t2": "Toutes les succursales", "t3": "Seulement en succursales", "t4": "Horaire de l'institution bancaire"},
+   {"t1": "Banco Azteca", "t2": "Toutes les succursales", "t3": "Seulement en succursales", "t4": "Horaire de l'institution bancaire"},
+   {"t1": "Scotiabank", "t2": "Toutes les succursales", "t3": "Seulement en succursales", "t4": "Horaire de l'institution bancaire"}
+  ]
+}

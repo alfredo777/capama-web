@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151113021447) do
+ActiveRecord::Schema.define(version: 20151124104955) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -65,6 +65,29 @@ ActiveRecord::Schema.define(version: 20151113021447) do
   create_table "format_forms_to_roles", force: true do |t|
     t.integer  "format_form_id"
     t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "inspects", force: true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "inconforme"
+    t.string   "acount"
+    t.string   "meter"
+    t.string   "t_ser"
+    t.string   "additional_data"
+    t.string   "date"
+    t.string   "visit_date"
+    t.string   "general_inspect"
+    t.string   "shooting_conditions"
+    t.string   "home_room"
+    t.string   "number_of_people"
+    t.string   "ordeno_prueba_de_inspeccion"
+    t.string   "property_activity"
+    t.string   "anomalies"
+    t.string   "meter_conditions"
+    t.string   "additional_report"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -147,20 +170,20 @@ ActiveRecord::Schema.define(version: 20151113021447) do
     t.string   "address"
     t.string   "colony"
     t.string   "water_meter"
-    t.string   "reference"
-    t.text     "observations"
     t.string   "sx"
     t.string   "ux"
     t.string   "stage"
     t.string   "account_number"
-    t.string   "abnormalities"
-    t.string   "lecture"
     t.datetime "data_access"
     t.integer  "reading_assignment_id"
     t.boolean  "successfully_completed"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "diameter"
+    t.text     "lecture"
+    t.text     "abnormalities"
+    t.text     "observations"
+    t.text     "reference"
   end
 
   add_index "reading_takes_waters", ["business_name"], name: "index_reading_takes_waters_on_business_name"
@@ -169,6 +192,26 @@ ActiveRecord::Schema.define(version: 20151113021447) do
   create_table "roles", force: true do |t|
     t.string   "title"
     t.boolean  "active_role"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "service_contracts", force: true do |t|
+    t.string   "drinking_water"
+    t.string   "sewage_system"
+    t.string   "acount"
+    t.string   "meter"
+    t.string   "diameter"
+    t.string   "applicant_name"
+    t.string   "address"
+    t.string   "colony"
+    t.string   "phone"
+    t.string   "bussiness_name"
+    t.string   "rfc"
+    t.string   "commercial_bussines"
+    t.string   "legal_representative"
+    t.string   "type_service"
+    t.string   "legal_title"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

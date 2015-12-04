@@ -1,0 +1,36 @@
+{
+  "title": "Programmes géré par la Direction Commercial",
+  "sub1":  "Base juridique",
+  "cont1": "Artículo 71 fracción XXIV de la ley Número 663 de Ingresos para el Municipio de Acapulco de Juárez del Estado de Guerrero, para el ejercicio fiscal 2015.",
+  "sub2":  "Bienfaits",
+  "cont2": "La Commission d'Eau Potable et d'égouts du Municipe d'Acapulco, pourra accorder subventions jusqu'à un maximum de 50%,  à couvrir par la Municipalité, au titre des paiement de services publiques d'Eau potable, de drainage, d'égouts, traitement et disposition de leur eaux d'égout , exclusivament à ceux usagers du service domestique du peuple qui se trouve dans les postes suivantes:",
+  "sub3": "Population cible ",
+  "cont3": "Soient mères célibataires,retraités conformément à la législation laboral,retraités , personnes dotées de capacités différentes, ainsi que usagers du service âgées de plus de 60 ans, à condition qu'ils répondent aux conditions suivantes:", 
+  "sub4": "Conditions",
+  "cont4li": [
+    {
+      "li":"Document official de mère célibataire qui a de fils de moins de  18 ans ou qui atteste que celui-ci sont inscrits dans une école publique reconnu par la autorité compétente, et ne avoir plus de 25 ans, âge qui devra être validée annuellement; dans les cas de personnes de capacités différentes ou d'incapacité physique, le Sistema para el Desarrollo Integral de la Familia Municipal délivrera la accréditation correspondant,sur présentation du certificat médical correspondant; carte de retraite délivrée par le Instituto Mexicano del Seguro Social, par le Instituto de Seguridad y Servicio Sociales de los Trabajadores del Estado ou par  la Tarjeta del Instituto Nacional de las Personas Adultas mayores."
+    },
+    {
+      "li": "Carte d'électeur."
+    },
+    {
+      "li": "Justificatif de domicile, reçu d'eau."
+    }
+  ],
+  "cont4": "Le domicile mentionné dans la carte du Instituto Nacional de las Personas Adultas mayores, d doit coïncider avec celui de la carte d'electeur.<br/><br/>Cette subvention sera appliqué lorsque la facturation de consommations par prise d'eau installée sur chaque ménage soit versée ponctuellement, dans les conditions suivantes:",
+  "list4li2": [
+    {
+      "li": "Le bienfait précédent sera accordée à condition quela prise d'eau soit sur le nom du bénéficiaire et que il se trouve dans le immeuble oùil habite, jusqu'à un volumen maximal de  20 metres cubes, mensuels. Si la consommation est supérieure le bienfait ne procédera pas. C'est obligatoire attester le  bénéficiaire annuellement aux bureaus de la Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco."
+    },
+    {
+      "li": "Le bienfait  concernant à cette fraction, sera appliqué à paiements annuels anticipés. Cette benefice ne seraen aucun cas appliqué pour les arriérés de paiements, amendes ou majorations. Dans le cas de la fourniture d'eau potable avec compteur, l' organisme opérateur recevra le paiement anticipé sur la moyenne annuel lors de l'exercice précédent, applicant les bonifications rapportées, à la fin du sixième, l'organisme déterminera le total de mètres cubes consommés par l'usager, si celui aurait un nombre supérieur de mètres cubes fournis que les payés annuellement,le usager sera notifié porur payer l'écart correspondant, dans les premier dix  jours suivantes à sa notification."
+    },
+    {
+      "li": "ELe bienfait  concernant à cette fraction, vaut seulement pour le logement correspondant au domicile du usager  mentionné sur le Document d'identification."
+    },
+    {
+      "li": "Le bienfait  concernant à cette fraction, sera annulé  cancelara automatiquement quand le bénéficiaire a un arriéré de paiement de plus de 3 mois de ses obligations fiscales."
+    }
+  ]
+}

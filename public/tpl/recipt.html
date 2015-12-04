@@ -180,8 +180,9 @@ border-bottom: solid 1px #{{color}};
             {{#each bank }}
             <p><b>{{li}}</b>: {{content}}</p>
             {{/each}}
+            <div class="ean128">{{homocode}}</div>
             <div>{{homocode}}</div>
-            <div>{{oxxocode}}</div>
+            <br/>
           </div>
         </div>
         <div class="cfull">
@@ -234,8 +235,9 @@ border-bottom: solid 1px #{{color}};
         <div class="span-ming-2">${{adeudo_anterior}}</div>
         <div class="span-ming-2">${{importe_total}}</div>
         </br></br>
-        {{homocode}}<br/>
-        {{oxxocode}}<br/>
+        <p>Pago en oxxo:</p>
+        <div class="ean128">{{oxxocode}}</div>
+        <div> {{oxxocode}}</div><br/>
         <div class="pull-right"><img src="/assets/admin/logo-v-3.png" width="40%" class="pull-right" /></div>
       </div>
     </div>

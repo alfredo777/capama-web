@@ -29,6 +29,10 @@ Rails.application.routes.draw do
   get 'admin/config_roles', to: 'admin#config_roles', as: :congif_roles
   get 'admin/congif_users', to: 'admin#congif_users', as: :congif_users
   get 'admin/readings', as: :readings
+  get 'admin/contracts', as: :contracts
+  get 'admin/inspects', as: :inspects
+  get 'admin/export_inspect', as: :export_inspect
+  get 'admin/export_contract', as: :export_contract
   get 'admin/create_reading', to: 'api#create_reading', as: :create_reading
   post 'admin/create_reading', to: 'api#create_reading'
   get 'admin/import_readings', to: 'api#import_readings', as: :import_readings
@@ -141,10 +145,19 @@ Rails.application.routes.draw do
   post "/api/response_forms"
   get '/printing_view_format', to: "format_forms#printing_view_format", as: :printing_view_format
 
+
   ##### get mobile api ####
 
   get "mobile/login", to: "appmobile_api#login"
   post "mobile/login", to: "appmobile_api#login"
   get "mobile/call_all_routes", to: "appmobile_api#call_all_routes"
+  get "mobile/sincronize_routes", to: "appmobile_api#sincronize_routes"
+  post "mobile/sincronize_routes", to: "appmobile_api#sincronize_routes"
+  get "mobile/sincronize_user_helps", to: "appmobile_api#sincronize_user_helps"
+  post "mobile/sincronize_user_helps", to: "appmobile_api#sincronize_user_helps" 
+  get "mobile/sincronize_inspects", to: "appmobile_api#sincronize_inspects"
+  post "mobile/sincronize_inspects", to: "appmobile_api#sincronize_inspects" 
+  get "mobile/sincronize_serivices_contracts", to: "appmobile_api#sincronize_serivices_contracts"
+  post "mobile/sincronize_serivices_contracts", to: "appmobile_api#sincronize_serivices_contracts" 
 
 end

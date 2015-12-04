@@ -28,22 +28,29 @@ class AppmobileApiController < ApplicationController
     @reading = ReadingTakesWater.find(params[:id])
     @reading.reference = params[:reference]
     @reading.observations = params[:observations]
-    @reading,abnormalities = params[:abnormalities]
+    @reading.abnormalities = params[:abnormalities]
     @reading.lecture = params[:lecture]
+    @reading.data_access = params[:data_access].to_date
     @reading.save
 
     render json: @readings.to_json, callback: params[:callback]
   end
 
   def sincronize_user_helps
-
+   @user_help = UserHelp.create(cause: params[:cause],explanation: params[:explanation],area: params[:area], phone: params[:phone])
+   render json: @user_help.to_json, callback: params[:callback]
   end
 
   def sincronize_inspects
+    @create_inspect = Inspect.create(name: params[:name], address: params[:address], inconforme: params[:inconforme], acount: params[:acount], meter: params[:meter], t_ser: params[:t_ser], additional_data: params[:additional_data], date: params[:date], visit_date: params[:visit_date], general_inspect: params[:general_inspect], shooting_conditions: params[:shooting_conditions], home_room: params[:home_room], number_of_people: params[:number_of_people], ordeno_prueba_de_inspeccion: params[:ordeno_prueba_de_inspeccion], property_activity: params[:property_activity], anomalies: params[:anomalies], meter_conditions: params[:meter_conditions], additional_report: params[:additional_report])
+    render json: @create_inspect.to_json, callback: params[:callback]
   end
 
   def sincronize_serivices_contracts
+    @create_contract = ServiceContract.create(drinking_water: params[:drinking_water], sewage_system: params[:sewage_system], acount: params[:acount], meter: params[:meter], diameter: params[:diameter], applicant_name: params[:applicant_name], address: params[:address], colony: params[:colony], phone: params[:phone], bussiness_name: params[:bussiness_name], rfc: params[:rfc], commercial_bussines: params[:commercial_bussines], legal_representative: params[:legal_representative], type_service: params[:type_service], legal_title: params[:legal_title])
+    render json: @create_contract.to_json, callback: params[:callback]
   end
+
 private
 protected
   def corroborate_password(password, pass)

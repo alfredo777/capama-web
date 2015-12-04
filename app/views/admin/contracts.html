@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Lista de contratos</header>
+  <section class="panel">
+    <div class="panel-body">
+      <div class="panel-body">
+          <div class="table-responsive">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Agua potable</th>
+                  <th>Alcantarillado </th>
+                  <th>Cuenta</th>
+                  <th>Medidor</th>
+                  <th>Diametro</th>
+                  <th>Persona que solicita</th>
+                  <th>Exportar</th>
+                </tr>
+              </thead>
+              <tbody>
+              <% @contracts.each do |contract|%>
+              <tr>
+                <td><%= contract.drinking_water %></td>
+                <td><%= contract.sewage_system %></td>
+                <td><%= contract.acount %></td>
+                <td><%= contract.meter %></td>
+                <td><%= contract.diameter %></td>
+                <td><%= contract.applicant_name %></td>
+                <td><%= link_to "Exportar el contrato completo", export_contract_path(id: contract.id, :format => :xls) %></td>
+              </tr>
+              <%end%>
+              </tbody>
+            </table>
+          </div>
+      <%= will_paginate @contracts, renderer: BootstrapPagination::Rails %>
+    </div>
+  </section>
+  </div>
+</div>

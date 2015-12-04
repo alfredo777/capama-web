@@ -1,0 +1,162 @@
+{
+    "title": "CONDITIONS POUR LE CHANGEMENT DE NOM DU USAGER",
+    "sub1": "USAGE MENAGER:",
+    "sub1li": [
+        {
+            "li": "Attester la possesion de l'immeuble par moyen de:",
+            "subli": [
+                {
+                    "li": "Copie d'acte notarié, ou du contrat d'achat ou de venteó , dûment requis, ou bien d'un Carte de Possesion,  ou n'importe quelle document que garantisse la possession légitime de l'immeuble délivré par un organisme réglementaire (CORET, CRETT ó INVISUR)"
+                },
+                {
+                    "li": "Régime de condominium (si nécessaire)"
+                },
+                {
+                    "li": "Plan de subdivision (si nécessaire)"
+                }
+            ]
+        },
+        {
+            "li": "Constitution legal de l'administration de condominium (si nécessaire)",
+            "subli": []
+        },
+        {
+            "li": "Procuration de l'administrateur et copie d'identification oficial en vigueur (si nécessaire)",
+            "subli": []
+        },
+        {
+            "li": "Copie d'identification oficial en vigueur du propriétaire",
+            "subli": []
+        },
+        {
+            "li": "Que le status de la prise d'eau potable soit ACTIVO",
+            "subli": []
+        },
+        {
+            "li": "Que il n'existe pas dette dans l'immeuble pourlequel on demande le changement de données.",
+            "subli": []
+        }
+    ],
+    "sub2": "Si vous louez, vous devez aussi avoir:",
+    "sub2li": [
+        {
+            "li": "Copie du contrat de Bail"
+        },
+        {
+            "li": "Autorisation par écrit du locataire (carte pouvoir)"
+        },
+        {
+            "li": "Copie de l'identification oficielle en vigueur du locataire."
+        }
+    ],
+    "sub3": "POUR SERVICE COMMERCIAL:",
+    "sub31": "Personnes  physiques:",
+    "sub31li": [
+        {
+            "li": "Attester la possesion de l'immeuble par moyen de:",
+            "subli": [
+                {
+                    "li": "Copie de Acte notarié, ou d'achat-vente dûment requis, ou bien d'un Carte de Possesion"
+                },
+                {
+                    "li": "Régime de condominium (si nécessaire)"
+                }
+            ]
+        },
+        {
+            "li": "Copie de l'identification oficielle en vigueur du propriétaire",
+            "subli": []
+        },
+        {
+            "li": "Que il n'existe pas dette dans l'immeuble pourlequel on demande le changement de données",
+            "subli": []
+        },
+        {
+            "li": "Que le status de la prise d'eau potable soit ACTIVO",
+            "subli": []
+        },
+        {
+            "li": "Constitution legal de l'administration de condominium (si nécessaire)",
+            "subli": []
+        },
+        {
+            "li": "Procuration de l'administrateur et copie d'identification oficial en vigueur (si nécessaire)",
+            "subli": []
+        },
+        {
+            "li": "Licence de fonctionemment ou inscription au Trésor Public.", 
+            "subli": []
+        }
+    ],
+    "sub32": "Si vous louez, vous devez aussi avoir:",
+    "sub32li": [
+        {
+            "li": "Copie du contrat de Bail"
+        },
+        {
+            "li": "Autorisation par écrit du locataire. (carte pouvoir)"
+        },
+        {
+            "li": "Copie de l'identification oficielle en vigueur du locataire."
+        }
+    ],
+    "sub33": "Personnes morales:",
+    "sub33li": [
+        {
+            "li": "Attester la possesion de l'immeuble,par moyen de:",
+            "subli": [
+                {"li": "Acte notarié , du contrat d'achat ou de vente  dûment requis, ou bien d'un Carte de Possesion."},
+                {"li": "Régime de condominium (si nécessaire)"}
+            ]
+        },
+        {
+            "li": "Copie de l'identification oficielle en vigueur du propriétaire",
+            "subli": []
+        },
+        {
+            "li": "Que il n'existe pas dette dans l'immeuble pourlequel on demande le changement de données",
+            "subli": []
+        },
+        {
+            "li": "Que le status de la prise d'eau potable soit ACTIVO",
+            "subli": []
+        },
+        {
+            "li": "Constitution legal de l'administration de condominium  (si nécessaire)",
+            "subli": []
+        },
+        {
+            "li": "Procuration de l'administrateur et copie d'identification oficial en vigueur (si nécessaire)",
+            "subli": []
+        },
+        {
+            "li": "Licence de fonctionemment ou inscription au Trésor Public",
+            "subli": []
+        },
+        {
+            "li": "Copie des statuts de l'entreprise",
+            "subli": []
+        },
+        {
+            "li": "Copie de la procuration du représentant legal",
+            "subli": []
+        },
+        {
+            "li": "Copie d'identification oficial en vigueur du  représentant legal.",
+            "subli": []
+        }
+    ],
+    "sub34": "Si vous louez, vous devez aussi avoir:",
+    "sub34li": [
+        {
+            "li": "Copie du contrat de Bail"
+        },
+        {
+            "li": "Autorisation par écrit du locataire (carte pouvoir)"
+        },
+        {
+            "li": "Copie de l'identification oficielle en vigueur du locataire."
+            
+        }
+    ]
+}

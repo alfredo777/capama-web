@@ -1,0 +1,63 @@
+{
+  "title": "CONDITIONS POUR SOUSCRIRE UN CONTRAT DE SERVICES D'EAU POTABLE ET DE DRAINAGE.",
+  "sub1": "POUR PRISES D'EAU D' UN DEMI-POUCE",
+  "sub11": "Pour utilisation ménager",
+  "sub11li": [
+    {"li": "Attester la possesion de l'immeuble,par moyen de une copie de l'Acte notarié,ou du contrat d'achat ou de vente dûment requis, ou bien d'un Carte de Possesion."},
+    {"li": "Copie de identification oficial en vigueur du propriétaire ."},
+    {"li": "Qu'il n'existe pas dette sur l'immeuble pour lequel on demande le nouveau contrat."}
+  ],
+  "sub12": "Si vous louez, vous devez aussi avoir:",
+  "sub12li": [
+    {"li": "Copie du contrat de Bail."},
+    {"li": "Autorisation par écrit du locataire."},
+    {"li": "Copie de l'identification oficielle en vigueur du locataire."}
+  ],
+  "sub13": "Pour service commercial
+  ercial:",
+  "sub14": "Personnes physiques:",
+  "sub14li":[
+    {"li": "Attester la possesion de l'immeuble,par moyen de une copie de l'Acte notarié,ou du  contrat d'achat ou de vente  dûment requis, ou bien d'un Carte de Possesion."},
+    {"li": "Copie de identification oficial en vigueur du propriétaire."},
+    {"li": "Qu'il n'existe pas dette sur l'immeuble pour lequel on demande le nouveau contrat.."},
+    {"li": "Licence de fonctionnement ou inscription au Trésor Public"}
+  ],
+  "sub15": "Personnes morales:",
+  "sub15li": [
+    {"li": "Attester la possesion de l'immeuble,par moyen de une copie de l'Acte notarié,ou du contrat d'achat ou de vente  dûment requis, ou bien d'un Carte de Possesion."},
+    {"li": "Copie de identification oficial en vigueur du propriétaire."},
+    {"li": "Qu'il n'existe pas dette sur l'immeuble pour lequel on demande le nouveau contrat.."},
+    {"li": "Licence de fonctionnement ou inscription au Trésor Public."},
+    {"li": "Copie des statutes de l'entreprise."},
+    {"li": "Copie du procuration du représentant légal, ."},
+    {"li": "Copie de l'identification oficial en vigueur du représentant légal, "}
+  ],
+  "sub16": "Si vous louez, vous devez aussi avoir:",
+  "sub16li": [
+    {"li": "Copie du contrat de Bail."},
+    {"li": "Autorisation par écrit du locataire"},
+    {"li": "Copie de l'identification oficielle en vigueur du locataire."}
+  ],
+  "sub2": "POUR PRISES D'EAU DE PLUD D'UN DEMI-POUCE",
+  "sub21": "L'Original et deux copies du:",
+  "sub21li": [
+    {"li": "Office de demande de faisabilité des services d'eau potable et drainage, adressé au Directeur de la Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco (CAPAMA)."},
+    {"li": "Croquis du lieu de situation de l'immeuble."},
+    {"li": "Rapport de calcul."},
+    {"li": "Jeu de plans hydrauliques et sanitaires et spécification des metres carrés de d'espaces verts pour irrigation."},
+    {"li": "Paiement du étude de faisabilité."}
+  ],
+  "sub22": "Dans le cas de personnes physiques, vous deves aussi fournir  trois copies de:",
+  "sub22li": [
+    {"li": "Acte notarié de l'immeuble."},
+    {"li": "Identification oficial en vigueur du propriétaire."}   
+  ],
+  "sub23": "Dans le cas de personnes morales vous deve aussi fournir trois copies de:",
+  "sub23li": [
+    {"li": "Acte notarié de l'immeuble."},
+    {"li": "Identification oficial en vigueur du propriétaire."},
+    {"li": "Des statutes de la entreprise."},
+    {"li": "Procuration du représentant legal."},
+    {"li": "Identification oficial en vigueur du représentant légal."}
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "title1": "¿Quienes somos?",
+  "subti11": "Notre Mission",
+  "subti11cont": " Nous sommes un organisme public paramunicipal engagé à fournir le service d´eau potable et assainissment integral avec qualité, efficacité et  honnêteté, en  prennant soin du environnement écologique, a fin de satisfaire la communauté.",
+  "subti12": "Notre Vision",
+  "subti12cont": "Un service de qualité pour satisfaire les habitants d´Acapulco.",
+  "title2": "Nos Valeurs", 
+  "values": [
+    { "tl": "Qualité", "cont" : "Fournir un service au niveau d´un ville international comme Acapulco."},
+    { "tl": "éthique", "cont" : "Les usagers peuvent être sûrs que la honnêteté  c´est un pilier  importante pour nous et nous la suivons, donc nous disons que la honnêteté est notre compromis."},
+    { "tl": "Développement Interne", "cont" : "Nous travaillons ensemble pour construir la force de CAPAMA et de Acapulco."},
+    { "tl": "Personnel", "cont" : "Nous donnons de la puissance aux ressources humaines, en stimulant leur développement  et leur croissance personnelle."},
+    { "tl": "Compréhension", "cont" : "Nous comprenons les nécessités des usagers c'est pour cela que nous dessinons programmes pour les profiter."},
+    { "tl": "Notre stratégie", "cont" : "En fortifiant les ressources humaines et profitant les progrès technologiques, nous réussirons  à satisfaire une capacité de service supérieure et nous améliorerons la culture organisationnelle au profit des usagers,ce qui nos permettra obtenir de la rentabilité financiére pour continuer les programmes de développement."}
+  ]
+
+}
