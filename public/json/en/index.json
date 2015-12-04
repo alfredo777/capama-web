@@ -1,7 +1,7 @@
 {
   "li1t": "Welcome to CAPAMA",
   "li1c": "You can now find more quickly <br /> the options on our menu ",
-  "li1b": " <a href='http://www.capama.gob.mx/net/' class='btn btn-forest'>Pay my Account</a> <a href='/user_help/recipt' class='btn btn-red'>See my debts</a>",
+  "li1b": " <a href='http://www.capama.gob.mx/net/' class='btn btn-forest'>Pay my Account</a> <a href='/recipt' class='btn btn-red'>See my debts</a>",
   "li2t": "Online support",
   "li2c": "We invite you to use our online helpdesk .",
   "li2b": "<a href='/user_help/new_ticket' class='btn btn-orange'>Online support</a>",
