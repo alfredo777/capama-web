@@ -22,6 +22,15 @@ function loadTPLAPI(jsonn, tpln, divloadtpl){
    });
 }
 
+// cargar tpl add
+function loadTPLAPIADD(jsonn, tpln, divloadtpl){
+   getasJSONAPI(jsonn,function(data, err) {
+      getTemplate(tpln, data, function(output, err) {
+        $("#"+divloadtpl).after(output);
+      });    
+   });
+}
+
 // cargar paginando
 
 function loadTPLpaginate(data, tpln, divloadtpl){

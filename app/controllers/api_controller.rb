@@ -10,6 +10,11 @@ class ApiController < ApplicationController
     end
   end
 
+  def last_posts
+    @posts = BlogPost.last(2).reverse
+    render json: {posts: @posts}
+  end
+
   def users
     @users = User.paginate(:page => params[:page], :per_page => 30).order('id DESC')
     render json: @users

@@ -11,6 +11,10 @@ class HeadImageUploader < CarrierWave::Uploader::Base
      process :resize_to_fill => [440, 280]
   end
 
+  version :super_large do
+     process :resize_to_fill => [3000,2064]
+  end
+
 
   storage :file
 

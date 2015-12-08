@@ -4,10 +4,9 @@
   {{title}}
 </div>
 <div class="container inner2">
-
   <br/>
   <div class="blog grid-view col1 row">
-    <div class="col-sm-12 blog-content">
+    <div class="col-sm-8 blog-content">
       <div class="blog-posts">
         <div class="isotope row" id="puts-posts">
           {{#each posts}}
@@ -16,7 +15,7 @@
               <figure class="main"><a href="/post/{{id}}"><img src="{{head_image.image_head.url}}" alt="" /></a></figure>
               <div class="box text-center">
                 <div class="category cat6"><span><a href="#">Periodismo</a></span></div>
-                <h4 class="post-title"><a href="/post/{{id}}">{{{trimString title}}}</a></h4>
+                <h4 class="post-title truncate"><a href="/post/{{id}}">{{{trimString title}}}</a></h4>
                 <div class="meta"><span class="date">17 May 2015</span><span class="comments"><a href="#"><i class="icon-chat-1"></i> 5</a></span></div>
               </div>
             </div>
@@ -27,6 +26,10 @@
       <a onclick="paginatePost(2)" class="btn btn-defaul" data-remote="true" id="paginate-posts">
         Cargar mas Noticias
       </a>
+    </div>
+    <div class="col-sm-4 blog-content">
+      <a class="twitter-timeline" href="https://twitter.com/CAPAMA_Online" data-widget-id="674067281270300672">Tweets por el @CAPAMA_Online.</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <!--
     <div class="col-sm-4 blog-content">

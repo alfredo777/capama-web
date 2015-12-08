@@ -4430,3 +4430,16 @@ textarea {
     background: rgba(3, 30, 54, 0.9);
     font-size: 60px;
 }
+.foonav{
+    background: #5b5b5b;
+    z-index: 9999;
+    width: 100%;
+}
+
+.truncate {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}

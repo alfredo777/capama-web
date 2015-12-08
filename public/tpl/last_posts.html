@@ -1,0 +1,12 @@
+{{#each posts}}
+<li data-transition="fade">
+  <a href="/post/{{{id}}}">
+    <img class="inner-head-imh" src="{{{head_image.super_large.url}}}"  alt="" width="100%" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat" />
+    <h1  class="tp-caption large sfr" data-x="center" data-y="263" data-speed="900" data-start="800" data-easing="Sine.easeOut" style="color:#1C94BC;"><center>{{title}}</center></h1>
+  </a>
+</li>
+<script type="text/javascript">
+var hfg= $( window ).height();
+$('.inner-head-imh').height(hfg);
+</script>
+{{/each}}

@@ -115,6 +115,7 @@ Rails.application.routes.draw do
   post '/api/create_ticket'
   get '/api/create_customer', as: :create_customer
   post '/api/create_customer'
+  get '/api/last_posts'
 
   #### messages ####
   get '/messages/show', to: "messages#show", as: :show_message
