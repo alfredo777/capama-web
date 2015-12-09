@@ -1,46 +1,68 @@
-
 <div class="first-head"></div>
 <img src="/assets/heads/head1v2.png" width="100%">
-<div class="ahead-head">{{title}}</div>
+<div class="ahead-head truncate">{{title}}</div>
 <div class="submenu">
-  <a class="gettoDIV" data-target="planta-0">Papagallo I</a>
-  <a class="gettoDIV" data-target="planta-1">Papagallo II</a>
-  <a class="gettoDIV" data-target="planta-2">El chorro</a>
+  <a class="gettoDIV truncate" data-target="planta-0">Planta El Cayaco</a>
+  <a class="dropdown-gettoDIV truncate">Plantas tratadoras <i class="fa fa-caret-down"></i></a>
+  <div class="slide-xv" style="display:none;" >
+  <ul>
+  <li><a class="gettoDIV" data-target="tplanta-0">Aguas Blancas</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-1">Tecnológico</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-2">Renacimiento</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-3">Límite Sur</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-4">Puerto Marquez</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-5">Vicente Guerrero</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-6">Jabonera</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-7">Coloso</a></li>
+  <li><a class="gettoDIV" data-target="tplanta-8">Paso Limonero</a></li>
+  </ul>
+  </div>
 </div>
 <div class="container" style="text-align: justify; padding:30px;">
-  {{#each plants}}
+{{#each plants}}
   <div class="col-lg-12" id="planta-{{@index}}">
-    <h2>{{li}}</h2>
-    {{#each p}}
-    <p>{{{li}}}</p>
-    {{/each}}
-    {{#if conf}}
-        <pre>
-            {{#each conf}}
-              <p><b>{{#if c }}{{c}}.- {{/if}}</b>{{{li}}}</p>
-            {{/each}}
-    </pre>
-    {{/if}}
+    <h2>{{{li}}}</h2>
     <table class="table table-bordered">
       <thead>
         <tr>
-          {{#each headtable}}
-          <th width="25%" style="padding:5px;">{{{li}}}</th>
-          {{/each}}
+          <th width="25%" style="padding:5px;">Características de la planta</th>
+          <th width="25%" style="padding:5px;">Datos</th>
         </tr>
       </thead>
-      <tbody>
-        {{#each table}}
-        <tr >
-          <td style="padding:5px;"> {{{t1}}} </td>
-          <td style="padding:5px;"> {{{t2}}} </td>
-          <td style="padding:5px;"> {{{t3}}}</td>
-        </tr>
-        {{/each}}
-      </tbody>
+      {{#each char}}
+      <tr >
+          <td style="padding:5px;"> {{{li}}} </td>
+          <td style="padding:5px;"> {{{des}}} </td>
+      </tr>
+      {{/each}}
     </table>
+   {{{info}}}
+    {{#each waterinfo}}
+      <table class="table table-bordered">
+        <thead>
+          {{{head}}}
+        </thead>
+        <tbody>{{{li}}}</tbody>
+      </table>
+    {{/each}}
   </div>
-  {{/each}}
+{{/each}}
+{{#each tplants}}
+  <div class="col-lg-12" id="tplanta-{{@index}}">
+   <h2>{{{title}}}</h2>
+   {{{info}}}
+   {{#each tables}}
+      <h3>{{title}}</h3>
+      <table class="table table-bordered">
+        <thead>
+          {{{head}}}
+        </thead>
+        <tbody>{{{li}}}</tbody>
+      </table>
+    {{/each}}
+  </div>
+{{/each}}
+
 </div>
 
 <script type="text/javascript">
@@ -49,5 +71,9 @@
     $('html, body').animate({
         scrollTop: $("#"+target).offset().top - 100
     }, 2000);
+
 });
+  $('.dropdown-gettoDIV').click(function(){
+    $('.slide-xv').slideToggle('slow');
+  });
 </script>

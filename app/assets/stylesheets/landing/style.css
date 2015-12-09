@@ -4474,6 +4474,19 @@ textarea {
     bottom: 0;
     vertical-align: middle;
     height: 75px;
+}
 
-
+.slide-xv{
+    width: 200px;
+    padding: 1px;
+    border: solid 1px #eee;
+    position: relative;
+    margin-left: 130px;
+    background: rgba(6, 40, 122, 0.8) !important;
+    z-index: 9999999;
+    display:block;
+    float:none;
+}
+.slide-xv li{
+    width: 200px !important;
 }
