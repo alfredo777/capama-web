@@ -4443,3 +4443,22 @@ textarea {
   text-overflow: ellipsis;
   text-align: center;
 }
+.submenu {
+    background:  rgba(6, 40, 122, 0.8);
+    color: #fff;
+    width: 100%;
+    height: 75px;
+    z-index: 999999;
+    padding-left: 5%;
+    padding-right: 5%%;
+    text-align: left;
+    vertical-align: middle;
+   line-height: 75px;  
+}
+.submenu a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 10px;
+    padding-left: 20px;
+
+}

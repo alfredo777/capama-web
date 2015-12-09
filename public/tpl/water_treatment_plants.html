@@ -1,0 +1,53 @@
+
+<div class="first-head"></div>
+<img src="/assets/heads/head1v2.png" width="100%">
+<div class="ahead-head">{{title}}</div>
+<div class="submenu">
+  <a class="gettoDIV" data-target="planta-0">Papagallo I</a>
+  <a class="gettoDIV" data-target="planta-1">Papagallo II</a>
+  <a class="gettoDIV" data-target="planta-2">El chorro</a>
+</div>
+<div class="container" style="text-align: justify; padding:30px;">
+  {{#each plants}}
+  <div class="col-lg-12" id="planta-{{@index}}">
+    <h2>{{li}}</h2>
+    {{#each p}}
+    <p>{{{li}}}</p>
+    {{/each}}
+    {{#if conf}}
+        <pre>
+            {{#each conf}}
+              <p><b>{{#if c }}{{c}}.- {{/if}}</b>{{{li}}}</p>
+            {{/each}}
+    </pre>
+    {{/if}}
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          {{#each headtable}}
+          <th width="25%" style="padding:5px;">{{{li}}}</th>
+          {{/each}}
+        </tr>
+      </thead>
+      <tbody>
+        {{#each table}}
+        <tr >
+          <td style="padding:5px;"> {{{t1}}} </td>
+          <td style="padding:5px;"> {{{t2}}} </td>
+          <td style="padding:5px;"> {{{t3}}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{/each}}
+</div>
+
+<script type="text/javascript">
+  $(".gettoDIV").click(function() {
+    var target = $(this).data('target');
+    $('html, body').animate({
+        scrollTop: $("#"+target).offset().top - 100
+    }, 2000);
+});
+</script>

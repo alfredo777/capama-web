@@ -1,0 +1,514 @@
+{
+  "title": "Plantas potabilizadoras",
+  "plants": [{
+    "li": "Papagallo I",
+    "p": [{
+      "li": "Una de las principales fuentes de abastecimiento, ubicado en Río Papagayo."
+    }, {
+      "li": "La Captación Papagayo I esta formada por: Pozo Radial, Pozo raney, Pozos Someros I y II."
+    }, {
+      "li": "La Captación Papagayo I esta formada por:"
+    }],
+    "conf": [{
+      "c": "a",
+      "li": "Pozo Raney .- Aprovecha las aguas filtradas del subálveo del río por medio de tubería ranurada de 12&#34; de diámetro que forma una galería filtrante radial. Su capacidad es de 380 l.p.s. en promedio y está equipado con 3 equipos, de los cuales en condiciones normales, sólo opera uno."
+    }, {
+      "c": "b",
+      "li": "Pozo Radial .- Igualmente, aprovecha las aguas filtradas del subálveo del río por medio de tuberías ranuradas, su capacidad es de 750 l.p.s. y opera con 3 equipos."
+    }, {
+      "c": "c",
+      "li": "Pozos Someros I .- Consta de 4 pozos de 20 a 25 m. de profundidad, equipados con bombas sumergibles, de los cuales normalmente operan 3 y en conjunto aportan 130 l.p.s."
+    }, {
+      "c": "d",
+      "li": "Pozos Someros II .- Cuenta con 16 pozos de 18 a 25 m. de profundidad, equipados con bombas sumergibles, normalmente operan 13 y en conjunto aportan 254 l.p.s."
+    }, {
+      "c": "e",
+      "li": "La capacidad total de explotación del sistema Papagayo I es del orden de 1230 l.p.s. siendo su agua de buena calidad, ya que solo requiere cloración para su distribución."
+    }, {
+      "c": "f",
+      "li": "La zona que abastece este subsistema es la zona baja de Acapulco identificada como la de mayor actividad turística"
+    }],
+    "tanqu": "Tanques de almacenamiendo",
+    "headtable": [{
+      "li": "Nombre del tanque"
+    }, {
+      "li": "Capacidad del tanque"
+    }, {
+      "li": "Evalevación (M.S.N.M.)"
+    }],
+    "table": [{
+      "t1": "REBOMBEO PAPAGAYO I",
+      "t2": "1200",
+      "t3": "22.00"
+    }, {
+      "t1": "REBOMBEO TUNEL BAJO",
+      "t2": "18,000",
+      "t3": "52.30"
+    }, {
+      "t1": "TANQUE ICACOS",
+      "t2": "100",
+      "t3": "33.00"
+    }, {
+      "t1": "TANQUE COSTA AZUL",
+      "t2": "530",
+      "t3": "40.00"
+    }, {
+      "t1": "TANQUE CHINAMECA",
+      "t2": "1000",
+      "t3": "156.00"
+    }, {
+      "t1": "TANQUE ZAPATA I",
+      "t2": "500",
+      "t3": "32.82"
+    }, {
+      "t1": "TANQUE ZAPATA II",
+      "t2": "x",
+      "t3": "60.00"
+    }, {
+      "t1": "TANQUE SIMON BOLIVAR",
+      "t2": "400",
+      "t3": "90.00"
+    }, {
+      "t1": "CARCAMO VENTA ZAPATA",
+      "t2": "300",
+      "t3": "35.31"
+    }, {
+      "t1": "TANQUE EMPERADOR MOCTEZUMA",
+      "t2": "1400",
+      "t3": "66.71"
+    }, {
+      "t1": "TANQUE SINAI",
+      "t2": "2000",
+      "t3": "119.34"
+    }, {
+      "t1": "TANQUE INDUSTRIAL",
+      "t2": "1000",
+      "t3": "108.00"
+    }, {
+      "t1": "CARCAMO PASO LIMONERO",
+      "t2": "100",
+      "t3": "33.23"
+    }, {
+      "t1": "TANQUE BARRIO NUEVO",
+      "t2": "200",
+      "t3": "101.62"
+    }, {
+      "t1": "TANQUE No. I",
+      "t2": "7,200",
+      "t3": "120.00"
+    }, {
+      "t1": "TANQUE No. II",
+      "t2": "3,600",
+      "t3": "180.00"
+    }, {
+      "t1": "TANQUE No. III",
+      "t2": "200",
+      "t3": "80.00"
+    }]
+  }, {
+    "li": "Papagallo II",
+    "p": [{
+      "li": "El sistema Papagayo II esta constituido por una toma directa del rio que alimenta un carcamo de succión donde se han instalado 11 equipos de bombeo verticales de 16 &#34; de diametro en su descarga con motores de 400 hp, estos equipos se conectan a un múltiple de acero de 36 &#34; de diámetro, iniciando a partir de este múltiple la línea de conducción a presión de 60 &#34; de diámetro."
+    }, {
+      "li": "Debido a que el agua se toma directamente del río, se presentan problemas de turbiedad y azolvamientos que hacen que esta agua deba ser tratada en una planta Potabilizadora. Así mismo, y debido a que las maniobras para el desazolve del vaso de la presa La Venta, ubicada aguas arriba de esta captación, se realizan 4 veces al año en promedio, se genera la necesidad de cerrar la captación durante periodos que alcanzan 16 a 24 horas, que en ocasiones se traducen hasta en tres días para restablecer completamente el servicio en la red de distribución. Mediante el sistema  Papagayo II es posible captar hasta 2000 l.p.s."
+    }, {
+      "li": "La Planta Potabilizadora &#34; EL CAYACO &#34; recibe las aguas del sistema Papagayo II, para ser tratadas y enviadas a las principales líneas de conducción que a su vez abastecen a los sub-sistemas secundarios localizados en distintos sitios de la ciudad de Acapulco."
+    }, {
+      "li": "Las principales líneas de conducción a que se hace referencia son:"
+    }],
+    "conf": [{
+      "c": "Planta Potabilizadora",
+      "li": "Tanque Renacimiento"
+    }, {
+      "c": "Rebombeo Cruces",
+      "li": "Tanque Renacimiento"
+    }, {
+      "c": "Rebombeos Tecnológico, Coloso y Jabonera",
+      "li": "Tanque Renacimiento"
+    }, {
+      "c":"", "li": "Rebombeo Puerto Marqués. Las zonas que abastece este sistema son la alta y media del sistema de distribución, las cuales están comprendidas entre las cotas 275 a 100 y 100 a 50 mts. sobre el nivel del mar."
+    }],
+    "tanqu": "Tanques de almacenamiendo y rebombeos de agua potable del sistema Papagayo II",
+    "headtable": [{
+      "li": "Nombre del tanque"
+    }, {
+      "li": "Capacidad del tanque"
+    }, {
+      "li": "Evalevación (M.S.N.M.)"
+    }],
+    "table": [{
+      "t1": "CARCAMO DE    NAVIDAD DE LLANO LARGO",
+      "t2": "100",
+      "t3": "17.00"
+    }, {
+      "t1": "TANQUE NAVIDAD DE    LLANO LARGO",
+      "t2": "200",
+      "t3": "105.00"
+    }, {
+      "t1": "CARCAMO MIRAMAR",
+      "t2": "50",
+      "t3": "7.5"
+    }, {
+      "t1": "TANQUE MIRAMAR",
+      "t2": "100",
+      "t3": "118"
+    }, {
+      "t1": "ESTACION DE    REBOMBEO No.1 PTO. MARQUES",
+      "t2": "",
+      "t3": "4.20"
+    }, {
+      "t1": "REBOMBEO No. 2",
+      "t2": "&nbsp;",
+      "t3": "71.86"
+    }, {
+      "t1": "REBOMBEO No. 3",
+      "t2": "&nbsp;",
+      "t3": "137.37"
+    }, {
+      "t1": "REBOMBEO No.4",
+      "t2": "&nbsp;",
+      "t3": "209.00"
+    }, {
+      "t1": "TANQUE DIAMANTE",
+      "t2": "10,000",
+      "t3": "115.00"
+    }, {
+      "t1": "TANQUE LA BANDERA",
+      "t2": "10,000",
+      "t3": "265.00"
+    }, {
+      "t1": "TANQUE ICACOS I",
+      "t2": "100",
+      "t3": "124.00"
+    }, {
+      "t1": "TANQUE ICACOS II",
+      "t2": "100",
+      "t3": "125"
+    }, {
+      "t1": "TANQUE PIRULES",
+      "t2": "700",
+      "t3": "80.00"
+    }, {
+      "t1": "TANQUE&nbsp; COLORINES",
+      "t2": "350",
+      "t3": "175.00"
+    }, {
+      "t1": "TANQUE CEREZOS",
+      "t2": "250",
+      "t3": "140.00"
+    }, {
+      "t1": "TANQUE GEMELOS",
+      "t2": "1,000",
+      "t3": "372.00"
+    }, {
+      "t1": "REBOMBEO    TECNOLOGICO",
+      "t2": "500",
+      "t3": "18.00"
+    }, {
+      "t1": "TANQUE COLOSO No. 7",
+      "t2": "1,000",
+      "t3": "90.00"
+    }, {
+      "t1": "TANQUE COLOSO No. 8",
+      "t2": "1,000",
+      "t3": "90.00"
+    }, {
+      "t1": "TANQUE COLOSO No. 9",
+      "t2": "1,000",
+      "t3": "85.00"
+    }, {
+      "t1": "TANQUE COLOSO No. 24",
+      "t2": "700",
+      "t3": "150.00"
+
+    }, {
+      "t1": "TANQUE COLOSO No. 25",
+      "t2": "1,400",
+      "t3": "150.00"
+
+    }, {
+      "t1": "REBOMBEO COLOSO",
+      "t2": "500",
+      "t3": "&nbsp;"
+
+    }, {
+      "t1": "TANQUE COLOSO No. 10",
+      "t2": "1,000",
+      "t3": "90.00"
+
+    }, {
+      "t1": "TANQUE COLOSO No. 26",
+      "t2": "700",
+      "t3": "150.00"
+
+    }, {
+      "t1": "REBOMBEO JABONERA",
+      "t2": "500",
+      "t3": "18.00"
+
+    }, {
+      "t1": "TANQUE COLOSO No. 13",
+      "t2": "1,000",
+      "t3": "74.00"
+
+    }, {
+      "t1": "TANQUE COLOSO No. 12",
+      "t2": "1,000",
+      "t3": "90.00"
+
+    }, {
+      "t1": "TANQUE 5 DE MAYO I",
+      "t2": "425",
+      "t3": "70.00"
+
+    }, {
+      "t1": "TANQUE 5 DE MAYO II",
+      "t2": "325",
+      "t3": "117.00"
+
+    }, {
+      "t1": "TANQUE HEROES DE GUERRERO I",
+      "t2": "370",
+      "t3": "70.00"
+
+    }, {
+      "t1": "TANQUE HEROES DE  GUERRERO II",
+      "t2": "215",
+      "t3": "110.00"
+
+    }, {
+      "t1": "TANQUE LIBERTAD I",
+      "t2": "300",
+      "t3": "70.00"
+
+    }, {
+      "t1": "TANQUE LIBERTAD II",
+      "t2": "400",
+      "t3": "110.00"
+
+    }, {
+      "t1": "TANQUE RENACIMIENTO",
+      "t2": "4,000",
+      "t3": "74.00"
+    }, {
+      "t1": "TUNEL ALTO",
+      "t2": "6,650",
+      "t3": "160.00"
+
+    }, {
+      "t1": "TANQUE PARAISO",
+      "t2": "1,000",
+      "t3": "161.86"
+    }, {
+      "t1": "TANQUE SAN JOSE",
+      "t2": "1,000",
+      "t3": "148.35"
+    }, {
+      "t1": "CARCAMO ARROYO  SECO",
+      "t2": "100",
+      "t3": "30.00"
+    }, {
+      "t1": "TANQUE ARROYO  SECO",
+      "t2": "200",
+      "t3": "75.00"
+    }, {
+      "t1": "REBOMBEO CRUCES",
+      "t2": "800",
+      "t3": "39.00"
+    }, {
+      "t1": "TANQUE MARROQUIN",
+      "t2": "340",
+      "t3": "110.00"
+    }, {
+      "t1": "TANQUE MOGOTE",
+      "t2": "10,000",
+      "t3": "84.70"
+    }, {
+      "t1": "TANQUE LA IGUANA",
+      "t2": "2,400",
+      "t3": "61.80"
+    }, {
+      "t1": "TANQUE LA PINZONA",
+      "t2": "2,500",
+      "t3": "77.00"
+    }, {
+      "t1": "TANQUE LA SUIZA",
+      "t2": "450",
+      "t3": "64.50"
+    }, {
+      "t1": "TANQUE LA CIMA",
+      "t2": "3,500",
+      "t3": "112.00"
+    }, {
+      "t1": "TANQUE LA QUEBRADA",
+      "t2": "5,000",
+      "t3": "132.00"
+    }, {
+      "t1": "TANQUE PRADERAS DE COSTA AZUL",
+      "t2": "&nbsp;",
+      "t3": "&nbsp;"
+    }, {
+      "t1": "TANQUE LA MIRA",
+      "t2": "1,100",
+      "t3": "177.60"
+    }, {
+      "t1": "TANQUE MOZIMBA",
+      "t2": "375",
+      "t3": "130.00"
+    }, {
+      "t1": "TANQUE ISSSTE-PALOMARES",
+      "t2": "2,750",
+      "t3": "140.00"
+    }, {
+      "t1": "TANQUE No. 4",
+      "t2": "270",
+      "t3": "111.50"
+    }, {
+      "t1": "TANQUE No. 5",
+      "t2": "270",
+      "t3": "157.00"
+    }, {
+      "t1": "REBOMBEO TUNEL ALTO",
+      "t2": "&nbsp;",
+      "t3": "151.00"
+    }, {
+      "t1": "TANQUE 1º DE MAYO",
+      "t2": "100",
+      "t3": "439.00"
+    }, {
+      "t1": "TANQUE GARITA",
+      "t2": "1,200",
+      "t3": "275.00"
+    }, {
+      "t1": "TANQUE HORNOS INSURGENTES",
+      "t2": "5,000",
+      "t3": "171.90"
+    }, {
+      "t1": "TANQUE PALMA SOLA",
+      "t2": "90",
+      "t3": "115.00"
+    }, {
+      "t1": "TANQUE MORELOS",
+      "t2": "400",
+      "t3": "150.00"
+    }, {
+      "t1": "TANQUE MORELOS II",
+      "t2": "200",
+      "t3": "198.00"
+    }, {
+      "t1": "TANQUE MORELOS III",
+      "t2": "500",
+      "t3": "237.00"
+    }, {
+      "t1": "TANQUE MIRADOR",
+      "t2": "800",
+      "t3": "333.00"
+    }, {
+      "t1": "TANQUE FOVISSSTE-PALMA SOLA",
+      "t2": "1,600",
+      "t3": "115.00"
+    }, {
+      "t1": "TANQUE FOVISSSTE II",
+      "t2": "&nbsp;",
+      "t3": "157.00"
+    }, {
+      "t1": "TANQUE FOVISSSTE III",
+      "t2": "&nbsp;",
+      "t3": "185.00"
+    }, {
+      "t1": "TANQUE FOVISSSTE IV",
+      "t2": "&nbsp;",
+      "t3": "220.00"
+    }, {
+      "t1": "TANQUE  FOVISSSTE-PALMA SOLA",
+      "t2": "600",
+      "t3": "236.72"
+    }, {
+      "t1": "TANQUE LA&nbsp; LAJA",
+      "t2": "2,000",
+      "t3": "268.50"
+    }, {
+      "t1": "CISTERNA DE BOMBEO INF. ALTA PROGRESO",
+      "t2": "&nbsp;",
+      "t3": "162.00"
+    }, {
+      "t1": "TANQUE INFONAVIT    ALTA PROGRESO",
+      "t2": "1,200",
+      "t3": "228.00"
+    }, {
+      "t1": "TANQUE INFONAVIT GEMELOS",
+      "t2": "2,280",
+      "t3": "268.00"
+    }, {
+      "t1": "TANQUE CUMBRES DE FIGUEROA",
+      "t2": "3,000",
+      "t3": "275.00"
+    }, {
+      "t1": "TANQUE 23 DE NOVIEMBRE",
+      "t2": "500",
+      "t3": "189.00"
+    }, {
+      "t1": "TANQUE TEHUACAN",
+      "t2": "107",
+      "t3": "53.50"
+    }, {
+      "t1": "TANQUE JARDIN",
+      "t2": "625",
+      "t3": "110.82"
+    }, {
+      "t1": "TANQUE PIRULES",
+      "t2": "330",
+      "t3": "80.41"
+    }, {
+      "t1": "TANQUE ALCANFORES",
+      "t2": "480",
+      "t3": "47.98"
+    }, {
+      "t1": "TANQUE PIE DE LA CUESTA",
+      "t2": "500",
+      "t3": "76.50"
+    }, {
+      "t1": "TANQUE SAN ISIDRO",
+      "t2": "500",
+      "t3": "76.50"
+    }, {
+      "t1": "TANQUE EL PEDREGOSO",
+      "t2": "500",
+      "t3": "48.85"
+    }, {
+      "t1": "TANQUE PITAYOS II",
+      "t2": "1,000",
+      "t3": "206.50"
+    }, {
+      "t1": "TANQUE LAS PALMAS",
+      "t2": "422",
+      "t3": "170.00"
+    }, {
+      "t1": "TANQUE MANGOS",
+      "t2": "200",
+      "t3": "133.65"
+    }, {
+      "t1": "TANQUE CEREZOS",
+      "t2": "283",
+      "t3": "199.50"
+    }, {
+      "t1": "TANQUE ISOBARICA",
+      "t2": "1,000",
+      "t3": "280.00"
+    }, {
+      "t1": "TANQUE IGNACIO M. ALTAMIRANO",
+      "t2": "500",
+      "t3": "229.00"
+    }]
+  }, {
+    "li": "El chorro",
+    "p": [{
+      "li": "Este sistema de captación aprovecha caudales provenientes de manantiales ubicados en el municipio de Coyuca de Benítez. El agua captada es conducida, almacenada y distribuida mediante nuestra infraestructura"
+    }],
+    "conf": [],
+    "tanqu": "",
+    "headtable": [],
+    "table": []
+  }]
+
+}
