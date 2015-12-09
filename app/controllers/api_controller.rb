@@ -11,7 +11,7 @@ class ApiController < ApplicationController
   end
 
   def last_posts
-    @posts = BlogPost.last(2).reverse
+    @posts = BlogPost.last(3).reverse
     render json: {posts: @posts}
   end
 
