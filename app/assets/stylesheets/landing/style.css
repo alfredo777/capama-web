@@ -4463,3 +4463,17 @@ textarea {
     cursor: pointer;
 
 }
+.blur-me {
+  -webkit-filter: contrast(2);
+  filter: blur(20px);
+}
+.bottom-slider-part{
+    width: 100%;
+    background: rgba(34, 44, 44, 0.9)!important;
+    color: #fff;
+    bottom: 0;
+    vertical-align: middle;
+    height: 75px;
+
+
+}
