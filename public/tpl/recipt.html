@@ -97,7 +97,7 @@ float: left;
 text-align: right;
 }
 .cmid{
-width: 50%;
+width: 50% !important;
 float: left;
 padding-left: 30px;
 padding-right: 30px;
@@ -115,135 +115,159 @@ border-right: solid 1px #{{color}};
 border-left: solid 1px #{{color}};
 border-bottom: solid 1px #{{color}};
 }
+.ponint_div{
+padding: 5px;
+width: auto;
+position: relative;
+display: block;
+border: dotted 3px #{{color}};
+}
+.watermark{
+  width: 100%;
+  position: fixed;
+  margin-top: 360px;
+  color: rgba(15, 26, 44, 0.4);
+  font-size: 70px; 
+  padding-left: 30px;
+}
 </style>
 <div class="first-head"></div>
 <img src="/assets/heads/head1v2.png" width="100%">
 <div class="ahead-head">
   {{title}}
 </div>
-
 <div class="container inner2">
-   <div class="btn btn-green" id="format-print">Imprimir recibo</div>
+  <div class="btn btn-green" id="format-print">Imprimir recibo</div>
+  <div  style="width:100%; overflow-y:auto;" id="conft">
+    <div id="recipt" style="width:100%;">
+      <div class="content-recipt" >
+        <div class="watermark">Material Informativo no oficial</div>
 
-  <div id="recipt" >
-    <div class="content-recipt" >
-      <div class="head-recipt">
-        <div class="head-ac">
-          <div class="head-content">
-            <div class="pull-left">
-              {{{head}}}
+        <div class="head-recipt">
+          <div class="head-ac">
+            <div class="head-content">
+              <div class="pull-left">
+                {{{head}}}
+              </div>
+            </div>
+            <div class="logo-content"><img src="/assets/admin/logo.png" width="60%" class="pull-right" /></div>
+          </div>
+          <div class="container-clover">
+            {{#each head-li1}}
+            <div class="clover-list">
+              <center>{{{li}}}</center>
+              <div class="clover-content">{{content}}</div>
+            </div>
+            {{/each}}
+          </div>
+          <div class="container-clover">
+            {{#each head-li2}}
+            <div class="clover-list">
+              <center>{{{li}}}</center>
+              <div class="clover-content">{{content}}</div>
+            </div>
+            {{/each}}
+          </div>
+        </div>
+        <div class="content-moc">
+          <div class="cmid">
+            <div class="ponint_div" style="position:absolute !important;">
+              <div class="blue-span">USUARIO</div>
+              <br/>
+              {{{user}}} <br/>
+              {{{address}}}
+              <br/><br/>
+              <div class="blue-span-min">NUM.MEDIDOR</div>
+              <div class="blue-span-min">DIAMETRO</div>
+              <div class="blue-span-min">TIPO DE USUARIO</div>
+              <div class="span-ming">{{medidor}}</div>
+              <div class="span-ming">{{diameter}}</div>
+              <div class="span-ming">{{service}}</div>
+              <br/><br/>
+              <div class="blue-span-min">CLAVE DE ACT</div>
+              <div class="blue-span-min">PROM TARIFA</div>
+              <div class="blue-span-min">FECHA DE CORTE</div>
+              <div class="span-ming">{{clavact}}</div>
+              <div class="span-ming">{{tarifa}}</div>
+              <div class="span-ming">{{fechacorte}}</div>
             </div>
           </div>
-          <div class="logo-content"><img src="/assets/admin/logo.png" width="60%" class="pull-right" /></div>
-        </div>
-        <div class="container-clover">
-          {{#each head-li1}}
-          <div class="clover-list">
-            <center>{{{li}}}</center>
-            <div class="clover-content">{{content}}</div>
+          <div class="cmid">
+            <div class="ponint_div" style="width:100% !important;">
+              <div class="blue-span" style="width:100% !important;">DATOS DE PAGOS</div>
+              <div class="payments">
+                {{#each bank }}
+                <p><b>{{li}}</b>: {{content}}</p>
+                {{/each}}
+                <div class="ean128">{{homocode}}</div>
+                <div>{{homocode}}</div>
+              </div>
+            </div>
           </div>
-          {{/each}}
-        </div>
-        <div class="container-clover">
-          {{#each head-li2}}
-          <div class="clover-list">
-            <center>{{{li}}}</center>
-            <div class="clover-content">{{content}}</div>
-          </div>
-          {{/each}}
-        </div>
-      </div>
-      <div class="content-moc">
-        <div class="cmid">
-          <div class="blue-span">USUARIO</div>
-          <br/>
-          {{{user}}} <br/>
-          {{{address}}}
-          <br/><br/>
-          <div class="blue-span-min">NUM.MEDIDOR</div>
-          <div class="blue-span-min">DIAMETRO</div>
-          <div class="blue-span-min">TIPO DE USUARIO</div>
-          <div class="span-ming">{{medidor}}</div>
-          <div class="span-ming">{{diameter}}</div>
-          <div class="span-ming">{{service}}</div>
-          <br/><br/>
-          <div class="blue-span-min">CLAVE DE ACT</div>
-          <div class="blue-span-min">PROM TARIFA</div>
-          <div class="blue-span-min">FECHA DE CORTE</div>
-          <div class="span-ming">{{clavact}}</div>
-          <div class="span-ming">{{tarifa}}</div>
-          <div class="span-ming">{{fechacorte}}</div>
-        </div>
-        <div class="cmid">
-          <div class="blue-span">DATOS DE PAGOS</div>
-          <div class="payments">
-            {{#each bank }}
-            <p><b>{{li}}</b>: {{content}}</p>
+          <div class="cfull">
+            <div class="blue-span-min-2">CONCEPTO</div>
+            <div class="blue-span-min-2">REZAGO</div>
+            <div class="blue-span-min-2">MES ACTUAL</div>
+            <div class="blue-span-min-2">TOTAL</div>
+            {{#each listconcepts }}
+            <div class="span-ming-2" style="text-align:left;">{{concept}}</div>
+            <div class="span-ming-2">${{rezago}}</div>
+            <div class="span-ming-2">${{mes_actual}}</div>
+            <div class="span-ming-2">${{total}}</div>
             {{/each}}
-            <div class="ean128">{{homocode}}</div>
-            <div>{{homocode}}</div>
-            <br/>
+          </div>
+          <div class="cmid" style="text-align:justify; height: 150px;">
+            <div class="ponint_div" style="width:100% !important; margin-bottom:5px;">
+              <br/>
+              <p>EL SANEAMIENTO ES SUBSIADO POR EL GOBIERNO FEDERAL CON $0.50 MXN POR CADA METRO CÚBICO(M3) DE AGUA RESIDUAL TRATADA.</p>
+              <P>PARA COMBATIR EL DENGUE, MANTÉN TAPADOS TUS CONTENEDORES DE AGUA LIMPIA Y VOLTEA LOS QUE NO UTILICES. </P>
+            </div>
+          </div>
+          <div class="cmid" style="height: 150px;">
+            <div class="blue-span-min-2">RANGO</div>
+            <div class="blue-span-min-2">M3</div>
+            <div class="blue-span-min-2">TARIFA</div>
+            <div class="blue-span-min-2">IMPORTE</div>
+            {{#each tarifas }}
+            <div class="span-ming-2" style="text-align:left;">{{rango}}</div>
+            <div class="span-ming-2">{{m3}}</div>
+            <div class="span-ming-2">${{tarifa}}</div>
+            <div class="span-ming-2">${{importe}}</div>
+            {{/each}}
           </div>
         </div>
-        <div class="cfull">
-          <div class="blue-span-min-2">CONCEPTO</div>
-          <div class="blue-span-min-2">REZAGO</div>
-          <div class="blue-span-min-2">MES ACTUAL</div>
+      </div>
+      <div class="pointer-dotted">
+        <center>CORTAR</center>
+        <div class="cmid">
+          <b>IMPORTE TOTAL A PAGAR</b></br>
+          {{importeconletra}}</br></br>
+          <b>USUARIO</b></br>
+          {{user}}</br>
+          {{address}}</br></br>
+          <div><b> Importante: </b>  Este recibo ha sido generado de manera digital, no sustituye al original, no consta como copia certíficada y solo es para conocimiento del estatus del usuario de  CAPAMA, capama no avala como tal la validez de este recivo como forma de identificación de la cuenta. </div>
+        </div>
+        <div class="cmid">
+          <div class="blue-span-min-2">Nº RECIBO</div>
+          <div class="blue-span-min-2">PERIODO</div>
+          <div class="blue-span-min-2">ADEUDO</div>
           <div class="blue-span-min-2">TOTAL</div>
-          {{#each listconcepts }}
-          <div class="span-ming-2" style="text-align:left;">{{concept}}</div>
-          <div class="span-ming-2">${{rezago}}</div>
-          <div class="span-ming-2">${{mes_actual}}</div>
-          <div class="span-ming-2">${{total}}</div>
-          {{/each}}
+          <div class="span-ming-2" style="text-align:left;">{{recibo}}</div>
+          <div class="span-ming-2">{{perdio}}</div>
+          <div class="span-ming-2">${{adeudo_anterior}}</div>
+          <div class="span-ming-2">${{importe_total}}</div>
+          </br></br>
+          <p>Pago en oxxo:</p>
+          <div class="ean128">{{oxxocode}}</div>
+          <div> {{oxxocode}}</div><br/>
+          <div class="pull-right"><img src="/assets/capamalogooficial.png" width="40%" class="pull-right" /></div>
         </div>
-        <div class="cmid" style="text-align:justify; height: 150px;">
-          <br/>
-          <p>EL SANEAMIENTO ES SUBSIADO POR EL GOBIERNO FEDERAL CON $0.50 MXN POR CADA METRO CÚBICO(M3) DE AGUA RESIDUAL TRATADA.</p>
-          <P>PARA COMBATIR EL DENGUE, MANTÉN TAPADOS TUS CONTENEDORES DE AGUA LIMPIA Y VOLTEA LOS QUE NO UTILICES. </P>
-        </div>
-        <div class="cmid" style="height: 150px;">
-          <div class="blue-span-min-2">RANGO</div>
-          <div class="blue-span-min-2">M3</div>
-          <div class="blue-span-min-2">TARIFA</div>
-          <div class="blue-span-min-2">IMPORTE</div>
-          {{#each tarifas }}
-          <div class="span-ming-2" style="text-align:left;">{{rango}}</div>
-          <div class="span-ming-2">{{m3}}</div>
-          <div class="span-ming-2">${{tarifa}}</div>
-          <div class="span-ming-2">${{importe}}</div>
-          {{/each}}
-        </div>
-      </div>
-    </div>
-    <div class="pointer-dotted">
-      <center>CORTAR</center>
-      <div class="cmid">
-        <b>IMPORTE TOTAL A PAGAR</b></br>
-        {{importeconletra}}</br></br>
-        <b>USUARIO</b></br>
-        {{user}}</br>
-        {{address}}</br>
-      </div>
-      <div class="cmid">
-        <div class="blue-span-min-2">Nº RECIBO</div>
-        <div class="blue-span-min-2">PERIODO</div>
-        <div class="blue-span-min-2">ADEUDO</div>
-        <div class="blue-span-min-2">TOTAL</div>
-        <div class="span-ming-2" style="text-align:left;">{{recibo}}</div>
-        <div class="span-ming-2">{{perdio}}</div>
-        <div class="span-ming-2">${{adeudo_anterior}}</div>
-        <div class="span-ming-2">${{importe_total}}</div>
-        </br></br>
-        <p>Pago en oxxo:</p>
-        <div class="ean128">{{oxxocode}}</div>
-        <div> {{oxxocode}}</div><br/>
-        <div class="pull-right"><img src="/assets/admin/logo-v-3.png" width="40%" class="pull-right" /></div>
       </div>
     </div>
   </div>
 </div>
 <script type="text/javascript">
+
 $(document).ready(function(){
 html2canvas($("#recipt"), {
 onrendered: function(canvas) {
@@ -254,6 +278,9 @@ theCanvas = canvas;
 $("#recipt").html(convertCanvasToImage(canvas));
 // Clean up
 //document.body.removeChild(canvas);
+$("#recipt img").width("75%");
+$('#conft').width("100%");
+$('#recipt').width("100%");
 }
 });
 function convertCanvasToImage(canvas) {
@@ -269,4 +296,5 @@ window.print();
 window.location = url
 });
 });
+
 </script>
