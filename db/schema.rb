@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124104955) do
+ActiveRecord::Schema.define(version: 20151211013247) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(version: 20151124104955) do
   end
 
   add_index "blog_posts", ["type"], name: "index_blog_posts_on_type"
+
+  create_table "celphone_images", force: true do |t|
+    t.integer  "imageable_id"
+    t.string   "imageable_type"
+    t.string   "img"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "conversations", force: true do |t|
     t.integer  "user_id"
@@ -174,7 +182,6 @@ ActiveRecord::Schema.define(version: 20151124104955) do
     t.string   "ux"
     t.string   "stage"
     t.string   "account_number"
-    t.datetime "data_access"
     t.integer  "reading_assignment_id"
     t.boolean  "successfully_completed"
     t.datetime "created_at"
@@ -184,6 +191,7 @@ ActiveRecord::Schema.define(version: 20151124104955) do
     t.text     "abnormalities"
     t.text     "observations"
     t.text     "reference"
+    t.string   "data_access"
   end
 
   add_index "reading_takes_waters", ["business_name"], name: "index_reading_takes_waters_on_business_name"

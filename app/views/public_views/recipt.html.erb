@@ -1,1 +1,5 @@
-<%= render partial: "/renders_layout/loading", locals: {template: "recipt", json:"recipt", div: "loader", type: "transparency"} %>
+<%#= render partial: "/renders_layout/loading", locals: {template: "recipt", json:"recipt", div: "loader", type: "transparency"} %>
+
+<script type="text/javascript">
+    getRecipt("<%=params[:acount]%>","recipt","loader");
+</script>

@@ -6,7 +6,7 @@
 #
 default: &default
   adapter: sqlite3
-  pool: 50
+  pool: 50000
   timeout: 15000
 
 development:
@@ -27,5 +27,5 @@ production:
   user: localuser
   password: post123
   database: production
-  pool: 50
+  pool: 50000
   timeout: 15000

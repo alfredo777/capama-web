@@ -30,10 +30,23 @@ class AppmobileApiController < ApplicationController
     @reading.observations = params[:observations]
     @reading.abnormalities = params[:abnormalities]
     @reading.lecture = params[:lecture]
-    @reading.data_access = params[:data_access].to_date
+    @reading.data_access = params[:data_access].to_s
     @reading.save
 
     render json: @readings.to_json, callback: params[:callback]
+  end
+
+  def images
+    thr = Thread.new do
+    @images = CelphoneImages.new
+    @images.img = params[:file]
+    @images.imageable_id = params[:imageable_id].to_i
+    @images.imageable_type = params[:imageable_type].to_s
+    @images.save
+   end
+   thr.join
+
+    render json: @images.to_json, callback: params[:callback]
   end
 
   def sincronize_user_helps

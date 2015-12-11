@@ -5,6 +5,16 @@ function loadDBTPL(data, tpln, divloadtpl){
     });  
 }
 
+function getRecipt(jsonn, tpln, divloadtpl){
+   var datax = {"cuenta": jsonn};
+   getasJSONRecipt(datax,function(data, err) {
+      getTemplate(tpln, data, function(output, err) {
+        $("#"+divloadtpl).html(output);
+      });    
+   });
+}
+
+
 function loadTPL(jsonn, tpln, divloadtpl, lang){
    getasJSON(jsonn, lang,function(data, err) {
       getTemplate(tpln, data, function(output, err) {
@@ -77,6 +87,23 @@ function getasJSONAPI(json_file ,callback){
     cache: true,
     success: function (data) {
       callback(data, null);
+    },
+    error: function(err) {
+      callback(null, err);
+    }
+  });
+}
+
+function getasJSONRecipt(acount,callback){
+  $.ajax({
+    dataType: "json",
+    url: "http://www.capama.gob.mx/net/recibo/",
+    data: acount,
+    cache: true,
+    type: 'POST',
+    success: function (data) {
+      callback(data, null);
+      console.log(data);
     },
     error: function(err) {
       callback(null, err);
