@@ -96,7 +96,7 @@ function getasJSONAPI(json_file ,callback){
 
 function getasJSONRecipt(acount,callback){
   $.ajax({
-    dataType: "json",
+    dataType: "jsonp",
     url: "http://www.capama.gob.mx/net/recibo/",
     data: acount,
     cache: true,
