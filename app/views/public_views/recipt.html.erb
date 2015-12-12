@@ -1,5 +1,13 @@
 <%#= render partial: "/renders_layout/loading", locals: {template: "recipt", json:"recipt", div: "loader", type: "transparency"} %>
-
+<% if params[:acount].nil? && params[:recipt].nil? %>
+  <div class="first-head"></div>
+  <img src="/assets/heads/head1v2.png" width="100%">
+  <div  class="container inner2" >
+  <%=link_to "Descarga tu recibo", "http://www.capama.gob.mx/net/", class: "btn btn-green" %>
+  </div>
+<%else%>
 <script type="text/javascript">
     getRecipt("<%=params[:acount]%>","recipt","loader");
 </script>
+<div id="loader"></div>
+<%end%>

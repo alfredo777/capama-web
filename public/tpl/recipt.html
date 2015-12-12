@@ -2,8 +2,9 @@
 <script type="text/javascript" src="/assets/canvas2image.js"></script>
 <style type="text/css">
 .content-recipt {
-height: 1050px;
-width: 100%;
+height: auto;
+width: 1170px;
+overflow: auto;
 border-right: solid 1px #{{color}};
 border-left: solid 1px #{{color}};
 border-top: solid 1px #{{color}};
@@ -136,7 +137,8 @@ border: dotted 3px #{{color}};
 <div class="ahead-head">
   {{title}}
 </div>
-<div class="container inner2">
+<div  class="container inner2" >
+  <div id="contentxxxv" style="width:1170px !important; overflow:auto !important; ">
   <div class="btn btn-green" id="format-print">Imprimir recibo</div>
   <div  style="width:100%; overflow-y:auto;" id="conft">
     <div id="recipt" style="width:100%;">
@@ -216,7 +218,7 @@ border: dotted 3px #{{color}};
             <div class="span-ming-2">${{total}}</div>
             {{/each}}
           </div>
-          <div class="cmid" style="text-align:justify; height: 150px;">
+          <div class="cmid" style="text-align:justify; height: 150px; margin-bottom: 40px !important;">
             <div class="ponint_div" style="width:100% !important; margin-bottom:5px;">
               <br/>
               <p>EL SANEAMIENTO ES SUBSIADO POR EL GOBIERNO FEDERAL CON $0.50 MXN POR CADA METRO CÚBICO(M3) DE AGUA RESIDUAL TRATADA.</p>
@@ -239,7 +241,7 @@ border: dotted 3px #{{color}};
       </div>
       <div class="pointer-dotted">
         <center>CORTAR</center>
-        <div class="cmid">
+        <div class="cmid"  style="margin-bottom: 40px !important;">
           <b>IMPORTE TOTAL A PAGAR</b></br>
           {{importeconletra}}</br></br>
           <b>USUARIO</b></br>
@@ -247,7 +249,7 @@ border: dotted 3px #{{color}};
           {{address}}</br></br>
           <div><b> Importante: </b>  Este recibo ha sido generado de manera digital, no sustituye al original, no consta como copia certíficada y solo es para conocimiento del estatus del usuario de  CAPAMA, capama no avala como tal la validez de este recivo como forma de identificación de la cuenta. </div>
         </div>
-        <div class="cmid">
+        <div class="cmid"  style="margin-bottom: 100px !important;">
           <div class="blue-span-min-2">Nº RECIBO</div>
           <div class="blue-span-min-2">PERIODO</div>
           <div class="blue-span-min-2">ADEUDO</div>
@@ -281,6 +283,7 @@ $("#recipt").html(convertCanvasToImage(canvas));
 $("#recipt img").width("75%");
 $('#conft').width("100%");
 $('#recipt').width("100%");
+$('#contentxxxv').width("100%");
 }
 });
 function convertCanvasToImage(canvas) {

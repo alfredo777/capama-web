@@ -8,6 +8,7 @@ function loadDBTPL(data, tpln, divloadtpl){
 function getRecipt(jsonn, tpln, divloadtpl){
    var datax = {"cuenta": jsonn};
    getasJSONRecipt(datax,function(data, err) {
+      console.log(data);
       getTemplate(tpln, data, function(output, err) {
         $("#"+divloadtpl).html(output);
       });    
@@ -103,7 +104,6 @@ function getasJSONRecipt(acount,callback){
     type: 'GET',
     success: function (data) {
       callback(data, null);
-      console.log(data);
     },
     error: function(err) {
       callback(null, err);
