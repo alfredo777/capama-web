@@ -100,7 +100,7 @@ function getasJSONRecipt(acount,callback){
     url: "http://www.capama.gob.mx/net/recibo/",
     data: acount,
     cache: true,
-    type: 'POST',
+    type: 'GET',
     success: function (data) {
       callback(data, null);
       console.log(data);
