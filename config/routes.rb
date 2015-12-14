@@ -42,6 +42,8 @@ Rails.application.routes.draw do
   post 'admin/clear_readings', to: 'api#clear_readings' 
   get 'admin/destroy_read', to: 'api#destroy_read', as: :destroy_read
   post 'admin/destroy_read', to: 'api#destroy_read'
+  get 'admin/show_readings', as: :show_readings
+  get 'admin/celphone_images', as: :celphone_images
 
   #### posts ######
   get 'admin/posts', to: 'posts#posts', as: :posts

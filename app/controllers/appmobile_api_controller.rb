@@ -33,18 +33,20 @@ class AppmobileApiController < ApplicationController
     @reading.data_access = params[:data_access].to_s
     @reading.save
 
+    @images = CelphoneImages.where(imageable_id: @reading.id, imageable_type: "routes")
+    @images.each do |i|
+      i.destroy
+    end
+
     render json: @readings.to_json, callback: params[:callback]
   end
 
   def images
-    thr = Thread.new do
     @images = CelphoneImages.new
-    @images.img = params[:file]
+    @images.img = params[:file] 
     @images.imageable_id = params[:imageable_id].to_i
     @images.imageable_type = params[:imageable_type].to_s
     @images.save
-   end
-   thr.join
 
     render json: @images.to_json, callback: params[:callback]
   end

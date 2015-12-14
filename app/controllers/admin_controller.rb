@@ -218,13 +218,20 @@ class AdminController < ApplicationController
     @users = users.order(name: :asc)
   end
 
+  def show_readings
+    @route = ReadingAssignment.find_by_id(params[:id])
+    @routes = @route.reading_takes_waters.paginate(:page => params[:page], :per_page => 100).order('id DESC')
+    respond_to do |format|
+      format.html 
+    end
+  end
+
   def contracts
     @contracts = ServiceContract.paginate(:page => params[:page], :per_page => 40).order('id DESC')
   end
 
   def inspects
     @inspects = Inspect.paginate(:page => params[:page], :per_page => 40).order('id DESC')
-
   end
 
   def export_inspect
@@ -236,6 +243,10 @@ class AdminController < ApplicationController
         send_data(@inspect.to_xls, :type => "text/xls; charset=utf-8; header=present", :filename => filename)
        }
     end
+  end
+
+  def celphone_images
+    @images = CelphoneImages.where(imageable_id: params[:imageable_id], imageable_type: params[:imageable_type])
   end
 
   def export_contract

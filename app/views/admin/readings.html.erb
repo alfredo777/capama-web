@@ -33,7 +33,7 @@
                 <%end%>
               </td>
               <td><%=link_to "Eliminar", destroy_read_path(id: read.id), "data-confirm": "¿Estas seguro de querer eliminar esta ruta?"%> | <%=  link_to "Limpiar(quita todas las rutas importadas)", clear_readings_path(id: read.id) %></td>
-              <td><%= link_to "Exportar", export_readings_path(id: read.id, :format => :xls) %></td>
+              <td><%= link_to 'Ver lecturas', show_readings_path(id: read.id)%></td>
             </tr>
             <%end%>
           </tbody>

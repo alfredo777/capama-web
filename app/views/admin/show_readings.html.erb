@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Lecturas de agua</header>
+  <section class="panel">
+    <div class="panel-body">
+      <div class="table-responsive">
+        <a href="/files/routes_import.csv" class="btn btn-default">Descargar Ejemplo para importación CSV</a>
+        <%= link_to "Exportar Lecturas de la ruta", export_readings_path(id: @route.id, :format => :xls), class: "btn btn-info" %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombre del negocio</th>
+              <th>Dirección</th>
+              <th>Colonia</th>
+              <th>S</th>
+              <th>U</th>
+              <th>Etapa</th>
+              <th>Cuenta</th>
+              <th>Diametro</th>
+              <th>Lectura</th>
+              <th>Anormalidades</th>
+              <th>Acceso de los datos</th>
+              <th>Fecha en la que se agrego el registro a la ruta</th>
+              <th>Eliminar</th>
+              <th>Ver imagenes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @routes.each do |r| %>
+            <tr>
+              <td> <%= r.business_name %></td>
+              <td> <%= r.address %></td>
+              <td> <%= r.colony %></td>
+              <td> <%= r.sx %></td>
+              <td> <%= r.ux %></td>
+              <td> <%= r.stage %></td>
+              <td> <%= r.account_number %></td>
+              <td> <%= r.diameter %></td>
+              <td> <%= r.lecture %></td>
+              <td> <%= r.abnormalities %></td>
+              <td> <%= r.data_access %></td>
+              <td> <%= r.created_at %></td>
+              <td></td>
+              <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "routes", routes: @route.id) %></td>
+            </tr>
+            <%end%>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+</div>
