@@ -11,7 +11,6 @@
             <tr>
               <th>Lecturista</th>
               <th>Fecha para la toma de lectua</th>
-              <th>Fecha de sincronización</th>
               <th>Número de ruta</th>
               <th>Importación</th>
               <th>Eliminar | Limpiar </th>
@@ -23,7 +22,6 @@
             <tr>
               <td><%= read.user.name %></td>
               <td><%= read.future_scheduled %></td>
-              <td><%= read.synchronization_date%></td>
               <td><%= read.route_number %></td>
               <td>
                 <%=form_tag import_readings_path, multipart: true do -%>

@@ -7,6 +7,7 @@ class User < ActiveRecord::Base
   has_many :messages, as: :talker
   has_many :conversations
   has_many :reading_assignments
+  has_many :user_inspects
   validates_presence_of :password
   validates_presence_of :name
   validates_presence_of :card

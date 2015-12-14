@@ -231,8 +231,17 @@ class AdminController < ApplicationController
   end
 
   def inspects
-    @inspects = Inspect.paginate(:page => params[:page], :per_page => 40).order('id DESC')
+    @inspects = UserInspect.paginate(:page => params[:page], :per_page => 100).order('id DESC')
+    users = User.where(:area => 'reportes')
+    @users = users.order(name: :asc)
   end
+
+  def show_inspects
+    @route = UserInspect.find_by_id(params[:id])
+    @routes =  @route.inspects.paginate(:page => params[:page], :per_page => 40).order('id DESC')
+  end
+
+  
 
   def export_inspect
     @inspect = Inspect.where(id: params[:id])

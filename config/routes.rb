@@ -37,13 +37,25 @@ Rails.application.routes.draw do
   post 'admin/create_reading', to: 'api#create_reading'
   get 'admin/import_readings', to: 'api#import_readings', as: :import_readings
   post 'admin/import_readings', to: 'api#import_readings'
+  get 'admin/create_user_inspect', to: 'api#create_user_inspect', as: :create_user_inspect
+  post 'admin/create_user_inspect', to: 'api#create_user_inspect'
+  get 'admin/import_inspects', to: 'api#import_inspects', as: :import_inspects
+  post 'admin/import_inspects', to: 'api#import_inspects'
   get 'admin/export_readings', to: 'api#export_readings', as: :export_readings
   get 'admin/clear_readings', to: 'api#clear_readings', as: :clear_readings
   post 'admin/clear_readings', to: 'api#clear_readings' 
   get 'admin/destroy_read', to: 'api#destroy_read', as: :destroy_read
   post 'admin/destroy_read', to: 'api#destroy_read'
+  get 'admin/clear_inspects', to: 'api#clear_inspects', as: :clear_inspects
+  post 'admin/clear_inspects', to: 'api#clear_inspects' 
+  get 'admin/destroy_read_inspects', to: 'api#destroy_read_inspects', as: :destroy_read_inspects
+  post 'admin/destroy_read_inspects', to: 'api#destroy_read_inspects' 
+  get 'admin/export_inspects', to: 'api#export_inspects', as: :export_inspects
+  post 'admin/export_inspects', to: 'api#export_inspects' 
+
   get 'admin/show_readings', as: :show_readings
   get 'admin/celphone_images', as: :celphone_images
+  get 'admin/show_inspects', as: :show_inspects
 
   #### posts ######
   get 'admin/posts', to: 'posts#posts', as: :posts

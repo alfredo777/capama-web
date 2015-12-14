@@ -18,10 +18,10 @@
               <th>Cuenta</th>
               <th>Diametro</th>
               <th>Lectura</th>
+              <th>Lectura anterior</th>
               <th>Anormalidades</th>
               <th>Acceso de los datos</th>
-              <th>Fecha en la que se agrego el registro a la ruta</th>
-              <th>Eliminar</th>
+              <th>Fecha de registro a la ruta</th>
               <th>Ver imagenes</th>
             </tr>
           </thead>
@@ -37,10 +37,10 @@
               <td> <%= r.account_number %></td>
               <td> <%= r.diameter %></td>
               <td> <%= r.lecture %></td>
+              <td> <%= r.last_read %></td>
               <td> <%= r.abnormalities %></td>
               <td> <%= r.data_access %></td>
               <td> <%= r.created_at %></td>
-              <td></td>
               <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "routes", routes: @route.id) %></td>
             </tr>
             <%end%>

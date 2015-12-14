@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151211013247) do
+ActiveRecord::Schema.define(version: 20151214033111) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -98,6 +98,7 @@ ActiveRecord::Schema.define(version: 20151211013247) do
     t.string   "additional_report"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "user_inspect_id"
   end
 
   create_table "messages", force: true do |t|
@@ -192,6 +193,11 @@ ActiveRecord::Schema.define(version: 20151211013247) do
     t.text     "observations"
     t.text     "reference"
     t.string   "data_access"
+    t.string   "last_read"
+    t.string   "sector"
+    t.string   "id_route"
+    t.string   "assigned_device"
+    t.string   "m3"
   end
 
   add_index "reading_takes_waters", ["business_name"], name: "index_reading_takes_waters_on_business_name"
@@ -239,6 +245,13 @@ ActiveRecord::Schema.define(version: 20151211013247) do
     t.string   "latitude"
     t.string   "longitude"
     t.string   "ticket_type", default: "external"
+  end
+
+  create_table "user_inspects", force: true do |t|
+    t.integer  "user_id"
+    t.date     "date_inspect"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   create_table "users", force: true do |t|

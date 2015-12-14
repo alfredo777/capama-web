@@ -3,35 +3,39 @@
   <header class="panel-heading" >Lista de inspecciones</header>
   <section class="panel">
     <div class="panel-body">
+      <%= render partial: "/admin/renders/form_inspect", locals: {users: @users} %>
       <div class="panel-body">
-          <div class="table-responsive">
-            <table class="table">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Dirección</th>
-                  <th>Inconformidad</th>
-                  <th>Cuenta</th>
-                  <th>Medidor</th>
-                  <th>Exportar</th>
-                </tr>
-              </thead>
-              <tbody>
+        <a href="/files/inspect_import.csv">Descargar Ejemplo para importación CSV</a>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Nombre del Inspector</th>
+                <th>Fecha</th>
+                <th>Importar inspecciones</th>
+                <th>Ver</th>
+                <th>Eliminar | limpiar </th>
+              </tr>
+            </thead>
+            <tbody>
               <% @inspects.each do |inspect|%>
               <tr>
-                <td><%= inspect.name %></td>
-                <td><%= inspect.address%></td>
-                <td><%= inspect.inconforme%></td>
-                <td><%= inspect.acount%></td>
-                <td><%= inspect.meter%></td>
-                <td><%= link_to "Exportar Toda la inspección", export_inspect_path(id: inspect.id, :format => :xls) %></td>
+                <td><%= inspect.user.name %></td>
+                <td><%= inspect.date_inspect%></td>
+                <td><%=form_tag import_inspects_path, multipart: true do -%>
+                  <%= file_field_tag 'file' %>
+                  <%= hidden_field_tag 'assignment', inspect.id %>
+                  <%= submit_tag "Importar", class: "btn btn-default" %>
+                <%end%></td>
+                <td><%= link_to "ver", show_inspects_path(id: inspect.id)%></td>
+                <td><%= link_to "Eliminar", destroy_read_inspects_path(id: inspect.id)%> | <%= link_to "Limpiar Inspecciones", clear_inspects_path(id: inspect.id)%></td>
               </tr>
               <%end%>
-              </tbody>
-            </table>
-          </div>
-      <%= will_paginate @inspects, renderer: BootstrapPagination::Rails %>
-    </div>
-  </section>
+            </tbody>
+          </table>
+        </div>
+        <%= will_paginate @inspects, renderer: BootstrapPagination::Rails %>
+      </div>
+    </section>
   </div>
 </div>

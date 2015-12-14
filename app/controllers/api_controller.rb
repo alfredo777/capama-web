@@ -93,6 +93,48 @@ class ApiController < ApplicationController
     redirect_to :back
   end
 
+  def create_user_inspect
+    @user_inspect =  UserInspect.create(user_id: params[:user_id], date_inspect: "#{params[:future_scheduled]}".to_date)
+    flash[:notice] = "Se ha agregado la asignación de lectura al usuario."
+    redirect_to :back
+  end
+
+  def import_inspects
+    @route = UserInspect.find_by_id(params[:assignment])
+    @r =  @route.inspects.import(params[:file])
+    flash[:notice] = "Se han importado las zonas de inspección"
+    redirect_to :back
+  end
+
+  def clear_inspects
+     @route = UserInspect.find_by_id(params[:id])
+     @routes =  @route.inspects
+     @routes.each do |r|
+       r.destroy
+     end
+     flash[:notice] = "Se han limpiado las inspecciones"
+     redirect_to :back
+  end
+
+  def destroy_read_inspects
+     @route = UserInspect.find_by_id(params[:id])
+     @route.destroy
+     flash[:notice] = "Se ha eliminado la ruta de inspección"
+     redirect_to :back
+  end
+
+  def export_inspects
+    @route = UserInspect.find_by_id(params[:id])
+    @routes = @route.inspects
+    respond_to do |format|
+      format.html 
+      format.xls {
+        filename = "Inspeccion-de-#{@route.user.name}-del-#{Time.now.strftime("%Y%m%d%H%M%S")}.xls"
+        send_data(@routes.to_xls, :type => "text/xls; charset=utf-8; header=present", :filename => filename)
+       }
+    end
+  end
+
   def export_readings
     @route = ReadingAssignment.find_by_id(params[:id])
     @routes = @route.reading_takes_waters
@@ -104,6 +146,8 @@ class ApiController < ApplicationController
        }
     end
   end
+
+
 
   def clear_readings
     @route = ReadingAssignment.find_by_id(params[:id])
