@@ -29,7 +29,9 @@
               <td> <%= r.meter %></td>
               <td> <%= r.t_ser %></td>
               <td> <%= r.additional_data %></td>
-              <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "inspects", routes: @route.id) %></td>
+              <td>
+                <%= link_to "Ver inspecciones", open_inspect_path(id:  r.id) %> |
+                <%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "inspects", routes: @route.id) %></td>
             </tr>
             <%end%>
           </tbody>

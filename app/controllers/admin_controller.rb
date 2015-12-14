@@ -241,6 +241,11 @@ class AdminController < ApplicationController
     @routes =  @route.inspects.paginate(:page => params[:page], :per_page => 40).order('id DESC')
   end
 
+  def open_inspect
+    @inspect = Inspect.find(params[:id])
+    
+  end
+
   
 
   def export_inspect

@@ -52,6 +52,7 @@ Rails.application.routes.draw do
   post 'admin/destroy_read_inspects', to: 'api#destroy_read_inspects' 
   get 'admin/export_inspects', to: 'api#export_inspects', as: :export_inspects
   post 'admin/export_inspects', to: 'api#export_inspects' 
+  get 'admin/open_inspect', as: :open_inspect
 
   get 'admin/show_readings', as: :show_readings
   get 'admin/celphone_images', as: :celphone_images
@@ -166,6 +167,7 @@ Rails.application.routes.draw do
   get "mobile/login", to: "appmobile_api#login"
   post "mobile/login", to: "appmobile_api#login"
   get "mobile/call_all_routes", to: "appmobile_api#call_all_routes"
+  get "mobile/call_all_inspects", to: "appmobile_api#call_all_inspects"
   post "mobile/sincronize_routes", to: "appmobile_api#sincronize_routes"
   get  "mobile/sincronize_routes", to: "appmobile_api#sincronize_routes"
   get "mobile/sincronize_user_helps", to: "appmobile_api#sincronize_user_helps"

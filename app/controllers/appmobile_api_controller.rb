@@ -24,6 +24,14 @@ class AppmobileApiController < ApplicationController
     render json: @readings.to_json, callback: params[:callback]
   end
 
+  def call_all_inspects
+    user = User.find_by_card(params[:card])
+    reading_t = user.user_inspects.last
+    @inspects = reading_t.inspects
+
+    render json: @inspects.to_json, callback: params[:callback]
+  end
+
   def sincronize_routes
     @reading = ReadingTakesWater.find(params[:id])
     @reading.reference = params[:reference]
@@ -57,8 +65,9 @@ class AppmobileApiController < ApplicationController
   end
 
   def sincronize_inspects
-    @create_inspect = Inspect.create(name: params[:name], address: params[:address], inconforme: params[:inconforme], acount: params[:acount], meter: params[:meter], t_ser: params[:t_ser], additional_data: params[:additional_data], date: params[:date], visit_date: params[:visit_date], general_inspect: params[:general_inspect], shooting_conditions: params[:shooting_conditions], home_room: params[:home_room], number_of_people: params[:number_of_people], ordeno_prueba_de_inspeccion: params[:ordeno_prueba_de_inspeccion], property_activity: params[:property_activity], anomalies: params[:anomalies], meter_conditions: params[:meter_conditions], additional_report: params[:additional_report])
-    render json: @create_inspect.to_json, callback: params[:callback]
+    @inspect = Inspect.find(params[:id])
+    @update_inspect = @inspect.update_attributes(name: params[:name], address: params[:address], inconforme: params[:inconforme], acount: params[:acount], meter: params[:meter], t_ser: params[:t_ser], additional_data: params[:additional_data], date: params[:date], visit_date: params[:visit_date], general_inspect: params[:general_inspect], shooting_conditions: params[:shooting_conditions], home_room: params[:home_room], number_of_people: params[:number_of_people], ordeno_prueba_de_inspeccion: params[:ordeno_prueba_de_inspeccion], property_activity: params[:property_activity], anomalies: params[:anomalies], meter_conditions: params[:meter_conditions], additional_report: params[:additional_report])
+    render json: @update_inspect.to_json, callback: params[:callback]
   end
 
   def sincronize_serivices_contracts
