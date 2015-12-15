@@ -4490,3 +4490,25 @@ textarea {
 .slide-xv li{
     width: 200px !important;
 }
+.forecast{
+    position: fixed;
+    float: right;
+    z-index: 99999;
+    width: 150px;
+    height: 100px;
+    background: #F8F32B;
+    border:solid 1px #393939; 
+    margin-top: 100px;
+    -webkit-border-top-right-radius: 030px;
+    -webkit-border-bottom-right-radius: 030px;
+    -moz-border-radius-topright: 030px;
+    -moz-border-radius-bottomright: 030px;
+    border-top-right-radius: 030px;
+    border-bottom-right-radius: 030px;
+
+}
+.max-min{
+    color: #393939;
+    font-size: 20px;
+    padding: 10px;
+}

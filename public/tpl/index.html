@@ -1,3 +1,8 @@
+<div class="forecast">
+  <center>
+  <div class="max-min" id="max-min"></div>
+  </center>
+</div>
 <div class="tp-fullscreen-container revolution">
   <div class="tp-fullscreen">
     <ul id="fullpost">
@@ -173,4 +178,16 @@
 <script type="text/javascript">
   loadTPLAPIADD("last_posts", "last_posts", "indexed");
   $('.tp-bullets ').hide();
+</script>
+
+<script type="text/javascript">
+
+  $.get("http://api.wunderground.com/api/1f952d942589f509/forecast/q/zmw:00000.1.76805.json", function(data) 
+    { 
+      var forecastday = data.forecast.simpleforecast.forecastday[0];
+      console.log(forecastday.icon_url);
+      $('#max-min').append("Max: "+ forecastday.high.celsius+ " Cº <br/> ");
+      $('#max-min').append("Min: "+forecastday.low.celsius+ " Cº");
+      $('#max-min').append("<img src='"+forecastday.icon_url+"' />");
+    });
 </script>
