@@ -1,6 +1,7 @@
-<div class="forecast">
+<div class="forecast" id="forecast">
   <center>
-  <div class="max-min" id="max-min"></div>
+  <div id="sun" class="sun"><i class="fa fa-sun-o"></i></div>
+  <div class="max-min" id="max-min" style="display:none;"></div>
   </center>
 </div>
 <div class="tp-fullscreen-container revolution">
@@ -190,4 +191,19 @@
       $('#max-min').append("Min: "+forecastday.low.celsius+ " Cº");
       $('#max-min').append("<img src='"+forecastday.icon_url+"' />");
     });
+    $(document).ready(function(){
+       $('#forecast').hover(
+          function() {
+             setTimeout(function(){
+             $('#sun').hide();
+             $('#max-min').show();
+             }, 500);
+          }, function(){
+            $('#sun').show();
+            $('#max-min').hide();
+          }
+       );
+    });
+    
+
 </script>
