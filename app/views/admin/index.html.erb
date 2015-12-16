@@ -30,13 +30,16 @@
     </div>
   </div>
 </div>
+<% if  scope_permission('zones','view_all') %>
 <div class="row">
   <div class="col-sm-12">
     <div class="btn-group">
       <button class="btn btn-white" type="button">Ver zonas</button>
       <button data-toggle="dropdown" class="btn btn-white dropdown-toggle" type="button" aria-expanded="false"><span class="caret"></span></button>
       <ul role="menu" class="dropdown-menu">
+        <% if  scope_permission('zones','create') %>
         <li><%= link_to "Administrar zonas", new_zone_path %></li>
+        <%end%>
         <li class="divider"></li>
         <% @zones.each do |zone|%>
         <li><a class="lalong" data-lat="<%= zone.lat %>" data-long="<%= zone.long %>"><%= zone.title %></a></li>
@@ -57,6 +60,7 @@
     </section>
   </div>
 </div>
+<%end%>
 <div class="row">
   <div class="col-md-3">
     <div class="mini-stat clearfix">

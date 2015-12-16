@@ -3,7 +3,9 @@
   <header class="panel-heading" >Lista de inspecciones</header>
   <section class="panel">
     <div class="panel-body">
+      <% if  scope_permission('inspections','create') %>
       <%= render partial: "/admin/renders/form_inspect", locals: {users: @users} %>
+      <%end%>
       <div class="panel-body">
         <a href="/files/inspect_import.csv">Descargar Ejemplo para importación CSV</a>
         <div class="table-responsive">
@@ -22,13 +24,28 @@
               <tr>
                 <td><%= inspect.user.name %></td>
                 <td><%= inspect.date_inspect%></td>
-                <td><%=form_tag import_inspects_path, multipart: true do -%>
+                <td>
+                  <% if  scope_permission('inspections','upadate') %>
+                  <%=form_tag import_inspects_path, multipart: true do -%>
                   <%= file_field_tag 'file' %>
                   <%= hidden_field_tag 'assignment', inspect.id %>
                   <%= submit_tag "Importar", class: "btn btn-default" %>
-                <%end%></td>
-                <td><%= link_to "ver", show_inspects_path(id: inspect.id)%></td>
-                <td><%= link_to "Eliminar", destroy_read_inspects_path(id: inspect.id)%> | <%= link_to "Limpiar Inspecciones", clear_inspects_path(id: inspect.id)%></td>
+                  <%end%>
+                  <%end%>
+                </td>
+                <td>
+                  <% if  scope_permission('inspections','view') %>
+                  <%= link_to "ver", show_inspects_path(id: inspect.id)%>
+                  <%end%>
+                </td>
+                <td>
+                  <% if  scope_permission('inspections','delete') %>
+                  <%= link_to "Eliminar", destroy_read_inspects_path(id: inspect.id)%>
+                  <%end%>
+                  <% if  scope_permission('inspections','upadate') %>
+                  | <%= link_to "Limpiar Inspecciones", clear_inspects_path(id: inspect.id)%>
+                  <%end%>
+                </td>
               </tr>
               <%end%>
             </tbody>

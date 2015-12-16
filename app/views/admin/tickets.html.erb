@@ -29,7 +29,11 @@
                   <td><%= ticket.email%></td>
                   <td><%= ticket.phone%></td>
                   <td><%= "<span class='label label-info'>Abierto</span>".html_safe if  ticket.open && !ticket.solve %> <%= "<span class='label label-danger'>Cerrado</span>".html_safe if  !ticket.open %> <%= "<span class='label label-success'> Finalizado</span>".html_safe if  ticket.solve %></td>
-                  <td><%= link_to 'Abrir', ticket_path(ticket.id)%></td>
+                  <td>
+                  <% if  scope_permission('tickets','view') %>
+                  <%= link_to 'Abrir', ticket_path(ticket.id)%>
+                  <%end%>
+                  </td>
                 </tr>
                 <%end%>
               </tbody>
@@ -60,7 +64,11 @@
                   <td><%= ticket.email%></td>
                   <td><%= ticket.phone%></td>
                   <td><%= "<span class='label label-info'>Abierto</span>".html_safe if  ticket.open && !ticket.solve %> <%= "<span class='label label-danger'>Cerrado</span>".html_safe if  !ticket.open %> <%= "<span class='label label-success'> Finalizado</span>".html_safe if  ticket.solve %></td>
-                  <td><%= link_to 'Abrir', ticket_path(ticket.id)%></td>
+                  <td>
+                  <% if  scope_permission('tickets','view') %>
+                  <%= link_to 'Abrir', ticket_path(ticket.id)%>
+                  <%end%>
+                  </td>
                 </tr>
                 <%end%>
               </tbody>

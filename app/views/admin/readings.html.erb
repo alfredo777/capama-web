@@ -3,7 +3,9 @@
   <header class="panel-heading" >Lecturas de agua</header>
   <section class="panel">
     <div class="panel-body">
+      <% if  scope_permission('readings','create') %>
       <%= render partial: "/admin/renders/form_reading", locals: {users: @users} %>
+      <%end%>
       <div class="table-responsive">
         <a href="/files/routes_import.csv">Descargar Ejemplo para importación CSV</a>
         <table class="table">
@@ -24,14 +26,27 @@
               <td><%= read.future_scheduled %></td>
               <td><%= read.route_number %></td>
               <td>
+                <% if  scope_permission('readings','upadate') %>
                 <%=form_tag import_readings_path, multipart: true do -%>
                 <%= file_field_tag 'file' %>
                 <%= hidden_field_tag 'assignment', read.id %>
                 <%= submit_tag "Importar", class: "btn btn-default" %>
                 <%end%>
+                <%end%>
               </td>
-              <td><%=link_to "Eliminar", destroy_read_path(id: read.id), "data-confirm": "¿Estas seguro de querer eliminar esta ruta?"%> | <%=  link_to "Limpiar(quita todas las rutas importadas)", clear_readings_path(id: read.id) %></td>
-              <td><%= link_to 'Ver lecturas', show_readings_path(id: read.id)%></td>
+              <td>
+               <% if  scope_permission('readings','delete') %>
+                <%=link_to "Eliminar", destroy_read_path(id: read.id), "data-confirm": "¿Estas seguro de querer eliminar esta ruta?"%>
+               <%end%> 
+               <% if  scope_permission('readings','upadate') %>
+               | <%=  link_to "Limpiar(quita todas las rutas importadas)", clear_readings_path(id: read.id) %>
+               <%end%>
+               </td>
+              <td>
+              <% if  scope_permission('readings','view') %>
+              <%= link_to 'Ver lecturas', show_readings_path(id: read.id)%>
+              <%end%>
+              </td>
             </tr>
             <%end%>
           </tbody>

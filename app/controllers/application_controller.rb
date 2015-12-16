@@ -26,7 +26,7 @@ class ApplicationController < ActionController::Base
   end
   def modules
     modules_array = []    
-    modules = ['users','blog_posts', 'roles', 'formats', 'dashboard', 'tickets', 'zones']
+    modules = ['users','blog_posts', 'roles', 'formats', 'dashboard', 'tickets', 'zones', 'readings', 'inspections']
     actions = ['create', 'upadate', 'delete', 'view', 'view_all']
     modules.each do |m|
       actions.each do |a|

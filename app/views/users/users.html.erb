@@ -3,9 +3,12 @@
   <header class="panel-heading" >Usuarios</header>
     <section class="panel">
       <div class="panel-body">
+        <% if scope_permission('users', 'create') %>
+
         <%= link_to 'Usuario nuevo',new_user_path, class: 'btn btn-default' %>
         <%= link_to 'Importar usuarios XLXs, CSV',create_users_masive_path, class: 'btn btn-default' %>
         <%= link_to 'Expotar usuarios XLXs', users_path(:format => :xls), class: 'btn btn-default' %>
+        <%end%>
         <div class="table-responsive">
           <table class="table">
             <thead>
@@ -24,7 +27,13 @@
                 <td><%= user.email%></td>
                 <td><%= user.card%></td>
                 <td><%= user.phone%></td>
-                <td><%= link_to 'Editar', edit_user_path(user.id)%> | <%=  link_to 'Eliminar', destroy_user_path(user.id), "data-confirm": "¿Estas seguro de querer eliminar este usuario?" %></td>
+                <td>
+                <% if scope_permission('users', 'upadate') %>
+                <%= link_to 'Editar', edit_user_path(user.id)%>
+                <%end%> 
+                <% if scope_permission('users', 'delete') %>
+                |<%=  link_to 'Eliminar', destroy_user_path(user.id), "data-confirm": "¿Estas seguro de querer eliminar este usuario?" %></td>
+                <%end%>
               </tr>
               <%end%>
             </tbody>

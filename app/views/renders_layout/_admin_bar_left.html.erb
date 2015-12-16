@@ -18,7 +18,9 @@
           <ul class="sub">
             <li><%= link_to 'Ver todos los posts', posts_path %></li>
             <li><%= link_to 'Mis posts', my_posts_path %></li>
+            <% if  scope_permission('blog_posts','create') %>
             <li><%= link_to 'Nuevo post', new_post_path %></li>
+            <%end%>
           </ul>
         </li>
         <%end%>
@@ -39,13 +41,15 @@
         </li>
         <%end%>
 
-        <% if scope_permission('zones', 'view_all') %>
+        <% if scope_permission('readings', 'view_all') %>
         <li>
           <%= link_to readings_path do %>
           <i class="fa fa-pencil-square-o"></i>
           <span>Lecturas</span>
           <%end%>
         </li>
+        <%end%>
+        <% if scope_permission('inspections', 'view_all') %>
         <li>
           <%= link_to inspects_path do %>
           <i class="fa fa-user-secret"></i>
@@ -70,8 +74,11 @@
             <span>Usuarios</span>
           </a>
           <ul class="sub">
+
             <li><%= link_to 'Usuarios', users_path %></li>
+            <% if  scope_permission('users','create') %>
             <li><%= link_to 'Nuevo Usuario', new_user_path %></li>
+            <%end%>
           </ul>
         </li>
         <%end%>
@@ -91,7 +98,9 @@
           </a>
           <ul class="sub">
             <li><%= link_to  'Todos los roles', roles_path   %></li>
+            <% if  scope_permission('roles','create') %>
             <li><%= link_to 'Nuevo rol', new_role_path %></li>
+            <%end%>
           </ul>
         </li>
         <%end%>
