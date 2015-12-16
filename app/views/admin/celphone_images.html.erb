@@ -3,7 +3,13 @@
   <header class="panel-heading" >Lecturas de agua</header>
   <section class="panel">
     <div class="panel-body">
-      <%= link_to "Regrear a las lecturas", show_readings_path(id: params[:routes]), class: "btn btn-info"%><br/><br/><br/>
+      <% if params[:imageable_type] == "routes" %>
+      <%= link_to "Regrear a las lecturas", show_readings_path(id: params[:routes]), class: "btn btn-info"%>
+      <%end%>
+      <% if params[:imageable_type] == "inspects" %>
+      <%= link_to "Regrear a las lecturas", show_inspects_path(id: params[:routes]), class: "btn btn-info"%>
+      <%end%>
+      <br/><br/><br/>
       <center>
       <% @images.each do |img| %>
         <%= image_tag "#{img.img}", width: "400px" %>
