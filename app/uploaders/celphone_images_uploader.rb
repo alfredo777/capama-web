@@ -3,6 +3,7 @@
 class CelphoneImagesUploader < CarrierWave::Uploader::Base
   include CarrierWave::RMagick
 
+  process resize_to_fill: [600, 800]
   process convert: 'png'
 
   storage :file
