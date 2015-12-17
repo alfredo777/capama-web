@@ -1,0 +1,70 @@
+<script type="text/javascript" src="/assets/html2canvas.js"></script>
+<script type="text/javascript" src="/assets/canvas2image.js"></script>
+<h2>Intensión de pago</h2>
+<style type="text/css">
+  .pay-intension{
+    width: 1100px;
+    height: 600px;
+    border: solid 3px #eee;
+    background-color: #fff;
+  }
+  .user-data-info{
+    float: left;
+    width: 40%;
+    padding: 5%;
+    border-right:solid 2px #010101;
+    height: 598px;
+  }
+  .user-data-concepts-cv{
+    float: left;
+    width: 60%;
+    padding: 5%;
+    height: 598px;
+  }
+  .debt{
+    margin: 5px;
+    background: #eee;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 1px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+  }
+</style>
+<div class="pay-intension" id="pay-intension">
+ <div class="user-data-info">
+  <p><b>Nº de medidor:</b> {{medidor}}</p>
+  <p><b>Nombre del usuario: </b> {{user}}</p>
+  <p><b>Tipo de servicio </b> {{service}}</p>
+  <h3>Adeudo actual:</h3>
+  <h1>${{importe_total}} MXN</h1>
+  <p><b>Pago en oxxo</b></p>
+  <center>
+  <div class="ean128">{{oxxocode}}</div>
+  <p>{{oxxocode}}</p>
+  </center>
+  <br/>
+
+  <h4>Otras formas de pago</h4>
+  {{#each bank}}
+   <p style="font-size:9px; margin-bottom:3px;"> {{li}} / {{content}}</p>
+  {{/each}}
+ </div>
+
+ <div class="user-data-concepts-cv">
+   <div class="pull-right"><img src="/assets/capamalogooficial.png" width="20%" class="pull-right" /></div>
+  <h1>Conceptos por los que se adeuda</h1>
+  {{#each  listconcepts}}
+   <div class="debt">
+   <p><b>Periodo: </b> {{Periodo}}</p>
+   <p><b>Monto: </b>${{Monto}} MXN</p>
+   </div>
+  {{/each}}
+ </div>
+  
+</div>
+
+<script type="text/javascript">
+
+</script
