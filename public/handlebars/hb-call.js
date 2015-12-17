@@ -15,6 +15,16 @@ function getRecipt(jsonn, tpln, divloadtpl){
    });
 }
 
+function getPayIntension(jsonn, tpln, divloadtpl){
+   var datax = {"cuenta": jsonn};
+   getJSONINTENSION(datax,function(data, err) {
+      console.log(data);
+      getTemplate(tpln, data, function(output, err) {
+        $("#"+divloadtpl).html(output);
+      });    
+   });
+}
+
 
 function loadTPL(jsonn, tpln, divloadtpl, lang){
    getasJSON(jsonn, lang,function(data, err) {
@@ -99,6 +109,22 @@ function getasJSONRecipt(acount,callback){
   $.ajax({
     dataType: "jsonp",
     url: "http://www.capama.gob.mx/net/recibo/",
+    data: acount,
+    cache: true,
+    type: 'GET',
+    success: function (data) {
+      callback(data, null);
+    },
+    error: function(err) {
+      callback(null, err);
+    }
+  });
+}
+
+function getJSONINTENSION(acount, callback){
+  $.ajax({
+    dataType: "jsonp",
+    url: "http://www.capama.gob.mx/net/recibo/adeudo.php",
     data: acount,
     cache: true,
     type: 'GET',

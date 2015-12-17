@@ -140,7 +140,9 @@ border: dotted 3px #{{color}};
 <div  class="container inner2" >
   <div id="contentxxxv" style="width:1170px !important; overflow:auto !important; ">
   <div class="btn btn-green" id="format-print">Imprimir recibo</div>
+  <div class="btn btn-orange" id="format-pay-print">Generar intención de pago</div>
   <div  style="width:100%; overflow-y:auto;" id="conft">
+
     <div id="recipt" style="width:100%;">
       <div class="content-recipt" >
         <div class="watermark">Material Informativo no oficial</div>
@@ -267,6 +269,7 @@ border: dotted 3px #{{color}};
       </div>
     </div>
   </div>
+  <div id="intension"></div></br>
 </div>
 <script type="text/javascript">
 
@@ -286,13 +289,9 @@ $('#recipt').width("100%");
 $('#contentxxxv').width("100%");
 }
 });
-function convertCanvasToImage(canvas) {
-var image = new Image();
-image.src = canvas.toDataURL("image/png");
-return image;
-}
+
 $("#format-print").click(function(){
-var url = "/recipt";
+var url = window.location.href;
 var divElements = $("#recipt").html();
 document.body.innerHTML = divElements ;
 window.print();
@@ -300,4 +299,45 @@ window.location = url
 });
 });
 
+$('#format-pay-print').click(function(){
+ var acount = getUrlParameter('acount');
+ getPayIntension(acount, "payintension", "intension");
+ setTimeout(function(){
+  html2canvas($("#pay-intension"), {
+    onrendered: function(canvas) {
+    theCanvas = canvas;
+   $("#pay-intension").html(convertCanvasToImage(canvas));
+   }});
+  }, 2000);
+ setTimeout(function(){
+  var url = window.location.href;
+  var divElements = $("#pay-intension").html();
+  document.body.innerHTML = divElements ;
+  window.print();
+  window.location = url;
+ },3000);
+ 
+ 
+});
+
+var getUrlParameter = function getUrlParameter(sParam) {
+  var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+      sURLVariables = sPageURL.split('&'),
+      sParameterName,
+      i;
+
+  for (i = 0; i < sURLVariables.length; i++) {
+      sParameterName = sURLVariables[i].split('=');
+
+      if (sParameterName[0] === sParam) {
+          return sParameterName[1] === undefined ? true : sParameterName[1];
+      }
+  }
+};
+
+function convertCanvasToImage(canvas) {
+var image = new Image();
+image.src = canvas.toDataURL("image/png");
+return image;
+}
 </script>

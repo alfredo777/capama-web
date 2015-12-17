@@ -61,18 +61,13 @@ class ApiController < ApplicationController
     if !@customer.nil?
       redirect_to chat_path(customer: @customer.id, ticket: @ticket.id)
     else
-      redirect_to new_customer_path(email: params[:email], phone: params[:phone], chat: true)
+      redirect_to new_customer_path(email: params[:email], phone: params[:phone], ticket: @ticket.id)
     end
   end
 
   def create_customer
     @customer = Customer.create(email: params[:email], phone: params[:phone], name: params[:name], address: params[:address])
-
-    if params[:chat]
-      redirect_to chat_path(customer: @customer.id)
-    else
-      redirect_to root_path
-    end
+    redirect_to chat_path(customer: @customer.id, ticket: params[:ticket])
   end
 
   def lang

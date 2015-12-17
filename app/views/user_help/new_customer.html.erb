@@ -7,6 +7,7 @@
       <div class="divide50"></div>
       <div class="form-container">
         <%= form_tag create_customer_path, class: "vanilla vanilla-form" do -%>
+        <%= hidden_field_tag 'ticket', params[:ticket] %>
         <div class="row">
           <div class="col-sm-6">
             <div class="form-field">
