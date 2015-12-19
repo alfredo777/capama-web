@@ -1,7 +1,7 @@
 {
   "title": "Plantas potabilizadoras y tratadoras",
   "plants": [
-   { "li": "Planta potabilizadora &#34 El Cagayo &#34", 
+   { "li": "Planta potabilizadora &#34 El Cayaco &#34", 
       "char": [
         {"li": "Tipo de tratamiento:", "des":"Fisico-Químico."},
         {"li": "Capacidad de diseño:", "des":"2000 lps" },
