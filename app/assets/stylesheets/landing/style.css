@@ -4583,3 +4583,15 @@ textarea {
     border:solid 1px rgba(217, 203, 70, 0.8); 
     margin-bottom: 10px;
 }
+.supt-logo{
+     height: 230px;
+     margin-top: 0px;
+     padding-top: 90px; 
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+29,63c8ed+86 */
+    background: rgb(179,220,237); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(179,220,237,1) 0%, rgba(41,184,229,1) 29%, rgba(99,200,237,1) 86%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 29%,rgba(99,200,237,1) 86%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(179,220,237,1) 0%,rgba(41,184,229,1) 29%,rgba(99,200,237,1) 86%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#63c8ed',GradientType=0 ); /* IE6-9 */
+
+}
