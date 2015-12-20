@@ -3,6 +3,7 @@ $(document).ready(function() {
     /*-----------------------------------------------------------------------------------*/
     /*	SCROLL NAVIGATION HIGHLIGHT
     /*-----------------------------------------------------------------------------------*/
+
     var headerWrapper = parseInt($('.navbar').height(), 10);
     var header_height = $('.navbar').height();
     var shrinked_header_height = 70;
@@ -19,6 +20,7 @@ $(document).ready(function() {
     };
     $('.onepage section:first-of-type').css(secondStyle);
     var offsetTolerance = -(header_height);
+    
     //Detecting user's scroll
     $(window).scroll(function() {
         //Check scroll position
@@ -707,3 +709,6 @@ function init() {
 $(window).resize(function() {
 	$('.offset').css('padding-top', $('.navbar').height() + 'px');        
 }); 
+
+
+

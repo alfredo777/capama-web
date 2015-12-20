@@ -32,7 +32,10 @@
   "fr": "Français",
   "frc": "Aujourd'hui on est multilingue",
   "enc": "We are now multi-language",
-  "esc": "Ahora nos encontramos en varios idiomas",
+  "esc": "Ahora en varios idiomas",
   "news": "Noticias",
-  "news_go": "Ir a las noticias"
+  "news_go": "Ir a las noticias",
+  "phone_help": "Te ofrecemos ayuda en cualquir momento marcando a nuestro centro de información de serivicios.",
+  "map_help": "En caso de mayor información puedes encontrarnos en cualquiera de estas oficinas",
+  "map_button": "Ver oficinas"
 }

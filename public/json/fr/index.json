@@ -34,5 +34,8 @@
   "enc": "We are now multi-language",
   "esc": "Nous sommes maintenant en plusieurs langues",
   "news": "Nouvelles",
-  "news_go": "Aller aux nouvelles"
+  "news_go": "Aller aux nouvelles",
+  "phone_help": "Nous offrons de l'aide à tout moment en vérifiant vos services de monétisation de centre d'information.",
+  "map_help": "Si vous pouvez trouver plus d'informations sur l'un de ces bureaux.",
+  "map_button": "Voir les bureaux"
 }

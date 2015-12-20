@@ -113,6 +113,7 @@ Rails.application.routes.draw do
   post '/api/clicking'
   get '/lang_select', to: 'api#lang', as: :lang
   get '/api/view_post', to: 'api#view_post'
+  get '/api/last_post_viewver', to: 'api#last_post_viewver'
     ### user_help ####
   get '/admin/tickets', as: :tickets
   get '/admin/customers', as: :customers

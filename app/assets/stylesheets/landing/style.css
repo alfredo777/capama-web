@@ -4443,17 +4443,28 @@ textarea {
   text-overflow: ellipsis;
   text-align: center;
 }
+
+.p-truncate {
+  height: 200px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: justify;
+}
+
 .submenu {
     background:  rgba(6, 40, 122, 0.8);
     color: #fff;
     width: 100%;
     height: 75px;
-    z-index: 999999;
+    z-index: 6565;
     padding-left: 5%;
     padding-right: 5%%;
     text-align: left;
     vertical-align: middle;
    line-height: 75px;  
+    position: relative;
 }
 .submenu a{
     color: #fff;
@@ -4464,8 +4475,7 @@ textarea {
 
 }
 .blur-me {
-  -webkit-filter: contrast(2);
-  filter: blur(20px);
+ 
 }
 .bottom-slider-part{
     width: 100%;
@@ -4522,7 +4532,54 @@ textarea {
 
 }
 .max-min{
-    color: #fff;
-    font-size: 20px;
+    color: #FFF807;
+    font-size: 30px;
     padding: 10px;
+}
+
+.act-fixed{
+    position: fixed !important;
+}
+.first-jump{
+    margin-top: 7.2%;
+    position: static;
+}
+
+.news-head{
+    font-size: 70px;
+    margin-top: 8.2%;
+    text-align: center;
+    font-family: 'Arvo', serif;
+}
+
+.news-head-index{
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    background: url('/assets/black_linen_v2.png');
+
+}
+
+.double-line{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-top: double 10px #5b5b5b ;
+    width: 30%;
+}
+.inner-head-imh{
+    width: 100% !important;
+}
+
+.climate{
+    position: relative;
+    float: left;
+    z-index: 99999;
+    width: 100%;
+    height: 130px;
+    background: url('/assets/climate.png');
+    border:solid 1px rgba(217, 203, 70, 0.8); 
+    margin-bottom: 10px;
 }
