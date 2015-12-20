@@ -6,12 +6,12 @@
   function init() {
       var mapOptions = {
           center: new google.maps.LatLng(16.8548671,-99.8979708),
-          zoom: 13,
+          zoom: 12,
           zoomControl: true,
           zoomControlOptions: {
               style: google.maps.ZoomControlStyle.DEFAULT,
           },
-          disableDoubleClickZoom: false,
+          disableDoubleClickZoom: true,
           mapTypeControl: true,
           mapTypeControlOptions: {
               style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -22,7 +22,7 @@
           draggable : true,
           overviewMapControl: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
-      styles: [{stylers:[{saturation:-100},{gamma:1}]},{elementType:"labels.text.stroke",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{visibility:"simplified"}]},{featureType:"water",stylers:[{visibility:"on"},{saturation:50},{gamma:0},{hue:"#50a5d1"}]},{featureType:"administrative.neighborhood",elementType:"labels.text.fill",stylers:[{color:"#333333"}]},{featureType:"road.local",elementType:"labels.text",stylers:[{weight:0.5},{color:"#333333"}]},{featureType:"transit.station",elementType:"labels.icon",stylers:[{gamma:1},{saturation:50}]}]
+      styles: [{stylers:[{saturation:-70},{gamma:1}]},{elementType:"labels.text.stroke",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.business",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.text",stylers:[{visibility:"off"}]},{featureType:"poi.place_of_worship",elementType:"labels.icon",stylers:[{visibility:"off"}]},{featureType:"road",elementType:"geometry",stylers:[{visibility:"simplified"}]},{featureType:"water",stylers:[{visibility:"on"},{saturation:50},{gamma:0},{hue:"#50a5d1"}]},{featureType:"administrative.neighborhood",elementType:"labels.text.fill",stylers:[{color:"#333333"}]},{featureType:"road.local",elementType:"labels.text",stylers:[{weight:0.5},{color:"#333333"}]},{featureType:"transit.station",elementType:"labels.icon",stylers:[{gamma:1},{saturation:50}]}]
       }
   
       var mapElement = document.getElementById('map');
@@ -30,8 +30,8 @@
       var locations = [
           ['Capama', 16.8477304,-99.910647],
           ['Capama Gerencia Coloso', 16.8467471,-99.8125651],
-          ['Plaza Velero', 16.8942252,-99.8283246], 
-          ['Gerencia Pie de La Cuesta',16.8341735,-99.8243143,19],
+          ['Gerencia Pie de La Cuesta',16.87545,-99.9392142,17],
+          ['Gerencia Diamante', 16.812109, -99.8198707,13],
           ['Gerencia Renacimiento', 16.8944562,-99.829435] 
       ];
       for (i = 0; i < locations.length; i++) {
@@ -42,5 +42,8 @@
           });
       }
   }
+
+  var wh = $(window).height()-70;
+  $('#map').height(wh);
   </script>
 <%= render partial: "/renders_layout/loading", locals: {template: "branches_for_payments", json:"branches_for_payments", div: "loader", type: "branches_for_payments"} %>
