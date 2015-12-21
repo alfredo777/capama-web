@@ -1,4 +1,4 @@
-stage,sector,id_route,account_number,business_name,address,colony,water_meter,diameter,sx,ux,last_read
-1c, 006, 001, 1-002-0020-5, VALLE VIDAL T MARIA, TTE. AZUETA 7, MARISCOS NACHOS, 838555, 500, 1, 4,12136
-1c, 006, 001, 1-010-0080-4, ALQUILADORA DE CASA S.A. DE C.V, HIDALGO 15, TELMEX, 20005, 1000, 1, 4,12535
-1c, 006, 001, 1-014-0110-0, ECHEVERRIA DE M.ROSA S.A , HIDALGO 1O,TELMEX, 7949, 750, 1, 4,12453
+stage,sector,id_route,account_number,business_name,address,colony,water_meter,diameter,sx,ux,last_read,reference
+1c, 006, 001, 1-002-0020-5, VALLE VIDAL T MARIA, TTE. AZUETA 7, MARISCOS NACHOS, 838555, 500, 1, 4,12136, referencia1
+1c, 006, 001, 1-010-0080-4, ALQUILADORA DE CASA S.A. DE C.V, HIDALGO 15, TELMEX, 20005, 1000, 1, 4,12535, referencia2
+1c, 006, 001, 1-014-0110-0, ECHEVERRIA DE M.ROSA S.A , HIDALGO 1O,TELMEX, 7949, 750, 1, 4,12453, referencia3
