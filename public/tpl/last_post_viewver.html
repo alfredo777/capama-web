@@ -1,19 +1,18 @@
-{{#each posts}}
-<div class="blog-posts classic-view">
-  <div class="post">
-    <div class="box text-center">
-      <h2 class="post-title"><a href="/post/{{id}}">{{title}}</a></h2>
-      <div class="meta"><span class="date">{{{prettifyDate created_at}}}</span></div>
-      <figure class="main"><a href="/post/{{id}}"><img src="{{head_image.image_head.url}}" alt="" /></a></figure>
-      <div class="post-content text-justify">
-        {{{truncate content 400}}}
+<script src="/assets/landing/plugins.js"></script>
+<script src="/assets/landing/classie.js"></script>
+<script src="/assets/landing/scripts.js"></script>
+<div class="basic-slider">
+  {{#each posts}}
+  <div class="item caption-overlay"><img src="{{head_image.image_head.url}}" alt="" />
+    <div class="caption bottom-left">
+      <div class="layer box">
+        <div class="category cat9"><span><a href="/post/{{id}}">Leer</a></span></div>
+        <h4 class="post-title"><a href="/post/{{id}}">{{title}}</a></h4>
+        <div class="meta"><span class="date">{{{prettifyDate created_at}}}</span></div>
       </div>
-      <!-- /.post-content -->
-      <div class="post-footer"> <a href="/post/{{id}}" class="more pull-left">Continuar | Continue</a>
-      <!-- .social -->
-      <div class="clearfix"></div>
+      <!-- /.layer -->
     </div>
-    <!-- .post-footer -->
+    <!-- /.caption -->
   </div>
+  {{/each}}
 </div>
-{{/each}}

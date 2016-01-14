@@ -220,7 +220,7 @@ class AdminController < ApplicationController
 
   def show_readings
     @route = ReadingAssignment.find_by_id(params[:id])
-    @routes = @route.reading_takes_waters.paginate(:page => params[:page], :per_page => 100).order('id DESC')
+    @routes = @route.reading_takes_waters.paginate(:page => params[:page], :per_page => 500).order('id DESC')
     respond_to do |format|
       format.html 
     end
