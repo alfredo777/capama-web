@@ -66,7 +66,7 @@ class AppmobileApiController < ApplicationController
 
   def sincronize_inspects
     @inspect = Inspect.find(params[:id])
-    @update_inspect = @inspect.update_attributes(name: params[:name], address: params[:address], inconforme: params[:inconforme], acount: params[:acount], meter: params[:meter], t_ser: params[:t_ser], additional_data: params[:additional_data], date: params[:date], visit_date: params[:visit_date], general_inspect: params[:general_inspect], shooting_conditions: params[:shooting_conditions], home_room: params[:home_room], number_of_people: params[:number_of_people], ordeno_prueba_de_inspeccion: params[:ordeno_prueba_de_inspeccion], property_activity: params[:property_activity], anomalies: params[:anomalies], meter_conditions: params[:meter_conditions], additional_report: params[:additional_report])
+    @update_inspect = @inspect.update_attributes(name: params[:name], address: params[:address], inconforme: params[:inconforme], acount: params[:acount], meter: params[:meter], t_ser: params[:t_ser], additional_data: params[:additional_data], date: params[:date], visit_date: params[:visit_date], general_inspect: params[:general_inspect], shooting_conditions: params[:shooting_conditions], home_room: params[:home_room], number_of_people: params[:number_of_people], ordeno_prueba_de_inspeccion: params[:ordeno_prueba_de_inspeccion], property_activity: params[:property_activity], anomalies: params[:anomalies], meter_conditions: params[:meter_conditions], additional_report: params[:additional_report], meter_anomaly: params[:meter_anomaly], in_charge: params[:in_charge], other_obs: params[:other_obs] )
     render json: @update_inspect.to_json, callback: params[:callback]
   end
 
