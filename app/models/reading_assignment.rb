@@ -4,7 +4,6 @@ class ReadingAssignment < ActiveRecord::Base
 
  validates_presence_of :user_id
  validates_presence_of :future_scheduled
- validates_presence_of :route_number
 
  after_create do 
   self.route_number = SecureRandom.hex(10)
