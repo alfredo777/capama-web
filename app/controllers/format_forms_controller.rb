@@ -28,7 +28,7 @@ class FormatFormsController < ApplicationController
     @response = QuestionResponse.where(form_sender: params[:form_sender]).first
     @form = @response.question.format_form
     @questions = @form.questions
-    @barcode = Barby::Code128B.new("http://localhost:3000/printing_view_format?form_sender=#{params[:form_sender]}")
+    @barcode = Barby::Code128B.new("http://www.capama.gob.mx/printing_view_format?form_sender=#{params[:form_sender]}")
     @barcode_for_html = Barby::HtmlOutputter.new(@barcode)
     puts @barcode
     puts @barcode.to_ascii

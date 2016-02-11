@@ -232,7 +232,7 @@ class AdminController < ApplicationController
 
   def inspects
     @inspects = UserInspect.paginate(:page => params[:page], :per_page => 100).order('id DESC')
-    users = User.where(:area => 'reportes')
+    users = User.where(:area => 'inspector')
     @users = users.order(name: :asc)
   end
 
