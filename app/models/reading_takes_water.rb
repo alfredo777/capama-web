@@ -18,7 +18,7 @@ class ReadingTakesWater < ActiveRecord::Base
 
   def self.open_spreadsheet(file)
     case File.extname(file.original_filename)
-    when '.csv' then Roo::CSV.new(file.path, :headers=>true, :encoding => 'r:ISO-8859-1')
+    when '.csv' then Roo::CSV.new(file.path, :headers=>true, :encoding => 'windows-1251:utf-8')
     when '.xls' then Roo::Excel.new(file.path, :headers=>true, :encoding => 'windows-1251:utf-8')
     when '.xlsx' then Roo::Excelx.new(file.path, :headers=>true, :encoding => 'windows-1251:utf-8')
     else raise "Unknown file type: #{file.original_filename}"
