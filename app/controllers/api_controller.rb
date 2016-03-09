@@ -55,7 +55,7 @@ class ApiController < ApplicationController
   end
 
   def create_ticket
-    @user = User.first
+    @user = User.where(area: "suport").first
     @ticket = UserHelp.create(email: params[:email], cause: params[:cause], phone: params[:phone] ,explanation: params[:explanation], area: params[:area], user_id: @user.id, latitude: params[:latitude], longitude: params[:longitude] )
     @image = PublicImage.new
     @image.imageable = @ticket
