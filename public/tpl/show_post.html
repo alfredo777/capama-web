@@ -1,3 +1,8 @@
+<script type="text/javascript" src="/style/social/jssocials.min.js"></script>
+
+<link type="text/css" rel="stylesheet" href="/style/social/jssocials.css" />
+
+<link type="text/css" rel="stylesheet" href="/style/social/jssocials-theme-flat.css" />
 <div class="offset"></div>
 <div class="dark-wrapper">
   <div class="container inner2">
@@ -7,6 +12,7 @@
           <div class="post">
             <div class="box text-center">
               <div class="category cat9"><span><a href="#">Boletines de prensa</a></span></div>
+              <center><div id="share"></div></center>
               <h1 class="post-title">{{{title}}}</h1>
               <div class="meta"><span class="date">{{prettifyDate created_at}}</span></div>
             <figure class="main"><img src="{{head_image.image_head.url}}" alt="" /></figure>
@@ -19,3 +25,13 @@
     </div>
   </div>
 </div>
+
+<script>
+  $(document).ready(function(){
+    $("#share").jsSocials({
+        showLabel: false,
+        showCount: false,
+        shares: ["twitter", "facebook", "googleplus", "linkedin"]
+    });
+  });
+</script>
