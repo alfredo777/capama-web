@@ -19,7 +19,7 @@
     {"tl": "Cuentas públicas", "action": "loadTPL('public_acounts', 'public_acounts', 'transparency_content', 'es');"}, 
     {"tl": "Contratos", "action": "loadTPL('contract', 'contract', 'transparency_content', 'es');"},
     {"tl": "Concesiones", "action": "loadTPL('concesion', 'concesion', 'transparency_content', 'es');"},
-    {"tl": "Personal comicionado", "action": "loadTPL('comission', 'comission', 'transparency_content', 'es');"},
+    {"tl": "Personal comisionado", "action": "loadTPL('comission', 'comission', 'transparency_content', 'es');"},
     {"tl": "Informe CAPAMA rinde", "action": "loadTPL('statistical_report_of_information_requests', 'statistical_report_of_information_requests', 'transparency_content', 'es');"},
     {"tl": "Servicios que ofrece CAPAMA", "action": "loadTPL('services_offered', 'services_offered', 'transparency_content', 'es');"},
     {"tl": "Programas que administra la CAPAMA", "action": "loadTPL('commercial_programs', 'commercial_programs', 'transparency_content', 'es');"},

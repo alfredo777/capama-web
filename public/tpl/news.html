@@ -1,3 +1,6 @@
+<script type="text/javascript" src="/style/social/jssocials.min.js"></script>
+<link type="text/css" rel="stylesheet" href="/style/social/jssocials.css" />
+<link type="text/css" rel="stylesheet" href="/style/social/jssocials-theme-plain.css" />
 <link href='https://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
 <div class="news-head truncate">
   {{title}} <i class="fa fa-coffee"></i>
@@ -18,16 +21,31 @@
       <div class="blog-posts">
         <div class="isotope row" id="puts-posts">
           {{#each posts}}
-          <div class="col-md-4 col-sm-12 grid-view-post">
+          <div class="col-md-4 col-sm-12 grid-view-post" id="{{id}}">
             <div class="item post">
               <figure class="main"><a href="/post/{{id}}"><img src="{{head_image.image_head.url}}" alt="" /></a></figure>
               <div class="box text-center">
                 <div class="category cat6"><span><a href="#">Boletines de prensa</a></span></div>
                 <h4 class="post-title truncate"><a href="/post/{{id}}">{{{trimString title}}}</a></h4>
-                <div class="meta"><span class="date">{{{prettifyDate created_at}}}</span><span class="comments"><a href="#"><i class="icon-chat-1"></i> 5</a></span></div>
+                <div class="meta"><span class="date">{{{prettifyDate created_at}}}</span><span class="comments">
+                    <div id="social-index-{{id}}"></div>
+                </div>
+                
               </div>
             </div>
           </div>
+
+          <script>
+            $(document).ready(function(){
+              $("#social-index-{{id}}").jsSocials({
+                  url: "http://ww1.capama.gob.mx/post/{{id}}",
+                  text: "CAPAMA | {{{title}}}",
+                  showLabel: false,
+                  showCount: false,
+                  shares: ["twitter", "facebook", "googleplus"]
+              });
+            });
+          </script>
           {{/each}}
         </div>
       </div>
@@ -39,13 +57,7 @@
       <a class="twitter-timeline" href="https://twitter.com/CAPAMA_Online" data-widget-id="674067281270300672">Tweets por el @CAPAMA_Online.</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
-    <!--
-    <div class="col-sm-4 blog-content">
-      <div class="sidebox widget">
-        <h3 class="widget-title">Search</h3>
-        
-      </div>
-    </div>
+
     -->
   </div>
 </div>
