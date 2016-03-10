@@ -1,13 +1,18 @@
 {
   "title": "Funciones Relevantes",
   "content": "La Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco (CAPAMA), es un organismo público descentralizado de la administración pública municipal, con personalidad jurídica, patrimonio propio y funciones de autoridad administrativa, encargado de la prestación de los servicios públicos de agua potable, alcantarillado y saneamiento, en el ámbito territorial del Municipio de Acapulco de Juárez, Guerrero; creado como Organismo Operador Municipal por Acuerdo del Honorable Ayuntamiento Constitucional de Acapulco de Juárez, Guerrero, tomado en la Primera Sesión Ordinaria de Cabildo celebrada el día 17 de febrero de 2003, y su Complemento de fecha 17 de julio del mismo año, publicados en la Gaceta Municipal los días 31 de marzo y 14 de agosto del año 2003. <br/><br/> Entre las funciones de mayor relevancia que realiza se encuentran:",
+  "h41": "DIRECCION DE GESTION CIUDADANA",
+  "h31": "Funciones más relevantes:",
   "list": [
-    {"li": "Planear, programar, proyectar y construir la infraestructura hidráulica y sanitaria correspondiente al sistema de agua potable, alcantarillado y saneamiento."},
-    {"li": "Proporcionar los servicios de agua potable, alcantarillado y saneamiento, mediante la operación y mantenimiento de la infraestructura hidráulica y sanitaria."},
-    {"li": "Realizar estudios geohidrológicos para la identificación de fuentes de abastecimiento de agua."},
-    {"li": "Buscar nuevas alternativas de abastecimiento para preservar los mantos acuíferos en explotación."},
-    {"li": "Elaborar y mantener actualizado el catastro de las redes del sistema municipal de agua potable, alcantarillado, planta potabilizadora y plantas tratadoras."},
-    {"li": "Promover, vender, cobrar, determinar y valorar el consumo de todos los servicios ofrecidos, así como proporcionar la expansión del mercado de usuarios, destinando sus esfuerzos a eficientar el aspecto administrativo para brindar una mejor atención, disminuir las inconformidades, ordenar el padrón de usuarios, lograr la recaudación oportuna de la facturación y recuperar los créditos vencidos, que fortalezca la imagen como organismo público en beneficio de la sociedad."},
-    {"li": "Promover la cultura del agua entre los usuarios de la CAPAMA y la sociedad en su conjunto."}
-  ]
+   {"li": "Ser la ventanilla de atención al ciudadano para escucharlo, recibir sus solicitudes de servicio prospectivo, denuncias, quejas, otros comentarios y sugerencias."},
+   {"li": "Gestionar ante las otras Direcciones de Área de la CAPAMAlas solicitudes, quejas y denuncias que presenta elciudadano y darle seguimiento hasta su conclusión;"},
+   {"li": "Implementar las medidas necesarias para asegurar laatención oportuna, veraz y correcta a quienes realicentrámites, quejas, o promuevan cualesquier índole de petición;"},
+   {"li": "Recibir a los grupos organizados de la sociedad, y establecermesas de trabajo y negociación para el diálogo;"},
+   {"li": "Identificar el sentir de los usuarios de CAPAMA por medio deacciones que se consideren adecuadas para tal fin referentea la actuación de esta en materia de prestación de servicio yatención al público y generar propuestas de mejora;"},
+   {"li": "Crear y poner en operación por sí o por terceros alternativasde suministro de agua a las colonias que carezcan de lamisma por motivos técnicos o de falta de red;"},
+   {"li": "Promover la cultura del agua entre los usuarios de CAPAMAy la sociedad en su conjunto;"},
+   {"li": "Representar a la CAPAMA ante los Órganos de consulta yparticipación social, federales, estatales, municipales ycolegiados."},
+   {"li": "Las demás actividades que en materia de gestión ciudadanale señale el Consejo de Administración o el Director Generalde la CAPAMA."}
+  ],
+  "h42": "Indicadores de gestión:"
 }
