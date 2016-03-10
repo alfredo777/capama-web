@@ -5,7 +5,7 @@
     <div class="box text-center">
       <div class="category cat6"><span><a href="#">Boletines de prensa</a></span></div>
       <h4 class="post-title"><a href="/post/{{id}}">{{{trimString title}}}</a></h4>
-      <div class="meta"><span class="date">{{{prettifyDate created_at}}}</span> <div id="social-index-{{id}}"></div></div>
+      <div class="meta"><span class="date">{{{prettifyDate created_at}}}</span> <div id="social-index-{{id}}" style="font-size: 13px;"></div></div>
     </div>
   </div>
 </div>
@@ -15,7 +15,7 @@
         url: "http://ww1.capama.gob.mx/post/{{id}}",
         text: "CAPAMA | {{{title}}}",
         showLabel: false,
-        showCount: false,
+        showCount: "inside",
         shares: ["twitter", "facebook", "googleplus"]
     });
   });
