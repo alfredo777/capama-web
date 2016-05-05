@@ -9,6 +9,7 @@
         <table class="table">
           <thead>
             <tr>
+              <th>Index</th>
               <th>Nombre del negocio</th>
               <th>Dirección</th>
               <th>Colonia</th>
@@ -26,8 +27,9 @@
             </tr>
           </thead>
           <tbody>
-            <% @routes.each do |r| %>
+            <% @routes.each_with_index  do |r, index| %>
             <tr>
+              <td> <%=index%> </td>
               <td> <%= r.business_name %></td>
               <td> <%= r.address %></td>
               <td> <%= r.colony %></td>
