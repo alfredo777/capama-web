@@ -16,6 +16,10 @@ class ReadingTakesWater < ActiveRecord::Base
     end
   end
 
+  def count_images
+    @images = CelphoneImages.where(imageable_id: self.id, imageable_type: "routes").count
+  end
+
   def self.open_spreadsheet(file)
     case File.extname(file.original_filename)
     when '.csv' then Roo::CSV.new(file.path, :headers=>true, :encoding => 'windows-1251:utf-8')
