@@ -7,51 +7,51 @@
   "tbody": [
     {
       "t1": "Expedición de constancia de factibilidad de servicios de agua potable y alcantarillado",
-      "t2": "10 S.M.V"
+      "t2": "$701.00"
     },
     {
       "t1": "Expedición de Constancia de adeudo o de no adeudo",
-      "t2": "5 S.M.V."
+      "t2": "$350.50"
     },
     {
       "t1": "Autorización de proyectos de construcción de redes internas de Agua Potable y Alcantarillado sanitario",
-      "t2": "2 S.M.V. /l.p.s."
+      "t2": "$140.20/l.p.s."
     },
     {
       "t1": "Detección de fugas de agua potable o drenaje en el interior del inmueble",
-      "t2": "3 S.M.V."
+      "t2": "$210.30"
     },
     {
       "t1": "Revisión de aparatos medidores reportados como descompuestos o con desperfectos",
-      "t2": "1.5 S.M.V"
+      "t2": "$105.15"
     },
     {
       "t1": "Limpieza de fosas sépticas y disposición de lodos por M3",
-      "t2": "12 S.M.V."
+      "t2": "$841.20"
     },
     {
       "t1": "Autorización de reducción de diámetro de tomas de agua",
-      "t2": "5 S.M.V."
+      "t2": "$350.50"
     },
     {
       "t1": "Trámite de cambio de datos del Padrón de Usuarios",
-      "t2": "1.5 S.M.V."
+      "t2": "$105.15"
     },
     {
       "t1": "Cambios de lugar de aparatos medidores dentro del mismo inmueble (no incluye material)",
-      "t2": "2.5 S.M.V."
+      "t2": "$175.25"
     },
     {
       "t1": "Ruptura de concreto por metro lineal por instalaciones de Tomas",
-      "t2": "2.5 S.M.V."
+      "t2": "$175.25"
     },
     {
       "t1": "Descargas de aguas negras por buques y barcos a los colectores del muelle fiscal por M3.",
-      "t2": "2.5 S.M.V"
+      "t2": "$175.25"
     },
     {
       "t1": "Por el servicio de recepción para el tratamiento de aguas residuales en las plantas de CAPAMA por M3",
-      "t2": "1.5 S.M.V."
+      "t2": "$105.15"
     },
     {
       "t1": "Por los aparatos de medición que deban ser sustituidos por descompostura, o daño, en todos los diámetros y para todos los usos, siempre que el daño no sea imputable al usuario.",
@@ -59,99 +59,99 @@
     },
     {
       "t1": "Por análisis Físico-Químico que se hagan en los laboratorios de la CAPAMA",
-      "t2": "12 S.M.V."
+      "t2": "$841.20"
     },
     {
       "t1": "Por análisis Físico-Químico por auto tanque o pipa de aguas negras descargada en las plantas de CAPAMA",
-      "t2": "3 S.M.V."
+      "t2": "$210.30"
     },
     {
       "t1": "Por gestiones administrativas de cobro de tomas de media pulgada (no incluye material",
-      "t2": "2 S.M.V."
+      "t2": "$140.20"
     },
     {
       "t1": "Por gestiones administrativas de cobro de tomas de .750 pulgadas (No incluye material).",
-      "t2": "3 S.M.V."
+      "t2": "$210.30"
     },
     {
       "t1": "Por gestiones administrativas de cobro de tomas de 1.000 pulgadas (No incluye material).",
-      "t2": "5 S.M.V."
+      "t2": "$350.50"
     },
     {
       "t1": "Por gestiones administrativas de cobro de tomas mayores a una pulgada (no incluye material",
-      "t2": "6 S.M.V."
+      "t2": "$420.60"
     },
     {
       "t1": "Por trámites de Baja o Suspensión.",
-      "t2": "3 S.M.V."
+      "t2": "$210.30"
     },
     {
       "t1": "Por Medidores nuevos de 1/2in para servicio popular.",
-      "t2": "11 S.M.V."
+      "t2": "$771.10"
     },
     {
       "t1": "Por Medidores mecánicos nuevos de 1/2in para servicio Residencial, Comercial, Público y Mercados.",
-      "t2": "14 S.M.V."
+      "t2": "$981.40"
     },
     {
       "t1": "Por medidores nuevos de radiofrecuencia de 1/2in para servicio Residencial, Comercial, Público y Mercados.",
-      "t2": "36 S.M.V."
+      "t2": "$2,523.60"
     },
     {
       "t1": "Por medidores nuevos de 3/4in radio frecuencia.",
-      "t2": "38 S.M.V."
+      "t2": "$2,663.80"
     },
     {
       "t1": "Por medidores nuevos de 3/4in mecánico.",
-      "t2": "17 S.M.V."
+      "t2": "$1,191.70"
     },
     {
       "t1": "Por medidores nuevos de 1in",
-      "t2": "74 S.M.V."
+      "t2": "$5,187.40"
     },
     {
       "t1": "Por medidores nuevos de 1 1/2in",
-      "t2": "126 S.M.V."
+      "t2": "$8,832.60"
     },
     {
       "t1": "Por medidores nuevos de 2in",
-      "t2": "162 S.M.V."
+      "t2": "$11,356.20"
     },
     {
       "t1": "Por medidores nuevos de 2 1/2in",
-      "t2": "409 S.M.V"
+      "t2": "$28,670.90"
     },
     {
       "t1": "Por medidores nuevos de 3in",
-      "t2": "458 S.M.V."
+      "t2": "$82,105.80"
     },
     {
       "t1": "Por medidores nuevos de 4in",
-      "t2": "567 S.M.V."
+      "t2": "$39,746.70"
     },
     {
       "t1": "Por medidores nuevos de 6in",
-      "t2": "625 S.M.V."
+      "t2": "$43,812.50"
     },
     {
       "t1": "Revisión de planos para autorización de proyectos de desarrollos habitacionales o condominios",
-      "t2": "12 S.M.V. / l.p.s."
+      "t2": "$841.20/l.p.s."
     },
     {
       "t1": "Por supervisión de obras de las redes internas de agua potable y alcantarillado, se cobrará por cada 1,000 pesos de inversión.",
-      "t2": "0.3 S.M.V."
+      "t2": "$21.03"
     },
     {
       "t1": "Expedición de Histórico de consumo y pagos de los usuarios, de los últimos 5 años",
-      "t2": "0.5 S.M.V."
+      "t2": "$35.05"
     },
     {
       "t1": "Por la conexión de una Toma Derivada para uso comercial dentro del mismo predio y con giro diferente, hasta 5 mt de tubería, (no incluye medidor).",
-      "t2": "30 S.M.V."
+      "t2": "$2,103.00"
     },
     {
       "t1": "Por la conexión de una Toma Derivada para uso comercial dentro del mismo predio y con giro diferente, hasta 10mt de tubería, (no incluye medidor).",
-      "t2": "35 S.M.V."
+      "t2": "$2,453.50"
     }
   ]
 }

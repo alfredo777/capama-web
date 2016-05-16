@@ -31,7 +31,13 @@
     {"tl": "Reglamento de la Ley de Obras Públicas y Servicios Relacionados con las mismas", "url": "http://www.ordenjuridico.gob.mx/Documentos/Federal/wo40292.pdf"},
     {"tl": "Reglamento de la Ley de Presupuesto, Contabilidad y Gasto Público Federal", "url": "http://www.ordenjuridico.gob.mx/Federal/PE/APF/CI/CIPTBSAPF/Reglamentos/18111981.pdf"},
     {"tl": "Reglamento de la Ley Federal de Protección al Consumidor", "url": "http://www.ordenjuridico.gob.mx//Federal/Combo/R-107.pdf"},
-    {"tl": "Reglamento del Código Fiscal de la Federación", "url":"http://www.ordenjuridico.gob.mx/Documentos/Federal/wo15307.pdf"}
+    {"tl": "Reglamento del Código Fiscal de la Federación", "url":"http://www.ordenjuridico.gob.mx/Documentos/Federal/wo15307.pdf"},
+    {"tl": "En el ámbito federal se deben agregar la siguiente legislación", "url":"*"},
+    {"tl": "Ley general de bienes Nacionales", "url":"*"},
+    {"tl": "Ley forestal","url":"*"},
+    {"tl": "Ley federal de metrología y normatización", "url":"*"},
+    {"tl": "Ley general de salud", "url":"*"},
+    {"tl": "Ley de contribucion de mejoras por obras de infraestructura hidraúlica del ámbito estatal se deben incorporar", "url": "*"}
   ],
   "title2": "Marco legal Estatal",
   "files2": [
@@ -40,7 +46,7 @@
     {"tl": "Ley Número 374 de Transparencia y Acceso a la Informacion Publica del Estado de Guerrero", "url": "http://201.159.134.38/obtenerdoc.php?path=/Documentos/ESTADO/GUERRERO/o425254.doc&nombreclave=o425254.doc"},
     {"tl": "Ley de Administración de Recursos Materiales", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Leyes/GROLEY03.pdf"},
     {"tl": "Ley de Hacienda del Estado de Guerrero Número 428", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Leyes/GROLEY19.pdf"},
-    {"tl": "Ley Número 674 de Responsabilidades de los Servidores Públicos del Estado de Guerrero", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Leyes/GROLEY72.pdf"},
+    {"tl": "Ley Número 695 de Responsabilidades de los Servidores Públicos del Estado y de los Municipios de Guerrero", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Leyes/GROLEY72.pdf"},
     {"tl": "Ley de Seguridad Social de los Servidores Públicos del Estado de Guerrero", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Leyes/GROLEY39.pdf"},
     {"tl": "Ley de Trabajo de los Servidores Públicos del Estado de Guerrero Número 248", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Leyes/GROLEY41.pdf"},
     {"tl": "Ley Número 51, Estatuto de los Trabajadores al Servicio del Estado, de los Municipios y de los Organismos Públicos Coordinados y Descentralizados del Estado de Guerrero", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Leyes/GROLEY68.pdf"},
@@ -51,25 +57,28 @@
     {"tl": "Código Fiscal Municipal Número 152", "url": "http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Codigos/GROCOD06.pdf"},
     {"tl": "Código Procesal Civil del Estado Libre y Soberano de Guerrero Número 364", "url":"http://www.ordenjuridico.gob.mx/Estatal/GUERRERO/Codigos/GROCOD08.pdf"},
     {"tl": "Lineamientos y Criterios Generales para la Clasificación y Desclasificación de la Información Reservada y Confidencial de los Sujetos Obligados del Estado de Guerrero", "url": "http://www.itaig.org.mx/pdf/lineamientos.pdf"},
-    {"tl": "Lineamientos Generales para la Protección de los Datos Personales que estén en Posesión de los Sujetos Obligados del Estado De Guerrero", "url": "http://www.itaig.org.mx/pdf/pdp.pdf"}
+    {"tl": "Lineamientos Generales para la Protección de los Datos Personales que estén en Posesión de los Sujetos Obligados del Estado De Guerrero", "url": "http://www.itaig.org.mx/pdf/pdp.pdf"},
+     {"tl": "Ley num. 696 de la Comisión de los Derechos Humanos", "url":"*"},
+    {"tl": "Ley num. 494 de fomento y desarrollo turístico para el estado de Guerrero y los Municipios", "url":"*"},
+    {"tl": "Ley num. 1212 de salud del estado de Guerrero", "url":"*"},
+    {"tl": "Ley num. 1028 de fiscalización superior y rendición de cuentas del estado de Guerrero", "url":"*"},
+    {"tl": "Ley num. 455 de protección civil del estado de Guerrero", "url":"*"},
+    {"tl": "Ley num. 878 del equilibrio ecológico y la protección al ambiente del estado de Guerrero", "url":"*"},
+    {"tl": "Ley num. 876 de entrega y recepción de las administraciones públicas del estado y municipio de Guerrero", "url":"*"},
+    {"tl": "Código penal para el estado libre y soberano de Guerrero", "url":"*"},
+    {"tl": "Código fiscal del estado de Guerrero num. 429", "url":"*"},
+    {"tl": "Reglamento de las juntas locales de conciliación y arbitraje del estado de Guerrero", "url":"*"},
+    {"tl": "Reglamento sobre fraccionamiento y terrenos para los municipios del estado de Guerrero", "url":"*"}
 
   ],
   "title3": "Marco legal Municipal ",
   "files3": [
-    {"tl": "Ley Número 663 de Ingresos para el Municipio de Acapulco de Juárez del estado de Guerrero, para el ejercicio Fiscal 2015", "url": "http://i.guerrero.gob.mx/uploads/2015/03/L663IMACAPULCO15.pdf"},
+    {"tl": "Ley Número 134 de Ingresos para el Municipio de Acapulco de Juárez del estado de Guerrero, para el ejercicio Fiscal 2015", "url": "http://i.guerrero.gob.mx/uploads/2015/03/L663IMACAPULCO15.pdf"},
     {"tl": "Reglamento Interior de la Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco, publicado en la Gaceta Municipal del H. Ayuntamiento Constitucional de  de Acapulco de Juárez Guerrero, de fecha 30 de diciembre de 2008", "url": "http://www.capama.gob.mx/portal/descargas/descarga.php?f=3"}
   ],
-  "title4": "Marco jurídico de capama",
-  "files4":[
-    {"tl": "En el ámbito federal se deben agregar la siguiente legislación", "url":"*"},
-    {"tl": "Ley general de bienes Nacionales", "url":"*"},
-    {"tl": "Ley forestal","url":"*"},
-    {"tl": "Ley federal de metrología y normatización", "url":"*"},
-    {"tl": "Ley general de salud", "url":"*"},
-    {"tl": "Ley de contribucion de mejoras por obras de infraestructura hidraúlica del ámbito estatal se deben incorporar", "url": "*"},
-    {"tl": "Ley num. 696 de la Comisión de los Derechos Humanos", "url":"*"},
-    {"tl": "Ley num. 494 de fomento y desarrollo turístico para el estado de Guerrero y los Municipios", "url":"*"},
-    {"tl": "Ley num. 1212 de salud del estado de Guerrero", "url":"*"}
+  "title4": "Última Actualización ",
+  "files4": [
+    {"tl": "3 de Febrero de 2016", "url": "*"}
   ]
 }
 

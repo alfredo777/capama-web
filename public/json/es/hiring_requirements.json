@@ -58,5 +58,9 @@
     {"li": "Acta constitutiva de la empresa."},
     {"li": "Poder notarial del representante legal."},
     {"li": "Identificación oficial vigente del representante legal."}
+  ],
+  "sub24": "Última actualización:",
+  "sub24li": [
+    {"li": "1 de Marzo de 2016"}
   ]
 }
