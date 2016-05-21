@@ -43,5 +43,9 @@
    {"t1": "Afirme", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
    {"t1": "Banco Azteca", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"},
    {"t1": "Scotiabank", "t2": "Todas las sucursales", "t3": "Solo en sucursales", "t4": "Horario de la institución bancaria"}
+  ],
+  "sub24": "Última actualización:",
+  "sub24li": [
+    {"li": "17 de Mayo de 2016"}
   ]
 }

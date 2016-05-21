@@ -157,5 +157,11 @@
         {
             "li": "Copia de identificación oficial vigente del arrendatario."
         }
+    ],
+    "sub35": "Última fecha de actualización:",
+    "sub35li": [
+        {
+            "li": "17 de Mayo de 2016"
+        }
     ]
 }
