@@ -62,7 +62,7 @@ class AppmobileApiController < ApplicationController
   def json_insert
     img = params[:image]
     parsed_json = ActiveSupport::JSON.decode(img)
-    puts parsed_json[:image]
+    puts parsed_json[:image][:image]
     #imgecode = Base64.decode64(parsed_json["image"])
     #puts imgecode
     #@images = CelphoneImages.new
