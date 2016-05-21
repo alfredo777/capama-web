@@ -35,6 +35,6 @@ gem 'to_xls-rails'
 gem "auto_strip_attributes", "~> 2.0"
 gem 'rmagick'
 gem 'carrierwave-base64'
-gem "carrierwave-mongoid"
+#gem "carrierwave-mongoid"
 gem 'roo-xls'
 

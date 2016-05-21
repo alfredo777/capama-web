@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160116165031) do
+ActiveRecord::Schema.define(version: 20160521212857) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -73,6 +73,14 @@ ActiveRecord::Schema.define(version: 20160116165031) do
   create_table "format_forms_to_roles", force: true do |t|
     t.integer  "format_form_id"
     t.integer  "role_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "images_string_celphones", force: true do |t|
+    t.integer  "imageable_id"
+    t.string   "imageable_type"
+    t.text     "img",            limit: 4294967295
     t.datetime "created_at"
     t.datetime "updated_at"
   end

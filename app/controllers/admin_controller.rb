@@ -260,7 +260,7 @@ class AdminController < ApplicationController
   end
 
   def celphone_images
-    @images = CelphoneImages.where(imageable_id: params[:imageable_id], imageable_type: params[:imageable_type])
+    @images = ImagesStringCelphone.where(imageable_id: params[:imageable_id], imageable_type: params[:imageable_type])
   end
 
   def export_contract
