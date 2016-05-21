@@ -66,11 +66,11 @@ class AppmobileApiController < ApplicationController
     puts "************************************>>>>"
     imgecode = Base64.decode64(img)
     puts imgecode
-    #@images = CelphoneImages.new
-    #@images.img = imgecode
-    #@images.imageable_id = parsed_json.imageable_id.to_i
-    #@images.imageable_type = parsed_json.imageable_type.to_s
-    #@images.save
+    @images = CelphoneImages.new
+    @images.img = params[:image] 
+    @images.imageable_id = params[:imageable_id].to_i
+    @images.imageable_type = params[:imageable_type].to_s
+    @images.save
     render json: "Enviado".to_json, callback: params[:callback]
   end 
 
