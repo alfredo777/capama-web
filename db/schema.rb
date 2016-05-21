@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 20160521212857) do
   create_table "images_string_celphones", force: true do |t|
     t.integer  "imageable_id"
     t.string   "imageable_type"
-    t.text     "img",            limit: 4294967295
+    t.text     "img",            limit: 1073741823
     t.datetime "created_at"
     t.datetime "updated_at"
   end
