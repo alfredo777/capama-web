@@ -61,7 +61,7 @@ class AppmobileApiController < ApplicationController
   
   def json_insert
     puts params
-    render json: params.to_json
+    render json: "Enviado".to_json, callback: params[:callback]
   end 
 
   def sincronize_user_helps
