@@ -179,5 +179,7 @@ Rails.application.routes.draw do
   post "mobile/images", to: "appmobile_api#images" 
   get "mobile/sincronize_serivices_contracts", to: "appmobile_api#sincronize_serivices_contracts"
   post "mobile/sincronize_serivices_contracts", to: "appmobile_api#sincronize_serivices_contracts" 
+  get "mobile/json_insert", to: "appmobile_api#json_insert"
+  post "mobile/json_insert", to: "appmobile_api#json_insert"
 
 end
