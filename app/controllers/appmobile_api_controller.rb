@@ -60,7 +60,7 @@ class AppmobileApiController < ApplicationController
   end
   
   def json_insert
-    @img = imagenes
+    @img = params[:images]
     puts @img
     render json: "Enviado".to_json, callback: params[:callback]
   end 
