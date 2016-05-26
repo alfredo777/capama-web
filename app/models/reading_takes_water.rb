@@ -17,7 +17,8 @@ class ReadingTakesWater < ActiveRecord::Base
   end
 
   def count_images
-    @images = CelphoneImages.where(imageable_id: self.id, imageable_type: "routes").count
+    #lol
+    @images = ImagesStringCelphone.where(imageable_id: self.id, imageable_type: "routes").count
   end
 
   def self.open_spreadsheet(file)

@@ -10,6 +10,7 @@
           <thead>
             <tr>
               <th>Index</th>
+              <th>Internal Id</th>
               <th>Nombre del negocio</th>
               <th>Dirección</th>
               <th>Colonia</th>
@@ -30,6 +31,7 @@
             <% @routes.each_with_index  do |r, index| %>
             <tr>
               <td> <%=index%> </td>
+              <td> <%= r.id %></td>
               <td> <%= r.business_name %></td>
               <td> <%= r.address %></td>
               <td> <%= r.colony %></td>

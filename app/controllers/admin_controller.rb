@@ -220,7 +220,7 @@ class AdminController < ApplicationController
 
   def show_readings
     @route = ReadingAssignment.find_by_id(params[:id])
-    @routes = @route.reading_takes_waters.paginate(:page => params[:page], :per_page => 500).order('id DESC')
+    @routes = @route.reading_takes_waters.paginate(:page => params[:page], :per_page => 1000).order('id DESC')
     respond_to do |format|
       format.html 
     end
@@ -260,7 +260,7 @@ class AdminController < ApplicationController
   end
 
   def celphone_images
-    @images = CelphoneImages.where(imageable_id: params[:imageable_id], imageable_type: params[:imageable_type])
+    @images = ImagesStringCelphone.where(imageable_id: params[:imageable_id], imageable_type: params[:imageable_type])
   end
 
   def export_contract

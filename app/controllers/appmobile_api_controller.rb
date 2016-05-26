@@ -48,7 +48,7 @@ class AppmobileApiController < ApplicationController
 
     render json: @readings.to_json, callback: params[:callback]
   end
-
+   
   def images
     @images = CelphoneImages.new
     @images.img = params[:file] 
@@ -58,6 +58,15 @@ class AppmobileApiController < ApplicationController
 
     render json: @images.to_json, callback: params[:callback]
   end
+  
+  def json_insert
+    @images = ImagesStringCelphone.new
+    @images.img = params[:image] 
+    @images.imageable_id = params[:imageable_id].to_i
+    @images.imageable_type = params[:imageable_type].to_s
+    @images.save
+    render json: "Enviado".to_json, callback: params[:callback]
+  end 
 
   def sincronize_user_helps
    @user_help = UserHelp.create(cause: params[:cause],explanation: params[:explanation],area: params[:area], phone: params[:phone])
