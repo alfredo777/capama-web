@@ -263,6 +263,10 @@ class AdminController < ApplicationController
     @images = ImagesStringCelphone.where(imageable_id: params[:imageable_id], imageable_type: params[:imageable_type])
   end
 
+  def inspect_images
+    @images = CelphoneImages.where(imageable_id: params[:imageable_id], imageable_type: params[:imageable_type])
+  end
+
   def export_contract
     @contract = ServiceContract.where(id: params[:id])
     respond_to do |format|
