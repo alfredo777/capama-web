@@ -13,7 +13,7 @@
     {"tl": "Últimos tres ejecicios", "action": "loadTPL('exersices', 'exersices', 'transparency_content', 'es')"},
     {"tl": "Programa operativo anual de la CAPAMA", "action": "loadTPL('operative', 'operative', 'transparency_content', 'es');"}, 
     {"tl": "Calendario de sesiones", "action": "loadTPL('calendar', 'calendar', 'transparency_content', 'es')"},
-    {"tl": "Unidad de transparecia y acceso a la información", "action": "loadTPL('transparency_contact', 'transparency_contact', 'transparency_content', 'es');"},
+    {"tl": "Unidad de Transparecia", "action": "loadTPL('transparency_contact', 'transparency_contact', 'transparency_content', 'es');"},
     {"tl": "Instrumentos de consulta", "action": "loadTPL('consult', 'consult', 'transparency_content', 'es');"},
     {"tl": "Informe de auditorias", "action": "loadTPL('audits', 'audits', 'transparency_content', 'es');"}, 
     {"tl": "Cuentas públicas", "action": "loadTPL('public_acounts', 'public_acounts', 'transparency_content', 'es');"}, 
