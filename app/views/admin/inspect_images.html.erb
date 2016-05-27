@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-lg-12">
+  <header class="panel-heading" >Lecturas de agua</header>
+  <section class="panel">
+    <div class="panel-body">
+      <% if params[:imageable_type] == "routes" %>
+      <%= link_to "Regrear a las lecturas", show_readings_path(id: params[:routes]), class: "btn btn-info"%>
+      <%end%>
+      <% if params[:imageable_type] == "inspects" %>
+      <%= link_to "Regrear a las inspecciones", show_inspects_path(id: params[:routes]), class: "btn btn-info"%>
+      <%end%>
+      <br/><br/><br/>
+      <center>
+      <% @images.each do |img| %>
+        <img src="<%= img.img %>" width="400px" />
+      <%end%>
+      </center>
+    </div>
+  </section>
+</div>
+</div>

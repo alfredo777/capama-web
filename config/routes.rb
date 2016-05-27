@@ -56,6 +56,7 @@ Rails.application.routes.draw do
 
   get 'admin/show_readings', as: :show_readings
   get 'admin/celphone_images', as: :celphone_images
+  get 'admin/inspect_images', as: :inspect_images
   get 'admin/show_inspects', as: :show_inspects
 
   #### posts ######
