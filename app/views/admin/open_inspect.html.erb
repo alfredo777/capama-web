@@ -4,7 +4,7 @@
   <header class="panel-heading" >Inspección <%= @inspect.created_at %></header>
   <section class="panel">
     <div class="panel-body">
-      <div class="col-md-6">
+      <div class="col-md-6" style="width:50%; float:left;">
       <p> <b>Nombre:  </b> <br/> <br/> <%= @inspect.name %></p><br/>
       <p> <b>Dirección:  </b> <br/> <br/><%= @inspect.address %></p><br/>
       <p> <b>Inconforme:  </b> <br/> <br/><%= @inspect.inconforme %></p><br/>
@@ -17,7 +17,7 @@
       <p> <b>Inspección General :  </b> <br/> <br/><%= @inspect.general_inspect %></p><br/>
       <p> <b>Condiciones de la toma :  </b> <br/> <br/><%= @inspect.shooting_conditions %></p><br/>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6" style="width:50%; float:left;">
       <p> <b>Anomalias de la toma :  </b> <br/> <br/><%= @inspect.meter_anomaly %></p><br/>
       <p> <b>Casa habitación :  </b> <br/> <br/><%= @inspect.home_room %></p><br/>
       <p> <b>Número de personas :  </b> <br/> <br/><%= @inspect.number_of_people %></p><br/>
