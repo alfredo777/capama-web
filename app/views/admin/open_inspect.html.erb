@@ -1,8 +1,13 @@
 <div class="row">
-   <div class="btn btn-info pull-right" id="format-print">Imprimir </div>
   <div class="col-lg-12" id="printing">
+  <div class="btn btn-info pull-right" id="format-print">Imprimir </div>
+  <div id="printing">
   <header class="panel-heading" >Inspección <%= @inspect.created_at %></header>
   <section class="panel">
+    <div class="col-md-12">
+     <img src="/assets/admin/logo.png" width="60%" class="pull-right" />
+     <center> Impresión de inspección </center>
+    </div>
     <div class="panel-body">
       <div class="col-md-6" style="width:50%; float:left;">
       <p> <b>Nombre:  </b> <br/> <br/> <%= @inspect.name %></p><br/>
@@ -37,6 +42,7 @@
       </div>
     </div>
   </section>
+</div>
 </div>
 </div>
 
