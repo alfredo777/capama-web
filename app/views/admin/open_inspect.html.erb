@@ -27,11 +27,13 @@
       <p> <b>Reporte Adicional :  </b> <br/> <br/><%= @inspect.additional_report %></p><br/>
       <p> <b>Otras anomalias :  </b> <br/> <br/><%= @inspect.other_obs %></p><br/>
       </div>
+      <div class="col-md-12">
       <center>
       <% @images.each do |img| %>
       <img src="<%= img.img %>" width="25%" />
       <%end%>
       </center>
+      </div>
     </div>
   </section>
 </div>
