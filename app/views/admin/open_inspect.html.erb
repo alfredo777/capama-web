@@ -3,31 +3,32 @@
   <header class="panel-heading" >Inspección <%= @inspect.created_at %></header>
   <section class="panel">
     <div class="panel-body">
-    <p> <b>Nombre:  </b> <br/> <br/> <%= @inspect.name %></p><br/>
-    <p> <b>Dirección:  </b> <br/> <br/><%= @inspect.address %></p><br/>
-    <p> <b>Inconforme:  </b> <br/> <br/><%= @inspect.inconforme %></p><br/>
-    <p> <b>Cuenta:  </b> <br/> <br/><%= @inspect.acount %></p><br/>
-    <p> <b>Medidor:  </b> <br/> <br/><%= @inspect.meter %></p><br/>
-    <p> <b>T ser:  </b> <br/> <br/><%= @inspect.t_ser %></p><br/>
-    <p> <b>Persona a cargo :  </b> <br/> <br/><%= @inspect.in_charge %></p><br/>
-
-    <p> <b>Datos Adicionales:  </b> <br/> <br/><%= @inspect.additional_data %></p><br/>   
-    <p> <b>Fecha de visita:  </b> <br/> <br/><%= @inspect.visit_date %></p><br/>   
-    <p> <b>Inspección General :  </b> <br/> <br/><%= @inspect.general_inspect %></p><br/>   
-    <p> <b>Condiciones de la toma :  </b> <br/> <br/><%= @inspect.shooting_conditions %></p><br/>  
-    <p> <b>Anomalias de la toma :  </b> <br/> <br/><%= @inspect.meter_anomaly %></p><br/>
-    <p> <b>Casa habitación :  </b> <br/> <br/><%= @inspect.home_room %></p><br/>   
-    <p> <b>Número de personas :  </b> <br/> <br/><%= @inspect.number_of_people %></p><br/>   
-    <p> <b>Ordenó inspección :  </b> <br/> <br/><%= @inspect.ordeno_prueba_de_inspeccion %></p><br/>   
-    <p> <b>Tipo de actividad :  </b> <br/> <br/><%= @inspect.property_activity %></p><br/>   
-    <p> <b>Anomalias :  </b> <br/> <br/><%= @inspect.anomalies %></p><br/>   
-    <p> <b>Condiciones del medidor :  </b> <br/> <br/><%= @inspect.meter_conditions %></p><br/>  
-    <p> <b>Reporte Adicional :  </b> <br/> <br/><%= @inspect.additional_report %></p><br/> 
-    <p> <b>Otras anomalias :  </b> <br/> <br/><%= @inspect.other_obs %></p><br/> 
-
-     
-
-     </div>
+      <p> <b>Nombre:  </b> <br/> <br/> <%= @inspect.name %></p><br/>
+      <p> <b>Dirección:  </b> <br/> <br/><%= @inspect.address %></p><br/>
+      <p> <b>Inconforme:  </b> <br/> <br/><%= @inspect.inconforme %></p><br/>
+      <p> <b>Cuenta:  </b> <br/> <br/><%= @inspect.acount %></p><br/>
+      <p> <b>Medidor:  </b> <br/> <br/><%= @inspect.meter %></p><br/>
+      <p> <b>T ser:  </b> <br/> <br/><%= @inspect.t_ser %></p><br/>
+      <p> <b>Persona a cargo :  </b> <br/> <br/><%= @inspect.in_charge %></p><br/>
+      <p> <b>Datos Adicionales:  </b> <br/> <br/><%= @inspect.additional_data %></p><br/>
+      <p> <b>Fecha de visita:  </b> <br/> <br/><%= @inspect.visit_date %></p><br/>
+      <p> <b>Inspección General :  </b> <br/> <br/><%= @inspect.general_inspect %></p><br/>
+      <p> <b>Condiciones de la toma :  </b> <br/> <br/><%= @inspect.shooting_conditions %></p><br/>
+      <p> <b>Anomalias de la toma :  </b> <br/> <br/><%= @inspect.meter_anomaly %></p><br/>
+      <p> <b>Casa habitación :  </b> <br/> <br/><%= @inspect.home_room %></p><br/>
+      <p> <b>Número de personas :  </b> <br/> <br/><%= @inspect.number_of_people %></p><br/>
+      <p> <b>Ordenó inspección :  </b> <br/> <br/><%= @inspect.ordeno_prueba_de_inspeccion %></p><br/>
+      <p> <b>Tipo de actividad :  </b> <br/> <br/><%= @inspect.property_activity %></p><br/>
+      <p> <b>Anomalias :  </b> <br/> <br/><%= @inspect.anomalies %></p><br/>
+      <p> <b>Condiciones del medidor :  </b> <br/> <br/><%= @inspect.meter_conditions %></p><br/>
+      <p> <b>Reporte Adicional :  </b> <br/> <br/><%= @inspect.additional_report %></p><br/>
+      <p> <b>Otras anomalias :  </b> <br/> <br/><%= @inspect.other_obs %></p><br/>
+      <center>
+      <% @images.each do |img| %>
+      <img src="<%= img.img %>" width="50%" />
+      <%end%>
+      </center>
+    </div>
   </section>
-  </div>
+</div>
 </div>

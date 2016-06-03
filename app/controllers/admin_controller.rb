@@ -243,7 +243,7 @@ class AdminController < ApplicationController
 
   def open_inspect
     @inspect = Inspect.find(params[:id])
-    
+    @images = CelphoneImages.where(imageable_id: params[:id], imageable_type: "inspects")
   end
 
   
