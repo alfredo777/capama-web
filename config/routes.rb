@@ -59,6 +59,8 @@ Rails.application.routes.draw do
   get 'admin/inspect_images', as: :inspect_images
   get 'admin/show_inspects', as: :show_inspects
 
+  get 'admin/find_acount_by_type/:type', to: 'admin#find_acount_by_type', as: :find_acount_by_type
+  post 'admin/find_acount_by_type/:type', to: 'admin#find_acount_by_type'
   #### posts ######
   get 'admin/posts', to: 'posts#posts', as: :posts
   get 'admin/posts/:id', to: 'posts#show', as: :post 
@@ -71,6 +73,7 @@ Rails.application.routes.draw do
   post 'admin/update_post/:id', to: 'posts#edit', as: :update_post
   get 'admin/destroy_post', to: 'posts#destroy', as: :destroy_post
   post 'admin/destroy_post', to: 'posts#destroy'
+
 
   ##### images #####
   post 'admin/create_new_image', to: 'admin#create_new_image', as: :create_new_image

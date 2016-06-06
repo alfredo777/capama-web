@@ -1,0 +1,13 @@
+<div class="row">
+<%= form_tag find_acount_by_type_path(type: typer), class: 'form-verticaly' do -%>
+
+  <div class="col-md-8">
+    <%= text_field_tag 'acount','', placeholder: "Ingresa una cuenta para buscarla",class: 'form-control' %>
+  </div>
+  <div class="col-md-4">
+    <%= submit_tag 'Buscar cuenta', class: "btn btn-info"%>
+  </div>
+<%end%>
+</div>
+<br/>
+<br/>

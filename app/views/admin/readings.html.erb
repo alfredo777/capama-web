@@ -5,6 +5,8 @@
     <div class="panel-body">
       <% if  scope_permission('readings','create') %>
       <%= render partial: "/admin/renders/form_reading", locals: {users: @users} %>
+      <%= render partial: "/admin/renders/form_to_filtering_acount", locals: {typer: "routes"} %>
+
       <%end%>
       <div class="table-responsive">
         <a href="/files/routes_import.csv">Descargar Ejemplo para importación CSV</a>

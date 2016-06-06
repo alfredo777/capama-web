@@ -5,6 +5,8 @@
     <div class="panel-body">
       <% if  scope_permission('inspections','create') %>
       <%= render partial: "/admin/renders/form_inspect", locals: {users: @users} %>
+      <%= render partial: "/admin/renders/form_to_filtering_acount", locals: {typer: "inspects"} %>
+
       <%end%>
       <div class="panel-body">
         <a href="/files/inspect_import.csv">Descargar Ejemplo para importación CSV</a>

@@ -246,6 +246,17 @@ class AdminController < ApplicationController
     @images = CelphoneImages.where(imageable_id: params[:id], imageable_type: "inspects").last(7)
   end
 
+  def find_acount_by_type
+    @type_x = params[:type]
+
+    case @type_x
+     when "inspects"
+      @inspects = Inspect.where(acount: params[:acount]).last(500)
+     when "routes" 
+      @routes = ReadingTakesWater.where(account_number: params[:acount]).last(500)
+    end
+
+  end
   
 
   def export_inspect

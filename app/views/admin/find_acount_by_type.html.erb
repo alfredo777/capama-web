@@ -1,0 +1,86 @@
+<div class="row">
+  <div class="col-lg-12">
+    <section class="panel">
+      <div class="panel-body">
+        <% if @type_x == "inspects" %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Dirección</th>
+              <th>Inconformidad</th>
+              <th>Cuenta</th>
+              <th>Medidor</th>
+              <th>t_ser</th>
+              <th>Datos Adicionales</th>
+              <th>Reporte completo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @inspects.each do |r| %>
+            <tr>
+              <td> <%= r.name %></td>
+              <td> <%= r.address %></td>
+              <td> <%= r.inconforme %></td>
+              <td> <%= r.acount %></td>
+              <td> <%= r.meter %></td>
+              <td> <%= r.t_ser %></td>
+              <td> <%= r.additional_data %></td>
+              <td>
+                <%= link_to "Ver inspecciones", open_inspect_path(id:  r.id) %> |
+              <%= link_to "Ver imagenes", inspect_images_path(imageable_id: r.id, imageable_type: "inspects", routes: r.id) %></td>
+            </tr>
+            <%end%>
+          </tbody>
+        </table>
+        <%end%>
+        <% if @type_x == "routes" %>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Index</th>
+              <th>Internal Id</th>
+              <th>Nombre del negocio</th>
+              <th>Dirección</th>
+              <th>Colonia</th>
+              <th>S</th>
+              <th>U</th>
+              <th>Etapa</th>
+              <th>Cuenta</th>
+              <th>Diametro</th>
+              <th>Lectura</th>
+              <th>Lectura anterior</th>
+              <th>Anormalidades</th>
+              <th>Acceso de los datos</th>
+              <th>Fecha de registro a la ruta</th>
+              <th>Ver imagenes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @routes.each_with_index  do |r, index| %>
+            <tr>
+              <td> <%=index%> </td>
+              <td> <%= r.id %></td>
+              <td> <%= r.business_name %></td>
+              <td> <%= r.address %></td>
+              <td> <%= r.colony %></td>
+              <td> <%= r.sx %></td>
+              <td> <%= r.ux %></td>
+              <td> <%= r.stage %></td>
+              <td> <%= r.account_number %></td>
+              <td> <%= r.diameter %></td>
+              <td> <%= r.lecture %></td>
+              <td> <%= r.last_read %></td>
+              <td> <%= r.abnormalities %></td>
+              <td> <%= r.data_access %></td>
+              <td> <%= r.created_at %></td>
+              <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "routes", routes: r.id) %> | <%= r.count_images %></td>
+            </tr>
+            <%end%>
+          </tbody>
+        </table>
+        <%end%>
+      </div>
+    </section>
+  </div>
+</div>
