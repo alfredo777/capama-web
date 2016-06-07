@@ -28,7 +28,7 @@
               <td> <%= r.additional_data %></td>
               <td>
                 <%= link_to "Ver inspecciones", open_inspect_path(id:  r.id) %> |
-              <%= link_to "Ver imagenes", inspect_images_path(imageable_id: r.id, imageable_type: "inspects", routes: r.id) %></td>
+              <%= link_to "Ver imagenes", inspect_images_path(imageable_id: r.id, imageable_type: "inspects", routes: r.id, active: false) %></td>
             </tr>
             <%end%>
           </tbody>
@@ -74,7 +74,7 @@
               <td> <%= r.abnormalities %></td>
               <td> <%= r.data_access %></td>
               <td> <%= r.created_at %></td>
-              <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "routes", routes: r.id) %> | <%= r.count_images %></td>
+              <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "routes", routes: r.id, active: false) %> | <%= r.count_images %></td>
             </tr>
             <%end%>
           </tbody>

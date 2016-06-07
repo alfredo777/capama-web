@@ -45,7 +45,7 @@
               <td> <%= r.abnormalities %></td>
               <td> <%= r.data_access %></td>
               <td> <%= r.created_at %></td>
-              <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "routes", routes: @route.id) %> | <%= r.count_images %></td>
+              <td><%= link_to "Ver imagenes", celphone_images_path(imageable_id: r.id, imageable_type: "routes", routes: @route.id, active: true) %> | <%= r.count_images %></td>
             </tr>
             <%end%>
           </tbody>
