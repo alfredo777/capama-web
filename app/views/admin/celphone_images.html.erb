@@ -3,7 +3,7 @@
   <header class="panel-heading" >Lecturas de agua</header>
   <section class="panel">
     <div class="panel-body">
-      <% if active %>
+      <% if params[:active] == true %>
       <% if params[:imageable_type] == "routes" %>
       <%= link_to "Regrear a las lecturas", show_readings_path(id: params[:routes]), class: "btn btn-info"%>
       <%end%>
