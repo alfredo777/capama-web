@@ -20,13 +20,13 @@
     {"tl": "Contratos", "action": "loadTPL('contract', 'contract', 'transparency_content', 'es');"},
     {"tl": "Concesiones", "action": "loadTPL('concesion', 'concesion', 'transparency_content', 'es');"},
     {"tl": "Personal comisionado", "action": "loadTPL('comission', 'comission', 'transparency_content', 'es');"},
-    {"tl": "Informe CAPAMA rinde", "action": "loadTPL('statistical_report_of_information_requests', 'statistical_report_of_information_requests', 'transparency_content', 'es');"},
+    {"tl": "Informe que rinde la CAPAMA", "action": "loadTPL('statistical_report_of_information_requests', 'statistical_report_of_information_requests', 'transparency_content', 'es');"},
     {"tl": "Servicios que ofrece CAPAMA", "action": "loadTPL('services_offered', 'services_offered', 'transparency_content', 'es');"},
     {"tl": "Programas que administra la CAPAMA", "action": "loadTPL('commercial_programs', 'commercial_programs', 'transparency_content', 'es');"},
     {"tl": "Programas de capacitación", "action": "loadTPL('capacit', 'capacit', 'transparency_content', 'es');"},
     {"tl": "El nombre de las personas físicas y morales", "action": "loadTPL('pfpm', 'pfpm', 'transparency_content', 'es');"},
     {"tl": "Requisitos para la contratación de los servicios de agua potable y drenaje", "action": "loadTPL('hiring_requirements', 'hiring_requirements', 'transparency_content', 'es');"},
-    {"tl": "Requisitos para el cambio de nombre de usuario", "action": "loadTPL('name_change_requirements', 'name_change_requirements', 'transparency_content', 'es');"},
+    {"tl": "Requisitos para el legal cambio de nombre de usuario", "action": "loadTPL('name_change_requirements', 'name_change_requirements', 'transparency_content', 'es');"},
     {"tl": "Unidades de atención y pago de servicios", "action": "loadTPL('care_units', 'care_units', 'transparency_content', 'es');"},
     {"tl": "Informe unidad de transparecia", "action": "loadTPL('infotrans', 'infotrans', 'transparency_content', 'es');"}
     
