@@ -2,9 +2,9 @@
   "title": "Sucursales",
   "list": [
     {"li": "Oficinas Centrales ", "address": "Av. Lic. Adolfo López Mateos, Esq. Tte. José Azueta s/n, Col. Centro C.P. 39300, Acapulco, Gro", "phone": "01 (744)434-1400"},
-    {"li": "Gerencia Coloso", "address": "Gran Vía Coloso s/n, Col. La Esperanza C.P. 39810, Acapulco, Gro", "phone": "01 (744)468-0995"},
-    {"li": "Gerencia Diamante", "address": "Plaza Velero, Local 1, Entrada principal Col. Luis Donaldo Colosio 39907, Acapulco, Gro", "phone": "01(744)466-4406 y 466-4407"},
-    {"li": "Gerencia Pie de La Cuesta", "address": "Carretera Nacional Acapulco-Zihuatanejo Km. 8.5, Parada del Tehuacan 39412, Acapulco, Gro", "phone": "01 (744)460-1313"},
-    {"li": "Gerencia Renacimiento", "address": "Calle Yelotepec, Cd. Renacimiento, Lotes 8 y 10, Manzana 17, Sector 2 C.P. 39710, Acapulco, Gro", "phone": "01(744)441-4079"}
+    {"li": "Gerencia Coloso", "address": "Carretera cayaco puerto marquez kilómetro 3, Acapulco Gro. Interior plaza comercial 'El patio'","phone":"01(744)468-0995"},
+    {"li": "Gerencia Diamante", "address": "Plaza Velero local 1, entrada principal Col. Luis Donaldo Colosio C.P. 39907", "phone": "001(744)466-4406 y 01(744)466-4407"},
+    {"li": "Gerencia Pie de La Cuesta", "address": "Calzada pie de la cuesta y Av. Ejido s/n Fraccionamiento Mozimba Acapulco Gro., Interior gasolinera 'Mozimba'", "phone": "01(744)460-1313"},
+    {"li": "Gerencia Renacimiento", "address": "Calle Yolotepec Cd. Renacimiento lotes 8 y 10 manzana 17 sector 2 C.P. 39710", "phone": "01(744)441-4079"}
   ]
 }
