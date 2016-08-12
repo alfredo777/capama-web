@@ -1,0 +1,28 @@
+{
+  "title1": "Misión",
+  "content1": "Para servir con calidad y calidez al público en general que viene con el propósito de resolver problemas que presentan los servicios públicos que provee el organisno, como también proveer agua potable por medio de camiones tanque (pipas) a los barrios que carecen de la red de distribución o aún cuando tienen la infraestructura y debido a fallas técnicas, no tienen el servicio de agua. Atender y servir la demanda pública y promover la Cultura del Agua.",
+  "title2": "Visión",
+  "content2": "Para formar un equipo de trabajo con los elementos necesarios para proveer, integrar y desarrollar profesionalismo, excelencia y acciones con alto sentido humano para satisfacer las necesidades de suministro de agua a los barrios que carecen de la infraestructura de agua y crear estrategias que permitan suministrar agua permanentemente y obtener logros de Cultura del Agua a través del territorio municipal.",
+  "title3": "Actividades",
+  "content3": "La Dirección de Gestión Ciudadana es el área que se encarga de las diversas situaciones sociales, con las siguientes funciones principales:",
+  "list3": [
+    {"li": "El servicio al público incluye escuchar, recibir solicitudes de servicios, denuncias, quejas, sugerencias y otros comentarios."},
+    {"li": "Colaborar con las otras gerencias en el área de CAPAMA, solicitudes, quejas, denuncias y seguimiento de las mismas hasta su finalización."},
+    {"li": "Tener las medidas necesarias para garantizar puntualmente,  de manera precisa y con la atención adecuada para realizar o promover cualquier solicitud."},
+    {"li": "Colocar a trabajadores y negociadores para dialogar con las asociaciones creadas por la sociedad."},
+    {"li": "Tener instrumentos para identificar el sentir del usuario con respecto a los servicios que se ofrecen y de ese modo mejorar la antención otorgada."},
+    {"li": "Proporcionar agua a los barrios que carecen de ella debido a razones técnicas o falta de infraestructura."},
+    {"li": "Representar a CAPAMA frente a las organizaciones de consulta y participación social."},
+    {"li": "Y otras actividades relacionadas a la Gestión Ciudadana indicada por la junta directiva o por el Director General de CAPAMA."}
+  ],
+  "title4": "Organización",
+  "content4": "La Dirección de Gestión Pública está formada por oficinas de servicios público y las siguientes áreas de trabajo:",
+  "list4": [
+    {"li": "Jurídico."},
+    {"li": "Atención a usuarios (073)."}, 
+    {"li": "Atención Integral."},
+    {"li": "Cultura del Agua."}, 
+    {"li": "Programas alternativos."},
+    {"li": "Comités de usuarios potenciales."}
+  ]
+}
