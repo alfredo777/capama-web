@@ -21,6 +21,12 @@ class PublicViewsController < ApplicationController
   def transparency
   end
 
+  def ley81
+  end
+
+  def ley81207
+  end
+
   def about_capama
   end
 
