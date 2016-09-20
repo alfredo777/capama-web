@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get '/citizen_management', to: 'public_views#citizen_management', as: :citizen_management
   get '/news', to: 'public_views#news', as: :news
   get '/transparency', to: 'public_views#transparency', as: :transparency
-  get '/ley81', to: 'public_views#ley81', as: :ley81
+  ##get '/ley81', to: 'public_views#ley81', as: :ley81##
   get '/ley81207', to: 'public_views#ley81207', as: :ley81207
   get '/about_capama', to: 'public_views#about_capama', as: :about_capama
   get '/infraestructure', to: 'public_views#infraestructure', as: :infraestructure
