@@ -1,0 +1,34 @@
+{
+  "title": "Transparencia",
+  "content": "El Consejo de Administración, en su función de Órgano de Gobierno de la Comisión de Agua Potable y Alcantarillado del Municipio de Acapulco (CAPAMA), en atención y concordancia con las disposiciones contenidas en el artículo 6 apartado A de la Constitución Política de los Estados Unidos Mexicanos, que elevan a nivel de garantía el derecho que tiene cualquier gobernado para solicitar y obtener de los sujetos obligados, determinada información en los términos previstos por la normatividad reglamentaria, en el ejercicio de sus facultades, autorizó la instauración e instalación de la “<i><b>Unidad de Enlace para la Transparencia y Acceso a la Información Pública</i></b>” como una unidad administrativa dependiente de la Dirección General, responsable de recibir y dar trámite a las solicitudes de acceso a la información, hoy denominada “<i><b>Unidad de Transparencia</b></i>” por mandato del artículo 52 de la Ley Número 207 de Transparencia y Acceso a la Información Pública del Estado de Guerrero.<br/><br/>La autorización en comento quedó asentada bajo el Acuerdo número ASC-I-ORD-ENERO 13-2010-06, emitido por el Pleno del Consejo de Administración en la primera sesión ordinaria de 2010, celebrada con fecha 13 de enero del año referido.<br/><br/>Con esta decisión, el Consejo de Administración otorga vital importancia y relevancia a la transparencia de las actividades propias de este organismo operador de agua, constituyendo una virtual contraloría ciudadana con la participación de quienes requieran información de su interés.<br/><br/>",
+  "menu": [
+    {"tl": "Solicitud de Información", "action": "loadTPL('appli_information', 'appli_information', 'transparency_content', 'es');"},
+    {"tl": "Estructura orgánica", "action": "loadTPL('organization_chart', 'organization_chart_2', 'transparency_content', 'es');"},
+    {"tl": "Directorio", "action": "loadTPL('directory', 'directory', 'transparency_content', 'es');"},
+    {"tl": "Marco normativo", "action": "loadTPL('legal_framework', 'legal_framework', 'transparency_content', 'es');"},
+    {"tl": "Información Reservada", "action": "loadTPL('reserved','reserved','transparency_content', 'es')"},
+    {"tl": "Funciones Relevantes", "action": "loadTPL('relevant_functions', 'relevant_functions', 'transparency_content', 'es');"},
+    {"tl": "Tabulador de salarios", "action": "loadTPL('salary', 'salary', 'transparency_content', 'es')"},
+    {"tl": "Tabulador de Viáticos", "action": "loadTPL('viatic', 'viatic', 'transparency_content', 'es')"},
+    {"tl": "Últimos tres ejecicios", "action": "loadTPL('exersices', 'exersices', 'transparency_content', 'es')"},
+    {"tl": "Programa operativo anual de la CAPAMA", "action": "loadTPL('operative', 'operative', 'transparency_content', 'es');"}, 
+    {"tl": "Calendario de sesiones", "action": "loadTPL('calendar', 'calendar', 'transparency_content', 'es')"},
+    {"tl": "Unidad de Transparecia", "action": "loadTPL('transparency_contact', 'transparency_contact', 'transparency_content', 'es');"},
+    {"tl": "Instrumentos de consulta", "action": "loadTPL('consult', 'consult', 'transparency_content', 'es');"},
+    {"tl": "Informe de auditorias", "action": "loadTPL('audits', 'audits', 'transparency_content', 'es');"}, 
+    {"tl": "Cuentas públicas", "action": "loadTPL('public_acounts', 'public_acounts', 'transparency_content', 'es');"}, 
+    {"tl": "Contratos", "action": "loadTPL('contract', 'contract', 'transparency_content', 'es');"},
+    {"tl": "Concesiones", "action": "loadTPL('concesion', 'concesion', 'transparency_content', 'es');"},
+    {"tl": "Personal comisionado", "action": "loadTPL('comission', 'comission', 'transparency_content', 'es');"},
+    {"tl": "Informe que rinde la CAPAMA", "action": "loadTPL('statistical_report_of_information_requests', 'statistical_report_of_information_requests', 'transparency_content', 'es');"},
+    {"tl": "Servicios que ofrece CAPAMA", "action": "loadTPL('services_offered', 'services_offered', 'transparency_content', 'es');"},
+    {"tl": "Programas que administra la CAPAMA", "action": "loadTPL('commercial_programs', 'commercial_programs', 'transparency_content', 'es');"},
+    {"tl": "Programas de capacitación", "action": "loadTPL('capacit', 'capacit', 'transparency_content', 'es');"},
+    {"tl": "El nombre de las personas físicas y morales", "action": "loadTPL('pfpm', 'pfpm', 'transparency_content', 'es');"},
+    {"tl": "Requisitos para la contratación de los servicios de agua potable y drenaje", "action": "loadTPL('hiring_requirements', 'hiring_requirements', 'transparency_content', 'es');"},
+    {"tl": "Requisitos para el legal cambio de nombre de usuario", "action": "loadTPL('name_change_requirements', 'name_change_requirements', 'transparency_content', 'es');"},
+    {"tl": "Unidades de atención y pago de servicios", "action": "loadTPL('care_units', 'care_units', 'transparency_content', 'es');"},
+    {"tl": "Informe unidad de transparecia", "action": "loadTPL('infotrans', 'infotrans', 'transparency_content', 'es');"}
+    
+  ]
+}
