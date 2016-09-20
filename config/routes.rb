@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/transparency', to: 'public_views#transparency', as: :transparency
   ##get '/ley81', to: 'public_views#ley81', as: :ley81##
   get '/ley81207', to: 'public_views#ley81207', as: :ley81207
+  get '/transparency81', to: 'public_views#transparency81', as: :transparency81
   get '/about_capama', to: 'public_views#about_capama', as: :about_capama
   get '/infraestructure', to: 'public_views#infraestructure', as: :infraestructure
   get '/capama_basics', to: 'public_views#capama_basics', as: :capama_basics

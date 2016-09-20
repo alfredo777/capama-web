@@ -27,6 +27,9 @@ class PublicViewsController < ApplicationController
   def ley81207
   end
 
+  def transparency81
+  end
+
   def about_capama
   end
 
