@@ -30,6 +30,9 @@ class PublicViewsController < ApplicationController
   def transparency81
   end
 
+  def cumplimiento
+  end
+
   def about_capama
   end
 
