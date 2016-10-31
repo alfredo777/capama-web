@@ -68,4 +68,7 @@ class PublicViewsController < ApplicationController
 
   def recipt
   end
+
+  def marco_normativo
+  end
 end

@@ -25,6 +25,7 @@ Rails.application.routes.draw do
   get '/branches_for_payments', to: 'public_views#branches_for_payments', as: :branches_for_payments
   get '/post/:id', to: 'public_views#show_post', as: :post_public_view
   get '/recipt', to: 'public_views#recipt', as: :recipt
+  get '/marco_normativo', to: 'public_views#marco_normativo', as: :marco_normativo
 
   ##### admin #####
 
