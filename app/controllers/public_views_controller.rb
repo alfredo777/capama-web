@@ -68,7 +68,8 @@ class PublicViewsController < ApplicationController
 
   def recipt
   end
+#********************************PARA Artículo 81 LTAIPEG 207
+  
+    
 
-  def marco_normativo
-  end
 end
