@@ -1,0 +1,16 @@
+{
+  "title": "Información financiera 2015",
+  "instuctions": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
+  "title1": "Contenido",
+  "files1": [
+    {"tl": "Estado de Situación Financiera(Ejercicio 2015)", "url": "/files/situacionfinanciera2015.pdf"},
+    {"tl": "Estado de Actividades(Ejercicio 2015)", "url": "/files/estadodeactividades2015.pdf"},
+    {"tl": "Estado de Variación en la Hacienda Pública (Ejercicio 2015)", "url": "/files/estadodevariacion2015.pdf"},
+    {"tl": "Estado de Flujo Efectivo (Ejercicio 2015)", "url": "/files/estadodeflujo2015.pdf"}
+    
+  ]
+
+}
+
+
+

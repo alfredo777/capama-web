@@ -1,0 +1,9 @@
+{
+  "title": "Cumplimiento de la Ley General de Contabilidad Gubernamental",
+  "content": "",
+  "menu": [
+    {"tl": "Ley General de Contabilidad Gubernamental", "action": "loadTPL('cumplimiento_ley', 'cumplimiento_ley', 'transparency_cumplimiento_content', 'es');"},
+    {"tl": "Información financiera 2015", "action": "loadTPL('info_quince', 'info_quince', 'transparency_cumplimiento_content', 'es');"},
+    {"tl": "Información financiera 2016", "action": "loadTPL('info_dieciseis', 'info_dieciseis', 'transparency_cumplimiento_content', 'es');"}
+  ]
+}

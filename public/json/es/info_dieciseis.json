@@ -1,0 +1,16 @@
+{
+  "title": "Información financiera 2016",
+  "instuctions": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
+  "title1": "Contenido",
+  "files1": [
+    {"tl": "Estado de Situación Financiera (del 1 de Enero al 30 de Junio de 2016)", "url": "/files/situacionfinanciera2016.pdf"},
+    {"tl": "Estado de Actividades (del 1 de Enero al 30 de Junio de 2016)", "url": "/files/estadodeactividades2016.pdf"},
+    {"tl": "Estado de Variación en la Hacienda Pública (del 1 de Enero al 30 de Junio de 2016)", "url": "/files/estadodevariacion2016.pdf"},
+    {"tl": "Estado de Flujo Efectivo (del 1 de Enero al 30 de Junio de 2016)", "url": "/files/estadodeflujo2016.pdf"}
+    
+  ]
+
+}
+
+
+
