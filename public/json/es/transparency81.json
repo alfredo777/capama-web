@@ -49,7 +49,8 @@
     {"tl": "EL catálogo de disposición y guía de archivo documental", "action": "loadTPL('catalago', 'catalago', 'transparency81_content', 'es');"},
     {"tl": "Las actas de sesiones ordinarias y extraordinarias", "action": "loadTPL('actas_sesiones', 'actas_sesiones', 'transparency81_content', 'es');"},
     {"tl": "Para efectos estadísticos, el listado de solicitudes a las empresas concesionarias de telecomunicaciones y proveedores de servicios o aplicaciones de internet", "action": "loadTPL('listado_solicitudes', 'listado_solicitudes', 'transparency81_content', 'es');"},
-    {"tl": "Cualquier otra información que sea de utilidad o se considere relevante","action": "loadTPL('cualquier', 'cualquier', 'transparency81_content', 'es');"}
+    {"tl": "Cualquier otra información que sea de utilidad o se considere relevante","action": "loadTPL('cualquier', 'cualquier', 'transparency81_content', 'es');"},
+    {"tl": "Tabla de aplicabilidad de las obligaciones de transparencia comunes; y Tabla de actualización y conservación de la información","action": "loadTPL('aplicabilidad', 'aplicabilidad', 'transparency81_content', 'es');"}
   ],
   "menu2": [
     
