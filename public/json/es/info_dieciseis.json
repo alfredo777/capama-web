@@ -1,13 +1,10 @@
 {
-  "title": "Información financiera 2016",
+  "title": "Información presupuestaria",
   "instuctions": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
   "title1": "Contenido",
   "files1": [
-    {"tl": "Estado de Situación Financiera (Ejercicio 2016)", "url": "/files/situacionfinanciera.pdf"},
-    {"tl": "Estado de Actividades (Ejercicio 2016)", "url": "/files/estadodeactividades.pdf"},
-    {"tl": "Estado de Variación en la Hacienda Pública (Ejercicio 2016)", "url": "/files/estadodevariacion.pdf"},
-    {"tl": "Estado de cambios de situación financiera (Ejercicio 2016)", "url": "/files/estadodecambios.pdf"},
-    {"tl": "Estado de Flujo Efectivo (Ejercicio 2016)", "url": "/files/estadodeflujo.pdf"}
+    {"tl": "Descarga pendiente", "url": "/files/situacionfinanciera.pdf"},
+    
     
   ]
 

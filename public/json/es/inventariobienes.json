@@ -1,0 +1,22 @@
+{
+  "title": "Inventario de los bienes",
+  "instuctions": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
+  "title1": "Contenido",
+  "files1": [
+    {"tl": "LTAIPEG81XXXIVA", "url": "/files/inventariobienes/XXXIVa.xls"},
+    {"tl": "LTAIPEG81XXXIVB", "url": "/files/inventariobienes/XXXIVb.xls"},
+    {"tl": "LTAIPEG81XXXIVC", "url": "/files/inventariobienes/XXXIVc.xls"},
+    {"tl": "LTAIPEG81XXXIVD", "url": "/files/inventariobienes/XXXIVd.xls"},
+    {"tl": "LTAIPEG81XXXIVE", "url": "/files/inventariobienes/XXXIVe.xls"},
+    {"tl": "LTAIPEG81XXXIVF", "url": "/files/inventariobienes/XXXIVf.xls"},
+    {"tl": "LTAIPEG81XXXIVH", "url": "/files/inventariobienes/XXXIVh.xls"}
+    
+  ]
+  
+}
+
+
+
+
+
+

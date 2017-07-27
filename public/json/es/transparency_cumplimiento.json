@@ -3,7 +3,11 @@
   "content": "",
   "menu": [
     {"tl": "Ley General de Contabilidad Gubernamental", "action": "loadTPL('cumplimiento_ley', 'cumplimiento_ley', 'transparency_cumplimiento_content', 'es');"},
-    {"tl": "Información financiera 2015", "action": "loadTPL('info_quince', 'info_quince', 'transparency_cumplimiento_content', 'es');"},
-    {"tl": "Información financiera 2016", "action": "loadTPL('info_dieciseis', 'info_dieciseis', 'transparency_cumplimiento_content', 'es');"}
+    {"tl": "Información contable", "action": "loadTPL('info_quince', 'info_quince', 'transparency_cumplimiento_content', 'es');"},
+    {"tl": "Información presupuestaria", "action": "loadTPL('info_dieciseis', 'info_dieciseis', 'transparency_cumplimiento_content', 'es');"},
+  	{"tl": "Inventario de los bienes", "action": "loadTPL('inventariobienes', 'inventariobienes', 'transparency_cumplimiento_content', 'es');"},
+  	{"tl": "Cuentas públicas", "action": "loadTPL('cuentaspublicas', 'cuentaspublicas', 'transparency_cumplimiento_content', 'es');"},
+  	{"tl": "Ayudas y subsidios", "action": "loadTPL('ayudasysubsidios','ayudasysubsidios', 'transparency_cumplimiento_content', 'es');"},
+  	{"tl": "División de la norma", "action": "loadTPL('difusiondelanorma', 'difusiondelanorma', 'transparency_cumplimiento_content', 'es');"}
   ]
 }
