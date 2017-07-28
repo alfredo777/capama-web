@@ -7,7 +7,7 @@
     {"tl": "Información presupuestaria", "action": "loadTPL('info_dieciseis', 'info_dieciseis', 'transparency_cumplimiento_content', 'es');"},
   	{"tl": "Inventario de los bienes", "action": "loadTPL('inventariobienes', 'inventariobienes', 'transparency_cumplimiento_content', 'es');"},
   	{"tl": "Cuentas públicas", "action": "loadTPL('cuentaspublicas', 'cuentaspublicas', 'transparency_cumplimiento_content', 'es');"},
-  	{"tl": "Ayudas y subsidios", "action": "loadTPL('ayudasysubsidios','ayudasysubsidios', 'transparency_cumplimiento_content', 'es');"},
+  	{"tl": "Ayudas y subsidios", "action": "loadTPL('subsidios','subsidios','transparency_cumplimiento_content', 'es');"},
   	{"tl": "División de la norma", "action": "loadTPL('difusiondelanorma', 'difusiondelanorma', 'transparency_cumplimiento_content', 'es');"}
   ]
 }
