@@ -3,9 +3,12 @@
   "instuctions": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
   "title1": "Contenido",
   "files1": [
-    {"tl": "Descarga pendiente", "url": "/files/situacionfinanciera.pdf"},
-    
-    
+    {"tl": "Clasificación administrativa", "url": "/files/informacionpresupuestaria/clasificacionadministrativa.pdf"},
+    {"tl": "Clasificación económica", "url": "/files/informacionpresupuestaria/clasificacioneconomica.pdf"},
+    {"tl": "Clasificación funcional", "url": "/files/informacionpresupuestaria/clasificacionfuncional.pdf"},
+    {"tl": "Clasificación por objeto del gasto", "url": "/files/informacionpresupuestaria/clasificacionporobjetodelgasto.pdf"},
+    {"tl": "Clasificación programática", "url": "/files/informacionpresupuestaria/clasificacionprogramatica.pdf"},
+    {"tl": "Estadoanalitico de ingresos", "url": "/files/informacionpresupuestaria/estadoanaliticodeingresos.pdf"}
   ]
 
 }
