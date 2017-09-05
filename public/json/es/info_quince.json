@@ -20,6 +20,17 @@
     {"tl": "Estado de Flujo Efectivo (Ejercicio 2016)", "url": "/files/estadodeflujo.pdf"},
     {"tl": "Estado Analítico del Activo (Ejercicio 2016)", "url": "/files/informacioncontable/EstadoAnalíticodelActivo.pdf"}
    
+  ],
+  "title4": "Información contable 2017",
+  "instuctions3": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
+  "title5": "Contenido",
+  "files3": [
+    {"tl": "Estado de Situación Financiera (1 de Enero al 30 de Junio de 2017)", "url": "/files/informacioncontable/2017/situacionfinanciera.pdf"},
+    {"tl": "Estado de Actividades (1 de Enero al 30 de Junio de 2017)", "url": "/files/informacioncontable/2017/estadodeactividades.pdf"},
+    {"tl": "Estado de Variación en la Hacienda Pública (1 de Enero al 30 de Junio de 2017)", "url": "/files/informacioncontable/2017/estadodevariacion.pdf"},
+    {"tl": "Estado de Cambios de Situación Financiera (1 de Enero al 30 de Junio de 2017)", "url": "/files/informacioncontable/2017/estadodecambios.pdf"},
+    {"tl": "Estado Analítico del Activo (1 de Enero al 30 de Junio de 2017)", "url": "/files/informacioncontable/2017/estadoanaliticodelactivo.pdf"}
+   
   ]
 
 }
