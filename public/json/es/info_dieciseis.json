@@ -1,5 +1,5 @@
 {
-  "title": "Información presupuestaria",
+  "title": "Información presupuestaria 2016 (del 1 de Enero al 31 de Diciembre del ejercicio fiscal 2016)",
   "instuctions": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
   "title1": "Contenido",
   "files1": [
@@ -9,6 +9,17 @@
     {"tl": "Clasificación por objeto del gasto", "url": "/files/informacionpresupuestaria/clasificacionporobjetodelgasto.pdf"},
     {"tl": "Clasificación programática", "url": "/files/informacionpresupuestaria/clasificacionprogramatica.pdf"},
     {"tl": "Estadoanalitico de ingresos", "url": "/files/informacionpresupuestaria/estadoanaliticodeingresos.pdf"}
+  ],
+  "title2": "Información presupuestaria 2017(del 1 de Enero al 30 de Junio del ejercicio fiscal 2017)",
+  "instuctions": "De click en el enlace correspondiente para ver o descargar el documento de su elección",
+  "title3": "Contenido",
+  "files2": [
+    {"tl": "Estado Analítico del Activo", "url": "/files/informacionpresupuestaria/segundo2017/estadoanalitico.pdf"},
+    {"tl": "Estado de Actividades", "url": "/files/informacionpresupuestaria/segundo2017/estadoactividades.pdf"},
+    {"tl": "Estado de Cambios en la Situación Financiera", "url": "/files/informacionpresupuestaria/segundo2017/estadocambios.pdf"},
+    {"tl": "Estado de Variación en la Hacienda Publica", "url": "/files/informacionpresupuestaria/segundo2017/estadovariacion.pdf"},
+    {"tl": "Estado de Situación Financiera", "url": "/files/informacionpresupuestaria/segundo2017/estadosituacion.pdf"}
+   
   ]
 
 }
