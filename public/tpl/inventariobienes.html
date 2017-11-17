@@ -1,6 +1,14 @@
 <h2>{{title}}</h2><br/>
-<h5>{{instuctions}}</h5><br/>
+<h5>{{instuctions1}}</h5><br/>
 <h3>{{title1}}:</h3><br/>
+<p>
+  {{#each files}}
+  <a href="{{url}}" target="_blank"><i class="fa fa-file-xls-o"></i> {{tl}}</a><br/>
+  {{/each}}
+</p><br/>
+<h2>{{title2}}</h2><br/>
+<h5>{{instuctions2}}</h5><br/>
+<h3>{{title3}}:</h3><br/>
 <p>
   {{#each files1}}
   <a href="{{url}}" target="_blank"><i class="fa fa-file-xls-o"></i> {{tl}}</a><br/>
